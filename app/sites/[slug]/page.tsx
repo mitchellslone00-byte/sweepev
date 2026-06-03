@@ -126,15 +126,12 @@ export default async function SitePage(
         {site.strategy ? (
           <>
             <div className="mt-2 rounded-xl border border-accent/40 bg-panel p-5">
-              <p className="text-muted leading-relaxed">{site.strategy.edge}</p>
+              {site.strategy.edge.split("\n\n").map((para, i) => (
+                <p key={i} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
+              ))}
             </div>
 
-            <Link
-              href={`/guides/${site.slug}`}
-              className="mt-4 inline-flex items-center gap-2 rounded-lg bg-accent text-bg font-semibold px-4 py-2.5 text-sm hover:opacity-90"
-            >
-              Read the {site.name} strategy guide →
-            </Link>
+
           </>
         ) : (
           <>
