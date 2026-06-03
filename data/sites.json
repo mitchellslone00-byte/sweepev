@@ -425,6 +425,35 @@
     }
   },
   {
+    "slug": "blitzmania",
+    "name": "Blitzmania",
+    "tagline": "Newer sweepstakes casino with a strong welcome offer, frequent sales, and VIP farming.",
+    "rating": 4.3,
+    "bonus": "$25 for 75 SC welcome offer + daily login SC",
+    "promoCode": "",
+    "homepageUrl": "https://blitzmania.com/",
+    "affiliateUrl": "https://blitzmania.com/r/036A055007",
+    "available": "Available in most US states",
+    "highlights": [
+      "Frequent sales",
+      "Instant card redemptions",
+      "$25 for 75 SC welcome offer"
+    ],
+    "pros": [
+      "Great welcome offer",
+      "Instant cashouts",
+      "Frequent sales"
+    ],
+    "cons": [
+      "Small game selection",
+      "No live games",
+      "Newer site"
+    ],
+    "strategy": {
+      "edge": "Blitzmania is one of the newer sites that we have added here at SweepEV. They have a great welcome offer and have also had some really good sales. With 1x playthrough, washing shouldn't be too bad. VIP farming here is also an option, the daily at silver VIP gets pretty good! Some great value here, don't miss it."
+    }
+  },
+  {
     "slug": "spinquest",
     "name": "SpinQuest",
     "tagline": "Adventure-themed social casino with daily SC drops and reload bonuses.",
