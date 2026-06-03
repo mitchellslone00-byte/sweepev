@@ -60,6 +60,35 @@
     }
   },
   {
+    "slug": "legacy-casino",
+    "name": "Legacy Casino",
+    "tagline": "Social casino with slots, jackpots, and Sweepstakes prize redemptions.",
+    "rating": 4,
+    "bonus": "$10 for 30 SC welcome offer + 20% purchase bonus daily",
+    "promoCode": "",
+    "homepageUrl": "https://legacycasino.com",
+    "affiliateUrl": "https://legacycasino.com/refer-code/XYP2NRB5",
+    "available": "Available in most US states",
+    "highlights": [
+      "Instant redemptions",
+      "Daily sales",
+      "French roulette at 1x"
+    ],
+    "pros": [
+      "Instant redeems",
+      "Great game selection at 1x playthrough",
+      "Clean UI"
+    ],
+    "cons": [
+      "No live games",
+      "No VIP program",
+      "Newer brand"
+    ],
+    "strategy": {
+      "edge": "Legacy Casino is one of the newer additions to our vetted list. Legacy offers a generous $10 for 30 SC signup bonus and a 20% purchase match daily. Combined with their French roulette at 1x, this makes it a no-brainer. Keep an eye on Legacy — they've said better features are coming."
+    }
+  },
+  {
     "slug": "lonestar",
     "name": "LoneStar Social Casino",
     "tagline": "Texas-themed social casino with frequent freebies and large recurring sales.",
@@ -615,35 +644,6 @@
     ],
     "strategy": {
       "edge": "Baba is a newer sweepstakes casino that offers a decent daily streak, farmable SC accumulation, and some decent sales. It's a reliable platform that you should definitely add to your list. Baba has a $50 minimum gift-card redemption and $100 for a cash prize, so use that to your advantage for your daily farming."
-    }
-  },
-  {
-    "slug": "legacy-casino",
-    "name": "Legacy Casino",
-    "tagline": "Social casino with slots, jackpots, and Sweepstakes prize redemptions.",
-    "rating": 4,
-    "bonus": "$10 for 30 SC welcome offer + 20% purchase bonus daily",
-    "promoCode": "",
-    "homepageUrl": "https://legacycasino.com",
-    "affiliateUrl": "https://legacycasino.com/refer-code/XYP2NRB5",
-    "available": "Available in most US states",
-    "highlights": [
-      "Instant redemptions",
-      "Daily sales",
-      "French roulette at 1x"
-    ],
-    "pros": [
-      "Instant redeems",
-      "Great game selection at 1x playthrough",
-      "Clean UI"
-    ],
-    "cons": [
-      "No live games",
-      "No VIP program",
-      "Newer brand"
-    ],
-    "strategy": {
-      "edge": "Legacy Casino is one of the newer additions to our vetted list. Legacy offers a generous $10 for 30 SC signup bonus and a 20% purchase match daily. Combined with their French roulette at 1x, this makes it a no-brainer. Keep an eye on Legacy — they've said better features are coming."
     }
   },
   {
