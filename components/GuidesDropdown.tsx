@@ -7,12 +7,7 @@ const items = [
   { label: "General", href: "/guides" },
   { label: "CrownCoins", href: "/guides/crown-coins" },
   { label: "LuckyLand", href: "/guides/luckyland" },
-  { label: "Sweet Sweeps", href: "/guides/sweet-sweeps" },
-  { label: "LoneStar", href: "/guides/lonestar" },
-  { label: "RealPrize", href: "/guides/realprize" },
-  { label: "WOW Vegas", href: "/guides/wow-vegas" },
-  { label: "ReBet", href: "/guides/rebet" },
-  { label: "Dogg House", href: "/guides/dogghouse" },
+  { label: "ReBet / Dogg House", href: "/guides/rebet" },
 ];
 
 export function GuidesDropdown() {
