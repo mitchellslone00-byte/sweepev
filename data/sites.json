@@ -60,35 +60,6 @@
     }
   },
   {
-    "slug": "legacy-casino",
-    "name": "Legacy Casino",
-    "tagline": "Social casino with slots, jackpots, and Sweepstakes prize redemptions.",
-    "rating": 4,
-    "bonus": "$10 for 30 SC welcome offer + 20% purchase bonus daily",
-    "promoCode": "",
-    "homepageUrl": "https://legacycasino.com",
-    "affiliateUrl": "https://legacycasino.com/refer-code/XYP2NRB5",
-    "available": "Available in most US states",
-    "highlights": [
-      "Instant redemptions",
-      "Daily sales",
-      "French roulette at 1x"
-    ],
-    "pros": [
-      "Instant redeems",
-      "Great game selection at 1x playthrough",
-      "Clean UI"
-    ],
-    "cons": [
-      "No live games",
-      "No VIP program",
-      "Newer brand"
-    ],
-    "strategy": {
-      "edge": "Legacy Casino is one of the newer additions to our vetted list. Legacy offers a generous $10 for 30 SC signup bonus and a 20% purchase match daily. Combined with their French roulette at 1x, this makes it a no-brainer. Keep an eye on Legacy — they've said better features are coming."
-    }
-  },
-  {
     "slug": "lonestar",
     "name": "LoneStar Social Casino",
     "tagline": "Texas-themed social casino with frequent freebies and large recurring sales.",
@@ -145,31 +116,59 @@
     }
   },
   {
-    "slug": "wow-vegas",
-    "name": "WOW Vegas",
-    "tagline": "Vegas-themed Sweeps casino with valuable daily SC links and live dealer games.",
-    "rating": 4.8,
+    "slug": "pulsz",
+    "name": "Pulsz",
+    "tagline": "Polished social casino from Yellow Social Interactive with strong slot variety.",
+    "rating": 4.6,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
-    "homepageUrl": "https://wowvegas.com",
-    "affiliateUrl": "https://www.wowvegas.com/?raf=8981297",
+    "homepageUrl": "https://pulsz.com",
+    "affiliateUrl": "https://www.pulsz.com/?invited_by=28atab",
     "available": "Available in most US states",
     "highlights": [
       "Daily SC",
-      "Daily SC links and free spins shared on Discord",
-      "Live dealer games"
+      "Relax Gaming + Push Gaming",
+      "Skrill and bank cashouts"
     ],
     "pros": [
-      "Generous no-purchase signup",
-      "Reliable flash sales",
-      "Wide live game selection"
+      "Top-tier game providers",
+      "Reliable redemptions",
+      "Frequent promos"
     ],
     "cons": [
-      "No meaningful VIP farming"
+      "No live games",
+      "VIP perks favor heavy buyers"
     ],
     "strategy": {
-      "edge": "WOW Vegas remains one of our favorite sites in 2026. Between the free daily spins, daily SC links, and flash sales there is tons of value here. The large selection of games makes this an easy wash. Don't miss out on WOW Vegas, and make sure to join the Discord so you don't miss any freebies.",
-      "washingNotes": "Lean on the live dealer rooms when available for the easiest cross-wash, or pick a 97%+ RTP slot at minimum bet to clear playthrough. Watch the Discord for flash sales worth buying and washing."
+      "edge": "Pulsz is another one of our favorite sites in 2026. Offering a generous daily SC login bonus, events, and frequent sales. With a 1x playthrough and a plethora of solid games to choose from, this is a no-brainer. Pulsz VIP scales largely with the amount you spend, so it's not farmable, but after a few washes you should see a large increase."
+    }
+  },
+  {
+    "slug": "pulsz-bingo",
+    "name": "Pulsz Bingo",
+    "tagline": "Bingo-first sister site to Pulsz with shared wallet and slot crossover.",
+    "rating": 4.6,
+    "bonus": "$10 for 30 SC welcome offer",
+    "promoCode": "",
+    "homepageUrl": "https://pulszbingo.com",
+    "affiliateUrl": "https://www.pulszbingo.com/?invited_by=cn6eqt",
+    "available": "Available in most US states",
+    "highlights": [
+      "Daily SC",
+      "Live bingo rooms with SC prizes",
+      "Slot library shared with Pulsz"
+    ],
+    "pros": [
+      "Niche bingo focus",
+      "Same trusted operator as Pulsz",
+      "Daily SC drops"
+    ],
+    "cons": [
+      "Smaller slot lineup than Pulsz",
+      "Bingo schedule limited off-peak"
+    ],
+    "strategy": {
+      "edge": "Pulsz Bingo runs on the same Yellow Social backbone as Pulsz, so the same wins apply: generous daily SC login bonus, frequent sales, and a clean 1x playthrough. The slot library is shared with Pulsz and the live bingo rooms add a different way to win SC. VIP scales with purchase activity rather than wagering, so it's not farmable, but the value compounds with a few washes."
     }
   },
   {
@@ -234,59 +233,31 @@
     }
   },
   {
-    "slug": "pulsz",
-    "name": "Pulsz",
-    "tagline": "Polished social casino from Yellow Social Interactive with strong slot variety.",
-    "rating": 4.6,
+    "slug": "wow-vegas",
+    "name": "WOW Vegas",
+    "tagline": "Vegas-themed Sweeps casino with valuable daily SC links and live dealer games.",
+    "rating": 4.8,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
-    "homepageUrl": "https://pulsz.com",
-    "affiliateUrl": "https://www.pulsz.com/?invited_by=28atab",
+    "homepageUrl": "https://wowvegas.com",
+    "affiliateUrl": "https://www.wowvegas.com/?raf=8981297",
     "available": "Available in most US states",
     "highlights": [
       "Daily SC",
-      "Relax Gaming + Push Gaming",
-      "Skrill and bank cashouts"
+      "Daily SC links and free spins shared on Discord",
+      "Live dealer games"
     ],
     "pros": [
-      "Top-tier game providers",
-      "Reliable redemptions",
-      "Frequent promos"
+      "Generous no-purchase signup",
+      "Reliable flash sales",
+      "Wide live game selection"
     ],
     "cons": [
-      "No live games",
-      "VIP perks favor heavy buyers"
+      "No meaningful VIP farming"
     ],
     "strategy": {
-      "edge": "Pulsz is another one of our favorite sites in 2026. Offering a generous daily SC login bonus, events, and frequent sales. With a 1x playthrough and a plethora of solid games to choose from, this is a no-brainer. Pulsz VIP scales largely with the amount you spend, so it's not farmable, but after a few washes you should see a large increase."
-    }
-  },
-  {
-    "slug": "pulsz-bingo",
-    "name": "Pulsz Bingo",
-    "tagline": "Bingo-first sister site to Pulsz with shared wallet and slot crossover.",
-    "rating": 4.6,
-    "bonus": "$10 for 30 SC welcome offer",
-    "promoCode": "",
-    "homepageUrl": "https://pulszbingo.com",
-    "affiliateUrl": "https://www.pulszbingo.com/?invited_by=cn6eqt",
-    "available": "Available in most US states",
-    "highlights": [
-      "Daily SC",
-      "Live bingo rooms with SC prizes",
-      "Slot library shared with Pulsz"
-    ],
-    "pros": [
-      "Niche bingo focus",
-      "Same trusted operator as Pulsz",
-      "Daily SC drops"
-    ],
-    "cons": [
-      "Smaller slot lineup than Pulsz",
-      "Bingo schedule limited off-peak"
-    ],
-    "strategy": {
-      "edge": "Pulsz Bingo runs on the same Yellow Social backbone as Pulsz, so the same wins apply: generous daily SC login bonus, frequent sales, and a clean 1x playthrough. The slot library is shared with Pulsz and the live bingo rooms add a different way to win SC. VIP scales with purchase activity rather than wagering, so it's not farmable, but the value compounds with a few washes."
+      "edge": "WOW Vegas remains one of our favorite sites in 2026. Between the free daily spins, daily SC links, and flash sales there is tons of value here. The large selection of games makes this an easy wash. Don't miss out on WOW Vegas, and make sure to join the Discord so you don't miss any freebies.",
+      "washingNotes": "Lean on the live dealer rooms when available for the easiest cross-wash, or pick a 97%+ RTP slot at minimum bet to clear playthrough. Watch the Discord for flash sales worth buying and washing."
     }
   },
   {
@@ -315,6 +286,35 @@
     "tier": "B",
     "strategy": {
       "edge": "Coinsback Casino is a new social casino affiliated with the WOW Vegas group that we're very excited about. The \"coinsback\" feature gives you 50% back based on the RTP of the game, which is something new and worth tracking. We haven't seen any sales or a ton of value yet, but keep it on your radar. Coinsback offers a great 10 SC on signup, so don't miss out."
+    }
+  },
+  {
+    "slug": "legacy-casino",
+    "name": "Legacy Casino",
+    "tagline": "Social casino with slots, jackpots, and Sweepstakes prize redemptions.",
+    "rating": 4,
+    "bonus": "$10 for 30 SC welcome offer + 20% purchase bonus daily",
+    "promoCode": "",
+    "homepageUrl": "https://legacycasino.com",
+    "affiliateUrl": "https://legacycasino.com/refer-code/XYP2NRB5",
+    "available": "Available in most US states",
+    "highlights": [
+      "Instant redemptions",
+      "Daily sales",
+      "French roulette at 1x"
+    ],
+    "pros": [
+      "Instant redeems",
+      "Great game selection at 1x playthrough",
+      "Clean UI"
+    ],
+    "cons": [
+      "No live games",
+      "No VIP program",
+      "Newer brand"
+    ],
+    "strategy": {
+      "edge": "Legacy Casino is one of the newer additions to our vetted list. Legacy offers a generous $10 for 30 SC signup bonus and a 20% purchase match daily. Combined with their French roulette at 1x, this makes it a no-brainer. Keep an eye on Legacy — they've said better features are coming."
     }
   },
   {
