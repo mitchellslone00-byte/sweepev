@@ -9,7 +9,7 @@ export function DiscordBanner() {
   return (
     <div className="flex justify-center pt-2 pb-1 px-3">
       <a
-        href="https://discord.gg/XxbmgBZPP"
+        href="https://discord.gg/A62yrjBPZN"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 rounded-full bg-[#5865F2] hover:bg-[#4752c4] text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-1 sm:py-1.5 shadow-md shadow-[#5865F2]/30 ring-1 ring-white/10 transition-colors"
