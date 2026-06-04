@@ -294,55 +294,6 @@ export default function KentuckyCrownCoinsPage() {
           </ol>
         </section>
 
-        {/* FAQ */}
-        <section className="mt-10">
-          <h2 className="text-2xl font-bold">Frequently Asked Questions</h2>
-
-          <div className="mt-4 space-y-4">
-            <div className="rounded-xl border border-border bg-panel p-5">
-              <h3 className="font-semibold text-text">Can Kentucky residents play Crown Coins Casino?</h3>
-              <p className="mt-2 text-muted leading-relaxed text-sm">
-                Yes. Kentucky is an eligible state for Crown Coins Casino. You can sign up, play for free, make optional purchases, and redeem Sweeps Coins for real prizes without any Kentucky-specific restrictions.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-border bg-panel p-5">
-              <h3 className="font-semibold text-text">Is Crown Coins legal in Kentucky?</h3>
-              <p className="mt-2 text-muted leading-relaxed text-sm">
-                Crown Coins operates under sweepstakes promotional law, not gambling law. The dual-currency model — where Sweeps Coins can always be obtained for free — makes it legal across most of the US, including Kentucky. It is not classified as online gambling.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-border bg-panel p-5">
-              <h3 className="font-semibold text-text">Can Kentucky players redeem Sweeps Coins for cash?</h3>
-              <p className="mt-2 text-muted leading-relaxed text-sm">
-                Yes. Kentucky players can redeem Sweeps Coins for real prizes including cash equivalents via Skrill, bank transfer, and other available methods. There are no state-specific redemption restrictions for Kentucky.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-border bg-panel p-5">
-              <h3 className="font-semibold text-text">Do I have to buy anything to play Crown Coins in Kentucky?</h3>
-              <p className="mt-2 text-muted leading-relaxed text-sm">
-                No. Crown Coins is legally required to offer a no-purchase path to Sweeps Coins. Kentucky residents can collect free SC through daily login bonuses, mail-in requests, and promotional offers at no cost.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-border bg-panel p-5">
-              <h3 className="font-semibold text-text">What is the minimum age to play Crown Coins in Kentucky?</h3>
-              <p className="mt-2 text-muted leading-relaxed text-sm">
-                You must be at least 18 years old to register and play Crown Coins Casino in Kentucky.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-border bg-panel p-5">
-              <h3 className="font-semibold text-text">How do I sign up for Crown Coins from Kentucky?</h3>
-              <p className="mt-2 text-muted leading-relaxed text-sm">
-                Visit Crown Coins Casino and create your account. Use your real name exactly as it appears on your ID — this is important for verification. Kentucky residents can complete full sign-up and verification without any restrictions.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Responsible Gaming */}
         <section className="mt-8 rounded-2xl border border-border bg-panel/60 p-5 text-sm text-muted">
           <p className="font-semibold text-text">Responsible Gaming</p>
