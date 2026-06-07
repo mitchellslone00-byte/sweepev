@@ -19,7 +19,7 @@ export default function HomePage() {
             Best Sweepstakes Casinos<br className="hidden md:block" /> of {year}
           </h1>
           <p className="mt-4 sm:mt-5 text-base sm:text-lg text-muted max-w-2xl mx-auto">
-            {siteConfig.tagline} We rank US Sweeps casinos on bonus value,
+            {siteConfig.tagline} We rank US sweepstakes &amp; social casinos on bonus value,
             redemption speed, game library, and trust, so you don&apos;t waste a coin.
           </p>
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:justify-center gap-3">
@@ -35,7 +35,7 @@ export default function HomePage() {
 
       <section id="rankings" className="container-x py-10 md:py-16">
         <div className="flex items-end justify-between mb-5 md:mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold">Top Sweepstakes Sites</h2>
+          <h2 className="text-2xl md:text-3xl font-bold">Top Sweepstakes &amp; Social Casino Sites</h2>
           <span className="text-sm text-muted hidden md:block">Ranked by editorial score</span>
         </div>
 
