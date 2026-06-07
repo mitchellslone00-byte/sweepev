@@ -91,7 +91,7 @@
     "slug": "realprize",
     "name": "RealPrize",
     "tagline": "Sister site to LoneStar with the same daily SC drops and large sales.",
-    "rating": 4.8,
+    "rating": 4.9,
     "bonus": "$20 for 50 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://realprize.com",
@@ -119,7 +119,7 @@
     "slug": "pulsz",
     "name": "Pulsz",
     "tagline": "Polished social casino from Yellow Social Interactive with strong slot variety.",
-    "rating": 4.6,
+    "rating": 4.9,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://pulsz.com",
@@ -142,6 +142,97 @@
     "strategy": {
       "edge": "Pulsz is another one of our favorite sites in 2026. Offering a generous daily SC login bonus, events, and frequent sales. With a 1x playthrough and a plethora of solid games to choose from, this is a no-brainer. Pulsz VIP scales largely with the amount you spend, so it's not farmable, but after a few washes you should see a large increase."
     }
+  },
+  {
+    "slug": "modo",
+    "name": "Modo.us",
+    "tagline": "Modern social casino with crypto-style UX and a growing slot catalog.",
+    "rating": 4.9,
+    "bonus": "$210 for 300 SC best-value offer (or $1 for 6 SC starter)",
+    "promoCode": "",
+    "homepageUrl": "https://modo.us",
+    "affiliateUrl": "https://modo.us/?referralCode=I5NXGR",
+    "available": "Available in most US states",
+    "highlights": [
+      "Daily SC",
+      "VIP farming",
+      "Plenty of great sales"
+    ],
+    "pros": [
+      "VIP farming",
+      "Free daily SC",
+      "Tons of sales"
+    ],
+    "cons": [
+      "Lacking some live games"
+    ],
+    "strategy": {
+      "edge": "Modo has been one of the hottest sites in 2026, offering consistent sales that bring a tremendous amount of value. Modo runs 1x playthrough and has plenty of games, so washing is a breeze. Refer to the dedicated Modo guide on how to farm VIP — they just completely reset their VIP system, so there's plenty of value to grab. Don't miss out on Modo, join now."
+    },
+    "tier": "S"
+  },
+  {
+    "slug": "rebet",
+    "name": "ReBet",
+    "tagline": "Social sportsbook + casino hybrid with Sweeps prize redemptions.",
+    "rating": 4.9,
+    "bonus": "$200 for 300 SC best-value welcome offer",
+    "promoCode": "",
+    "homepageUrl": "https://rebet.app",
+    "affiliateUrl": "https://prod.d1z93dthu4z3m6.amplifyapp.com/?code=U-3LV-THA-TL&type=refferal_code",
+    "available": "Available in most US states",
+    "highlights": [
+      "1 SC daily",
+      "Free pick promos and a monthly pass",
+      "Mobile-first app experience"
+    ],
+    "pros": [
+      "Unique sportsbook-style Sweeps",
+      "Strong mobile UX",
+      "Active community feed"
+    ],
+    "cons": [
+      "Smaller casino game library",
+      "Sports-focused, fewer slot promos"
+    ],
+    "strategy": {
+      "edge": "Our favorite sports-and-sweeps casino. The free pick promos, the monthly pass, and the steady daily SC make it more valuable over time than most sports-first social books. Strong opening welcome offer on top. Quick trick: the 1 SC daily will not stack if your balance is above $1, so place a long-term future bet that's heavily favored to stack up the freebies.",
+      "washingGames": [
+        "Plinko XY, high-90s RTP across risk levels and the standout choice on the site",
+        "Low-risk Plinko (8-row, low-volatility) for slower variance on larger SC balances",
+        "Casino originals, check posted RTP first and stick to 96%+ titles"
+      ]
+    },
+    "tier": "S"
+  },
+  {
+    "slug": "dogghouse",
+    "name": "Dogg House Casino",
+    "tagline": "Newer S-tier site running on the ReBet UI engine, with steady daily SC drops.",
+    "rating": 4.9,
+    "bonus": "$200 for 300 SC best-value welcome offer",
+    "promoCode": "",
+    "homepageUrl": "https://dogghouse.com",
+    "affiliateUrl": "https://prod.d1qrywpnm2lw71.amplifyapp.com/?code=U-BL7-THA-9T&type=refferal_code",
+    "available": "Available in most US states",
+    "highlights": [
+      "1 SC daily",
+      "Built on the ReBet UI engine",
+      "Sweepstakes redemptions"
+    ],
+    "pros": [
+      "Unique branding",
+      "No-purchase signup SC",
+      "Familiar ReBet-style interface"
+    ],
+    "cons": [
+      "Newer brand",
+      "Smaller catalog vs. major sites"
+    ],
+    "strategy": {
+      "edge": "One of the newer S-tier sites and built on the same UI engine as ReBet, so the experience feels familiar from day one. Daily SC drops are steady and the welcome bundle is one of the strongest openings in the space. Similar to ReBet, the daily SC won't stack with a non-zero balance, so place a heavily favored futures pick to stack them up."
+    },
+    "tier": "S"
   },
   {
     "slug": "pulsz-bingo",
@@ -169,67 +260,6 @@
     ],
     "strategy": {
       "edge": "Pulsz Bingo runs on the same Yellow Social backbone as Pulsz, so the same wins apply: generous daily SC login bonus, frequent sales, and a clean 1x playthrough. The slot library is shared with Pulsz and the live bingo rooms add a different way to win SC. VIP scales with purchase activity rather than wagering, so it's not farmable, but the value compounds with a few washes."
-    }
-  },
-  {
-    "slug": "rebet",
-    "name": "ReBet",
-    "tagline": "Social sportsbook + casino hybrid with Sweeps prize redemptions.",
-    "rating": 4.7,
-    "bonus": "$200 for 300 SC best-value welcome offer",
-    "promoCode": "",
-    "homepageUrl": "https://rebet.app",
-    "affiliateUrl": "https://prod.d1z93dthu4z3m6.amplifyapp.com/?code=U-3LV-THA-TL&type=refferal_code",
-    "available": "Available in most US states",
-    "highlights": [
-      "1 SC daily",
-      "Free pick promos and a monthly pass",
-      "Mobile-first app experience"
-    ],
-    "pros": [
-      "Unique sportsbook-style Sweeps",
-      "Strong mobile UX",
-      "Active community feed"
-    ],
-    "cons": [
-      "Smaller casino game library",
-      "Sports-focused, fewer slot promos"
-    ],
-    "strategy": {
-      "edge": "Our favorite sports-and-sweeps casino. The free pick promos, the monthly pass, and the steady daily SC make it more valuable over time than most sports-first social books. Strong opening welcome offer on top. Quick trick: the 1 SC daily will not stack if your balance is above $1, so place a long-term future bet that's heavily favored to stack up the freebies.",
-      "washingGames": [
-        "Plinko XY, high-90s RTP across risk levels and the standout choice on the site",
-        "Low-risk Plinko (8-row, low-volatility) for slower variance on larger SC balances",
-        "Casino originals, check posted RTP first and stick to 96%+ titles"
-      ]
-    }
-  },
-  {
-    "slug": "dogghouse",
-    "name": "Dogg House Casino",
-    "tagline": "Newer S-tier site running on the ReBet UI engine, with steady daily SC drops.",
-    "rating": 4.7,
-    "bonus": "$200 for 300 SC best-value welcome offer",
-    "promoCode": "",
-    "homepageUrl": "https://dogghouse.com",
-    "affiliateUrl": "https://prod.d1qrywpnm2lw71.amplifyapp.com/?code=U-BL7-THA-9T&type=refferal_code",
-    "available": "Available in most US states",
-    "highlights": [
-      "1 SC daily",
-      "Built on the ReBet UI engine",
-      "Sweepstakes redemptions"
-    ],
-    "pros": [
-      "Unique branding",
-      "No-purchase signup SC",
-      "Familiar ReBet-style interface"
-    ],
-    "cons": [
-      "Newer brand",
-      "Smaller catalog vs. major sites"
-    ],
-    "strategy": {
-      "edge": "One of the newer S-tier sites and built on the same UI engine as ReBet, so the experience feels familiar from day one. Daily SC drops are steady and the welcome bundle is one of the strongest openings in the space. Similar to ReBet, the daily SC won't stack with a non-zero balance, so place a heavily favored futures pick to stack them up."
     }
   },
   {
@@ -479,33 +509,6 @@
     ],
     "strategy": {
       "edge": "SpinQuest is one of the newer sweepstakes casinos you've likely heard of if you follow any gambling influencers. It offers a generous 1 SC daily, but be careful: the playthrough requirements have been changing a lot recently, so make sure you're in the Discord to stay current. SpinQuest has a massive selection of games and some decent sales every once in a while."
-    }
-  },
-  {
-    "slug": "modo",
-    "name": "Modo.us",
-    "tagline": "Modern social casino with crypto-style UX and a growing slot catalog.",
-    "rating": 4.2,
-    "bonus": "$210 for 300 SC best-value offer (or $1 for 6 SC starter)",
-    "promoCode": "",
-    "homepageUrl": "https://modo.us",
-    "affiliateUrl": "https://modo.us/?referralCode=I5NXGR",
-    "available": "Available in most US states",
-    "highlights": [
-      "Daily SC",
-      "VIP farming",
-      "Plenty of great sales"
-    ],
-    "pros": [
-      "VIP farming",
-      "Free daily SC",
-      "Tons of sales"
-    ],
-    "cons": [
-      "Lacking some live games"
-    ],
-    "strategy": {
-      "edge": "Modo has been one of the hottest sites in 2026, offering consistent sales that bring a tremendous amount of value. Modo runs 1x playthrough and has plenty of games, so washing is a breeze. Refer to the dedicated Modo guide on how to farm VIP — they just completely reset their VIP system, so there's plenty of value to grab. Don't miss out on Modo, join now."
     }
   },
   {
