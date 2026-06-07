@@ -208,6 +208,43 @@ export default async function SitePage(
         </p>
       </section>
 
+      {site.relatedSites && site.relatedSites.length > 0 && (() => {
+        const related = site.relatedSites!.map(slug => sites.find(s => s.slug === slug)).filter(Boolean);
+        return related.length > 0 ? (
+          <section className="mt-6 rounded-2xl border border-border bg-panel/60 p-5">
+            <p className="text-sm font-semibold text-text mb-3">Sister Sites</p>
+            <div className="flex flex-wrap gap-2">
+              {related.map(r => (
+                <Link
+                  key={r!.slug}
+                  href={`/sites/${r!.slug}`}
+                  className="rounded-lg border border-border bg-panel px-4 py-2 text-sm text-muted hover:text-text hover:border-accent/40 transition-colors"
+                >
+                  {r!.name} →
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null;
+      })()}
+
+      {site.statePages && site.statePages.length > 0 && (
+        <section className="mt-4 rounded-2xl border border-border bg-panel/60 p-5">
+          <p className="text-sm font-semibold text-text mb-3">State Guides</p>
+          <div className="flex flex-wrap gap-2">
+            {site.statePages.map(sp => (
+              <Link
+                key={sp.href}
+                href={sp.href}
+                className="rounded-lg border border-border bg-panel px-4 py-2 text-sm text-muted hover:text-text hover:border-accent/40 transition-colors"
+              >
+                {sp.label} →
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="mt-10 text-center">
         <AffiliateLink
           slug={site.slug}

@@ -188,6 +188,34 @@ export default function GuidesPage() {
         </p>
       </section>
 
+      <section className="mt-8 rounded-2xl border border-accent/40 bg-panel p-5">
+        <h2 className="text-xl md:text-2xl font-bold text-accent">Top Sites to Get Started</h2>
+        <p className="mt-3 text-muted leading-relaxed text-sm">
+          If you are just getting started, these are our top-rated sites for 2026. Each has a dedicated review covering bonuses, redemptions, and strategy.
+        </p>
+        <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-2">
+          {[
+            { name: "Crown Coins", slug: "crown-coins" },
+            { name: "Sweet Sweeps", slug: "sweet-sweeps" },
+            { name: "Chumba Casino", slug: "chumba-casino" },
+            { name: "LuckyLand Slots", slug: "luckyland-slots" },
+            { name: "Pulsz", slug: "pulsz" },
+            { name: "Modo", slug: "modo" },
+            { name: "ReBet", slug: "rebet" },
+            { name: "WOW Vegas", slug: "wow-vegas" },
+            { name: "Legendz Casino", slug: "legendz-casino" },
+          ].map(s => (
+            <Link
+              key={s.slug}
+              href={`/sites/${s.slug}`}
+              className="rounded-lg border border-border bg-panel/60 px-3 py-2 text-sm text-muted hover:text-text hover:border-accent/40 transition-colors text-center"
+            >
+              {s.name}
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="mt-4 rounded-2xl border border-border bg-panel/60 p-5 text-sm text-muted">
         <p>
           Sweepstakes casinos are entertainment first, side income second. Set a budget, take breaks, and never chase losses. If gambling stops being fun, call{" "}

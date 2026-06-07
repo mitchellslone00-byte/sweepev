@@ -21,6 +21,8 @@ export type Site = {
   };
   /** Optional tier override. Otherwise tier is derived from rank in SiteCard. */
   tier?: "S" | "A" | "B" | "C";
+  relatedSites?: string[];
+  statePages?: { label: string; href: string }[];
 };
 
 export const sites: Site[] = sitesData as Site[];

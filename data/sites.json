@@ -29,7 +29,14 @@
         "Fruity Girl, 1¢ minimum spins, slower to clear playthrough but the best long-term RTP",
         "Epic Joker (Relax Gaming), excellent variance profile for washing larger SC balances"
       ]
-    }
+    },
+    "relatedSites": [],
+    "statePages": [
+      {
+        "label": "Crown Coins in Kentucky",
+        "href": "/states/kentucky/crown-coins"
+      }
+    ]
   },
   {
     "slug": "sweet-sweeps",
@@ -85,7 +92,10 @@
     "strategy": {
       "edge": "LoneStar has quickly become one of the more rewarding sites in 2026. Frequent freebies, regular large sales, and a clean themed UI make it a staple in the rotation. Sister site to RealPrize, so the same operator backbone is behind both. Quick note: after a large amount of profit, redemptions can take a while to come through, but they will come through.",
       "washingNotes": "Live dealer games and a slot library with several high-RTP titles make playthrough easy to clear. Cross-wash where the option is available, otherwise pick a 97%+ RTP slot at minimum bet."
-    }
+    },
+    "relatedSites": [
+      "realprize"
+    ]
   },
   {
     "slug": "realprize",
@@ -113,7 +123,10 @@
     "strategy": {
       "edge": "Between the daily SC drops, links, spins, and many sales, RealPrize is one of the higher-value sites. Make sure you join the Discord so you don't miss any freebies. Similar to LoneStar, be aware that after a large amount of profit redemption time can slow down, but it does come through.",
       "washingNotes": "Live dealer games and a slot library with several high-RTP titles make playthrough easy to clear. Cross-wash where the option is available, otherwise pick a 97%+ RTP slot at minimum bet."
-    }
+    },
+    "relatedSites": [
+      "lonestar"
+    ]
   },
   {
     "slug": "pulsz",
@@ -141,7 +154,10 @@
     ],
     "strategy": {
       "edge": "Pulsz is another one of our favorite sites in 2026. Offering a generous daily SC login bonus, events, and frequent sales. With a 1x playthrough and a plethora of solid games to choose from, this is a no-brainer. Pulsz VIP scales largely with the amount you spend, so it's not farmable, but after a few washes you should see a large increase."
-    }
+    },
+    "relatedSites": [
+      "pulsz-bingo"
+    ]
   },
   {
     "slug": "modo",
@@ -203,7 +219,10 @@
         "Casino originals, check posted RTP first and stick to 96%+ titles"
       ]
     },
-    "tier": "S"
+    "tier": "S",
+    "relatedSites": [
+      "dogghouse"
+    ]
   },
   {
     "slug": "dogghouse",
@@ -232,7 +251,10 @@
     "strategy": {
       "edge": "One of the newer S-tier sites and built on the same UI engine as ReBet, so the experience feels familiar from day one. Daily SC drops are steady and the welcome bundle is one of the strongest openings in the space. Similar to ReBet, the daily SC won't stack with a non-zero balance, so place a heavily favored futures pick to stack them up."
     },
-    "tier": "S"
+    "tier": "S",
+    "relatedSites": [
+      "rebet"
+    ]
   },
   {
     "slug": "legendz-casino",
@@ -321,7 +343,11 @@
     ],
     "strategy": {
       "edge": "Chumba Casino is VGW's flagship sweepstakes platform and one of the most established names in the space. The same company runs LuckyLand Slots and LuckyLand Casino, and that Malta gaming license and proven infrastructure carries across all three. If you want a platform you can trust completely, Chumba is about as reliable as it gets.\n\nThe daily login streak gives you 1 SC per day, and staying consistent compounds over time. On top of that, Chumba offers a digital AMOE worth up to 5 SC per day, which is one of the more generous free entry options available on any platform right now. Combining both, players who stay active can build up meaningful SC without making any purchases at all.\n\nRedemptions are fast and consistent. Chumba has been processing cashouts for years and the track record speaks for itself. No crypto option is available, but cash and standard transfer options are reliable and well tested.\n\nThere is no traditional VIP farming structure at Chumba. If VIP farming is a core part of your strategy, pair it with LuckyLand Slots where the VIP program is much more developed. Chumba's value comes from the daily accumulation, the digital AMOE, and the overall reliability of the platform.\n\nBottom line: Chumba Casino is a cornerstone site for any serious sweepstakes rotation in 2026. The daily SC, the generous AMOE, and the operator track record make it a permanent fixture."
-    }
+    },
+    "relatedSites": [
+      "luckyland-slots",
+      "luckyland-casino"
+    ]
   },
   {
     "slug": "luckyland-slots",
@@ -356,7 +382,11 @@
     "strategy": {
       "edge": "LuckyLand Slots is VGW's sweepstakes platform, the same operator behind Chumba Casino. That operator backing matters: it means reliable redemptions, a Malta gaming license, and a proven track record that most newer platforms simply cannot match.\n\nThe VIP program is the main reason LuckyLand earns its spot at the top of our list. As you climb through tiers, you earn additional monthly SC bonuses on top of your daily login, up to 80 SC per month at higher VIP levels. That kind of passive accumulation compounding alongside your daily bonus puts LuckyLand in a different category than most sites. For players serious about building a sweepstakes rotation around long-term value, this is one of the best VIP systems available.\n\n<<guide>>\n\nThe daily login bonus is strong and farmable, and the promotional cadence is genuinely high. Flash sales drop regularly and tend to offer real value when you catch them. We share LuckyLand flash sale alerts in our Discord, so make sure you are in there.\n\nOn the redemption side, the gift card floor is one of the lowest we have seen anywhere at just $10. Cash redemptions start at $50. No crypto, but the ability to pull small gift card redemptions frequently is useful for players who do not want balances sitting idle.\n\nBottom line: LuckyLand Slots is a consistent, high-value site with one of the most rewarding VIP programs in the space. If you are not running it as part of your regular rotation in 2026, you are leaving monthly SC on the table.",
       "guideUrl": "/guides/luckyland"
-    }
+    },
+    "relatedSites": [
+      "chumba-casino",
+      "luckyland-casino"
+    ]
   },
   {
     "slug": "luckyland-casino",
@@ -388,7 +418,11 @@
     "strategy": {
       "edge": "LuckyLand Casino is a VGW platform, the same company behind Chumba Casino and LuckyLand Slots. VGW has one of the strongest track records in the sweepstakes space, backed by a Malta gaming license and years of consistent, reliable operations.\n\nThe daily login streak gives you 1 SC per day, which stacks up quickly when you stay consistent. Pair that with one of the stronger VIP farming setups we have seen and you are looking at up to 80 SC per month in additional value on top of your daily. For players focused on long-term accumulation, LuckyLand Casino delivers.\n\n<<guide>>\n\nThe welcome offer is solid at $10 for 30 SC, and the operator track record means you can trust the redemption process. Cash redemptions start at $100, and there is no crypto or gift card option currently, so plan accordingly.\n\nOverall, LuckyLand Casino is a well-rounded platform with real recurring value through its daily streak and VIP program. The VGW name behind it gives you confidence that it will continue to develop. Get signed up, stay consistent, and let the daily SC and VIP bonuses do the work.",
       "guideUrl": "/guides/luckyland"
-    }
+    },
+    "relatedSites": [
+      "chumba-casino",
+      "luckyland-slots"
+    ]
   },
   {
     "slug": "wow-vegas",
@@ -416,7 +450,10 @@
     "strategy": {
       "edge": "WOW Vegas remains one of our favorite sites in 2026. Between the free daily spins, daily SC links, and flash sales there is tons of value here. The large selection of games makes this an easy wash. Don't miss out on WOW Vegas, and make sure to join the Discord so you don't miss any freebies.",
       "washingNotes": "Lean on the live dealer rooms when available for the easiest cross-wash, or pick a 97%+ RTP slot at minimum bet to clear playthrough. Watch the Discord for flash sales worth buying and washing."
-    }
+    },
+    "relatedSites": [
+      "rolla"
+    ]
   },
   {
     "slug": "pulsz-bingo",
@@ -444,7 +481,10 @@
     ],
     "strategy": {
       "edge": "Pulsz Bingo runs on the same Yellow Social backbone as Pulsz, so the same wins apply: generous daily SC login bonus, frequent sales, and a clean 1x playthrough. The slot library is shared with Pulsz and the live bingo rooms add a different way to win SC. VIP scales with purchase activity rather than wagering, so it's not farmable, but the value compounds with a few washes."
-    }
+    },
+    "relatedSites": [
+      "pulsz"
+    ]
   },
   {
     "slug": "legacy-casino",
@@ -530,7 +570,10 @@
     "strategy": {
       "edge": "Coin Wizard is a new Golden Hearts sister site. The welcome offer is strong — $10 for 25 SC at 1x playthrough plus 2.5 SC free on signup — and the daily login streak compounds nicely. No live games, but a clean enough catalog to clear playthrough on slots."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "golden-hearts"
+    ]
   },
   {
     "slug": "golden-hearts",
@@ -558,7 +601,10 @@
     "strategy": {
       "edge": "Golden Hearts shares the same operator backbone as Coin Wizard. Same strong $10-for-25-SC welcome at 1x playthrough, 2.5 SC free on signup, and a generous daily login streak. Easy account to keep active for the freebies."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "coin-wizard"
+    ]
   },
   {
     "slug": "clash5",
@@ -588,7 +634,10 @@
     ],
     "strategy": {
       "edge": "Clash 5 is a newer social casino operating as a sister site to SpinPals, and it stands out from most platforms because of one key difference: it runs on a card-based model rather than a traditional sweepstakes framework. That distinction matters because it allows California and New York residents to participate, two states that have historically been excluded from most sweepstakes casino platforms.\n\nFor players in those states who have been locked out of the sweepstakes casino space, Clash 5 is worth paying close attention to. The card-based mechanism operates under a different legal framework than sweepstakes law, and the platform has held up reliably since launch.\n\nNew players receive 5 Clash Coins just for signing up, which is a solid no-purchase introduction to the platform. The welcome offers are competitive for a newer site, and redemptions have been consistently quick and near-instant in most cases, putting Clash 5 ahead of a number of more established platforms in that area.\n\nThe main areas still developing are the daily bonus structure and promotional cadence. There is no recurring daily Clash Coin bonus yet, and we have not seen a consistent schedule of sales or reload offers so far. That is pretty normal for a newer platform. SpinPals followed a similar path early on and has since built out its promotional calendar considerably, so we expect Clash 5 to follow suit.\n\nIf you are in California or New York and have been searching for a platform that actually works in your state, Clash 5 is one of the better options available right now."
-    }
+    },
+    "relatedSites": [
+      "spinpals"
+    ]
   },
   {
     "slug": "zula-casino",
@@ -616,7 +665,12 @@
     "strategy": {
       "edge": "Zula is the flagship of the Priority Play / Zula sister-site network. They give 1 SC daily, run sporadic happy-hour sales, and most importantly: keep an eye out for a $1000 for 2000 SC offer that can trigger randomly. That's the play to watch for here."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "sportzino",
+      "yay-casino",
+      "american-luck"
+    ]
   },
   {
     "slug": "sportzino",
@@ -644,7 +698,11 @@
     "strategy": {
       "edge": "Sportzino is part of the Zula / Priority Play sister-site family. The sportsbook side is the main draw, but they sometimes have happy-hour sales that can be very profitable. Watch the promos tab and the Discord for drops."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "zula-casino",
+      "yay-casino"
+    ]
   },
   {
     "slug": "yay-casino",
@@ -670,7 +728,11 @@
     "strategy": {
       "edge": "Similar to the other Priority Play sites, Yay randomly offers happy-hour sales and decent promos. Definitely one you don't want to skip out on. Sister site to Zula, Sportzino, and American Luck."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "zula-casino",
+      "sportzino"
+    ]
   },
   {
     "slug": "american-luck",
@@ -699,7 +761,11 @@
     "strategy": {
       "edge": "American Luck is another Zula / Priority Play sister site. They randomly drop happy-hour sales and decent promos, similar to Yay and Zula, so it's worth keeping an account active just to catch the flashes of value."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "zula-casino",
+      "luck-party"
+    ]
   },
   {
     "slug": "fortune-coins",
@@ -728,7 +794,10 @@
     "strategy": {
       "edge": "Fortune Wins is another Zula sister / Priority Play site. This one uses FC instead of SC and goes by a 100:1 ratio. Fortune Wins offers a generous daily SC bonus that scales with how many days you log in, nice welcome offers, and some great sales to watch for."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "zula-casino"
+    ]
   },
   {
     "slug": "luck-party",
@@ -756,7 +825,11 @@
     "strategy": {
       "edge": "Luck Party is another Zula / Priority Play sister site. We haven't seen a ton of value in sales here yet, but the frequent SC links and the SC login bonus make it worth it. No live dealers, so pick a low-volatility slot or Plinko for easy washing. Don't miss out on the free SC — it stacks up."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "zula-casino",
+      "win-bonanza"
+    ]
   },
   {
     "slug": "win-bonanza",
@@ -785,7 +858,11 @@
     "strategy": {
       "edge": "Win Bonanza is the latest sister site from the Zula group. We haven't seen a ton of value from this site yet, but it does offer a generous daily SC login bonus and frequently drops 1 SC links that we post in our Discord. Get started, grab the welcome offer, and take advantage of the free SC."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "zula-casino",
+      "luck-party"
+    ]
   },
   {
     "slug": "rolla",
@@ -814,7 +891,10 @@
     "strategy": {
       "edge": "Rolla is a newer sister site to WOW Vegas. They offer a small daily SC login bonus and typically have a flash sale once a week that's good value. Rolla will usually drop a few free 1 SC links a week, so make sure you're in the Discord to grab them. There's some value here — don't skip it."
     },
-    "tier": "A"
+    "tier": "A",
+    "relatedSites": [
+      "wow-vegas"
+    ]
   },
   {
     "slug": "blitzmania",
@@ -902,7 +982,10 @@
     "strategy": {
       "edge": "SpinPals is a newer site that we've seen a decent amount of value on. SpinPals offers a very generous daily bonus as well as a VIP system that's farmable with GC. They frequently offer sales that include free spins and can be very +EV. There's a $500/day redemption limit, but that's rarely a problem."
     },
-    "tier": "B"
+    "tier": "B",
+    "relatedSites": [
+      "clash5"
+    ]
   },
   {
     "slug": "babacasino",
@@ -1014,7 +1097,11 @@
     ],
     "strategy": {
       "edge": "SpeedSweeps is another Sweep Sister site. Similar to the others, they run frequent sale codes — make sure you join the Discord so you don't miss any of them."
-    }
+    },
+    "relatedSites": [
+      "dimesweeps",
+      "sweepsroyal"
+    ]
   },
   {
     "slug": "dimesweeps",
@@ -1042,7 +1129,11 @@
     ],
     "strategy": {
       "edge": "DimeSweeps is another Sweep Sister site. Similar to the others, they run frequent sale codes — make sure you join the Discord so you don't miss any of them."
-    }
+    },
+    "relatedSites": [
+      "speedsweeps",
+      "sweepsroyal"
+    ]
   },
   {
     "slug": "sweepsroyal",
@@ -1070,7 +1161,11 @@
     ],
     "strategy": {
       "edge": "SweepsRoyal is another Sweep Sister site. Similar to the others, they run frequent sale codes — make sure you join the Discord so you don't miss any of them."
-    }
+    },
+    "relatedSites": [
+      "speedsweeps",
+      "richsweeps"
+    ]
   },
   {
     "slug": "richsweeps",
@@ -1098,7 +1193,11 @@
     ],
     "strategy": {
       "edge": "RichSweeps is another Sweep Sister site. Similar to the others, they run frequent sale codes — make sure you join the Discord so you don't miss any of them."
-    }
+    },
+    "relatedSites": [
+      "sweepsroyal",
+      "bangcoins"
+    ]
   },
   {
     "slug": "bangcoins",
@@ -1126,6 +1225,10 @@
     ],
     "strategy": {
       "edge": "BangCoins is another Sweep Sister site. Similar to the others, they run frequent sale codes — make sure you join the Discord so you don't miss any of them."
-    }
+    },
+    "relatedSites": [
+      "richsweeps",
+      "dimesweeps"
+    ]
   }
 ]
