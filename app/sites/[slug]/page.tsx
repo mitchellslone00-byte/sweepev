@@ -132,12 +132,19 @@ export default async function SitePage(
         {site.strategy ? (
           <>
             <div className="mt-2 rounded-xl border border-accent/40 bg-panel p-5">
-              {site.strategy.edge.split("\n\n").map((para, i) => (
-                <p key={i} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
-              ))}
+              {site.strategy.edge.split("\n\n").map((para, i) =>
+                para === "<<guide>>" && site.strategy?.guideUrl ? (
+                  <p key={i} className="text-muted leading-relaxed mt-3">
+                    For a full breakdown on how to farm each VIP tier efficiently, see our{" "}
+                    <Link href={site.strategy.guideUrl} className="text-accent underline underline-offset-2 hover:opacity-80">
+                      {site.name} VIP &amp; Strategy Guide
+                    </Link>.
+                  </p>
+                ) : (
+                  <p key={i} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
+                )
+              )}
             </div>
-
-
           </>
         ) : (
           <>

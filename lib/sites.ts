@@ -17,6 +17,7 @@ export type Site = {
     edge: string;
     washingGames?: string[];
     washingNotes?: string;
+    guideUrl?: string;
   };
   /** Optional tier override. Otherwise tier is derived from rank in SiteCard. */
   tier?: "S" | "A" | "B" | "C";

@@ -293,6 +293,39 @@
     "tier": "S"
   },
   {
+    "slug": "luckyland-slots",
+    "name": "LuckyLand Slots",
+    "tagline": "VGW sweepstakes casino with farmable VIP, up to 80 SC per month, and a $10 gift card floor.",
+    "rating": 4.9,
+    "tier": "S",
+    "bonus": "$10 for 30 SC welcome offer + 1 SC daily login bonus",
+    "promoCode": "",
+    "homepageUrl": "https://luckylandslots.com",
+    "affiliateUrl": "https://luckylandslots.com",
+    "available": "Available in most US states",
+    "highlights": [
+      "1 SC daily login bonus",
+      "VIP earns up to 80 SC per month",
+      "Frequent flash sales and free SC for VIP"
+    ],
+    "pros": [
+      "1 SC daily",
+      "Amazing VIP farming (up to 80 SC/month)",
+      "Frequent flash sales",
+      "$10 gift card redemption minimum",
+      "Malta licensed and VGW backed"
+    ],
+    "cons": [
+      "No live games",
+      "No crypto redemption",
+      "Flash sales require active monitoring"
+    ],
+    "strategy": {
+      "edge": "LuckyLand Slots is VGW's sweepstakes platform, the same operator behind Chumba Casino. That operator backing matters: it means reliable redemptions, a Malta gaming license, and a proven track record that most newer platforms simply cannot match.\n\nThe VIP program is the main reason LuckyLand earns its spot at the top of our list. As you climb through tiers, you earn additional monthly SC bonuses on top of your daily login, up to 80 SC per month at higher VIP levels. That kind of passive accumulation compounding alongside your daily bonus puts LuckyLand in a different category than most sites. For players serious about building a sweepstakes rotation around long-term value, this is one of the best VIP systems available.\n\n<<guide>>\n\nThe daily login bonus is strong and farmable, and the promotional cadence is genuinely high. Flash sales drop regularly and tend to offer real value when you catch them. We share LuckyLand flash sale alerts in our Discord, so make sure you are in there.\n\nOn the redemption side, the gift card floor is one of the lowest we have seen anywhere at just $10. Cash redemptions start at $50. No crypto, but the ability to pull small gift card redemptions frequently is useful for players who do not want balances sitting idle.\n\nBottom line: LuckyLand Slots is a consistent, high-value site with one of the most rewarding VIP programs in the space. If you are not running it as part of your regular rotation in 2026, you are leaving monthly SC on the table.",
+      "guideUrl": "/guides/luckyland"
+    }
+  },
+  {
     "slug": "wow-vegas",
     "name": "WOW Vegas",
     "tagline": "Vegas-themed Sweeps casino with valuable daily SC links and live dealer games.",
