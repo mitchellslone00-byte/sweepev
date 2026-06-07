@@ -264,6 +264,35 @@
     "tier": "S"
   },
   {
+    "slug": "card-crush",
+    "name": "Card Crush",
+    "tagline": "Sweepstakes platform in 48 states with rolling welcome offers, VIP matching, and a $10 gift card redemption minimum.",
+    "rating": 4.9,
+    "bonus": "Up to 120 SC for $60 + 2 MC free on signup",
+    "promoCode": "",
+    "homepageUrl": "https://cardcrush.com",
+    "affiliateUrl": "https://www.cardcrush.com/lp/raf?r=5cce8358%2F47169795",
+    "available": "Available in 48 US states (excludes Nevada and Washington)",
+    "highlights": [
+      "Rolling welcome offers",
+      "VIP matching",
+      "2 MC free on signup"
+    ],
+    "pros": [
+      "$10 gift card redemption minimum",
+      "Available in 48 states",
+      "VIP program with matching"
+    ],
+    "cons": [
+      "Excludes Nevada and Washington",
+      "Cash redemption starts at $75"
+    ],
+    "strategy": {
+      "edge": "Card Crush has quickly become one of the more interesting sweepstakes platforms available today. Recently expanding to 48 states, it's now accessible to players across most of the United States, with only Nevada and Washington excluded. This makes it a great option for players who often run into state restrictions on other platforms.\n\nNew players receive 2 MC just for signing up, along with a solid lineup of welcome offers and ongoing promotions. The site regularly runs sales and bonus events, making it easy to stretch your playtime and find extra value throughout the month.\n\nOne of Card Crush's biggest strengths is its low $10 gift card redemption minimum, making rewards more accessible than many competing platforms. Cash redemptions start at $75, and the site also includes a VIP program for players looking to earn additional perks over time.\n\nOverall, Card Crush combines strong promotions, a large game selection, and broad state availability into a package that's easy to recommend. If you're eligible to play, it's definitely worth adding to your rotation."
+    },
+    "tier": "S"
+  },
+  {
     "slug": "wow-vegas",
     "name": "WOW Vegas",
     "tagline": "Vegas-themed Sweeps casino with valuable daily SC links and live dealer games.",
@@ -378,10 +407,66 @@
     }
   },
   {
+    "slug": "coin-wizard",
+    "name": "Coin Wizard",
+    "tagline": "Golden Hearts sister site with a strong welcome offer and 1x playthrough.",
+    "rating": 4.7,
+    "bonus": "$10 for 25 SC welcome offer + 2.5 SC free on signup",
+    "promoCode": "",
+    "homepageUrl": "https://www.coinwizardgames.com",
+    "affiliateUrl": "https://www.coinwizardgames.com/referral/WE2MKG9YIT",
+    "available": "Available in most US states",
+    "highlights": [
+      "2.5 SC free on signup",
+      "1x playthrough",
+      "Generous daily login streak"
+    ],
+    "pros": [
+      "Strong welcome offer ($10 for 25 SC)",
+      "1x playthrough",
+      "Generous daily login streak"
+    ],
+    "cons": [
+      "No live games"
+    ],
+    "strategy": {
+      "edge": "Coin Wizard is a new Golden Hearts sister site. The welcome offer is strong — $10 for 25 SC at 1x playthrough plus 2.5 SC free on signup — and the daily login streak compounds nicely. No live games, but a clean enough catalog to clear playthrough on slots."
+    },
+    "tier": "A"
+  },
+  {
+    "slug": "golden-hearts",
+    "name": "Golden Hearts",
+    "tagline": "Long-running charity-focused sweeps with 1x playthrough and a strong daily streak.",
+    "rating": 4.7,
+    "bonus": "$10 for 25 SC welcome offer + 2.5 SC free on signup",
+    "promoCode": "",
+    "homepageUrl": "https://www.goldenheartsgames.com",
+    "affiliateUrl": "https://www.goldenheartsgames.com/referral/KJEB4FV61Z",
+    "available": "Available in most US states",
+    "highlights": [
+      "2.5 SC free on signup",
+      "1x playthrough",
+      "Generous daily login streak"
+    ],
+    "pros": [
+      "Strong welcome offer ($10 for 25 SC)",
+      "1x playthrough",
+      "Generous daily login streak"
+    ],
+    "cons": [
+      "No live games"
+    ],
+    "strategy": {
+      "edge": "Golden Hearts shares the same operator backbone as Coin Wizard. Same strong $10-for-25-SC welcome at 1x playthrough, 2.5 SC free on signup, and a generous daily login streak. Easy account to keep active for the freebies."
+    },
+    "tier": "A"
+  },
+  {
     "slug": "zula-casino",
     "name": "Zula Casino",
     "tagline": "Yellow Social sister site to Pulsz with its own promo cadence and slot mix.",
-    "rating": 4.5,
+    "rating": 4.6,
     "bonus": "$10 for 30 SC welcome offer + 10 SC free on signup",
     "promoCode": "",
     "homepageUrl": "https://zulacasino.com",
@@ -402,13 +487,14 @@
     ],
     "strategy": {
       "edge": "Zula is the flagship of the Priority Play / Zula sister-site network. They give 1 SC daily, run sporadic happy-hour sales, and most importantly: keep an eye out for a $1000 for 2000 SC offer that can trigger randomly. That's the play to watch for here."
-    }
+    },
+    "tier": "A"
   },
   {
     "slug": "sportzino",
     "name": "Sportzino",
     "tagline": "Social sportsbook with Sweeps cash redemptions on parlays and props.",
-    "rating": 4.4,
+    "rating": 4.6,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://sportzino.com",
@@ -429,13 +515,14 @@
     ],
     "strategy": {
       "edge": "Sportzino is part of the Zula / Priority Play sister-site family. The sportsbook side is the main draw, but they sometimes have happy-hour sales that can be very profitable. Watch the promos tab and the Discord for drops."
-    }
+    },
+    "tier": "A"
   },
   {
     "slug": "yay-casino",
     "name": "Yay Casino",
     "tagline": "Casino-style social site with slots, jackpots, and fish games.",
-    "rating": 4.4,
+    "rating": 4.6,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://yaycasino.com",
@@ -455,13 +542,13 @@
     "strategy": {
       "edge": "Similar to the other Priority Play sites, Yay randomly offers happy-hour sales and decent promos. Definitely one you don't want to skip out on. Sister site to Zula, Sportzino, and American Luck."
     },
-    "tier": "B"
+    "tier": "A"
   },
   {
     "slug": "american-luck",
     "name": "American Luck",
     "tagline": "Slots-and-jackpots social casino with a fast signup and daily promos.",
-    "rating": 4.3,
+    "rating": 4.5,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://americanluck.com",
@@ -484,13 +571,128 @@
     "strategy": {
       "edge": "American Luck is another Zula / Priority Play sister site. They randomly drop happy-hour sales and decent promos, similar to Yay and Zula, so it's worth keeping an account active just to catch the flashes of value."
     },
-    "tier": "B"
+    "tier": "A"
+  },
+  {
+    "slug": "fortune-coins",
+    "name": "Fortune Wins",
+    "tagline": "Zula sister site running on Fortune Coins (FC) at a 100:1 ratio.",
+    "rating": 4.6,
+    "bonus": "$10 for 30 SC welcome offer",
+    "promoCode": "",
+    "homepageUrl": "https://fortunecoins.com",
+    "affiliateUrl": "https://fortunecoins.com",
+    "available": "Available in most US states",
+    "highlights": [
+      "Daily free SC",
+      "Zula sister site",
+      "Large game selection"
+    ],
+    "pros": [
+      "Frequent sales",
+      "$50 SC min redeem",
+      "Free daily SC"
+    ],
+    "cons": [
+      "No live games",
+      "No VIP farming"
+    ],
+    "strategy": {
+      "edge": "Fortune Wins is another Zula sister / Priority Play site. This one uses FC instead of SC and goes by a 100:1 ratio. Fortune Wins offers a generous daily SC bonus that scales with how many days you log in, nice welcome offers, and some great sales to watch for."
+    },
+    "tier": "A"
+  },
+  {
+    "slug": "luck-party",
+    "name": "Luck Party",
+    "tagline": "Top-rated social casino with daily SC drops and a growing slot library.",
+    "rating": 4.6,
+    "bonus": "$10 for 30 SC welcome offer",
+    "promoCode": "",
+    "homepageUrl": "https://luckparty.com",
+    "affiliateUrl": "https://luckparty.com/signup/61c55c5b-ae50-465b-b631-d3c9fb68cf7a",
+    "available": "Available in most US states",
+    "highlights": [
+      "Daily free SC",
+      "Zula sister site",
+      "Daily SC links (Discord)"
+    ],
+    "pros": [
+      "No-purchase signup SC",
+      "Frequent reload offers",
+      "Clean mobile experience"
+    ],
+    "cons": [
+      "Limited live dealer options"
+    ],
+    "strategy": {
+      "edge": "Luck Party is another Zula / Priority Play sister site. We haven't seen a ton of value in sales here yet, but the frequent SC links and the SC login bonus make it worth it. No live dealers, so pick a low-volatility slot or Plinko for easy washing. Don't miss out on the free SC — it stacks up."
+    },
+    "tier": "A"
+  },
+  {
+    "slug": "win-bonanza",
+    "name": "Win Bonanza",
+    "tagline": "Sweepstakes-driven social casino with raffles, giveaways, and free spins.",
+    "rating": 4.5,
+    "bonus": "$10 for 30 SC welcome offer",
+    "promoCode": "",
+    "homepageUrl": "https://winbonanza.com",
+    "affiliateUrl": "https://winbonanza.com/register/483425a5-34a3-4ab9-a128-9bf7d0a32988",
+    "available": "Available in most US states",
+    "highlights": [
+      "Daily SC login bonus",
+      "SC links (Discord)",
+      "Zula sister site"
+    ],
+    "pros": [
+      "Reliable brand",
+      "Daily SC login + links",
+      "Decent game selection"
+    ],
+    "cons": [
+      "No live games",
+      "Haven't seen any large amount of sales yet"
+    ],
+    "strategy": {
+      "edge": "Win Bonanza is the latest sister site from the Zula group. We haven't seen a ton of value from this site yet, but it does offer a generous daily SC login bonus and frequently drops 1 SC links that we post in our Discord. Get started, grab the welcome offer, and take advantage of the free SC."
+    },
+    "tier": "A"
+  },
+  {
+    "slug": "rolla",
+    "name": "Rolla",
+    "tagline": "WOW Vegas sister site with a 900+ slot library and Sweeps redemptions.",
+    "rating": 4.5,
+    "bonus": "$10 for 30 SC welcome offer",
+    "promoCode": "",
+    "homepageUrl": "https://rolla.com",
+    "affiliateUrl": "https://www.rolla.com/?raf=117822",
+    "available": "Available in most US states",
+    "highlights": [
+      "Daily SC",
+      "Daily login bonuses",
+      "WOW Vegas sister site"
+    ],
+    "pros": [
+      "Strong welcome value",
+      "Daily SC",
+      "No-purchase signup SC"
+    ],
+    "cons": [
+      "Limited sales",
+      "Not as much value as WOW Vegas"
+    ],
+    "strategy": {
+      "edge": "Rolla is a newer sister site to WOW Vegas. They offer a small daily SC login bonus and typically have a flash sale once a week that's good value. Rolla will usually drop a few free 1 SC links a week, so make sure you're in the Discord to grab them. There's some value here — don't skip it."
+    },
+    "tier": "A"
   },
   {
     "slug": "blitzmania",
     "name": "Blitzmania",
     "tagline": "Newer sweepstakes casino with a strong welcome offer, frequent sales, and VIP farming.",
-    "rating": 4.3,
+    "rating": 4.4,
     "bonus": "$25 for 75 SC welcome offer + daily login SC",
     "promoCode": "",
     "homepageUrl": "https://blitzmania.com/",
@@ -520,7 +722,7 @@
     "slug": "spinquest",
     "name": "SpinQuest",
     "tagline": "Adventure-themed social casino with daily SC drops and reload bonuses.",
-    "rating": 4.3,
+    "rating": 4.4,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://spinquest.com",
@@ -546,96 +748,10 @@
     "tier": "B"
   },
   {
-    "slug": "fortune-coins",
-    "name": "Fortune Wins",
-    "tagline": "Zula sister site running on Fortune Coins (FC) at a 100:1 ratio.",
-    "rating": 4.2,
-    "bonus": "$10 for 30 SC welcome offer",
-    "promoCode": "",
-    "homepageUrl": "https://fortunecoins.com",
-    "affiliateUrl": "https://fortunecoins.com",
-    "available": "Available in most US states",
-    "highlights": [
-      "Daily free SC",
-      "Zula sister site",
-      "Large game selection"
-    ],
-    "pros": [
-      "Frequent sales",
-      "$50 SC min redeem",
-      "Free daily SC"
-    ],
-    "cons": [
-      "No live games",
-      "No VIP farming"
-    ],
-    "strategy": {
-      "edge": "Fortune Wins is another Zula sister / Priority Play site. This one uses FC instead of SC and goes by a 100:1 ratio. Fortune Wins offers a generous daily SC bonus that scales with how many days you log in, nice welcome offers, and some great sales to watch for."
-    },
-    "tier": "B"
-  },
-  {
-    "slug": "luck-party",
-    "name": "Luck Party",
-    "tagline": "Top-rated social casino with daily SC drops and a growing slot library.",
-    "rating": 4.1,
-    "bonus": "$10 for 30 SC welcome offer",
-    "promoCode": "",
-    "homepageUrl": "https://luckparty.com",
-    "affiliateUrl": "https://luckparty.com/signup/61c55c5b-ae50-465b-b631-d3c9fb68cf7a",
-    "available": "Available in most US states",
-    "highlights": [
-      "Daily free SC",
-      "Zula sister site",
-      "Daily SC links (Discord)"
-    ],
-    "pros": [
-      "No-purchase signup SC",
-      "Frequent reload offers",
-      "Clean mobile experience"
-    ],
-    "cons": [
-      "Limited live dealer options"
-    ],
-    "strategy": {
-      "edge": "Luck Party is another Zula / Priority Play sister site. We haven't seen a ton of value in sales here yet, but the frequent SC links and the SC login bonus make it worth it. No live dealers, so pick a low-volatility slot or Plinko for easy washing. Don't miss out on the free SC — it stacks up."
-    },
-    "tier": "B"
-  },
-  {
-    "slug": "win-bonanza",
-    "name": "Win Bonanza",
-    "tagline": "Sweepstakes-driven social casino with raffles, giveaways, and free spins.",
-    "rating": 4.1,
-    "bonus": "$10 for 30 SC welcome offer",
-    "promoCode": "",
-    "homepageUrl": "https://winbonanza.com",
-    "affiliateUrl": "https://winbonanza.com/register/483425a5-34a3-4ab9-a128-9bf7d0a32988",
-    "available": "Available in most US states",
-    "highlights": [
-      "Daily SC login bonus",
-      "SC links (Discord)",
-      "Zula sister site"
-    ],
-    "pros": [
-      "Reliable brand",
-      "Daily SC login + links",
-      "Decent game selection"
-    ],
-    "cons": [
-      "No live games",
-      "Haven't seen any large amount of sales yet"
-    ],
-    "strategy": {
-      "edge": "Win Bonanza is the latest sister site from the Zula group. We haven't seen a ton of value from this site yet, but it does offer a generous daily SC login bonus and frequently drops 1 SC links that we post in our Discord. Get started, grab the welcome offer, and take advantage of the free SC."
-    },
-    "tier": "B"
-  },
-  {
     "slug": "spinpals",
     "name": "SpinPals",
     "tagline": "Newer social casino with no-purchase SC drops and a growing slot library.",
-    "rating": 4,
+    "rating": 4.4,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://spinpals.com",
@@ -661,39 +777,10 @@
     "tier": "B"
   },
   {
-    "slug": "rolla",
-    "name": "Rolla",
-    "tagline": "WOW Vegas sister site with a 900+ slot library and Sweeps redemptions.",
-    "rating": 4,
-    "bonus": "$10 for 30 SC welcome offer",
-    "promoCode": "",
-    "homepageUrl": "https://rolla.com",
-    "affiliateUrl": "https://www.rolla.com/?raf=117822",
-    "available": "Available in most US states",
-    "highlights": [
-      "Daily SC",
-      "Daily login bonuses",
-      "WOW Vegas sister site"
-    ],
-    "pros": [
-      "Strong welcome value",
-      "Daily SC",
-      "No-purchase signup SC"
-    ],
-    "cons": [
-      "Limited sales",
-      "Not as much value as WOW Vegas"
-    ],
-    "strategy": {
-      "edge": "Rolla is a newer sister site to WOW Vegas. They offer a small daily SC login bonus and typically have a flash sale once a week that's good value. Rolla will usually drop a few free 1 SC links a week, so make sure you're in the Discord to grab them. There's some value here — don't skip it."
-    },
-    "tier": "B"
-  },
-  {
     "slug": "babacasino",
     "name": "Baba Casino",
     "tagline": "Mobile-first social casino with Sweeps redemptions and quick signup.",
-    "rating": 4,
+    "rating": 4.4,
     "bonus": "$20 for 60 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://babacasino.com",
@@ -719,95 +806,10 @@
     "tier": "B"
   },
   {
-    "slug": "card-crush",
-    "name": "Card Crush",
-    "tagline": "Sweepstakes platform in 48 states with rolling welcome offers, VIP matching, and a $10 gift card redemption minimum.",
-    "rating": 4.2,
-    "bonus": "Up to 120 SC for $60 + 2 MC free on signup",
-    "promoCode": "",
-    "homepageUrl": "https://cardcrush.com",
-    "affiliateUrl": "https://www.cardcrush.com/lp/raf?r=5cce8358%2F47169795",
-    "available": "Available in 48 US states (excludes Nevada and Washington)",
-    "highlights": [
-      "Rolling welcome offers",
-      "VIP matching",
-      "2 MC free on signup"
-    ],
-    "pros": [
-      "$10 gift card redemption minimum",
-      "Available in 48 states",
-      "VIP program with matching"
-    ],
-    "cons": [
-      "Excludes Nevada and Washington",
-      "Cash redemption starts at $75"
-    ],
-    "strategy": {
-      "edge": "Card Crush has quickly become one of the more interesting sweepstakes platforms available today. Recently expanding to 48 states, it's now accessible to players across most of the United States, with only Nevada and Washington excluded. This makes it a great option for players who often run into state restrictions on other platforms.\n\nNew players receive 2 MC just for signing up, along with a solid lineup of welcome offers and ongoing promotions. The site regularly runs sales and bonus events, making it easy to stretch your playtime and find extra value throughout the month.\n\nOne of Card Crush's biggest strengths is its low $10 gift card redemption minimum, making rewards more accessible than many competing platforms. Cash redemptions start at $75, and the site also includes a VIP program for players looking to earn additional perks over time.\n\nOverall, Card Crush combines strong promotions, a large game selection, and broad state availability into a package that's easy to recommend. If you're eligible to play, it's definitely worth adding to your rotation."
-    },
-    "tier": "B"
-  },
-  {
-    "slug": "coin-wizard",
-    "name": "Coin Wizard",
-    "tagline": "Golden Hearts sister site with a strong welcome offer and 1x playthrough.",
-    "rating": 4.1,
-    "bonus": "$10 for 25 SC welcome offer + 2.5 SC free on signup",
-    "promoCode": "",
-    "homepageUrl": "https://www.coinwizardgames.com",
-    "affiliateUrl": "https://www.coinwizardgames.com/referral/WE2MKG9YIT",
-    "available": "Available in most US states",
-    "highlights": [
-      "2.5 SC free on signup",
-      "1x playthrough",
-      "Generous daily login streak"
-    ],
-    "pros": [
-      "Strong welcome offer ($10 for 25 SC)",
-      "1x playthrough",
-      "Generous daily login streak"
-    ],
-    "cons": [
-      "No live games"
-    ],
-    "strategy": {
-      "edge": "Coin Wizard is a new Golden Hearts sister site. The welcome offer is strong — $10 for 25 SC at 1x playthrough plus 2.5 SC free on signup — and the daily login streak compounds nicely. No live games, but a clean enough catalog to clear playthrough on slots."
-    },
-    "tier": "B"
-  },
-  {
-    "slug": "golden-hearts",
-    "name": "Golden Hearts",
-    "tagline": "Long-running charity-focused sweeps with 1x playthrough and a strong daily streak.",
-    "rating": 4.1,
-    "bonus": "$10 for 25 SC welcome offer + 2.5 SC free on signup",
-    "promoCode": "",
-    "homepageUrl": "https://www.goldenheartsgames.com",
-    "affiliateUrl": "https://www.goldenheartsgames.com/referral/KJEB4FV61Z",
-    "available": "Available in most US states",
-    "highlights": [
-      "2.5 SC free on signup",
-      "1x playthrough",
-      "Generous daily login streak"
-    ],
-    "pros": [
-      "Strong welcome offer ($10 for 25 SC)",
-      "1x playthrough",
-      "Generous daily login streak"
-    ],
-    "cons": [
-      "No live games"
-    ],
-    "strategy": {
-      "edge": "Golden Hearts shares the same operator backbone as Coin Wizard. Same strong $10-for-25-SC welcome at 1x playthrough, 2.5 SC free on signup, and a generous daily login streak. Easy account to keep active for the freebies."
-    },
-    "tier": "B"
-  },
-  {
     "slug": "jackpotdaily",
     "name": "JackpotDaily",
     "tagline": "Strong welcome at 134 SC for $60, 30% daily purchase bonus, and great sales juice.",
-    "rating": 4.2,
+    "rating": 4.4,
     "bonus": "$60 for 134 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://www.jackpotdaily.com",
