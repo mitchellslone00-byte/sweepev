@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <section className="relative overflow-hidden border-b border-border bg-gradient-to-b from-panel to-bg">
         <CoinRain />
-        <div className="container-x py-12 sm:py-16 md:py-24 text-center relative z-10">
+        <div className="container-x py-8 sm:py-10 md:py-14 text-center relative z-10">
           <span className="inline-block text-[10px] sm:text-xs uppercase tracking-widest text-accent border border-accent/40 rounded-full px-3 py-1">
             Updated {new Date().toLocaleDateString("en-US", { month: "long", year: "numeric" })}
           </span>
