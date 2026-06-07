@@ -118,7 +118,7 @@ const faqs = [
   },
   {
     q: "How do I get free Sweeps Coins?",
-    a: "Common no-purchase methods: daily login bonuses, mail-in requests (a postcard with a specific format), social-media giveaways, and welcome SC granted on signup verification. Stack these across multiple sites and free SC adds up quickly.",
+    a: "Common no-purchase methods: daily login bonuses, mail-in requests (a postcard with a specific format), social-media giveaways, and welcome SC granted on signup verification. Stack these across multiple sites and free SC adds up quickly. We also share free SC links, promotional drops, and limited-time offers regularly in our Discord community — joining is one of the easiest ways to stay on top of freebies across every platform we cover.",
   },
   {
     q: "How do I redeem Sweeps Coins for cash?",
