@@ -110,7 +110,7 @@ const faqs = [
   },
   {
     q: "Are Sweepstakes casinos legal in the US?",
-    a: "Yes. Sweeps casinos operate under Sweepstakes law and are legal in most US states. Availability varies by operator, so always check each site's terms for your state before signing up.",
+    a: "Yes. Sweeps casinos operate under Sweepstakes law and are legal in most US states. Availability varies by operator, so always check each site's terms for your state before signing up. It's worth noting that sweepstakes casinos have faced increasing scrutiny in recent years, and we've seen a growing number of operators shift toward card-based or token-based systems. These models operate under a different legal framework and have opened the door for players in states that traditionally restricted sweepstakes platforms.",
   },
   {
     q: "Do I have to pay to play?",
