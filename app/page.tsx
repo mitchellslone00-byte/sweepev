@@ -126,7 +126,7 @@ const faqs = [
   },
   {
     q: "How do I maximize value across these sites?",
-    a: "Always claim daily login bonuses, they add up fast. Stick to high-RTP slots (96%+) to clear playthrough efficiently. Use first-purchase offers, the SC value is often 5–10× ongoing offers. Verify your account early so redemptions aren't delayed later.",
+    a: "Always claim daily login bonuses, they add up fast. Stick to high-RTP slots (96%+) to clear playthrough efficiently. When available, cross-washing is even better — this involves using one game type to satisfy playthrough requirements on another, and it consistently produces higher returns than slot play alone. Use first-purchase offers, the SC value is often 5–10× ongoing offers. Verify your account early so redemptions aren't delayed later.",
   },
   {
     q: "How do I earn passive income from sweepstakes casinos?",
