@@ -130,7 +130,7 @@ const faqs = [
   },
   {
     q: "How do I earn passive income from sweepstakes casinos?",
-    a: "Stack 5–10 sites and run the same daily routine on each: claim every free Sweeps Coin (login bonus, mail-in, social, scavenger hunts), buy only +EV welcome offers and discounted reload packages where bundled SC exceeds the dollar cost, then cross-wash or play minimum bets on a 97%+ RTP slot to clear the 1× playthrough and redeem. Realistic baseline is $50–$300 per month in redeemed cash for under 30 minutes a day, almost entirely from free SC and high-value first-purchase offers. It's slow and repeatable rather than get-rich-quick, but it is real, legal sweepstakes-prize income.",
+    a: "Stack 5–10 sites and run the same daily routine on each: claim every free Sweeps Coin (login bonus, mail-in, social, scavenger hunts), buy only +EV welcome offers and discounted reload packages where bundled SC exceeds the dollar cost, then cross-wash or play minimum bets on a 97%+ RTP slot to clear the 1× playthrough and redeem. Realistic returns range from $500–$5,000+ per month depending on how much time and effort you put in — this can get quite lucrative at scale. Stack it with a good cashback credit card on your purchases for an additional layer of value on top of everything else. It's repeatable, legal sweepstakes-prize income, and the ceiling is higher than most people expect.",
   },
   {
     q: "Why do you recommend these sites?",
