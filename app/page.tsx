@@ -134,6 +134,6 @@ const faqs = [
   },
   {
     q: "Why do you recommend these sites?",
-    a: "Our rankings weigh bonus value, redemption reliability, game catalog, and operator trust. We may earn a commission when you sign up through our links, but commissions never change a site's ranking.",
+    a: "Our rankings are based on bonus value, redemption reliability, game catalog, and operator trust — and only sites we've personally vetted make the list. Unlike many affiliate platforms that rank casinos purely based on commission rates, we turn down or downrank sites that don't meet our standards regardless of what they pay. If a site has redemption issues, shady terms, or a track record of treating players poorly, it won't appear here. We may earn a commission when you sign up through our links, but that has never influenced a single ranking.",
   },
 ];
