@@ -32,10 +32,12 @@ export default async function SitePage(
     "@context": "https://schema.org",
     "@type": "Review",
     itemReviewed: {
-      "@type": "Service",
+      "@type": "SoftwareApplication",
       name: site.name,
       description: site.tagline,
       url: site.homepageUrl,
+      applicationCategory: "GameApplication",
+      operatingSystem: "Web",
     },
     reviewRating: {
       "@type": "Rating",
@@ -44,8 +46,8 @@ export default async function SitePage(
       worstRating: 1,
     },
     author: {
-      "@type": "Organization",
-      name: siteConfig.name,
+      "@type": "Person",
+      name: "Jordan Thacker",
       url: siteConfig.url,
     },
     publisher: {
@@ -69,13 +71,17 @@ export default async function SitePage(
       <header className="mt-4">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-black">{site.name} Review</h1>
         <p className="mt-2 text-sm sm:text-base text-muted">{site.tagline}</p>
-        <div className="mt-4 flex flex-wrap gap-2 text-xs sm:text-sm">
+        <div className="mt-2 flex items-center gap-2 text-xs text-muted">
+          <span>By <span className="text-text font-medium">Jordan Thacker</span></span>
+          <span>·</span>
+          <span>Last updated: {siteConfig.lastUpdated}</span>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-2 text-xs sm:text-sm">
           <span className="rounded-full bg-panel border border-border px-3 py-1">
             Rating: <span className="text-accent2">{site.rating.toFixed(1)} / 5</span>
           </span>
           <span className="rounded-full bg-panel border border-border px-3 py-1">{site.available}</span>
         </div>
-        <p className="mt-2 text-xs text-muted">Last updated: {siteConfig.lastUpdated}</p>
       </header>
 
       <div className="mt-6 rounded-2xl border border-accent/40 bg-panel p-4 sm:p-5">

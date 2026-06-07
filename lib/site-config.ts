@@ -6,5 +6,5 @@ export const siteConfig = {
     "Top Sweepstakes Sites of 2026. Independent rankings of the best US sweepstakes casinos with verified bonuses, payouts, and promo codes, plus strategy guides for earning passive income from free Sweeps Coins.",
   tagline: "Find your +EV Sweeps casino.",
   /** Site-wide content freshness stamp shown on reviews and guides. */
-  lastUpdated: "May 7, 2026",
+  lastUpdated: "June 4, 2026",
 };
