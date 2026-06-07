@@ -326,6 +326,36 @@
     }
   },
   {
+    "slug": "luckyland-casino",
+    "name": "LuckyLand Casino",
+    "tagline": "Newest VGW sister site with a proven operator pedigree and high expectations for daily value.",
+    "rating": 4.9,
+    "tier": "S",
+    "bonus": "$10 for 30 SC welcome offer + 1 SC daily login streak",
+    "promoCode": "",
+    "homepageUrl": "https://luckylandcasino.com/",
+    "affiliateUrl": "https://luckylandcasino.com/",
+    "available": "Available in most US states",
+    "highlights": [
+      "VGW backed, Malta licensed",
+      "Same operator as Chumba and LuckyLand Slots",
+      "Get in early for launch welcome offers"
+    ],
+    "pros": [
+      "1 SC daily login streak",
+      "VGW backing and Malta gaming license",
+      "Trustworthy redemption track record",
+      "VIP farming worth up to 80 SC/month"
+    ],
+    "cons": [
+      "No crypto redemption"
+    ],
+    "strategy": {
+      "edge": "LuckyLand Casino is a VGW platform, the same company behind Chumba Casino and LuckyLand Slots. VGW has one of the strongest track records in the sweepstakes space, backed by a Malta gaming license and years of consistent, reliable operations.\n\nThe daily login streak gives you 1 SC per day, which stacks up quickly when you stay consistent. Pair that with one of the stronger VIP farming setups we have seen and you are looking at up to 80 SC per month in additional value on top of your daily. For players focused on long-term accumulation, LuckyLand Casino delivers.\n\n<<guide>>\n\nThe welcome offer is solid at $10 for 30 SC, and the operator track record means you can trust the redemption process. Cash redemptions start at $100, and there is no crypto or gift card option currently, so plan accordingly.\n\nOverall, LuckyLand Casino is a well-rounded platform with real recurring value through its daily streak and VIP program. The VGW name behind it gives you confidence that it will continue to develop. Get signed up, stay consistent, and let the daily SC and VIP bonuses do the work.",
+      "guideUrl": "/guides/luckyland"
+    }
+  },
+  {
     "slug": "wow-vegas",
     "name": "WOW Vegas",
     "tagline": "Vegas-themed Sweeps casino with valuable daily SC links and live dealer games.",
