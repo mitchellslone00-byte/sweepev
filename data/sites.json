@@ -834,10 +834,37 @@
     "tier": "B"
   },
   {
+    "slug": "acebet",
+    "name": "AceBet",
+    "tagline": "Reputable newer sweeps with 1 SC daily and instant redeems.",
+    "rating": 4.3,
+    "bonus": "1 SC daily login bonus",
+    "promoCode": "",
+    "homepageUrl": "https://acebet.cc",
+    "affiliateUrl": "https://acebet.cc/welcome/r/theturbokermit",
+    "available": "Available in most US states",
+    "highlights": [
+      "1 SC daily",
+      "Decent rakeback",
+      "Instant redemptions"
+    ],
+    "pros": [
+      "1 SC daily",
+      "Decent rakeback",
+      "Instant redeems"
+    ],
+    "cons": [
+      "High playthrough requirements"
+    ],
+    "strategy": {
+      "edge": "AceBet is a newer site with a generous 1 SC per day login bonus — balance has to be zero to claim it. The playthrough requirements run high, so be aware before you commit, but it's a reputable casino with decent value just from the daily login."
+    }
+  },
+  {
     "slug": "speedsweeps",
     "name": "SpeedSweeps",
     "tagline": "Sweep sister site with frequent sale codes and instant redeems.",
-    "rating": 4.1,
+    "rating": 4.2,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://speedsweeps.com",
@@ -865,7 +892,7 @@
     "slug": "dimesweeps",
     "name": "DimeSweeps",
     "tagline": "Sweep sister site with frequent sale codes and instant redeems.",
-    "rating": 4.1,
+    "rating": 4.2,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://dimesweeps.com",
@@ -893,7 +920,7 @@
     "slug": "sweepsroyal",
     "name": "SweepsRoyal",
     "tagline": "Sweep sister site with frequent sale codes and instant redeems.",
-    "rating": 4.1,
+    "rating": 4.2,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://sweepsroyal.com",
@@ -921,7 +948,7 @@
     "slug": "richsweeps",
     "name": "RichSweeps",
     "tagline": "Sweep sister site with frequent sale codes and instant redeems.",
-    "rating": 4.1,
+    "rating": 4.2,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://richsweeps.com",
@@ -949,7 +976,7 @@
     "slug": "bangcoins",
     "name": "BangCoins",
     "tagline": "Sweep sister site with frequent sale codes and instant redeems.",
-    "rating": 4.1,
+    "rating": 4.2,
     "bonus": "$10 for 30 SC welcome offer",
     "promoCode": "",
     "homepageUrl": "https://bangcoins.com",
@@ -971,33 +998,6 @@
     ],
     "strategy": {
       "edge": "BangCoins is another Sweep Sister site. Similar to the others, they run frequent sale codes — make sure you join the Discord so you don't miss any of them."
-    }
-  },
-  {
-    "slug": "acebet",
-    "name": "AceBet",
-    "tagline": "Reputable newer sweeps with 1 SC daily and instant redeems.",
-    "rating": 4,
-    "bonus": "1 SC daily login bonus",
-    "promoCode": "",
-    "homepageUrl": "https://acebet.cc",
-    "affiliateUrl": "https://acebet.cc/welcome/r/theturbokermit",
-    "available": "Available in most US states",
-    "highlights": [
-      "1 SC daily",
-      "Decent rakeback",
-      "Instant redemptions"
-    ],
-    "pros": [
-      "1 SC daily",
-      "Decent rakeback",
-      "Instant redeems"
-    ],
-    "cons": [
-      "High playthrough requirements"
-    ],
-    "strategy": {
-      "edge": "AceBet is a newer site with a generous 1 SC per day login bonus — balance has to be zero to claim it. The playthrough requirements run high, so be aware before you commit, but it's a reputable casino with decent value just from the daily login."
     }
   }
 ]
