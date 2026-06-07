@@ -1,0 +1,340 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Sweepstakes Casinos in California — What Actually Works (2026) | SweepEV",
+  description:
+    "Most sweepstakes casinos don't work in California. Here's which platforms are available for CA residents in 2026 and why card-based casinos are the best option.",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Can California residents play sweepstakes casinos?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most traditional sweepstakes casinos are not available in California. However, card-based social casino platforms like Card Crush and Clash 5 operate under a different model and are fully available to California residents.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why are sweepstakes casinos not available in California?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "California has stricter regulations around sweepstakes and promotional gaming than most US states. Most sweepstakes casino operators have chosen to exclude California rather than navigate the state's legal requirements.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What online casinos can California residents use in 2026?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "California residents have a few solid options in 2026. Crown Coins Casino — the top-ranked sweepstakes casino overall — continues to operate in California. Card Crush and Clash 5 are also available, operating on a card-based model purpose-built for restricted states like California.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Card Crush available in California?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Card Crush is available in 48 US states including California. It operates on a card-based model rather than a sweepstakes framework, which is why it is accessible where most sweepstakes casinos are not.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Clash 5 available in California?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Clash 5 is available in California. Like Card Crush, it uses a card-based mechanism rather than traditional sweepstakes law, making it accessible to California residents.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can California residents win real money on social casinos?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Card-based platforms like Card Crush and Clash 5 offer prize redemptions similar to sweepstakes casinos. California residents can redeem their winnings for real prizes through these platforms.",
+      },
+    },
+  ],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.sweepev.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "States",
+      item: "https://www.sweepev.com/states",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "California",
+      item: "https://www.sweepev.com/states/california",
+    },
+  ],
+};
+
+export default function CaliforniaPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      <article className="container-x py-10 md:py-14 max-w-3xl">
+
+        {/* Breadcrumb */}
+        <nav className="text-xs text-muted mb-4">
+          <Link href="/" className="hover:text-text">Home</Link>
+          <span className="mx-1">›</span>
+          <span>States</span>
+          <span className="mx-1">›</span>
+          <span className="text-text">California</span>
+        </nav>
+
+        <header>
+          <h1 className="text-3xl md:text-4xl font-black leading-tight">
+            Sweepstakes Casinos in California — What Actually Works (2026)
+          </h1>
+          <div className="mt-3 flex items-center gap-3 text-xs text-muted">
+            <span>By <span className="text-text font-medium">Jordan Thacker</span></span>
+            <span>·</span>
+            <span>Last updated: June 2026</span>
+          </div>
+        </header>
+
+        {/* Quick Answer */}
+        <section className="mt-6 rounded-2xl border border-green-500/40 bg-green-500/5 p-5">
+          <p className="font-bold text-text text-lg">Good news — California has some solid options.</p>
+          <p className="mt-1 text-muted leading-relaxed">
+            While most sweepstakes casinos block California, a few notable platforms are fully available. Crown Coins Casino — our top-ranked site overall — still operates in California, which is a big deal. On top of that, card-based platforms like Card Crush and Clash 5 are purpose-built for states like California. You have real options here.
+          </p>
+        </section>
+
+        {/* Why CA is different */}
+        <section className="mt-8">
+          <h2 className="text-2xl font-bold">Why Most Sweepstakes Casinos Block California</h2>
+          <p className="mt-3 text-muted leading-relaxed">
+            Sweepstakes casinos operate under promotional sweepstakes law, which varies significantly by state. California has stricter regulations around sweepstakes and promotional gaming than most of the country, and most operators have made the business decision to exclude California rather than navigate the state&apos;s compliance requirements. Idaho, Washington, and a handful of other states face similar restrictions.
+          </p>
+          <p className="mt-3 text-muted leading-relaxed">
+            That said, Crown Coins Casino — our number one ranked site — continues to operate in California. It is one of the few traditional sweepstakes casinos that has maintained California availability, which makes it a standout option for CA residents who want access to a full-featured sweepstakes platform. Beyond Crown Coins, card-based platforms like Card Crush and Clash 5 are purpose-built for restricted states and are also fully available here.
+          </p>
+        </section>
+
+        {/* What is card-based */}
+        <section className="mt-8">
+          <h2 className="text-2xl font-bold">How Card-Based Platforms Work</h2>
+          <p className="mt-3 text-muted leading-relaxed">
+            Card-based social casinos use a token or card mechanic instead of the traditional sweepstakes dual-currency model. Rather than Sweeps Coins governed by promotional law, these platforms use their own proprietary currency system that sits outside the sweepstakes legal framework. This is what allows them to operate in California and other restricted states.
+          </p>
+          <p className="mt-3 text-muted leading-relaxed">
+            The practical experience is similar to a sweepstakes casino. You receive tokens on signup, can purchase additional packages, play casino-style games, and redeem your winnings for prizes. The legal structure underneath is just different, which is why California residents can access them.
+          </p>
+          <p className="mt-3 text-muted leading-relaxed">
+            Card-based platforms have been growing quickly in 2025 and 2026 as operators look for ways to serve players in restricted states. We expect more platforms to adopt this model over time.
+          </p>
+        </section>
+
+        {/* Available options */}
+        <section className="mt-8">
+          <h2 className="text-2xl font-bold">Best Options for California Residents in 2026</h2>
+
+          {/* Crown Coins */}
+          <div className="mt-5 rounded-2xl border border-accent/40 bg-panel p-5">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <div className="text-xs uppercase tracking-widest text-accent mb-1">Top Pick</div>
+                <h3 className="text-xl font-bold">Crown Coins Casino</h3>
+                <p className="mt-1 text-sm text-muted">Our #1 ranked sweepstakes casino — and one of the few that still operates in California</p>
+              </div>
+              <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in CA</span>
+            </div>
+            <ul className="mt-4 space-y-1.5 text-sm text-muted">
+              <li className="before:content-['✓'] before:text-accent before:mr-2">$20 for 75 SC welcome offer + 2 SC free on signup</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">Daily SC that scales with VIP level</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">Weekly Thursday races and monthly VIP bonuses</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">Fast Skrill redemptions</li>
+            </ul>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href="https://crowncoinscasino.com/?utm_campaign=899836c7-8f89-47a1-88b5-217032931dcf&utm_source=friends"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 text-sm hover:opacity-90"
+              >
+                Sign Up for Crown Coins
+              </a>
+              <Link href="/sites/crown-coins" className="inline-block rounded-lg border border-border px-5 py-2.5 text-sm text-muted hover:text-text">
+                Read the Review
+              </Link>
+            </div>
+          </div>
+
+          {/* Card Crush */}
+          <div className="mt-5 rounded-2xl border border-accent/40 bg-panel p-5">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h3 className="text-xl font-bold">Card Crush</h3>
+                <p className="mt-1 text-sm text-muted">Card-based social casino available in 48 states including California</p>
+              </div>
+              <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in CA</span>
+            </div>
+            <ul className="mt-4 space-y-1.5 text-sm text-muted">
+              <li className="before:content-['✓'] before:text-accent before:mr-2">Rolling welcome offers up to 120 SC for $60</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">VIP matching program</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">$10 gift card redemption minimum</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">Available in California and New York</li>
+            </ul>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href="https://www.cardcrush.com/lp/raf?r=5cce8358%2F47169795"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 text-sm hover:opacity-90"
+              >
+                Sign Up for Card Crush
+              </a>
+              <Link href="/sites/card-crush" className="inline-block rounded-lg border border-border px-5 py-2.5 text-sm text-muted hover:text-text">
+                Read the Review
+              </Link>
+            </div>
+          </div>
+
+          {/* Clash 5 */}
+          <div className="mt-4 rounded-2xl border border-accent/40 bg-panel p-5">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h3 className="text-xl font-bold">Clash 5</h3>
+                <p className="mt-1 text-sm text-muted">Card-based sister site to SpinPals, available in California and New York</p>
+              </div>
+              <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in CA</span>
+            </div>
+            <ul className="mt-4 space-y-1.5 text-sm text-muted">
+              <li className="before:content-['✓'] before:text-accent before:mr-2">5 Clash Coins free on signup</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">Near-instant redemptions</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">1x playthrough requirement</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">Available in California and New York</li>
+            </ul>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href="https://www.clash5.com?referralcode=198af5dd-3f48-4ffb-a99a-c9f9606303d5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 text-sm hover:opacity-90"
+              >
+                Sign Up for Clash 5
+              </a>
+              <Link href="/sites/clash5" className="inline-block rounded-lg border border-border px-5 py-2.5 text-sm text-muted hover:text-text">
+                Read the Review
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Comparison Table */}
+        <section className="mt-8">
+          <h2 className="text-2xl font-bold">California Availability at a Glance</h2>
+          <div className="mt-4 overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-border bg-panel2">
+                  <th className="px-4 py-3 text-left font-semibold text-text">Platform</th>
+                  <th className="px-4 py-3 text-left font-semibold text-text">Available in CA</th>
+                  <th className="px-4 py-3 text-left font-semibold text-text">Type</th>
+                  <th className="px-4 py-3 text-left font-semibold text-text">Redemptions</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border text-muted">
+                <tr className="bg-panel">
+                  <td className="px-4 py-3 font-medium text-text">Card Crush</td>
+                  <td className="px-4 py-3 text-green-400 font-semibold">Yes</td>
+                  <td className="px-4 py-3">Card-based</td>
+                  <td className="px-4 py-3">From $10 gift card</td>
+                </tr>
+                <tr className="bg-panel/60">
+                  <td className="px-4 py-3 font-medium text-text">Clash 5</td>
+                  <td className="px-4 py-3 text-green-400 font-semibold">Yes</td>
+                  <td className="px-4 py-3">Card-based</td>
+                  <td className="px-4 py-3">Near-instant</td>
+                </tr>
+                <tr className="bg-panel">
+                  <td className="px-4 py-3 font-medium text-text">Crown Coins</td>
+                  <td className="px-4 py-3 text-green-400 font-semibold">Yes</td>
+                  <td className="px-4 py-3">Sweepstakes</td>
+                  <td className="px-4 py-3">Skrill, bank transfer</td>
+                </tr>
+                <tr className="bg-panel/60">
+                  <td className="px-4 py-3 font-medium text-text">Pulsz</td>
+                  <td className="px-4 py-3 text-red-400 font-semibold">No</td>
+                  <td className="px-4 py-3">Sweepstakes</td>
+                  <td className="px-4 py-3">Not available in CA</td>
+                </tr>
+                <tr className="bg-panel">
+                  <td className="px-4 py-3 font-medium text-text">WOW Vegas</td>
+                  <td className="px-4 py-3 text-red-400 font-semibold">No</td>
+                  <td className="px-4 py-3">Sweepstakes</td>
+                  <td className="px-4 py-3">Not available in CA</td>
+                </tr>
+                <tr className="bg-panel/60">
+                  <td className="px-4 py-3 font-medium text-text">Chumba Casino</td>
+                  <td className="px-4 py-3 text-red-400 font-semibold">No</td>
+                  <td className="px-4 py-3">Sweepstakes</td>
+                  <td className="px-4 py-3">Not available in CA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Tips for CA players */}
+        <section className="mt-8">
+          <h2 className="text-2xl font-bold">Tips for California Players</h2>
+
+          <h3 className="text-xl font-semibold mt-5">Verify Your Account Early</h3>
+          <p className="mt-2 text-muted leading-relaxed">
+            On any platform you join, complete identity verification before you need to redeem. Use your real name exactly as it appears on your California ID or driver&apos;s license. Inconsistencies between your account info and your ID are the most common cause of redemption delays.
+          </p>
+
+          <h3 className="text-xl font-semibold mt-5">Stack Both Platforms</h3>
+          <p className="mt-2 text-muted leading-relaxed">
+            Card Crush and Clash 5 are sister-site style options — running both gives you more welcome offers to clear and more daily value to accumulate. Since both platforms have relatively low redemption minimums, it&apos;s practical to run them simultaneously as part of a daily routine.
+          </p>
+
+          <h3 className="text-xl font-semibold mt-5">Watch for New Platforms</h3>
+          <p className="mt-2 text-muted leading-relaxed">
+            The card-based casino category is growing fast. More operators are moving toward this model to serve restricted states, and California is one of the biggest markets they want access to. We expect more CA-compatible platforms to launch in 2026. Join our Discord to stay up to date as new options become available.
+          </p>
+        </section>
+
+        {/* Responsible Gaming */}
+        <section className="mt-8 rounded-2xl border border-border bg-panel/60 p-5 text-sm text-muted">
+          <p className="font-semibold text-text">Responsible Gaming</p>
+          <p className="mt-2 leading-relaxed">
+            Social and card-based casino platforms are entertainment first. Never spend money you cannot afford to lose on purchases. If you find yourself spending more than intended, take a break. If gambling stops being enjoyable, call the National Problem Gambling Helpline at{" "}
+            <a href="tel:1-800-522-4700" className="underline hover:text-text">1-800-GAMBLER</a>.
+          </p>
+        </section>
+
+      </article>
+    </>
+  );
+}
