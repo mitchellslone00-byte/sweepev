@@ -16,7 +16,7 @@ export async function generateMetadata(
   const site = getSite(slug);
   if (!site) return {};
   return {
-    title: `${site.name} Review, Bonus, Promo Code & Payouts`,
+    title: site.reviewTitle ?? `${site.name} Review, Bonus, Promo Code & Payouts`,
     description: `${site.name} review: ${site.tagline} Welcome offer: ${site.bonus}.`,
     alternates: {
       canonical: `${siteConfig.url}/sites/${slug}`,
@@ -72,7 +72,7 @@ export default async function SitePage(
       <Link href="/" className="text-sm text-muted hover:text-text">← Back to rankings</Link>
 
       <header className="mt-4">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-black">{site.name} Review</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-black">{site.reviewTitle ?? `${site.name} Review`}</h1>
         <p className="mt-2 text-sm sm:text-base text-muted">{site.tagline}</p>
         <div className="mt-2 flex items-center gap-2 text-xs text-muted">
           <span>By <span className="text-text font-medium">Jordan Thacker</span></span>
@@ -83,12 +83,12 @@ export default async function SitePage(
           <span className="rounded-full bg-panel border border-border px-3 py-1">
             Rating: <span className="text-accent2">{site.rating.toFixed(1)} / 5</span>
           </span>
-          <span className="rounded-full bg-panel border border-border px-3 py-1">{site.available}</span>
+          {site.available && <span className="rounded-full bg-panel border border-border px-3 py-1">{site.available}</span>}
         </div>
       </header>
 
       <div className="mt-6 rounded-2xl border border-accent/40 bg-panel p-4 sm:p-5">
-        <div className="text-xs uppercase tracking-widest text-accent">Welcome offer</div>
+        <div className="text-xs uppercase tracking-widest text-accent">Welcome offer / Promo Code</div>
         <div className="mt-1 text-base sm:text-lg font-semibold">{site.bonus}</div>
         {site.promoCode && (
           <div className="mt-1 text-sm">
@@ -129,25 +129,62 @@ export default async function SitePage(
         </div>
       </section>
 
+      {(site.restrictedStates || site.strategy?.washingGames) && (
+        <section className="mt-4 grid md:grid-cols-2 gap-4">
+          {site.strategy?.washingGames && (
+            <div className="rounded-xl border border-border bg-panel p-4">
+              <h3 className="font-semibold text-accent mb-2">Best EV+ Games</h3>
+              <ul className="space-y-1 text-sm text-muted">
+                {site.strategy.washingGames.map((g) => <li key={g}>+ {g}</li>)}
+              </ul>
+            </div>
+          )}
+          {site.restrictedStates && (
+            <div className="rounded-xl border border-border bg-panel p-4">
+              <h3 className="font-semibold text-accent2 mb-2">Restricted States</h3>
+              <p className="text-sm text-muted leading-relaxed">{site.restrictedStates.join(", ")}</p>
+            </div>
+          )}
+        </section>
+      )}
+
       <section className="mt-10">
         <h2 className="text-2xl font-bold mb-2">{site.name} Review</h2>
 
         {site.strategy ? (
           <>
-            <div className="mt-2 rounded-xl border border-accent/40 bg-panel p-5">
-              {site.strategy.edge.split("\n\n").map((para, i) =>
-                para === "<<guide>>" && site.strategy?.guideUrl ? (
-                  <p key={i} className="text-muted leading-relaxed mt-3">
-                    For a full breakdown on how to farm each VIP tier efficiently, see our{" "}
-                    <Link href={site.strategy.guideUrl} className="text-accent underline underline-offset-2 hover:opacity-80">
-                      {site.name} VIP &amp; Strategy Guide
-                    </Link>.
-                  </p>
-                ) : (
-                  <p key={i} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
-                )
-              )}
-            </div>
+            {(() => {
+              const guideUrl = site.strategy!.guideUrl;
+              const parts = site.strategy!.edge.split("\n\n");
+              const sections: { heading: string | null; paras: string[] }[] = [{ heading: null, paras: [] }];
+              for (const part of parts) {
+                const m = part.match(/^<<section:(.+)>>$/);
+                if (m) {
+                  sections.push({ heading: m[1], paras: [] });
+                } else {
+                  sections[sections.length - 1].paras.push(part);
+                }
+              }
+              return sections.filter(s => s.paras.length > 0).map((section, si) => (
+                <div key={si} className="mt-4 rounded-xl border border-accent/40 bg-panel p-5">
+                  {section.heading && (
+                    <h3 className="text-lg font-bold text-accent mb-3">{section.heading}</h3>
+                  )}
+                  {section.paras.map((para, pi) =>
+                    para === "<<guide>>" && guideUrl ? (
+                      <p key={pi} className="text-muted leading-relaxed mt-3">
+                        For a full breakdown on how to farm each VIP tier efficiently and how to effectively do the chases, see our{" "}
+                        <Link href={guideUrl} className="text-accent underline underline-offset-2 hover:opacity-80">
+                          {site.name} VIP &amp; Strategy Guide
+                        </Link>.
+                      </p>
+                    ) : (
+                      <p key={pi} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
+                    )
+                  )}
+                </div>
+              ));
+            })()}
           </>
         ) : (
           <>

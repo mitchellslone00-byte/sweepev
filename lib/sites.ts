@@ -19,6 +19,9 @@ export type Site = {
     washingNotes?: string;
     guideUrl?: string;
   };
+  /** Custom page title for metadata and h1, used when the default "{name} Review" isn't enough. */
+  reviewTitle?: string;
+  restrictedStates?: string[];
   /** Optional tier override. Otherwise tier is derived from rank in SiteCard. */
   tier?: "S" | "A" | "B" | "C";
   relatedSites?: string[];
