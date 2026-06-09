@@ -178,6 +178,14 @@ export default async function SitePage(
                           {site.name} VIP &amp; Strategy Guide
                         </Link>.
                       </p>
+                    ) : para === "<<bonusimage>>" && site.bonusImage ? (
+                      <div key={pi} className="mt-4">
+                        <img
+                          src={site.bonusImage}
+                          alt={`${site.name} welcome offer packages`}
+                          className="rounded-2xl w-full border border-border shadow-lg"
+                        />
+                      </div>
                     ) : (
                       <p key={pi} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
                     )
