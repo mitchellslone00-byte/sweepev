@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Sweepstakes Casinos in California — What Actually Works (2026) | SweepEV",
   description:
     "Most sweepstakes casinos don't work in California. Here's which platforms are available for CA residents in 2026 and why card-based casinos are the best option.",
+  alternates: {
+    canonical: "https://www.sweepev.com/states/california",
+  },
 };
 
 const faqSchema = {

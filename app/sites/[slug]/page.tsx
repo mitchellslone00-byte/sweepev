@@ -18,6 +18,9 @@ export async function generateMetadata(
   return {
     title: `${site.name} Review, Bonus, Promo Code & Payouts`,
     description: `${site.name} review: ${site.tagline} Welcome offer: ${site.bonus}.`,
+    alternates: {
+      canonical: `${siteConfig.url}/sites/${slug}`,
+    },
   };
 }
 

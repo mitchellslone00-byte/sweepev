@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Can Kentucky Residents Play Crown Coins? (2026 Guide) | SweepEV",
   description:
     "Yes — Kentucky residents can play Crown Coins Casino in 2026. Here's everything you need to know about availability, purchases, and redemptions from Kentucky.",
+  alternates: {
+    canonical: "https://www.sweepev.com/states/kentucky/crown-coins",
+  },
 };
 
 const AFFILIATE_URL =

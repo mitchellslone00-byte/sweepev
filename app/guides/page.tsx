@@ -5,6 +5,9 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: `General Sweeps Strategy | ${siteConfig.name}`,
   description: "How to collect free Sweeps Coins daily and how to actually use welcome offers on Sweepstakes casinos.",
+  alternates: {
+    canonical: `${siteConfig.url}/guides`,
+  },
 };
 
 export default function GuidesPage() {

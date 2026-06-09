@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Sweepstakes Casinos in New York — What Actually Works (2026) | SweepEV",
   description:
     "Most sweepstakes casinos don't work in New York. Here's which platforms are available for NY residents in 2026, including Card Crush and Clash 5.",
+  alternates: {
+    canonical: "https://www.sweepev.com/states/new-york",
+  },
 };
 
 const faqSchema = {

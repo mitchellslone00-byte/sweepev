@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import { sites } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
 import { CoinRain } from "@/components/CoinRain";
 import { FeaturedSite } from "@/components/FeaturedSite";
 import { SiteCard } from "@/components/SiteCard";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: siteConfig.url,
+  },
+};
 
 export default function HomePage() {
   const year = new Date().getFullYear();

@@ -5,6 +5,9 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: `LuckyLand Slots & Casino, VIP Leveling Guide | ${siteConfig.name}`,
   description: "How to climb LuckyLand Slots / LuckyLand Casino VIP tiers each month for exclusive package offers, Quacky Hour sales, and free SC scavenger hunts.",
+  alternates: {
+    canonical: `${siteConfig.url}/guides/luckyland`,
+  },
 };
 
 export default function LuckyLandGuidePage() {

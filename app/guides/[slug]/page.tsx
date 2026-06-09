@@ -19,6 +19,9 @@ export async function generateMetadata(
   return {
     title: `${site.name} Strategy Guide | ${siteConfig.name}`,
     description: `${site.name} strategy guide — how to clear playthrough, find +EV packages, and get the most value out of the daily SC drops.`,
+    alternates: {
+      canonical: `${siteConfig.url}/guides/${slug}`,
+    },
   };
 }
 
