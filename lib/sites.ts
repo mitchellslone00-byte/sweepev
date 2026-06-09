@@ -23,6 +23,7 @@ export type Site = {
   reviewTitle?: string;
   restrictedStates?: string[];
   bonusImage?: string;
+  faqs?: { q: string; a: string }[];
   /** Optional tier override. Otherwise tier is derived from rank in SiteCard. */
   tier?: "S" | "A" | "B" | "C";
   relatedSites?: string[];

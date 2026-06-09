@@ -293,6 +293,36 @@ export default async function SitePage(
         </section>
       )}
 
+      {site.faqs && site.faqs.length > 0 && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: site.faqs.map(f => ({
+                  "@type": "Question",
+                  name: f.q,
+                  acceptedAnswer: { "@type": "Answer", text: f.a },
+                })),
+              }),
+            }}
+          />
+          <section className="mt-8">
+            <h2 className="text-xl font-bold mb-4">Frequently Asked Questions</h2>
+            <div className="space-y-3">
+              {site.faqs.map((faq) => (
+                <div key={faq.q} className="rounded-xl border border-border bg-panel p-4">
+                  <p className="font-semibold text-text">{faq.q}</p>
+                  <p className="mt-2 text-sm text-muted leading-relaxed">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </>
+      )}
+
       <section className="mt-10 text-center">
         <AffiliateLink
           slug={site.slug}

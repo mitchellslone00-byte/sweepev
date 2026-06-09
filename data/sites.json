@@ -51,7 +51,29 @@
       "Oklahoma",
       "Washington"
     ],
-    "bonusImage": "/images/crown-coins-welcome-offer.png"
+    "bonusImage": "/images/crown-coins-welcome-offer.png",
+    "faqs": [
+      {
+        "q": "Is Crown Coins Casino legit?",
+        "a": "Yes. Crown Coins Casino is operated by Sunflower Limited and requires identity verification before redemptions."
+      },
+      {
+        "q": "What is the minimum redemption at Crown Coins Casino?",
+        "a": "Players can redeem starting at 50 SC for prepaid rewards and 100 SC for cash prizes."
+      },
+      {
+        "q": "Does Crown Coins Casino offer a no deposit bonus?",
+        "a": "Yes. New players receive 100,000 Crown Coins and 2 Sweeps Coins for free when they sign up through our link."
+      },
+      {
+        "q": "How fast are Crown Coins Casino redemptions?",
+        "a": "Skrill redemptions typically process within 24 hours. Bank transfer and ACH take 1 to 5 business days. Skrill is the recommended method for the fastest payouts."
+      },
+      {
+        "q": "What states is Crown Coins Casino not available in?",
+        "a": "Crown Coins Casino is not available in California, Connecticut, Idaho, Indiana, Louisiana, Maine, Michigan, Montana, Nevada, New Jersey, New York, Oklahoma, or Washington. It is available in all other US states and Canada."
+      }
+    ]
   },
   {
     "slug": "sweet-sweeps",
