@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: `Support | ${siteConfig.name}`,
   description: `Contact ${siteConfig.name} for support, feedback, or business inquiries.`,
+  alternates: { canonical: `${siteConfig.url}/support` },
 };
 
 export default function SupportPage() {

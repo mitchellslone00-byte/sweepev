@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     template: `%s · ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  alternates: { canonical: "/" },
   openGraph: {
     title: `Top Sweepstakes Sites | ${siteConfig.name}`,
     description: siteConfig.description,
