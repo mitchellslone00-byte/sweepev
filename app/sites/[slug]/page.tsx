@@ -186,6 +186,14 @@ export default async function SitePage(
                           className="rounded-2xl w-full border border-border shadow-lg"
                         />
                       </div>
+                    ) : para === "<<dailybonusimage>>" && site.dailyBonusImage ? (
+                      <div key={pi} className="mt-4">
+                        <img
+                          src={site.dailyBonusImage}
+                          alt={`${site.name} daily login bonus`}
+                          className="rounded-2xl w-full border border-border shadow-lg"
+                        />
+                      </div>
                     ) : (
                       <p key={pi} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
                     )
