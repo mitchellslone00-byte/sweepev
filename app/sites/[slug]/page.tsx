@@ -194,6 +194,14 @@ export default async function SitePage(
                           className="rounded-2xl border border-border shadow-lg max-w-[260px] w-full"
                         />
                       </div>
+                    ) : para === "<<promoimage>>" && site.promoImage ? (
+                      <div key={pi} className="mt-4 flex justify-center">
+                        <img
+                          src={site.promoImage}
+                          alt={`${site.name} free spins promotion`}
+                          className="rounded-2xl border border-border shadow-lg max-w-[260px] w-full"
+                        />
+                      </div>
                     ) : para === "<<discord>>" ? (
                       <div key={pi} className="mt-3">
                         <a
