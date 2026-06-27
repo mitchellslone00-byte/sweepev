@@ -31,6 +31,14 @@ export type Site = {
   tier?: "S" | "A" | "B" | "C";
   relatedSites?: string[];
   statePages?: { label: string; href: string }[];
+  /** Daily login SC for the Free Daily SC page. amount = base (non-VIP) rate used for ranking/monthly calc. */
+  dailySC?: {
+    amount: number;
+    display: string;
+    claim: string;
+    note: string | null;
+    scales: boolean;
+  };
 };
 
 export const sites: Site[] = sitesData as Site[];

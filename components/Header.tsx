@@ -21,7 +21,11 @@ export function Header() {
 
           <GuidesDropdown />
 
-          <Link href="/tools/ev-calculator" className="hover:text-accent transition-colors">
+          <Link href="/daily-sc" className="hover:text-accent transition-colors">
+            Free Daily SC
+          </Link>
+
+          <Link href="/tools/ev-calculator" className="hover:text-accent transition-colors hidden sm:inline">
             Calculate EV
           </Link>
 

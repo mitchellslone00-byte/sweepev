@@ -238,7 +238,14 @@
       }
     ],
     "dailyBonusImage": "/images/lonestar-table-games.png",
-    "saleImage": "/images/lonestar-sale.png"
+    "saleImage": "/images/lonestar-sale.png",
+    "dailySC": {
+      "amount": 0.3,
+      "display": "0.3 SC",
+      "claim": "Login every 24h",
+      "note": "7-day streak grand reward",
+      "scales": true
+    }
   },
   {
     "slug": "realprize",
@@ -341,7 +348,14 @@
       }
     ],
     "saleImage": "/images/realprize-sale.png",
-    "promoImage": "/images/realprize-free-spins.png"
+    "promoImage": "/images/realprize-free-spins.png",
+    "dailySC": {
+      "amount": 0.3,
+      "display": "0.3 SC",
+      "claim": "Login",
+      "note": null,
+      "scales": false
+    }
   },
   {
     "slug": "pulsz",
@@ -438,7 +452,14 @@
         "q": "Is Pulsz legit?",
         "a": "Yes. Pulsz is operated by Yellow Social Interactive Limited, has been running since 2020, and holds a 4.4/5 Trustpilot rating from over 24,000 reviews. All games are RNG-tested and the platform is a member of the Social Gaming Leadership Alliance."
       }
-    ]
+    ],
+    "dailySC": {
+      "amount": 0.3,
+      "display": "0.3 → 1.0 SC",
+      "claim": "Login, scales over the week",
+      "note": "Climbs to 1.0 SC by end of streak",
+      "scales": true
+    }
   },
   {
     "slug": "modo",
@@ -503,7 +524,14 @@
     "tier": "S",
     "relatedSites": [
       "dogghouse"
-    ]
+    ],
+    "dailySC": {
+      "amount": 1,
+      "display": "1.0 SC",
+      "claim": "Login",
+      "note": "Balance must be $0 to claim",
+      "scales": false
+    }
   },
   {
     "slug": "dogghouse",
@@ -512,7 +540,7 @@
     "rating": 4.9,
     "bonus": "$200 for 300 SC best-value welcome offer",
     "promoCode": "",
-    "homepageUrl": "https://dogghouse.com",
+    "homepageUrl": "https://dogghousecasino.com",
     "affiliateUrl": "https://prod.d1qrywpnm2lw71.amplifyapp.com/?code=U-BL7-THA-9T&type=refferal_code",
     "available": "Available in most US states",
     "highlights": [
@@ -535,7 +563,14 @@
     "tier": "S",
     "relatedSites": [
       "rebet"
-    ]
+    ],
+    "dailySC": {
+      "amount": 1,
+      "display": "1.0 SC",
+      "claim": "Login",
+      "note": "Balance must be $0 to claim",
+      "scales": false
+    }
   },
   {
     "slug": "legendz-casino",
@@ -628,7 +663,14 @@
     "relatedSites": [
       "luckyland-slots",
       "luckyland-casino"
-    ]
+    ],
+    "dailySC": {
+      "amount": 1,
+      "display": "1.0 SC",
+      "claim": "Login streak",
+      "note": null,
+      "scales": false
+    }
   },
   {
     "slug": "luckyland-slots",
@@ -667,7 +709,14 @@
     "relatedSites": [
       "chumba-casino",
       "luckyland-casino"
-    ]
+    ],
+    "dailySC": {
+      "amount": 1,
+      "display": "1.0 SC",
+      "claim": "Login",
+      "note": "VIP adds up to 80 SC/mo",
+      "scales": true
+    }
   },
   {
     "slug": "luckyland-casino",
@@ -703,7 +752,14 @@
     "relatedSites": [
       "chumba-casino",
       "luckyland-slots"
-    ]
+    ],
+    "dailySC": {
+      "amount": 1,
+      "display": "1.0 SC",
+      "claim": "Login streak",
+      "note": "VIP adds up to 80 SC/mo",
+      "scales": true
+    }
   },
   {
     "slug": "wow-vegas",
@@ -951,7 +1007,14 @@
       "sportzino",
       "yay-casino",
       "american-luck"
-    ]
+    ],
+    "dailySC": {
+      "amount": 1,
+      "display": "1.0 SC",
+      "claim": "Login",
+      "note": null,
+      "scales": false
+    }
   },
   {
     "slug": "sportzino",
@@ -1234,7 +1297,14 @@
     "strategy": {
       "edge": "SpinQuest is one of the newer sweepstakes casinos you've likely heard of if you follow any gambling influencers. It offers a generous 1 SC daily, but be careful: the playthrough requirements have been changing a lot recently, so make sure you're in the Discord to stay current. SpinQuest has a massive selection of games and some decent sales every once in a while."
     },
-    "tier": "B"
+    "tier": "B",
+    "dailySC": {
+      "amount": 1,
+      "display": "1.0 SC",
+      "claim": "Login",
+      "note": "Playthrough has been changing — check terms",
+      "scales": false
+    }
   },
   {
     "slug": "spinpals",
@@ -1350,6 +1420,13 @@
     ],
     "strategy": {
       "edge": "AceBet is a newer site with a generous 1 SC per day login bonus — balance has to be zero to claim it. The playthrough requirements run high, so be aware before you commit, but it's a reputable casino with decent value just from the daily login."
+    },
+    "dailySC": {
+      "amount": 1,
+      "display": "1.0 SC",
+      "claim": "Login",
+      "note": "Balance must be $0 to claim",
+      "scales": false
     }
   },
   {
