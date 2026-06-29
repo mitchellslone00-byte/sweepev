@@ -13,6 +13,7 @@ export type DailyRow = {
   claim: string;
   note: string | null;
   scales: boolean;
+  vip?: boolean;
 };
 
 function logoUrl(homepageUrl: string): string {
@@ -134,12 +135,12 @@ export function DailySCTable({ rows, maxAmount }: { rows: DailyRow[]; maxAmount:
                   {r.note && (
                     <span
                       className={`mt-1 block w-fit rounded border px-1.5 py-0.5 font-mono text-[10px] ${
-                        r.scales
+                        r.vip || r.scales
                           ? "border-accent/40 text-accent"
                           : "border-border text-muted"
                       }`}
                     >
-                      {r.scales ? "▲ " : ""}
+                      {r.vip ? "★ " : r.scales ? "▲ " : ""}
                       {r.note}
                     </span>
                   )}

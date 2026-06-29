@@ -73,7 +73,15 @@
         "q": "What states is Crown Coins Casino not available in?",
         "a": "Crown Coins Casino is not available in California, Connecticut, Idaho, Indiana, Louisiana, Maine, Michigan, Montana, Nevada, New Jersey, New York, Oklahoma, or Washington. It is available in all other US states and Canada."
       }
-    ]
+    ],
+    "dailySC": {
+      "amount": 1.5,
+      "display": "1.5 SC*",
+      "claim": "Login streak",
+      "note": "Shown at Gold VIP · scales with tier",
+      "scales": true,
+      "vip": true
+    }
   },
   {
     "slug": "sweet-sweeps",

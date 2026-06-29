@@ -38,6 +38,8 @@ export type Site = {
     claim: string;
     note: string | null;
     scales: boolean;
+    /** True when the amount shown is a representative VIP-tier rate, not the base rate. */
+    vip?: boolean;
   };
 };
 
