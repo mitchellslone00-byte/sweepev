@@ -495,7 +495,15 @@
     "strategy": {
       "edge": "Modo has been one of the hottest sites in 2026, offering consistent sales that bring a tremendous amount of value. Modo runs 1x playthrough and has plenty of games, so washing is a breeze. Refer to the dedicated Modo guide on how to farm VIP — they just completely reset their VIP system, so there's plenty of value to grab. Don't miss out on Modo, join now."
     },
-    "tier": "S"
+    "tier": "S",
+    "dailySC": {
+      "amount": 0.55,
+      "display": "0.55 SC*",
+      "claim": "Login",
+      "note": "Shown at Gold VIP · scales with tier",
+      "scales": true,
+      "vip": true
+    }
   },
   {
     "slug": "rebet",
@@ -977,7 +985,14 @@
     "tier": "A",
     "relatedSites": [
       "golden-hearts"
-    ]
+    ],
+    "dailySC": {
+      "amount": 0.39,
+      "display": "0.39 SC",
+      "claim": "Login streak",
+      "note": "2.7 SC/week via streak",
+      "scales": false
+    }
   },
   {
     "slug": "golden-hearts",
@@ -1008,7 +1023,14 @@
     "tier": "A",
     "relatedSites": [
       "coin-wizard"
-    ]
+    ],
+    "dailySC": {
+      "amount": 0.39,
+      "display": "0.39 SC",
+      "claim": "Login streak",
+      "note": "2.7 SC/week via streak",
+      "scales": false
+    }
   },
   {
     "slug": "clash5",
@@ -1113,7 +1135,14 @@
     "relatedSites": [
       "zula-casino",
       "yay-casino"
-    ]
+    ],
+    "dailySC": {
+      "amount": 0.76,
+      "display": "0.76 SC",
+      "claim": "Login streak",
+      "note": "5.35 SC/week via streak",
+      "scales": false
+    }
   },
   {
     "slug": "yay-casino",

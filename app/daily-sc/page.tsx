@@ -189,8 +189,8 @@ export default function DailySCPage() {
           headline number, so every site is compared at the rate a brand-new account actually gets.
           This page covers login bonuses only — no mail-in or survey routes.{" "}
           <span className="text-text">
-            *Crown Coins is shown at Gold VIP, since its daily is tier-based and pays almost entirely
-            in Gold Coins at the base level.
+            *Crown Coins and Modo are shown at Gold VIP, since their daily login is tier-based;
+            the figure reflects the Gold-tier rate rather than a brand-new account.
           </span>
         </div>
       </section>
