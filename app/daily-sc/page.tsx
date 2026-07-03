@@ -4,7 +4,7 @@ import { sites } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
 import { DailySCTable, type DailyRow } from "@/components/DailySCTable";
 
-const LAST_VERIFIED = "June 1, 2026";
+const LAST_VERIFIED = "July 1, 2026";
 
 export const metadata: Metadata = {
   title: `Free Daily SC Ranked by Monthly Value (2026) | ${siteConfig.name}`,
@@ -29,6 +29,7 @@ function buildRows(): DailyRow[] {
       note: s.dailySC!.note,
       scales: s.dailySC!.scales,
       vip: s.dailySC!.vip,
+      discordLinks: s.dailySC!.discordLinks,
     }))
     .sort((a, b) => {
       if (b.amount !== a.amount) return b.amount - a.amount;
@@ -107,6 +108,14 @@ export default function DailySCPage() {
           LAST FULL VERIFICATION:{" "}
           <b className="text-text">{LAST_VERIFIED.toUpperCase()}</b>
         </span>
+
+        <a
+          href="#discord-links"
+          className="mt-4 flex w-fit items-center gap-2 rounded-full border border-accent/30 bg-accent/[0.06] px-3 py-1.5 text-xs font-medium text-accent transition-colors hover:bg-accent/10"
+        >
+          💬 Several of these sites drop extra free SC links — we post every one in our Discord
+          <span aria-hidden>↓</span>
+        </a>
       </header>
 
       {/* Ledger */}
@@ -148,7 +157,7 @@ export default function DailySCPage() {
       </section>
 
       {/* Discord SC links callout */}
-      <section className="mt-6">
+      <section id="discord-links" className="mt-6 scroll-mt-20">
         <div className="flex flex-col gap-4 rounded-2xl border border-accent/30 bg-accent/[0.05] p-5 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-start gap-3">
             <span className="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[#5865F2]/15">

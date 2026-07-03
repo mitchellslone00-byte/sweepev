@@ -252,7 +252,8 @@
       "display": "0.3 SC",
       "claim": "Login every 24h",
       "note": "7-day streak grand reward",
-      "scales": true
+      "scales": true,
+      "discordLinks": true
     }
   },
   {
@@ -362,7 +363,8 @@
       "display": "0.3 SC",
       "claim": "Login",
       "note": null,
-      "scales": false
+      "scales": false,
+      "discordLinks": true
     }
   },
   {
@@ -1172,7 +1174,14 @@
     "relatedSites": [
       "zula-casino",
       "sportzino"
-    ]
+    ],
+    "dailySC": {
+      "amount": 0.71,
+      "display": "0.71 SC",
+      "claim": "Login streak",
+      "note": "5 SC/week via streak",
+      "scales": false
+    }
   },
   {
     "slug": "american-luck",
@@ -1205,7 +1214,14 @@
     "relatedSites": [
       "zula-casino",
       "luck-party"
-    ]
+    ],
+    "dailySC": {
+      "amount": 0.5,
+      "display": "0.50 SC",
+      "claim": "Login streak",
+      "note": "3.5 SC/week via streak",
+      "scales": false
+    }
   },
   {
     "slug": "fortune-coins",
@@ -1237,7 +1253,14 @@
     "tier": "A",
     "relatedSites": [
       "zula-casino"
-    ]
+    ],
+    "dailySC": {
+      "amount": 0.71,
+      "display": "0.71 SC",
+      "claim": "Login streak",
+      "note": "5 SC/week via streak",
+      "scales": false
+    }
   },
   {
     "slug": "luck-party",
@@ -1269,7 +1292,15 @@
     "relatedSites": [
       "zula-casino",
       "win-bonanza"
-    ]
+    ],
+    "dailySC": {
+      "amount": 0.46,
+      "display": "0.46 SC",
+      "claim": "Login streak",
+      "note": "3.25 SC/week via streak",
+      "scales": false,
+      "discordLinks": true
+    }
   },
   {
     "slug": "win-bonanza",

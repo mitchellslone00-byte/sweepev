@@ -40,6 +40,8 @@ export type Site = {
     scales: boolean;
     /** True when the amount shown is a representative VIP-tier rate, not the base rate. */
     vip?: boolean;
+    /** True when the site also drops free SC links we post in the Discord (extra on top of the login SC). */
+    discordLinks?: boolean;
   };
 };
 

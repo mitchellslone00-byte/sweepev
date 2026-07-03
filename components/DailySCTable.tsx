@@ -14,6 +14,7 @@ export type DailyRow = {
   note: string | null;
   scales: boolean;
   vip?: boolean;
+  discordLinks?: boolean;
 };
 
 function logoUrl(homepageUrl: string): string {
@@ -143,6 +144,16 @@ export function DailySCTable({ rows, maxAmount }: { rows: DailyRow[]; maxAmount:
                       {r.vip ? "★ " : r.scales ? "▲ " : ""}
                       {r.note}
                     </span>
+                  )}
+                  {r.discordLinks && (
+                    <a
+                      href="https://discord.gg/A62yrjBPZN"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 block w-fit rounded border border-[#5865F2]/50 px-1.5 py-0.5 font-mono text-[10px] text-[#8b95f7] transition-colors hover:bg-[#5865F2]/15"
+                    >
+                      + Discord SC links
+                    </a>
                   )}
                 </td>
                 <td className="px-3 py-3" style={{ minWidth: 170 }}>
