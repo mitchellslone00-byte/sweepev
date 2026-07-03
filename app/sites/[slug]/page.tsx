@@ -148,6 +148,21 @@ export default async function SitePage(
         </section>
       )}
 
+      {site.dailySC && (
+        <Link
+          href="/daily-sc"
+          className="mt-4 flex items-center gap-2 rounded-xl border border-accent/30 bg-accent/[0.05] p-4 text-sm transition-colors hover:bg-accent/10"
+        >
+          <span aria-hidden className="text-base">💰</span>
+          <span className="text-muted">
+            <span className="font-semibold text-text">{site.name} gives {site.dailySC.display} in free SC daily</span>{" "}
+            just for logging in — see how it ranks on our{" "}
+            <span className="font-semibold text-accent">Free Daily SC list</span>.
+          </span>
+          <span aria-hidden className="ml-auto text-accent">→</span>
+        </Link>
+      )}
+
       <section className="mt-10">
         <h2 className="text-2xl font-bold mb-2">{site.name} Review</h2>
 

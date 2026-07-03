@@ -81,11 +81,31 @@ export default function DailySCPage() {
     })),
   };
 
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Free Daily SC Sweepstakes Casinos Ranked by Monthly Value",
+    description:
+      "Sweepstakes casinos that give free Sweeps Coins for logging in, ranked by base monthly value.",
+    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    numberOfItems: rows.length,
+    itemListElement: rows.map((r, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: `${r.name} — ${r.display} daily`,
+      url: `${siteConfig.url}/sites/${r.slug}`,
+    })),
+  };
+
   return (
     <article className="container-x py-10 md:py-14">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }}
       />
 
       <Link href="/" className="text-sm text-muted hover:text-text">
