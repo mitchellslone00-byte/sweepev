@@ -15,6 +15,7 @@ export type DailyRow = {
   scales: boolean;
   vip?: boolean;
   discordLinks?: boolean;
+  tip?: string;
 };
 
 function logoUrl(homepageUrl: string): string {
@@ -133,17 +134,35 @@ export function DailySCTable({ rows, maxAmount }: { rows: DailyRow[]; maxAmount:
                 <td className="whitespace-nowrap px-3 py-3 font-mono font-semibold text-accent">{r.display}</td>
                 <td className="px-3 py-3 text-muted">
                   <span>{r.claim}</span>
-                  {r.note && (
-                    <span
-                      className={`mt-1 block w-fit rounded border px-1.5 py-0.5 font-mono text-[10px] ${
-                        r.vip || r.scales
-                          ? "border-accent/40 text-accent"
-                          : "border-border text-muted"
-                      }`}
-                    >
-                      {r.vip ? "★ " : r.scales ? "▲ " : ""}
-                      {r.note}
+                  {r.note && r.tip ? (
+                    <span className="group relative mt-1 block w-fit">
+                      <button
+                        type="button"
+                        className="inline-flex cursor-help items-center gap-1 rounded border border-accent/40 px-1.5 py-0.5 font-mono text-[10px] text-accent hover:bg-accent/10"
+                      >
+                        {r.note}
+                        <span aria-hidden className="text-[9px] opacity-70">ⓘ</span>
+                      </button>
+                      <span
+                        role="tooltip"
+                        className="pointer-events-none absolute left-0 top-full z-50 mt-1.5 hidden w-64 rounded-lg border border-border bg-panel2 p-2.5 text-[11px] font-normal normal-case leading-relaxed text-text shadow-xl group-hover:block group-focus-within:block"
+                      >
+                        {r.tip}
+                      </span>
                     </span>
+                  ) : (
+                    r.note && (
+                      <span
+                        className={`mt-1 block w-fit rounded border px-1.5 py-0.5 font-mono text-[10px] ${
+                          r.vip || r.scales
+                            ? "border-accent/40 text-accent"
+                            : "border-border text-muted"
+                        }`}
+                      >
+                        {r.vip ? "★ " : r.scales ? "▲ " : ""}
+                        {r.note}
+                      </span>
+                    )
                   )}
                   {r.discordLinks && (
                     <a

@@ -42,6 +42,8 @@ export type Site = {
     vip?: boolean;
     /** True when the site also drops free SC links we post in the Discord (extra on top of the login SC). */
     discordLinks?: boolean;
+    /** Optional longer explanation shown in a hover/tap tooltip on the claim note. */
+    tip?: string;
   };
 };
 

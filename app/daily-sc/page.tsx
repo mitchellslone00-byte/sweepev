@@ -30,6 +30,7 @@ function buildRows(): DailyRow[] {
       scales: s.dailySC!.scales,
       vip: s.dailySC!.vip,
       discordLinks: s.dailySC!.discordLinks,
+      tip: s.dailySC!.tip,
     }))
     .sort((a, b) => {
       if (b.amount !== a.amount) return b.amount - a.amount;

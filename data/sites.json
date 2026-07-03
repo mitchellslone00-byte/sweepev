@@ -548,7 +548,8 @@
       "display": "1.0 SC",
       "claim": "Login",
       "note": "Balance must be $0 to claim",
-      "scales": false
+      "scales": false,
+      "tip": "The daily SC only unlocks when your SC balance is $0. Easy fix: put your daily dollar on a heavily favored futures pick, or use it to cross-wash, so your balance clears — then the daily keeps stacking."
     }
   },
   {
@@ -587,7 +588,8 @@
       "display": "1.0 SC",
       "claim": "Login",
       "note": "Balance must be $0 to claim",
-      "scales": false
+      "scales": false,
+      "tip": "The daily SC only unlocks when your SC balance is $0. Easy fix: put your daily dollar on a heavily favored futures pick, or use it to cross-wash, so your balance clears — then the daily keeps stacking."
     }
   },
   {
