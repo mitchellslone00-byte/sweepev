@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: `Disclaimer | ${siteConfig.name}`,
+  title: "Disclaimer",
   description: `Important disclaimers about ${siteConfig.name}, affiliate relationships, editorial independence, and the limits of strategy content.`,
   alternates: { canonical: `${siteConfig.url}/disclaimer` },
 };

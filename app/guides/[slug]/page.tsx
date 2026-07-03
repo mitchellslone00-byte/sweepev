@@ -17,7 +17,7 @@ export async function generateMetadata(
   const site = getSite(slug);
   if (!site || !site.strategy) return {};
   return {
-    title: `${site.name} Strategy Guide | ${siteConfig.name}`,
+    title: `${site.name} Strategy Guide`,
     description: `${site.name} strategy guide — how to clear playthrough, find +EV packages, and get the most value out of the daily SC drops.`,
     alternates: {
       canonical: `${siteConfig.url}/guides/${slug}`,

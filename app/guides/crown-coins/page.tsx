@@ -3,7 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: `Crown Coins Casino Strategy Guide | ${siteConfig.name}`,
+  title: "Crown Coins Casino Strategy Guide",
   description: "Crown Coins Casino strategy guide — VIP progression, best washing games, daily routine, and how to get the most value out of CCC in 2026.",
   alternates: {
     canonical: `${siteConfig.url}/guides/crown-coins`,

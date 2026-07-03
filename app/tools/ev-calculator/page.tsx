@@ -6,7 +6,7 @@ import { buildRecommendations } from "@/lib/calculators/recommendations";
 import { EVCalculator } from "@/components/EVCalculator";
 
 export const metadata: Metadata = {
-  title: `Estimated Value Calculator | ${siteConfig.name}`,
+  title: "Estimated Value Calculator",
   description:
     "Free analytical tool for estimating net value, bankroll risk, and realistic cashout amounts on sweepstakes and online casino bonuses. Probability-based analysis, not promotional hype.",
   alternates: { canonical: "/tools/ev-calculator" },

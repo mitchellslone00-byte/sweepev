@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Sweepstakes Casinos in Texas (2026) — Top Sites for TX Players | SweepEV",
+  title: "Best Sweepstakes Casinos in Texas (2026) — Top Sites for TX Players",
   description:
     "Sweepstakes casinos are fully available in Texas. Here are the best platforms for TX residents in 2026, ranked by bonus value, redemption speed, and trust.",
   alternates: {

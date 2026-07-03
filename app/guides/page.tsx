@@ -3,7 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: `General Sweeps Strategy | ${siteConfig.name}`,
+  title: "General Sweeps Strategy",
   description: "How to collect free Sweeps Coins daily and how to actually use welcome offers on Sweepstakes casinos.",
   alternates: {
     canonical: `${siteConfig.url}/guides`,

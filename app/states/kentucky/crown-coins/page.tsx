@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Can Kentucky Residents Play Crown Coins? (2026 Guide) | SweepEV",
+  title: "Can Kentucky Residents Play Crown Coins? (2026 Guide)",
   description:
     "Yes — Kentucky residents can play Crown Coins Casino in 2026. Here's everything you need to know about availability, purchases, and redemptions from Kentucky.",
   alternates: {

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: `Message sent | ${siteConfig.name}`,
+  title: "Message sent",
   description: `Your message was sent to ${siteConfig.name} support.`,
   robots: { index: false, follow: false },
 };

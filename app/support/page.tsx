@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: `Support | ${siteConfig.name}`,
+  title: "Support",
   description: `Contact ${siteConfig.name} for support, feedback, or business inquiries.`,
   alternates: { canonical: `${siteConfig.url}/support` },
 };

@@ -7,9 +7,9 @@ import { DailySCTable, type DailyRow } from "@/components/DailySCTable";
 const LAST_VERIFIED = "July 1, 2026";
 
 export const metadata: Metadata = {
-  title: `Free Daily SC Ranked by Monthly Value (2026) | ${siteConfig.name}`,
+  title: "Free Sweeps Coins Daily: Every Site's Free SC Ranked",
   description:
-    "Every sweepstakes casino that gives you free Sweeps Coins just for logging in, ranked by what the daily habit is actually worth per month. No purchases, no writing — just sign in and collect. Re-verified monthly.",
+    "Get free Sweeps Coins every day just for logging in. We rank every sweepstakes casino that gives free SC daily by what it's actually worth per month — no purchase, no deposit, no writing. Just sign in and collect. Re-verified monthly.",
   alternates: { canonical: `${siteConfig.url}/daily-sc` },
 };
 
@@ -117,13 +117,14 @@ export default function DailySCPage() {
         <p className="font-mono text-xs uppercase tracking-[0.14em] text-accent">
           Daily bonus index · 2026
         </p>
-        <h1 className="mt-2 max-w-[18ch] text-3xl font-black leading-tight md:text-5xl">
-          Free daily SC, ranked by <span className="text-accent">monthly value</span>
+        <h1 className="mt-2 max-w-[20ch] text-3xl font-black leading-tight md:text-5xl">
+          Free daily Sweeps Coins, ranked by <span className="text-accent">monthly value</span>
         </h1>
         <p className="mt-3 max-w-[62ch] text-muted leading-relaxed">
-          Every sweepstakes casino that hands out Sweeps Coins just for showing up — how much,
-          how you claim it, and what the habit is worth per month. No purchases, no surveys, no
-          writing. Just sign in and collect. Re-verified on the first of every month.
+          Every sweepstakes casino that hands out free Sweeps Coins (SC) just for showing up — how
+          much, how you claim it, and what the habit is worth per month. No purchase, no deposit, no
+          surveys, no writing. Just sign in and collect your free SC. Re-verified on the first of
+          every month.
         </p>
         <span className="mt-4 inline-flex items-center gap-2 rounded-full border border-border px-3 py-1.5 font-mono text-xs text-muted">
           LAST FULL VERIFICATION:{" "}

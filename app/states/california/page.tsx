@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sweepstakes Casinos in California — What Actually Works (2026) | SweepEV",
+  title: "Sweepstakes Casinos in California — What Actually Works (2026)",
   description:
     "Most sweepstakes casinos don't work in California. Here's which platforms are available for CA residents in 2026 and why card-based casinos are the best option.",
   alternates: {
