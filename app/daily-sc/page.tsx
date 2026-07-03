@@ -211,6 +211,26 @@ export default function DailySCPage() {
         </div>
       </section>
 
+      {/* Efficient farming blurb */}
+      <section className="mt-6">
+        <div className="rounded-2xl border border-border bg-panel p-5">
+          <h3 className="font-bold text-text">Claiming 20+ dailies faster than you'd think</h3>
+          <p className="mt-1 max-w-[68ch] text-sm leading-relaxed text-muted">
+            A full list of daily claims sounds like a chore, but it isn&apos;t. Drop every claim
+            page into a single browser bookmark folder, open the whole folder at once, and click
+            through — you can rip through 40+ dailies in under 5 minutes. We break down the full
+            routine (plus the mobile version) in our{" "}
+            <Link
+              href="/guides#daily-farming"
+              className="font-semibold text-accent underline underline-offset-2 hover:opacity-80"
+            >
+              daily farming guide
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
       {/* Methodology */}
       <section className="mt-8">
         <div className="max-w-[70ch] border-l-[3px] border-accent py-1 pl-4 text-sm text-muted">

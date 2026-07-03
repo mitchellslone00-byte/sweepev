@@ -105,7 +105,7 @@ export default function GuidesPage() {
       </section>
 
       {/* Daily Farming */}
-      <section className="mt-4 rounded-2xl border border-accent/40 bg-panel p-5">
+      <section id="daily-farming" className="mt-4 scroll-mt-20 rounded-2xl border border-accent/40 bg-panel p-5">
         <h2 className="text-xl md:text-2xl font-bold text-accent">Daily Farming &amp; Being Efficient</h2>
         <p className="mt-3 text-muted leading-relaxed">
           Find a system that works for you. Here&apos;s what works well:
