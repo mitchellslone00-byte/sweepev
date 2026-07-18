@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 
 const items = [
   { label: "General", href: "/guides" },
+  { label: "AMOE (Mail-In)", href: "/guides/amoe" },
   { label: "CrownCoins", href: "/guides/crown-coins" },
   { label: "LuckyLand Slots/Casino", href: "/guides/luckyland" },
   { label: "ReBet / Dogg House", href: "/guides/rebet" },
