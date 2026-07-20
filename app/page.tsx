@@ -14,8 +14,42 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const year = new Date().getFullYear();
 
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Best Sweepstakes & Social Casino Sites of ${year}`,
+    description:
+      "Independent editorial ranking of US sweepstakes and social casinos by bonus value, redemption speed, game library, and trust.",
+    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    numberOfItems: sites.length,
+    itemListElement: sites.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: s.name,
+      url: `${siteConfig.url}/sites/${s.slug}`,
+    })),
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
       <section className="relative overflow-hidden border-b border-border bg-gradient-to-b from-panel to-bg">
         <CoinRain />
         <div className="container-x py-8 sm:py-10 md:py-14 text-center relative z-10">

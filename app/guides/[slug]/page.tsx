@@ -1,19 +1,23 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { sites, getSite } from "@/lib/sites";
+import { getSite } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
+import { GUIDE_SLUGS } from "@/lib/guides";
 import { AffiliateLink } from "@/components/AffiliateLink";
 
+// Reject any slug not in GUIDE_SLUGS (returns 404 instead of auto-building one).
+export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return sites.filter((s) => s.strategy).map((s) => ({ slug: s.slug }));
+  return GUIDE_SLUGS.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
   const { slug } = await params;
+  if (!GUIDE_SLUGS.includes(slug)) return {};
   const site = getSite(slug);
   if (!site || !site.strategy) return {};
   return {
@@ -29,6 +33,7 @@ export default async function SiteGuidePage(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params;
+  if (!GUIDE_SLUGS.includes(slug)) notFound();
   const site = getSite(slug);
   if (!site || !site.strategy) notFound();
 

@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { sites } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
+import { GUIDE_SLUGS } from "@/lib/guides";
 
 type ChangeFreq = "daily" | "weekly" | "monthly";
 
@@ -30,7 +31,6 @@ async function walkApp(dir: string, urlParts: string[], out: string[]) {
   if (base.startsWith(".") || base.startsWith("_")) return;
   if (urlParts[0] === "api") return;
   if (urlParts[0] === "go") return;
-  if (urlParts[0] === "guides") return;
   if (isDynamic(base)) return;
 
   if (await hasPage(dir)) {
@@ -53,6 +53,7 @@ function rulesFor(pathname: string): { priority: number; changeFrequency: Change
   if (pathname === "/daily-sc") return { priority: 0.9, changeFrequency: "weekly" };
   if (pathname.startsWith("/sites/")) return { priority: 0.8, changeFrequency: "weekly" };
   if (pathname.startsWith("/states/")) return { priority: 0.8, changeFrequency: "monthly" };
+  if (pathname.startsWith("/guides")) return { priority: 0.7, changeFrequency: "monthly" };
   return { priority: 0.6, changeFrequency: "monthly" };
 }
 
@@ -63,7 +64,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const sitePaths = sites.map((s) => `/sites/${s.slug}`);
 
-  const all = Array.from(new Set([...staticPaths, ...sitePaths])).sort();
+  // Curated dynamic guides only (app/guides/[slug]). The static guides
+  // (/guides, /guides/amoe, /guides/crown-coins, /guides/luckyland) are
+  // picked up by walkApp above.
+  const guidePaths = GUIDE_SLUGS.map((slug) => `/guides/${slug}`);
+
+  const all = Array.from(
+    new Set([...staticPaths, ...sitePaths, ...guidePaths])
+  ).sort();
   const base = siteConfig.url.replace(/\/$/, "");
   const now = new Date();
 
