@@ -194,11 +194,11 @@ export default async function SitePage(
                         </Link>.
                       </p>
                     ) : para === "<<bonusimage>>" && site.bonusImage ? (
-                      <div key={pi} className="mt-4">
+                      <div key={pi} className={`mt-4${site.compactImages ? " flex justify-center" : ""}`}>
                         <img
                           src={site.bonusImage}
                           alt={`${site.name} welcome offer packages`}
-                          className="rounded-2xl w-full border border-border shadow-lg"
+                          className={`rounded-2xl w-full border border-border shadow-lg${site.compactImages ? " max-w-lg" : ""}`}
                         />
                       </div>
                     ) : para === "<<saleimage>>" && site.saleImage ? (
@@ -232,11 +232,11 @@ export default async function SitePage(
                         </a>
                       </div>
                     ) : para === "<<dailybonusimage>>" && site.dailyBonusImage ? (
-                      <div key={pi} className="mt-4">
+                      <div key={pi} className={`mt-4${site.compactImages ? " flex justify-center" : ""}`}>
                         <img
                           src={site.dailyBonusImage}
                           alt={`${site.name} daily login bonus`}
-                          className="rounded-2xl w-full border border-border shadow-lg"
+                          className={`rounded-2xl w-full border border-border shadow-lg${site.compactImages ? " max-w-lg" : ""}`}
                         />
                       </div>
                     ) : (

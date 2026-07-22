@@ -22,7 +22,7 @@ export default function CrownCoinsGuidePage() {
 
       <header className="mt-4">
         <h1 className="text-3xl md:text-4xl font-black">Crown Coins Casino Strategy Guide</h1>
-        <p className="mt-2 text-xs text-muted">Last Updated: June 2026</p>
+        <p className="mt-2 text-xs text-muted">Last Updated: July 21, 2026</p>
         <p className="mt-3 text-muted leading-relaxed">
           Crown Coins Casino continues to be one of the best sweepstakes casinos available and remains one of our favorite sites for consistent value. Between the daily rewards, frequent promotions, VIP program, and weekly events, it&apos;s a site that can generate steady returns if you&apos;re willing to stay active.
         </p>

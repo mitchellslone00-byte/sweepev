@@ -26,6 +26,8 @@ export type Site = {
   saleImage?: string;
   promoImage?: string;
   dailyBonusImage?: string;
+  /** Render bonus/daily images centered and capped (for lower-res screenshots) instead of full-width. */
+  compactImages?: boolean;
   faqs?: { q: string; a: string }[];
   /** Optional tier override. Otherwise tier is derived from rank in SiteCard. */
   tier?: "S" | "A" | "B" | "C";

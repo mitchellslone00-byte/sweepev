@@ -69,7 +69,7 @@ export default function AmoeGuidePage() {
         <h1 className="text-3xl md:text-4xl font-black">
           AMOE: Free Sweeps Coins
         </h1>
-        <p className="mt-2 text-xs text-muted">Last updated: July 2026</p>
+        <p className="mt-2 text-xs text-muted">Last updated: July 21, 2026</p>
         <p className="mt-3 text-muted leading-relaxed">
           AMOE lets you claim free Sweeps Coins with no purchase. There are two flavors:{" "}
           <strong className="text-text">digital AMOE</strong> — handwrite an entry on an index card and

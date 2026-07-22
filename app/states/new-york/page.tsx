@@ -120,7 +120,7 @@ export default function NewYorkPage() {
           <div className="mt-3 flex items-center gap-3 text-xs text-muted">
             <span>By <span className="text-text font-medium">Jordan Thacker</span></span>
             <span>·</span>
-            <span>Last updated: June 2026</span>
+            <span>Last updated: July 21, 2026</span>
           </div>
         </header>
 
