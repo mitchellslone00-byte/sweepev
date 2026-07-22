@@ -935,30 +935,98 @@
   {
     "slug": "coinsback-casino",
     "name": "Coinsback Casino",
-    "tagline": "Cashback-themed social casino with sweepstakes prize redemptions.",
+    "tagline": "WOW Vegas sister site with a standout 50% CoinsBack refund on every SC spin and 1,400+ games.",
     "rating": 4.7,
-    "bonus": "Free welcome coin bundle on signup",
+    "bonus": "500,000 GC + 10 SC free on signup (best offer $9.99 for 1.5M GC + 30 SC)",
     "promoCode": "",
-    "homepageUrl": "https://coinsbackcasino.com",
+    "homepageUrl": "https://www.coinsbackcasino.com",
     "affiliateUrl": "https://www.coinsbackcasino.com/invite/1515539?utm_source=copy&utm_medium=referral&utm_campaign=member-referral",
-    "available": "Available in most US states",
+    "available": "",
     "highlights": [
-      "Slots, jackpots, and originals",
-      "Daily login bonuses",
-      "Sweepstakes redemptions"
+      "50% CoinsBack on every SC spin",
+      "500,000 GC + 10 SC free on signup",
+      "1,400+ games with high RTPs"
     ],
     "pros": [
-      "Cashback rewards on play",
-      "No-purchase signup SC"
+      "500,000 GC + 10 SC free on signup, no purchase",
+      "50% CoinsBack on every SC spin — half the house edge refunded instantly",
+      "1,400+ games from 20+ providers",
+      "Clean 1x playthrough",
+      "Gift card redemptions from just 50 SC",
+      "Operated by MW Services (WOW Vegas group)"
     ],
     "cons": [
-      "Newer brand",
-      "Smaller catalog vs. major sites"
+      "No table games or live dealers (slots only, no cross-washing)",
+      "CoinsClub VIP is an extreme grind",
+      "Only one first-purchase package",
+      "New brand (launched May 2026)"
     ],
     "tier": "A",
     "strategy": {
-      "edge": "Coinsback Casino is a new social casino affiliated with the WOW Vegas group that we're very excited about. The \"coinsback\" feature gives you 50% back based on the RTP of the game, which is something new and worth tracking. We haven't seen any sales or a ton of value yet, but keep it on your radar. Coinsback offers a great 10 SC on signup, so don't miss out."
-    }
+      "edge": "Coinsback Casino launched in May 2026 under MW Services Limited — the operator behind WOW Vegas, Rolla, and MetaWin — and it arrived with a genuinely novel headline feature. It's a slots-focused site with 1,400+ games, a clean 1x playthrough, and one standout mechanic that makes it one of the more +EV places in the space to wash SC: instant CoinsBack on every spin.\n\n<<bonusimage>>\n\n<<section:The CoinsBack Feature>>\n\nThe 50% CoinsBack system is the reason to pay attention here. On every eligible SC spin, the site instantly refunds 50% of the expected house edge back to your balance — no minimums, no conditions, regardless of your rank or how much you've played. In practice you're effectively playing at a meaningfully higher RTP than anywhere else: on a 96% RTP slot, halving the 4% house edge pushes your effective return closer to 98%. That makes Coinsback one of the cheapest sites anywhere to clear a wash. Pair the refund with a high-RTP slot at minimum bet and your SC stretches further per playthrough than almost anywhere else.\n\n<<dailybonusimage>>\n\n<<section:Bonuses & Promotions>>\n\nNew players get 500,000 GC + 10 SC free just for signing up — no purchase needed, one of the stronger no-deposit bonuses in the space right now. The single first-purchase offer is strong at 1.5 million GC + 30 SC for $9.99, a 200% bonus, and if you applied for early access, check your email for a 5 SC pre-registration bonus on top.\n\nCoinsback also drops free spins codes regularly — we post them in our Discord the moment they go up, so make sure you're in there to grab them.\n\n<<discord>>\n\nFor ongoing value, launching a game with an empty balance triggers a Faucet bonus of 15,000 GC, and there are hourly and daily leaderboards, social and email contests, and a multi-tiered referral program worth up to 100 SC. The mail-in AMOE pays 3 SC per approved handwritten request. One honest caveat: the CoinsClub VIP program is an extreme grind — you earn just 1 XP per SC played and reaching the top tiers takes millions of SC in wagering, so don't treat VIP as a core part of your strategy here.\n\n<<section:Game Selection>>\n\nCoinsback launched with 1,400+ games from 20+ providers and leans heavily into slots — classic reels, Hold & Win, and Megaways, plus CoinsBack Originals (in-house games like Dice and Mines) and fish shooters. You'll find familiar studios like Betsoft, BGaming, RubyPlay, M2Play, Hacksaw, 3 Oaks, and Nolimit City, alongside niche developers rarely seen at US sweeps sites like Popiplay, Golden Gopher, and RoyalBit. Most titles run at the highest available RTPs, and the CoinsBack refund improves them further. There are also live hosted slot sessions in the evenings (roughly 6pm-2am ET). The one gap: no table games or live dealers, so there's no cross-washing here — high-RTP slots are the play. Top picks include The Slotfather Book of Wins, Coins of Zeus Hold & Win, and Aztec Magic Megaways.\n\n<<section:Redemptions>>\n\nSweeps Coins clear a simple 1x playthrough before redemption, at 1 SC = $1. Gift cards (via Prizeout) start at just 50 SC, and cash redemptions via Skrill, bank transfer, or card start at 100 SC. Redemptions typically process within 1-3 business days, though your first may take up to 5, and there's a $10,000 per-request cap. Level 2 KYC (a selfie and government ID) is required to unlock redemptions — worth completing early, since it also unlocks your welcome SC. GC packages run from $4.99 to $99.99, and the platform recently dropped its purchase fee.\n\n<<section:State Availability>>\n\nCoinsback is NOT available for SC play or redemptions in California, Connecticut, Idaho, Illinois, Indiana, Louisiana, Maine, Maryland, Michigan, Montana, Nevada, New Jersey, New York, Tennessee, or Washington. Players in most of those states can still sign up and play with Gold Coins, but Sweeps Coins spins and prize redemptions are blocked. The age requirement is 21+.\n\n<<section:Trust & Legitimacy>>\n\nCoinsback is operated by MW Services Limited, a Gibraltar-based company and one of the most established names in US sweepstakes — the same operator behind WOW Vegas, Rolla, and MetaWin. Games are RNG-tested from licensed providers, the site runs on 256-bit SSL, and no purchase is ever required to play or redeem. As a May 2026 launch its Trustpilot history is still thin, and a few early users reported slow first redemptions (the rules do state the first can take up to 5 days) or verification delays during the launch rush — both normal growing pains for a new site backed by a proven operator. Support runs on a 24/7 AI-plus-human chat system with sub-minute response times.",
+      "washingGames": [
+        "High-RTP slots at min bet — 50% CoinsBack refunds half the house edge every spin",
+        "Low-volatility slots or CoinsBack Originals (Dice or Mines) to keep variance down — slots only, no cross-washing"
+      ]
+    },
+    "reviewTitle": "CoinsBack Casino Review 2026: Bonus, Redemptions, & Real EV+",
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Maryland",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "faqs": [
+      {
+        "q": "What is the CoinsBack feature?",
+        "a": "CoinsBack instantly refunds 50% of the expected house edge back to your balance on every eligible Sweeps Coin spin — no minimums or conditions. It effectively raises the RTP on every game, which makes Coinsback one of the cheapest sites to clear a wash. On a 96% RTP slot, for example, your effective return moves closer to 98%."
+      },
+      {
+        "q": "What is the CoinsBack no deposit bonus?",
+        "a": "New players get 500,000 Gold Coins + 10 Sweeps Coins free just for signing up — no purchase needed, one of the stronger no-deposit offers around right now. The first-purchase offer is 1.5M GC + 30 SC for $9.99. (Complete KYC verification to unlock redemptions.)"
+      },
+      {
+        "q": "How do redemptions work at Coinsback?",
+        "a": "Sweeps Coins clear a 1x playthrough, then redeem at 1 SC = $1. Gift cards start at 50 SC and cash (Skrill, bank transfer, or card) at 100 SC. Redemptions usually take 1-3 business days (your first may take up to 5), with a $10,000 per-request cap. Level 2 KYC is required first."
+      },
+      {
+        "q": "What states is Coinsback available in?",
+        "a": "Coinsback blocks SC play and redemptions in CA, CT, ID, IL, IN, LA, ME, MD, MI, MT, NV, NJ, NY, TN, and WA. Players in most of those states can still play with Gold Coins, but not Sweeps Coins. The age requirement is 21+."
+      },
+      {
+        "q": "What are the best games to wash at Coinsback?",
+        "a": "High-RTP slots at minimum bet, since the 50% CoinsBack refund cuts the house edge in half on every spin. There are no table games or live dealers, so cross-washing is not an option here — stick to low-volatility, high-RTP slots or the CoinsBack Originals."
+      },
+      {
+        "q": "Is Coinsback the same as WOW Vegas?",
+        "a": "They're sister sites — both run by MW Services Limited, alongside Rolla and MetaWin — so they share an operator and a similar level of polish, but they're separate platforms with their own accounts, bonuses, and game libraries. WOW Vegas has live dealers and a bigger promo calendar; Coinsback's edge is the 50% CoinsBack refund on every SC spin and its live hosted slot sessions."
+      },
+      {
+        "q": "Does Coinsback have live dealers?",
+        "a": "No. Coinsback is slots-focused — you get 1,400+ slots, Hold & Win and Megaways titles, CoinsBack Originals like Dice and Mines, and fish shooters, plus live hosted slot sessions in the evenings, but no live dealer table games. That also means there is no cross-washing here, so stick to high-RTP slots to clear playthrough."
+      },
+      {
+        "q": "Is Coinsback legit?",
+        "a": "Yes. Coinsback is operated by MW Services Limited, the Gibraltar-based company behind WOW Vegas, Rolla, and MetaWin. It uses RNG-tested games from licensed providers, runs on 256-bit SSL, requires no purchase, and enforces KYC. It launched in May 2026, so its public track record is still young, but the operator is well established."
+      }
+    ],
+    "relatedSites": [
+      "wow-vegas",
+      "rolla"
+    ],
+    "bonusImage": "/images/coinsback-home.png",
+    "dailyBonusImage": "/images/coinsback-feature.png"
   },
   {
     "slug": "coin-wizard",
