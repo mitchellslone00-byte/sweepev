@@ -231,6 +231,16 @@ export default async function SitePage(
                           Join the Discord
                         </a>
                       </div>
+                    ) : para === "<<amoeguide>>" ? (
+                      <div key={pi} className="mt-3">
+                        <Link
+                          href="/guides/amoe"
+                          className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/[0.06] px-3.5 py-1.5 text-sm font-medium text-accent transition-colors hover:bg-accent/10"
+                        >
+                          📮 Read the AMOE guide
+                          <span aria-hidden>→</span>
+                        </Link>
+                      </div>
                     ) : para === "<<dailybonusimage>>" && site.dailyBonusImage ? (
                       <div key={pi} className={`mt-4${site.compactImages ? " flex justify-center" : ""}`}>
                         <img
