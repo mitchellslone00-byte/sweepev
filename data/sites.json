@@ -262,8 +262,8 @@
     "dailyBonusImage": "/images/lonestar-table-games.png",
     "saleImage": "/images/lonestar-sale.png",
     "dailySC": {
-      "amount": 0.3,
-      "display": "0.3 SC",
+      "amount": 1,
+      "display": "1.0 SC",
       "claim": "Login every 24h",
       "note": "7-day streak grand reward",
       "scales": true,
@@ -380,8 +380,8 @@
     "saleImage": "/images/realprize-sale.png",
     "promoImage": "/images/realprize-free-spins.png",
     "dailySC": {
-      "amount": 0.3,
-      "display": "0.3 SC",
+      "amount": 1,
+      "display": "1.0 SC",
       "claim": "Login",
       "note": null,
       "scales": false,
@@ -800,19 +800,16 @@
       "chumba-casino",
       "luckyland-casino"
     ],
-    "dailySC": {
-      "amount": 1,
-      "display": "1.0 SC",
-      "claim": "Login",
-      "note": "VIP adds up to 80 SC/mo",
-      "scales": true
-    },
     "redemption": {
       "fastestMethod": "Skrill / bank",
       "fastestTime": "1-2 days",
       "speedHours": 36,
       "min": "100 SC",
       "note": null
+    },
+    "shutdownNotice": {
+      "date": "September 14th",
+      "message": "LuckyLand Slots has announced it is closing operations and will shut down on September 14th, 2026. If you still have a Sweeps Coins balance, redeem it before then — new signups are no longer recommended. We have removed LuckyLand Slots from our Free Daily SC rankings and AMOE guide."
     }
   },
   {
@@ -1192,7 +1189,10 @@
       ]
     },
     "tier": "A",
-    "shutdownNotice": "Coin Frenzy has announced it is closing operations and will shut down on September 26th, 2026. If you still have a Sweeps Coins balance, redeem it before then — new signups are no longer recommended. We have removed Coin Frenzy from our Free Daily SC rankings."
+    "shutdownNotice": {
+      "date": "September 26th",
+      "message": "Coin Frenzy has announced it is closing operations and will shut down on September 26th, 2026. If you still have a Sweeps Coins balance, redeem it before then — new signups are no longer recommended. We have removed Coin Frenzy from our Free Daily SC rankings."
+    }
   },
   {
     "slug": "coinsback-casino",

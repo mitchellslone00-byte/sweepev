@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Which sites offer digital AMOE?",
-    a: "The VGW family is where it shines: Chumba, LuckyLand Casino, LuckyLand Slots, and Global Poker each pay 5 SC per day for a photo entry, credited the next day — that's 20 SC per day if you run all four. Always confirm the current amount and process in each site's sweepstakes rules.",
+    a: "The VGW family is where it shines: Chumba, LuckyLand Casino, and Global Poker each pay 5 SC per day for a photo entry, credited the next day — that's 15 SC per day if you run all three. Always confirm the current amount and process in each site's sweepstakes rules.",
   },
   {
     q: "How fast do digital AMOE credits arrive?",
@@ -126,18 +126,17 @@ export default function AmoeGuidePage() {
         <ul className="mt-3 space-y-3 text-muted leading-relaxed">
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">
             <AffiliateLink slug="chumba-casino" name="Chumba Casino" source="amoe_guide" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">Chumba</AffiliateLink>,{" "}
-            <AffiliateLink slug="luckyland-casino" name="LuckyLand Casino" source="amoe_guide" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">LuckyLand Casino</AffiliateLink>,{" "}
-            <AffiliateLink slug="luckyland-slots" name="LuckyLand Slots" source="amoe_guide" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">LuckyLand Slots</AffiliateLink>, and{" "}
+            <AffiliateLink slug="luckyland-casino" name="LuckyLand Casino" source="amoe_guide" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">LuckyLand Casino</AffiliateLink>, and{" "}
             <strong className="text-text">Global Poker</strong> each pay{" "}
             <strong className="text-text">5 SC per day</strong> for a photo entry, credited the next day. Run
-            all four and that&apos;s <strong className="text-text">20 SC per day</strong>.
+            all three and that&apos;s <strong className="text-text">15 SC per day</strong>.
           </li>
         </ul>
         <p className="mt-4 rounded-xl border border-accent/40 bg-accent/[0.06] p-4 leading-relaxed text-muted">
-          <strong className="text-text">Do the math:</strong> 20 SC a day across all four sites is roughly{" "}
-          <strong className="text-accent">600 SC a month</strong>. After washing it through the 1x playthrough
+          <strong className="text-text">Do the math:</strong> 15 SC a day across all three sites is roughly{" "}
+          <strong className="text-accent">450 SC a month</strong>. After washing it through the 1x playthrough
           — you&apos;ll lose about 3% to the house edge on a high-RTP game — that&apos;s around{" "}
-          <strong className="text-accent">$580 in redeemable value</strong> a month, for a few minutes of
+          <strong className="text-accent">$435 in redeemable value</strong> a month, for a few minutes of
           writing a day, and you never spend a cent.
         </p>
         <p className="mt-3 text-muted leading-relaxed">
@@ -163,7 +162,7 @@ export default function AmoeGuidePage() {
             <strong className="text-text">Play for Free</strong> near the shop, then submit a request.
           </li>
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">
-            <strong className="text-text">LuckyLand Slots &amp; Casino</strong> — tap the duck/gem icon at the
+            <strong className="text-text">LuckyLand Casino</strong> — tap the gem icon at the
             top, then go to <strong className="text-text">Profile → Entry Request</strong>.
           </li>
         </ul>

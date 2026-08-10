@@ -31,8 +31,13 @@ export type Site = {
   faqs?: { q: string; a: string }[];
   /** Optional tier override. Otherwise tier is derived from rank in SiteCard. */
   tier?: "S" | "A" | "B" | "C";
-  /** When set, renders a prominent closure/shutdown banner at the top of the review. */
-  shutdownNotice?: string;
+  /** When set, renders a prominent closure banner (review) and a "shutting down" overlay (ranking card). */
+  shutdownNotice?: {
+    /** Display date shown in the banner/overlay headline, e.g. "September 26th". */
+    date: string;
+    /** Full notice paragraph shown in the review-page banner. */
+    message: string;
+  };
   relatedSites?: string[];
   statePages?: { label: string; href: string }[];
   /** Fastest redemption info for the Fastest Payouts page. speedHours = sort key (0 = instant). */

@@ -74,9 +74,9 @@ export default async function SitePage(
       {site.shutdownNotice && (
         <div className="mt-4 rounded-2xl border-2 border-red-500/60 bg-red-500/10 p-4 sm:p-5">
           <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-red-500">
-            <span aria-hidden className="text-base">⚠️</span> Shutting Down — September 26th
+            <span aria-hidden className="text-base">⚠️</span> Shutting Down — {site.shutdownNotice.date}
           </div>
-          <p className="mt-2 text-sm sm:text-base leading-relaxed text-text">{site.shutdownNotice}</p>
+          <p className="mt-2 text-sm sm:text-base leading-relaxed text-text">{site.shutdownNotice.message}</p>
         </div>
       )}
 
