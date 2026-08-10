@@ -86,7 +86,7 @@
       "fastestMethod": "Bank / card",
       "fastestTime": "1-2 days",
       "speedHours": 36,
-      "min": null,
+      "min": "100 SC",
       "note": null
     }
   },
@@ -758,7 +758,7 @@
       "fastestMethod": "Skrill / bank",
       "fastestTime": "1-2 days",
       "speedHours": 36,
-      "min": null,
+      "min": "100 SC",
       "note": null
     }
   },
@@ -811,7 +811,7 @@
       "fastestMethod": "Skrill / bank",
       "fastestTime": "1-2 days",
       "speedHours": 36,
-      "min": null,
+      "min": "100 SC",
       "note": null
     }
   },
@@ -955,7 +955,7 @@
       "fastestMethod": "Skrill / bank",
       "fastestTime": "1-2 days",
       "speedHours": 36,
-      "min": null,
+      "min": "100 SC",
       "note": null
     }
   },
@@ -1500,7 +1500,7 @@
       "fastestMethod": "Bank / card",
       "fastestTime": "2-3 days",
       "speedHours": 60,
-      "min": null,
+      "min": "50 SC",
       "note": null
     }
   },
@@ -1662,7 +1662,7 @@
       "fastestMethod": "Bank / card",
       "fastestTime": "2-3 days",
       "speedHours": 60,
-      "min": null,
+      "min": "50 SC",
       "note": null
     }
   },
@@ -1709,7 +1709,7 @@
       "fastestMethod": "Bank / card",
       "fastestTime": "2-3 days",
       "speedHours": 60,
-      "min": null,
+      "min": "50 SC",
       "note": null
     }
   },
@@ -1749,7 +1749,7 @@
       "fastestMethod": "Bank / card",
       "fastestTime": "2-3 days",
       "speedHours": 60,
-      "min": null,
+      "min": "50 SC",
       "note": null
     }
   },
