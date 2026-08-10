@@ -596,7 +596,7 @@
     "redemption": {
       "fastestMethod": "Debit card",
       "fastestTime": "Instant",
-      "speedHours": 0.5,
+      "speedHours": 0.4,
       "min": "20 SC",
       "note": "Instant on debit for redemptions under $500"
     }
