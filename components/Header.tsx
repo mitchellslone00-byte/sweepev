@@ -25,6 +25,10 @@ export function Header() {
             Free Daily SC
           </Link>
 
+          <Link href="/fastest-payouts" className="hover:text-accent transition-colors hidden sm:inline">
+            Fastest Payouts
+          </Link>
+
           <Link href="/tools/ev-calculator" className="hover:text-accent transition-colors hidden sm:inline">
             Calculate EV
           </Link>

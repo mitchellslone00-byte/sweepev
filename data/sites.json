@@ -81,6 +81,13 @@
       "note": "Shown at Gold VIP · scales with tier",
       "scales": true,
       "vip": true
+    },
+    "redemption": {
+      "fastestMethod": "Bank / card",
+      "fastestTime": "1-2 days",
+      "speedHours": 36,
+      "min": null,
+      "note": null
     }
   },
   {
@@ -156,7 +163,14 @@
       }
     ],
     "bonusImage": "/images/sweet-sweeps-sprinkle-sprint.png",
-    "dailyBonusImage": "/images/sweet-sweeps-daily-bonus.png"
+    "dailyBonusImage": "/images/sweet-sweeps-daily-bonus.png",
+    "redemption": {
+      "fastestMethod": "USDC crypto (Solana)",
+      "fastestTime": "Near instant",
+      "speedHours": 2,
+      "min": "60 SC",
+      "note": null
+    }
   },
   {
     "slug": "lonestar",
@@ -254,6 +268,13 @@
       "note": "7-day streak grand reward",
       "scales": true,
       "discordLinks": true
+    },
+    "redemption": {
+      "fastestMethod": "Debit / bank",
+      "fastestTime": "3-5 days",
+      "speedHours": 96,
+      "min": "100 SC",
+      "note": null
     }
   },
   {
@@ -365,6 +386,13 @@
       "note": null,
       "scales": false,
       "discordLinks": true
+    },
+    "redemption": {
+      "fastestMethod": "Bank / Skrill",
+      "fastestTime": "3-5 days",
+      "speedHours": 96,
+      "min": "100 SC",
+      "note": null
     }
   },
   {
@@ -469,6 +497,13 @@
       "claim": "Login, scales over the week",
       "note": "Climbs to 1.0 SC by end of streak",
       "scales": true
+    },
+    "redemption": {
+      "fastestMethod": "Skrill",
+      "fastestTime": "1-2 days",
+      "speedHours": 36,
+      "min": "100 SC",
+      "note": null
     }
   },
   {
@@ -495,7 +530,7 @@
       "Lacking some live games"
     ],
     "strategy": {
-      "edge": "Modo has been one of the hottest sites in 2026, offering consistent sales that bring a tremendous amount of value. Modo runs 1x playthrough and has plenty of games, so washing is a breeze. Refer to the dedicated Modo guide on how to farm VIP — they just completely reset their VIP system, so there's plenty of value to grab. Don't miss out on Modo, join now."
+      "edge": "Modo has been one of the hottest sites in 2026, offering consistent sales that bring a tremendous amount of value. Modo runs 1x playthrough and has plenty of games, so washing is a breeze. Refer to the dedicated Modo guide on how to farm VIP — they just completely reset their VIP system, so there's plenty of value to grab. Don't miss out on Modo, join now. Redemptions are instant (a small fee applies), with a 50 SC minimum."
     },
     "tier": "S",
     "dailySC": {
@@ -505,6 +540,13 @@
       "note": "Shown at Gold VIP · scales with tier",
       "scales": true,
       "vip": true
+    },
+    "redemption": {
+      "fastestMethod": "Instant (small fee)",
+      "fastestTime": "Instant",
+      "speedHours": 0.5,
+      "min": "50 SC",
+      "note": "A small fee applies for instant cashout"
     }
   },
   {
@@ -532,7 +574,7 @@
       "Sports-focused, fewer slot promos"
     ],
     "strategy": {
-      "edge": "Our favorite sports-and-sweeps casino. The free pick promos, the monthly pass, and the steady daily SC make it more valuable over time than most sports-first social books. Strong opening welcome offer on top. Quick trick: the 1 SC daily will not stack if your balance is above $1, so place a long-term future bet that's heavily favored to stack up the freebies.",
+      "edge": "Our favorite sports-and-sweeps casino. The free pick promos, the monthly pass, and the steady daily SC make it more valuable over time than most sports-first social books. Strong opening welcome offer on top. Quick trick: the 1 SC daily will not stack if your balance is above $1, so place a long-term future bet that's heavily favored to stack up the freebies. Redemptions are fast — instant to debit for amounts under $500, with a low 20 SC minimum.",
       "washingGames": [
         "Plinko XY, high-90s RTP across risk levels and the standout choice on the site",
         "Low-risk Plinko (8-row, low-volatility) for slower variance on larger SC balances",
@@ -550,6 +592,13 @@
       "note": "Balance must be $0 to claim",
       "scales": false,
       "tip": "The daily SC only unlocks when your SC balance is $0. Easy fix: put your daily dollar on a heavily favored futures pick, or use it to cross-wash, so your balance clears — then the daily keeps stacking."
+    },
+    "redemption": {
+      "fastestMethod": "Debit card",
+      "fastestTime": "Instant",
+      "speedHours": 0.5,
+      "min": "20 SC",
+      "note": "Instant on debit for redemptions under $500"
     }
   },
   {
@@ -577,7 +626,7 @@
       "Smaller catalog vs. major sites"
     ],
     "strategy": {
-      "edge": "One of the newer S-tier sites and built on the same UI engine as ReBet, so the experience feels familiar from day one. Daily SC drops are steady and the welcome bundle is one of the strongest openings in the space. Similar to ReBet, the daily SC won't stack with a non-zero balance, so place a heavily favored futures pick to stack them up."
+      "edge": "One of the newer S-tier sites and built on the same UI engine as ReBet, so the experience feels familiar from day one. Daily SC drops are steady and the welcome bundle is one of the strongest openings in the space. Similar to ReBet, the daily SC won't stack with a non-zero balance, so place a heavily favored futures pick to stack them up. Redemptions are fast too — instant to debit for amounts under $500, with a low 20 SC minimum."
     },
     "tier": "S",
     "relatedSites": [
@@ -590,6 +639,13 @@
       "note": "Balance must be $0 to claim",
       "scales": false,
       "tip": "The daily SC only unlocks when your SC balance is $0. Easy fix: put your daily dollar on a heavily favored futures pick, or use it to cross-wash, so your balance clears — then the daily keeps stacking."
+    },
+    "redemption": {
+      "fastestMethod": "Debit card",
+      "fastestTime": "Instant",
+      "speedHours": 0.5,
+      "min": "20 SC",
+      "note": "Instant on debit for redemptions under $500"
     }
   },
   {
@@ -617,9 +673,16 @@
       "Poor VIP program"
     ],
     "strategy": {
-      "edge": "Legendz has been a consistent money maker for us. They have frequent 10–20% sales that are easily cross-washable thanks to a ton of live games. They also run a promotion called Thirsty Thursday that's closer to guaranteed profit. Instant redeems on Legendz are great — you do not have to wait. Don't miss this one."
+      "edge": "Legendz has been a consistent money maker for us. They have frequent 10–20% sales that are easily cross-washable thanks to a ton of live games. They also run a promotion called Thirsty Thursday that's closer to guaranteed profit. Redemptions to debit land within about an hour, with a 100 SC minimum — no long waits. Don't miss this one."
     },
-    "tier": "S"
+    "tier": "S",
+    "redemption": {
+      "fastestMethod": "Debit card",
+      "fastestTime": "Within 1 hour",
+      "speedHours": 1,
+      "min": "100 SC",
+      "note": null
+    }
   },
   {
     "slug": "card-crush",
@@ -690,6 +753,13 @@
       "claim": "Login streak",
       "note": null,
       "scales": false
+    },
+    "redemption": {
+      "fastestMethod": "Skrill / bank",
+      "fastestTime": "1-2 days",
+      "speedHours": 36,
+      "min": null,
+      "note": null
     }
   },
   {
@@ -736,6 +806,13 @@
       "claim": "Login",
       "note": "VIP adds up to 80 SC/mo",
       "scales": true
+    },
+    "redemption": {
+      "fastestMethod": "Skrill / bank",
+      "fastestTime": "1-2 days",
+      "speedHours": 36,
+      "min": null,
+      "note": null
     }
   },
   {
@@ -779,6 +856,13 @@
       "claim": "Login streak",
       "note": "VIP adds up to 80 SC/mo",
       "scales": true
+    },
+    "redemption": {
+      "fastestMethod": "Skrill / bank",
+      "fastestTime": "1-2 days",
+      "speedHours": 36,
+      "min": null,
+      "note": null
     }
   },
   {
@@ -919,7 +1003,14 @@
     "relatedSites": [
       "pulsz"
     ],
-    "tier": "A"
+    "tier": "A",
+    "redemption": {
+      "fastestMethod": "Skrill",
+      "fastestTime": "1-2 days",
+      "speedHours": 36,
+      "min": "100 SC",
+      "note": null
+    }
   },
   {
     "slug": "legacy-casino",
@@ -947,9 +1038,16 @@
       "Newer brand"
     ],
     "strategy": {
-      "edge": "Legacy Casino is one of the newer additions to our vetted list. Legacy offers a generous $10 for 30 SC signup bonus and a 20% purchase match daily. Combined with their French roulette at 1x, this makes it a no-brainer. Keep an eye on Legacy — they've said better features are coming."
+      "edge": "Legacy Casino is one of the newer additions to our vetted list. Legacy offers a generous $10 for 30 SC signup bonus and a 20% purchase match daily. Combined with their French roulette at 1x, this makes it a no-brainer. Keep an eye on Legacy — they've said better features are coming. Redemptions are instant to card, with a 100 SC minimum."
     },
-    "tier": "A"
+    "tier": "A",
+    "redemption": {
+      "fastestMethod": "Debit card",
+      "fastestTime": "Instant",
+      "speedHours": 0,
+      "min": "100 SC",
+      "note": null
+    }
   },
   {
     "slug": "coin-frenzy",
@@ -1303,6 +1401,13 @@
       "claim": "Login",
       "note": null,
       "scales": false
+    },
+    "redemption": {
+      "fastestMethod": "Bank / card",
+      "fastestTime": "2-3 days",
+      "speedHours": 60,
+      "min": null,
+      "note": null
     }
   },
   {
@@ -1458,6 +1563,13 @@
       "claim": "Login streak",
       "note": "5 SC/week via streak",
       "scales": false
+    },
+    "redemption": {
+      "fastestMethod": "Bank / card",
+      "fastestTime": "2-3 days",
+      "speedHours": 60,
+      "min": null,
+      "note": null
     }
   },
   {
@@ -1498,6 +1610,13 @@
       "note": "3.25 SC/week via streak",
       "scales": false,
       "discordLinks": true
+    },
+    "redemption": {
+      "fastestMethod": "Bank / card",
+      "fastestTime": "2-3 days",
+      "speedHours": 60,
+      "min": null,
+      "note": null
     }
   },
   {
@@ -1531,7 +1650,14 @@
     "relatedSites": [
       "zula-casino",
       "luck-party"
-    ]
+    ],
+    "redemption": {
+      "fastestMethod": "Bank / card",
+      "fastestTime": "2-3 days",
+      "speedHours": 60,
+      "min": null,
+      "note": null
+    }
   },
   {
     "slug": "rolla",
@@ -1620,7 +1746,7 @@
       "Limited promotions"
     ],
     "strategy": {
-      "edge": "SpinQuest is one of the newer sweepstakes casinos you've likely heard of if you follow any gambling influencers. It offers a generous 1 SC daily, but be careful: the playthrough requirements have been changing a lot recently, so make sure you're in the Discord to stay current. SpinQuest has a massive selection of games and some decent sales every once in a while."
+      "edge": "SpinQuest is one of the newer sweepstakes casinos you've likely heard of if you follow any gambling influencers. It offers a generous 1 SC daily, but be careful: the playthrough requirements have been changing a lot recently, so make sure you're in the Discord to stay current. SpinQuest has a massive selection of games and some decent sales every once in a while. Redemptions are quick — instant to debit for amounts under $500, with a 50 SC minimum."
     },
     "tier": "B",
     "dailySC": {
@@ -1629,6 +1755,13 @@
       "claim": "Login",
       "note": "Playthrough has been changing — check terms",
       "scales": false
+    },
+    "redemption": {
+      "fastestMethod": "Debit card",
+      "fastestTime": "Instant",
+      "speedHours": 0,
+      "min": "50 SC",
+      "note": "Instant on debit for redemptions under $500"
     }
   },
   {

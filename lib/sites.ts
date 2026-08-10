@@ -33,6 +33,14 @@ export type Site = {
   tier?: "S" | "A" | "B" | "C";
   relatedSites?: string[];
   statePages?: { label: string; href: string }[];
+  /** Fastest redemption info for the Fastest Payouts page. speedHours = sort key (0 = instant). */
+  redemption?: {
+    fastestMethod: string;
+    fastestTime: string;
+    speedHours: number;
+    min?: string | null;
+    note?: string | null;
+  };
   /** Daily login SC for the Free Daily SC page. amount = base (non-VIP) rate used for ranking/monthly calc. */
   dailySC?: {
     amount: number;
