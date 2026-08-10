@@ -29,6 +29,10 @@ export function Header() {
             Fastest Payouts
           </Link>
 
+          <Link href="/where-legal" className="hover:text-accent transition-colors hidden md:inline">
+            Where Legal
+          </Link>
+
           <Link href="/tools/ev-calculator" className="hover:text-accent transition-colors hidden sm:inline">
             Calculate EV
           </Link>

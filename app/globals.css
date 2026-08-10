@@ -13,6 +13,41 @@ a { color: inherit; }
 
 .container-x { @apply mx-auto w-full max-w-6xl px-5; }
 
+/* Legality map — geographic US state fills */
+.us-state {
+  stroke: #0b0d12;
+  stroke-width: 0.75;
+  fill-opacity: 0.72;
+  transition: fill-opacity 0.15s ease, filter 0.15s ease;
+}
+.us-state:hover {
+  fill-opacity: 1;
+  filter: brightness(1.15);
+  cursor: pointer;
+}
+.us-label {
+  fill: #fff;
+  stroke: #0b0d12;
+  stroke-width: 2.2;
+  paint-order: stroke;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+.us-label--ext {
+  fill: #e8ecf3;
+  stroke-width: 0;
+  font-size: 13px;
+}
+.us-label--link:hover {
+  fill: #ffffff;
+  cursor: pointer;
+}
+.us-leader {
+  stroke: #8b93a7;
+  stroke-width: 0.8;
+}
+
 @keyframes coin-fall {
   0% {
     top: -10%;

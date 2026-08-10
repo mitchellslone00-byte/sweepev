@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { sites } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
+import { statusCounts } from "@/lib/states";
 import { CoinRain } from "@/components/CoinRain";
 import { FeaturedSite } from "@/components/FeaturedSite";
 import { SiteCard } from "@/components/SiteCard";
+import { LegalityMap, LegalityLegend } from "@/components/LegalityMap";
 
 export const metadata: Metadata = {
   alternates: {
@@ -13,6 +16,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const year = new Date().getFullYear();
+  const legalCounts = statusCounts();
 
   const itemListLd = {
     "@context": "https://schema.org",
@@ -109,6 +113,33 @@ export default function HomePage() {
             <span className="inline-flex h-5 min-w-[1.6rem] items-center justify-center rounded border border-amber-500/30 bg-amber-500/10 text-amber-200 text-[11px] font-bold">C</span>
             <span>#15+</span>
           </span>
+        </div>
+      </section>
+
+      {/* Legality map teaser */}
+      <section id="where-legal" className="container-x py-8">
+        <div className="rounded-2xl border border-border bg-gradient-to-b from-panel to-bg p-5 sm:p-7">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div className="max-w-[52ch]">
+              <h2 className="text-2xl md:text-3xl font-bold">Where are sweepstakes casinos legal?</h2>
+              <p className="mt-2 text-muted leading-relaxed">
+                The law is shifting fast — <span className="text-red-300 font-semibold">{legalCounts.banned} states</span>{" "}
+                now ban or don&apos;t serve sweeps play, and{" "}
+                <span className="text-amber-300 font-semibold">{legalCounts.iffy}</span> sit in a gray area.
+                Check your state before you sign up.
+              </p>
+              <LegalityLegend />
+              <Link
+                href="/where-legal"
+                className="mt-4 inline-block rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-bg hover:opacity-90"
+              >
+                See the full legality map →
+              </Link>
+            </div>
+            <div className="w-full md:max-w-sm">
+              <LegalityMap />
+            </div>
+          </div>
         </div>
       </section>
 

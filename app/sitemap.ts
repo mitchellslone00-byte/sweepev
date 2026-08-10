@@ -4,6 +4,7 @@ import path from "node:path";
 import { sites } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
 import { GUIDE_SLUGS } from "@/lib/guides";
+import { states } from "@/lib/states";
 
 type ChangeFreq = "daily" | "weekly" | "monthly";
 
@@ -69,8 +70,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // picked up by walkApp above.
   const guidePaths = GUIDE_SLUGS.map((slug) => `/guides/${slug}`);
 
+  // Programmatic per-state pages (app/states/[state]).
+  const statePaths = states.map((s) => `/states/${s.slug}`);
+
   const all = Array.from(
-    new Set([...staticPaths, ...sitePaths, ...guidePaths])
+    new Set([...staticPaths, ...sitePaths, ...guidePaths, ...statePaths])
   ).sort();
   const base = siteConfig.url.replace(/\/$/, "");
   const now = new Date();
