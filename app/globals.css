@@ -24,7 +24,7 @@ a { color: inherit; }
   100% {
     top: 110%;
     opacity: 0;
-    transform: rotate(720deg);
+    transform: rotate(var(--spin, 30deg));
   }
 }
 
@@ -47,18 +47,11 @@ a { color: inherit; }
   top: 0;
   display: grid;
   place-items: center;
-  border-radius: 9999px;
-  font-weight: 900;
-  font-size: 0.7rem;
-  color: #0b0d12;
-  background: radial-gradient(circle at 30% 30%, #4ade80, #22c55e 60%, #15803d);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), inset 0 0 0 2px rgba(255, 255, 255, 0.15);
+  line-height: 1;
+  /* Fall / Halloween falling emoji (🎃 🍂 👻 …) */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
   animation: coin-fall linear infinite;
   will-change: transform, opacity;
-}
-
-.coin-rain__coin--gold {
-  background: radial-gradient(circle at 30% 30%, #fde68a, #facc15 60%, #ca8a04);
 }
 
 @media (prefers-reduced-motion: reduce) {

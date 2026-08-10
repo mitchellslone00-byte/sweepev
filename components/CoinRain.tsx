@@ -1,50 +1,55 @@
-type Coin = {
+// Fall / Halloween falling emoji — weighted toward pumpkins.
+const FALL_EMOJI = ["🎃", "🎃", "🎃", "🍂", "🍁", "👻", "🦇", "🍬"];
+
+type Sprite = {
   left: number;
   size: number;
   duration: number;
   delay: number;
-  gold: boolean;
+  spin: number;
+  emoji: string;
 };
 
-function buildColumn(seed: number, count: number): Coin[] {
-  const coins: Coin[] = [];
+function buildColumn(seed: number, count: number): Sprite[] {
+  const sprites: Sprite[] = [];
   let s = seed;
   const rand = () => {
     s = (s * 9301 + 49297) % 233280;
     return s / 233280;
   };
   for (let i = 0; i < count; i++) {
-    coins.push({
+    sprites.push({
       left: rand() * 100,
-      size: 18 + Math.floor(rand() * 18),
+      size: 18 + Math.floor(rand() * 16),
       duration: 6 + rand() * 6,
       delay: rand() * 8,
-      gold: rand() < 0.4,
+      spin: (rand() - 0.5) * 40,
+      emoji: FALL_EMOJI[Math.floor(rand() * FALL_EMOJI.length)],
     });
   }
-  return coins;
+  return sprites;
 }
 
-const leftCoins = buildColumn(1337, 12);
-const rightCoins = buildColumn(7331, 12);
+const leftSprites = buildColumn(1337, 12);
+const rightSprites = buildColumn(7331, 12);
 
-function Column({ coins, side }: { coins: Coin[]; side: "left" | "right" }) {
+function Column({ sprites, side }: { sprites: Sprite[]; side: "left" | "right" }) {
   return (
     <div className="coin-rain" style={{ [side]: 0 } as React.CSSProperties}>
-      {coins.map((c, i) => (
+      {sprites.map((c, i) => (
         <span
           key={i}
-          className={`coin-rain__coin${c.gold ? " coin-rain__coin--gold" : ""}`}
+          className="coin-rain__coin"
           style={{
             left: `${c.left}%`,
-            width: `${c.size}px`,
-            height: `${c.size}px`,
+            fontSize: `${c.size}px`,
             animationDuration: `${c.duration}s`,
             animationDelay: `${-c.delay}s`,
+            ["--spin" as string]: `${c.spin}deg`,
           }}
           aria-hidden="true"
         >
-          SC
+          {c.emoji}
         </span>
       ))}
     </div>
@@ -54,8 +59,8 @@ function Column({ coins, side }: { coins: Coin[]; side: "left" | "right" }) {
 export function CoinRain() {
   return (
     <>
-      <Column coins={leftCoins} side="left" />
-      <Column coins={rightCoins} side="right" />
+      <Column sprites={leftSprites} side="left" />
+      <Column sprites={rightSprites} side="right" />
     </>
   );
 }
