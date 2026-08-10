@@ -1192,13 +1192,7 @@
       ]
     },
     "tier": "A",
-    "dailySC": {
-      "amount": 1,
-      "display": "1.0 SC",
-      "claim": "Login",
-      "note": null,
-      "scales": false
-    }
+    "shutdownNotice": "Coin Frenzy has announced it is closing operations and will shut down on September 26th, 2026. If you still have a Sweeps Coins balance, redeem it before then — new signups are no longer recommended. We have removed Coin Frenzy from our Free Daily SC rankings."
   },
   {
     "slug": "coinsback-casino",

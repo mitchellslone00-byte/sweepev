@@ -71,6 +71,15 @@ export default async function SitePage(
 
       <Link href="/" className="text-sm text-muted hover:text-text">← Back to rankings</Link>
 
+      {site.shutdownNotice && (
+        <div className="mt-4 rounded-2xl border-2 border-red-500/60 bg-red-500/10 p-4 sm:p-5">
+          <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-red-500">
+            <span aria-hidden className="text-base">⚠️</span> Shutting Down — September 26th
+          </div>
+          <p className="mt-2 text-sm sm:text-base leading-relaxed text-text">{site.shutdownNotice}</p>
+        </div>
+      )}
+
       <header className="mt-4">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-black">{site.reviewTitle ?? `${site.name} Review`}</h1>
         <p className="mt-2 text-sm sm:text-base text-muted">{site.tagline}</p>

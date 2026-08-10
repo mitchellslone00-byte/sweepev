@@ -55,9 +55,23 @@ function Stars({ value }: { value: number }) {
 
 export function SiteCard({ site, rank }: { site: Site; rank: number }) {
   const tier = tierFor(rank, site.tier);
+  const closing = !!site.shutdownNotice;
 
   return (
-    <div className="rounded-xl border border-border bg-panel hover:bg-panel2 transition-colors overflow-hidden">
+    <div
+      className={`relative rounded-xl border bg-panel transition-colors overflow-hidden ${
+        closing ? "border-red-500/60" : "border-border hover:bg-panel2"
+      }`}
+    >
+      {closing && (
+        <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-red-950/35">
+          <span className="-rotate-2 rounded-lg border-2 border-red-500/70 bg-bg/90 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-red-400 shadow-lg sm:text-sm">
+            ⚠️ Shutting down — Sept 26th
+          </span>
+        </div>
+      )}
+
+      <div className={closing ? "opacity-60" : ""}>
       {/* MOBILE, header row + offer + actions */}
       <div className="md:hidden px-3 py-3 space-y-2">
         {/* Header: rank + logo + name + tier  |  stars + rating */}
@@ -172,6 +186,7 @@ export function SiteCard({ site, rank }: { site: Site; rank: number }) {
             Review Guide
           </Link>
         </div>
+      </div>
       </div>
     </div>
   );
