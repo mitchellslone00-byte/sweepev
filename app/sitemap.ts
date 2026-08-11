@@ -52,6 +52,7 @@ async function walkApp(dir: string, urlParts: string[], out: string[]) {
 function rulesFor(pathname: string): { priority: number; changeFrequency: ChangeFreq } {
   if (pathname === "") return { priority: 1.0, changeFrequency: "weekly" };
   if (pathname === "/daily-sc") return { priority: 0.9, changeFrequency: "weekly" };
+  if (pathname === "/where-legal") return { priority: 0.9, changeFrequency: "weekly" };
   if (pathname.startsWith("/sites/")) return { priority: 0.8, changeFrequency: "weekly" };
   if (pathname.startsWith("/states/")) return { priority: 0.8, changeFrequency: "monthly" };
   if (pathname.startsWith("/guides")) return { priority: 0.7, changeFrequency: "monthly" };
