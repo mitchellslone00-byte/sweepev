@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { GuidesDropdown } from "@/components/GuidesDropdown";
+import { MobileMenu } from "@/components/MobileMenu";
 import { DiscordBanner } from "@/components/DiscordBanner";
 
 export function Header() {
@@ -16,8 +17,9 @@ export function Header() {
             Sweep<span className="text-accent">EV</span>
           </span>
         </Link>
-        <nav className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm text-muted">
-          <Link href="/" className="hover:text-text hidden sm:inline">Home</Link>
+        {/* Desktop nav */}
+        <nav className="hidden md:flex items-center gap-5 lg:gap-6 text-sm text-muted">
+          <Link href="/" className="hover:text-text">Home</Link>
 
           <GuidesDropdown />
 
@@ -25,15 +27,15 @@ export function Header() {
             Free Daily SC
           </Link>
 
-          <Link href="/fastest-payouts" className="hover:text-accent transition-colors hidden sm:inline">
+          <Link href="/fastest-payouts" className="hover:text-accent transition-colors">
             Fastest Payouts
           </Link>
 
-          <Link href="/where-legal" className="hover:text-accent transition-colors hidden md:inline">
+          <Link href="/where-legal" className="hover:text-accent transition-colors">
             Where Legal
           </Link>
 
-          <Link href="/tools/ev-calculator" className="hover:text-accent transition-colors hidden sm:inline">
+          <Link href="/tools/ev-calculator" className="hover:text-accent transition-colors">
             Calculate EV
           </Link>
 
@@ -46,6 +48,9 @@ export function Header() {
             Discord
           </a>
         </nav>
+
+        {/* Mobile nav */}
+        <MobileMenu />
       </div>
     </header>
   );
