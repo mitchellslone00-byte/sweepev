@@ -26,11 +26,18 @@ const LABEL_X = 1250;
 const LABELED_VIEWBOX = "192 9 1180 746";
 
 export function LegalityMap({ labels = false }: { labels?: boolean }) {
+  const viewBox = labels ? LABELED_VIEWBOX : US_VIEWBOX;
+  // viewBox = "minX minY width height" — use the last two for the intrinsic size.
+  const [, , vbW, vbH] = viewBox.split(/\s+/).map(Number);
   return (
     <MapTooltip>
       <svg
-        viewBox={labels ? LABELED_VIEWBOX : US_VIEWBOX}
+        viewBox={viewBox}
+        width={vbW}
+        height={vbH}
+        preserveAspectRatio="xMidYMid meet"
         className="h-auto w-full"
+        style={{ aspectRatio: `${vbW} / ${vbH}` }}
         role="img"
         aria-label="Map of US sweepstakes casino legality by state"
       >
