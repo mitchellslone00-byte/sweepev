@@ -17,6 +17,8 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const year = new Date().getFullYear();
   const legalCounts = statusCounts();
+  const codeSite = sites.find((s) => s.bonusCodes && s.bonusCodes.length > 0 && !s.shutdownNotice);
+  const codeSiteSc = codeSite?.bonusCodes?.reduce((a, c) => a + c.sc, 0) ?? 0;
 
   const itemListLd = {
     "@context": "https://schema.org",
@@ -83,6 +85,23 @@ export default function HomePage() {
           <h2 className="text-2xl md:text-3xl font-bold">Top Sweepstakes &amp; Social Casino Sites</h2>
           <span className="text-sm text-muted hidden md:block">Ranked by editorial score</span>
         </div>
+
+        {codeSite && (
+          <Link
+            href={`/sites/${codeSite.slug}`}
+            className="mb-4 flex flex-col gap-2 rounded-2xl border-2 border-accent/60 bg-accent/[0.08] p-4 transition-colors hover:bg-accent/[0.12] sm:flex-row sm:items-center sm:justify-between"
+          >
+            <span className="text-sm sm:text-base">
+              <span aria-hidden className="mr-1.5">🎟️</span>
+              <span className="font-black text-accent">{codeSiteSc} free SC</span>{" "}
+              <span className="text-text">in bonus codes at {codeSite.name}</span>{" "}
+              <span className="text-muted">— enter them for free Sweeps Coins, no purchase.</span>
+            </span>
+            <span className="whitespace-nowrap rounded-lg bg-accent px-4 py-1.5 text-sm font-bold text-bg">
+              Get the codes →
+            </span>
+          </Link>
+        )}
 
         <div className="grid gap-2">
           {sites.map((site, i) =>

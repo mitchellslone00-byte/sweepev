@@ -28,6 +28,8 @@ export type Site = {
   dailyBonusImage?: string;
   /** Wide lobby/interface screenshot, rendered full-width (not affected by compactImages). */
   interfaceImage?: string;
+  /** Redeemable bonus codes for free SC — shown as a bold callout on the review and a homepage banner. */
+  bonusCodes?: { code: string; sc: number }[];
   /** Render bonus/daily images centered and capped (for lower-res screenshots) instead of full-width. */
   compactImages?: boolean;
   faqs?: { q: string; a: string }[];

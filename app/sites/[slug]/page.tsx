@@ -114,6 +114,31 @@ export default async function SitePage(
         </AffiliateLink>
       </div>
 
+      {site.bonusCodes && site.bonusCodes.length > 0 && (
+        <div className="mt-4 rounded-2xl border-2 border-accent/60 bg-accent/[0.08] p-4 sm:p-5">
+          <div className="flex items-center gap-2 text-sm sm:text-base font-black uppercase tracking-wide text-accent">
+            <span aria-hidden className="text-lg">🎟️</span>
+            {site.bonusCodes.reduce((a, c) => a + c.sc, 0)} SC in free bonus codes
+          </div>
+          <p className="mt-1 text-sm text-muted">
+            Enter these in the {site.name} promo area for free Sweeps Coins — no purchase needed:
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {site.bonusCodes.map((c) => (
+              <span
+                key={c.code}
+                className="inline-flex items-center gap-2 rounded-lg border border-accent/40 bg-panel px-3 py-1.5"
+              >
+                <code className="font-mono text-sm font-bold text-text">{c.code}</code>
+                <span className="rounded bg-accent/15 px-1.5 py-0.5 text-xs font-bold text-accent">
+                  {c.sc} SC
+                </span>
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
       <section className="mt-8">
         <h2 className="text-xl font-bold mb-2">Highlights</h2>
         <ul className="grid gap-1 text-muted">
