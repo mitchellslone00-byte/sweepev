@@ -258,6 +258,14 @@ export default async function SitePage(
                           className={`rounded-2xl w-full border border-border shadow-lg${site.compactImages ? " max-w-lg" : ""}`}
                         />
                       </div>
+                    ) : para === "<<interfaceimage>>" && site.interfaceImage ? (
+                      <div key={pi} className="mt-4">
+                        <img
+                          src={site.interfaceImage}
+                          alt={`${site.name} lobby and game library`}
+                          className="rounded-2xl w-full border border-border shadow-lg"
+                        />
+                      </div>
                     ) : (
                       <p key={pi} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
                     )

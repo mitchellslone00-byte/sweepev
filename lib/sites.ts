@@ -26,6 +26,8 @@ export type Site = {
   saleImage?: string;
   promoImage?: string;
   dailyBonusImage?: string;
+  /** Wide lobby/interface screenshot, rendered full-width (not affected by compactImages). */
+  interfaceImage?: string;
   /** Render bonus/daily images centered and capped (for lower-res screenshots) instead of full-width. */
   compactImages?: boolean;
   faqs?: { q: string; a: string }[];
