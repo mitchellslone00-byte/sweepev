@@ -31,6 +31,21 @@ export default async function SitePage(
   const site = getSite(slug);
   if (!site) notFound();
 
+  // Nearest-ranked other reviews (excludes self, sister sites, and closing sites)
+  // to cross-link every review to ~6 relevant peers.
+  const idx = sites.findIndex((s) => s.slug === site.slug);
+  const moreReviews = sites
+    .filter(
+      (s) =>
+        s.slug !== site.slug &&
+        !s.shutdownNotice &&
+        !(site.relatedSites ?? []).includes(s.slug)
+    )
+    .map((s) => ({ s, dist: Math.abs(sites.indexOf(s) - idx) }))
+    .sort((a, b) => a.dist - b.dist)
+    .slice(0, 6)
+    .map((x) => x.s);
+
   const reviewLd = {
     "@context": "https://schema.org",
     "@type": "Review",
@@ -427,6 +442,55 @@ export default async function SitePage(
           </section>
         </>
       )}
+
+      {/* More reviews — cross-links to peer sites */}
+      {moreReviews.length > 0 && (
+        <section className="mt-8 rounded-2xl border border-border bg-panel/60 p-5">
+          <p className="mb-3 text-sm font-semibold text-text">More sweepstakes casino reviews</p>
+          <div className="flex flex-wrap gap-2">
+            {moreReviews.map((r) => (
+              <Link
+                key={r.slug}
+                href={`/sites/${r.slug}`}
+                className="rounded-lg border border-border bg-panel px-4 py-2 text-sm text-muted transition-colors hover:border-accent/40 hover:text-text"
+              >
+                {r.name} →
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Keep exploring — hub links */}
+      <section className="mt-4 rounded-2xl border border-border bg-panel/60 p-5">
+        <p className="mb-3 text-sm font-semibold text-text">Keep exploring</p>
+        <div className="flex flex-wrap gap-2 text-sm">
+          <Link
+            href="/"
+            className="rounded-lg border border-border bg-panel px-4 py-2 text-muted transition-colors hover:border-accent/40 hover:text-text"
+          >
+            All casino rankings →
+          </Link>
+          <Link
+            href="/daily-sc"
+            className="rounded-lg border border-border bg-panel px-4 py-2 text-muted transition-colors hover:border-accent/40 hover:text-text"
+          >
+            Free daily SC →
+          </Link>
+          <Link
+            href="/fastest-payouts"
+            className="rounded-lg border border-border bg-panel px-4 py-2 text-muted transition-colors hover:border-accent/40 hover:text-text"
+          >
+            Fastest payouts →
+          </Link>
+          <Link
+            href="/where-legal"
+            className="rounded-lg border border-border bg-panel px-4 py-2 text-muted transition-colors hover:border-accent/40 hover:text-text"
+          >
+            Where it&apos;s legal →
+          </Link>
+        </div>
+      </section>
 
       <section className="mt-10 text-center">
         <AffiliateLink
