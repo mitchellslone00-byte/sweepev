@@ -4,6 +4,7 @@ import Link from "next/link";
 import { sites, getSite } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
 import { AffiliateLink } from "@/components/AffiliateLink";
+import { CopyCode } from "@/components/CopyCode";
 
 export function generateStaticParams() {
   return sites.map((s) => ({ slug: s.slug }));
@@ -140,15 +141,7 @@ export default async function SitePage(
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
             {site.bonusCodes.map((c) => (
-              <span
-                key={c.code}
-                className="inline-flex items-center gap-2 rounded-lg border border-accent/40 bg-panel px-3 py-1.5"
-              >
-                <code className="font-mono text-sm font-bold text-text">{c.code}</code>
-                <span className="rounded bg-accent/15 px-1.5 py-0.5 text-xs font-bold text-accent">
-                  {c.sc} SC
-                </span>
-              </span>
+              <CopyCode key={c.code} code={c.code} sc={c.sc} />
             ))}
           </div>
         </div>
