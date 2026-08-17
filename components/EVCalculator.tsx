@@ -310,6 +310,36 @@ function Scenario({ label, inputs, onChange, out, onReset }: ScenarioProps) {
           </span>
         </div>
 
+        {/* Plain-English verdict */}
+        <div
+          className={`mt-3 rounded-lg border px-3 py-2.5 text-sm leading-relaxed ${
+            out.expectedValue > 0.5
+              ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-100"
+              : out.expectedValue < -0.5
+              ? "border-rose-500/40 bg-rose-500/10 text-rose-100"
+              : "border-border bg-panel2 text-muted"
+          }`}
+        >
+          {out.expectedValue > 0.5 ? (
+            <>
+              <strong className="text-emerald-300">✓ Worth it (+EV).</strong> On average this setup nets
+              you about <strong>{fmtMoney(out.expectedValue)}</strong> — you come out ahead over the long
+              run.
+            </>
+          ) : out.expectedValue < -0.5 ? (
+            <>
+              <strong className="text-rose-300">✗ Not worth it (−EV).</strong> On average you&apos;d lose
+              about <strong>{fmtMoney(Math.abs(out.expectedValue))}</strong> — skip it unless the terms
+              improve.
+            </>
+          ) : (
+            <>
+              <strong className="text-text">≈ Roughly break-even.</strong> This setup is close to neutral on
+              average — small edges (a higher-RTP game, cashback, or a bigger bonus) tip it either way.
+            </>
+          )}
+        </div>
+
         <div className="mt-3 sm:mt-4 grid grid-cols-2 gap-2 sm:gap-3">
           <ResultCell
             label="Estimated value"
