@@ -1481,7 +1481,8 @@
     "relatedSites": [
       "sportzino",
       "yay-casino",
-      "american-luck"
+      "american-luck",
+      "reel-zappy"
     ],
     "dailySC": {
       "amount": 1,
@@ -1613,6 +1614,89 @@
       "note": "3.5 SC/week via streak",
       "scales": false
     }
+  },
+  {
+    "slug": "reel-zappy",
+    "name": "Reel Zappy",
+    "tagline": "Zula / Priority Play sister site with 3.5 SC free on signup, a climbing 7-day daily bonus, and rotating sale offers.",
+    "rating": 4.5,
+    "bonus": "3.5 SC free on signup + rotating welcome offer sales",
+    "promoCode": "",
+    "homepageUrl": "https://reelzappy.com",
+    "affiliateUrl": "https://reelzappy.com/signup/0d2dfff9-8d53-410b-94b5-146030453b83",
+    "available": "Available in most US states",
+    "reviewTitle": "Reel Zappy Review 2026: Bonus, Daily SC, & Redemptions",
+    "highlights": [
+      "3.5 SC free on signup",
+      "~8 SC/week daily bonus",
+      "Rotating sale offers"
+    ],
+    "pros": [
+      "3.5 SC free on signup, no purchase",
+      "Generous 7-day daily bonus worth about 8 SC across the week",
+      "Rotating welcome-offer sales worth watching",
+      "Backed by the established Zula / Priority Play family"
+    ],
+    "cons": [
+      "Redemptions take about 2-3 days",
+      "Welcome-offer sales vary, so first-purchase value is inconsistent"
+    ],
+    "strategy": {
+      "edge": "If you have played Zula, Sportzino, Yay, or American Luck, Reel Zappy is going to feel familiar right away. It comes from the same Priority Play group, so it runs on the same playbook those sites use, and for the most part that works in your favor. You get a free stack of Sweeps Coins just for making an account, a daily bonus that grows the longer your login streak runs, and sale offers that rotate through the store. Because it is backed by the same experienced team that runs the rest of the Priority Play network, the basics are solid and everything runs smoothly from the start. Reel Zappy runs right in your browser with nothing to download. You sign up, verify your account, and start playing.\n\n<<section:The welcome bonus and daily rewards>>\n\nThe number that gets people in the door is the 3.5 SC you get free when you sign up. There is no purchase and no deposit involved. You create an account and it shows up in your balance. That is a genuinely generous no-deposit welcome, and it is actually more than most of Reel Zappy's sister sites give you to start. If you do decide to buy in, Reel Zappy runs rotating welcome-offer sales, which means the first-purchase deal changes depending on when you show up. It is worth opening the store and checking the current sale before you spend anything, because the value can swing quite a bit from one promotion to the next. A weak sale is easy to skip, and a strong one is worth jumping on.\n\n<<dailybonusimage>>\n\nThe daily bonus is where the steady, long-term value lives, and it is built as a seven-day streak. Every day you log in and claim, you move one step further along the calendar, and the reward gets bigger as you go. It opens at 0.50 SC on day one, jumps up to 2.50 SC on day two, drops into smaller amounts through the middle of the week, and finishes with a 2.00 SC Big Daily Bonus on day seven. Add the whole week together and you are looking at right around 8 SC, plus a chunk of Gold Coins every single day. That puts Reel Zappy near the top of the daily bonus rankings for the entire sister network. The one catch is the streak itself. If you miss a day, it resets back to the start, so the play here is simple: make it a habit and claim every day without fail. Reel Zappy does note that the amounts can change from time to time, so treat the exact figures as a current snapshot rather than a permanent promise.\n\n<<section:Games and what to play>>\n\nReel Zappy is a slots-first site. The library is a mix of classic reels, modern video slots, and jackpot games, and it gets fresh titles added fairly often, so there is usually something new to spin. If your goal is to turn Sweeps Coins into an actual redemption instead of just playing for fun, the smart approach is to stick to higher-RTP slots and keep your bet size small. A low, steady bet keeps you closer to the game's posted return and stops a bad run from draining your balance before you finish the playthrough. Low-volatility slots help for the same reason, since they pay smaller amounts more often and keep your balance from swinging wildly. The jackpot games and flashier originals are a good time, but they run hotter and colder, so it is better to save those for when you are playing for entertainment rather than trying to lock in a cashout.\n\n<<section:Cashing out your Sweeps Coins>>\n\nRedemptions on Reel Zappy work the same way they do across the rest of the Priority Play family. You can request a payout once your balance hits the 50 SC minimum, which is on the lower side and means you are not stuck grinding forever before you can cash out for the first time. Payouts usually go through bank transfer or card, and in real-world use they tend to arrive in about two to three business days after the site approves the request. As with every legitimate sweeps casino, you have to finish identity verification before your first redemption can clear, so it pays to get your KYC done early. Uploading your documents up front means your first cashout is not sitting on hold while you scramble to find them later.\n\n<<section:Is Reel Zappy legit?>>\n\nThis is the part that should ease most of the worry. Reel Zappy is not some anonymous site that popped up overnight with no history behind it. It is part of the Zula and Priority Play network, the same group that runs Zula Casino, Sportzino, Yay Casino, and American Luck. That network has a real track record, it pays its players, and it has been around long enough to build a reputation you can actually check. Because Reel Zappy is backed by an established operator with a real track record, you are not rolling the dice on some unknown site. The same company already pays players across Zula, Sportzino, Yay, and American Luck, and Reel Zappy runs on that same proven setup. That backing takes the guesswork out of it, and it is a big part of why Reel Zappy earns a spot on our rankings.",
+      "washingGames": [
+        "High-RTP slots (97%+) at minimum bet to clear the low playthrough",
+        "Low-variance titles to protect your balance on the way to a redemption"
+      ]
+    },
+    "tier": "A",
+    "dailyBonusImage": "/images/reel-zappy-daily-bonus.png",
+    "compactImages": true,
+    "dailySC": {
+      "amount": 1.14,
+      "display": "1.14 SC",
+      "claim": "Login streak",
+      "note": "8 SC/week via streak",
+      "scales": false
+    },
+    "redemption": {
+      "fastestMethod": "Bank / card",
+      "fastestTime": "2-3 days",
+      "speedHours": 60,
+      "min": "50 SC",
+      "note": null
+    },
+    "relatedSites": [
+      "zula-casino",
+      "sportzino",
+      "yay-casino",
+      "american-luck"
+    ],
+    "faqs": [
+      {
+        "q": "What is the Reel Zappy signup bonus?",
+        "a": "New players get 3.5 SC free on signup with no purchase required. Reel Zappy also runs varying welcome-offer sales, so check the store for a discounted first purchase before buying."
+      },
+      {
+        "q": "Does Reel Zappy have a daily bonus?",
+        "a": "Yes. It runs as a seven-day streak calendar that climbs from 0.50 SC on Day 1 to a 2.00 SC Big Daily Bonus on Day 7, totaling about 8 SC across the week plus Gold Coins each day. Miss a day and the streak resets."
+      },
+      {
+        "q": "How do Reel Zappy redemptions work?",
+        "a": "Sweeps Coins redeem from a 50 SC minimum, usually via bank transfer or card, and typically arrive in about 2-3 business days once your account is verified."
+      },
+      {
+        "q": "Is Reel Zappy legit?",
+        "a": "Yes. Reel Zappy is part of the established Zula and Priority Play family, alongside Zula Casino, Sportzino, Yay, and American Luck. It is backed by an operator with a real track record that already pays players across those sites, so it is a trustworthy place to play."
+      },
+      {
+        "q": "What games does Reel Zappy have?",
+        "a": "Reel Zappy is mainly a slots site, with a mix of classic slots, video slots, and jackpot games, and it adds new titles fairly regularly. If you are trying to clear Sweeps Coins for a redemption, stick to higher-RTP slots and keep your bet size small."
+      },
+      {
+        "q": "Is Reel Zappy free to play?",
+        "a": "Yes. You can play Reel Zappy for free with Gold Coins, and you can pick up Sweeps Coins without spending anything through the 3.5 SC signup bonus and the daily login streak. Buying coin packages is optional and really only worth it when a good sale is running."
+      }
+    ]
   },
   {
     "slug": "fortune-coins",
