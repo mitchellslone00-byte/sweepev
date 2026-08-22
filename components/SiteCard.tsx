@@ -66,7 +66,7 @@ export function SiteCard({ site, rank }: { site: Site; rank: number }) {
       {closing && (
         <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-red-950/35">
           <span className="-rotate-2 rounded-lg border-2 border-red-500/70 bg-bg/90 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-red-400 shadow-lg sm:text-sm">
-            ⚠️ Shutting down — {site.shutdownNotice?.date}
+            ⚠️ Shutting down. {site.shutdownNotice?.date}
           </span>
         </div>
       )}

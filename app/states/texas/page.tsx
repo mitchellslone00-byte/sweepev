@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Sweepstakes Casinos in Texas (2026) — Top Sites for TX Players",
+  title: "Best Sweepstakes Casinos in Texas (2026). Top Sites for TX Players",
   description:
     "Sweepstakes casinos are fully available in Texas. Here are the best platforms for TX residents in 2026, ranked by bonus value, redemption speed, and trust.",
   alternates: {
@@ -179,7 +179,7 @@ export default function TexasPage() {
         <section className="mt-8">
           <h2 className="text-2xl font-bold">Are Sweepstakes Casinos Legal in Texas?</h2>
           <p className="mt-3 text-muted leading-relaxed">
-            Yes. Sweepstakes casinos operate under promotional sweepstakes law, not gambling law. The model works because Sweeps Coins — the redeemable currency — can always be obtained for free through daily login bonuses, mail-in requests, and promotional offers. That no-purchase-necessary structure keeps sweepstakes casinos outside the scope of traditional gambling regulations in Texas and most other US states.
+            Yes. Sweepstakes casinos operate under promotional sweepstakes law, not gambling law. The model works because Sweeps Coins. The redeemable currency. Can always be obtained for free through daily login bonuses, mail-in requests, and promotional offers. That no-purchase-necessary structure keeps sweepstakes casinos outside the scope of traditional gambling regulations in Texas and most other US states.
           </p>
           <p className="mt-3 text-muted leading-relaxed">
             Texas does not have commercial casinos, but sweepstakes platforms have been operating here without issue for years. You can sign up, play, purchase optional Gold Coin packages, and redeem Sweeps Coins for real prizes as a Texas resident.

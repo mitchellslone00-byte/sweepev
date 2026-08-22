@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sweepstakes Casinos in New York — What Actually Works (2026)",
+  title: "Sweepstakes Casinos in New York. What Actually Works (2026)",
   description:
     "Most sweepstakes casinos don't work in New York. Here's which platforms are available for NY residents in 2026, including Card Crush and Clash 5.",
   alternates: {
@@ -115,7 +115,7 @@ export default function NewYorkPage() {
 
         <header>
           <h1 className="text-3xl md:text-4xl font-black leading-tight">
-            Sweepstakes Casinos in New York — What Actually Works (2026)
+            Sweepstakes Casinos in New York. What Actually Works (2026)
           </h1>
           <div className="mt-3 flex items-center gap-3 text-xs text-muted">
             <span>By <span className="text-text font-medium">Jordan Thacker</span></span>
@@ -128,7 +128,7 @@ export default function NewYorkPage() {
         <section className="mt-6 rounded-2xl border border-yellow-500/40 bg-yellow-500/5 p-5">
           <p className="font-bold text-text text-lg">Most sweepstakes casinos are not available in New York.</p>
           <p className="mt-1 text-muted leading-relaxed">
-            New York is one of the more restricted states for sweepstakes casinos. Most major platforms — including Crown Coins, Pulsz, WOW Vegas, and Chumba — do not operate in New York. The good news is that you still have real options. Card Crush and Clash 5 are card-based platforms built specifically for restricted states like New York, and AceBet is a sweepstakes casino that also operates here with a 1 SC daily bonus and instant redemptions.
+            New York is one of the more restricted states for sweepstakes casinos. Most major platforms. Including Crown Coins, Pulsz, WOW Vegas, and Chumba. Do not operate in New York. The good news is that you still have real options. Card Crush and Clash 5 are card-based platforms built specifically for restricted states like New York, and AceBet is a sweepstakes casino that also operates here with a 1 SC daily bonus and instant redemptions.
           </p>
         </section>
 
@@ -153,7 +153,7 @@ export default function NewYorkPage() {
               <div>
                 <div className="text-xs uppercase tracking-widest text-accent mb-1">Top Pick</div>
                 <h3 className="text-xl font-bold">Card Crush</h3>
-                <p className="mt-1 text-sm text-muted">Card-based social casino available in 48 states — explicitly NY friendly</p>
+                <p className="mt-1 text-sm text-muted">Card-based social casino available in 48 states. Explicitly NY friendly</p>
               </div>
               <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in NY</span>
             </div>
@@ -183,7 +183,7 @@ export default function NewYorkPage() {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <h3 className="text-xl font-bold">AceBet</h3>
-                <p className="mt-1 text-sm text-muted">Sweepstakes casino with 1 SC daily and instant redemptions — available in New York</p>
+                <p className="mt-1 text-sm text-muted">Sweepstakes casino with 1 SC daily and instant redemptions. Available in New York</p>
               </div>
               <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in NY</span>
             </div>
@@ -212,7 +212,7 @@ export default function NewYorkPage() {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <h3 className="text-xl font-bold">Clash 5</h3>
-                <p className="mt-1 text-sm text-muted">Card-based sister site to SpinPals — available in New York and California</p>
+                <p className="mt-1 text-sm text-muted">Card-based sister site to SpinPals. Available in New York and California</p>
               </div>
               <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in NY</span>
             </div>

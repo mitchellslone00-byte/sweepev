@@ -90,7 +90,7 @@ export default async function SitePage(
       {site.shutdownNotice && (
         <div className="mt-4 rounded-2xl border-2 border-red-500/60 bg-red-500/10 p-4 sm:p-5">
           <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-red-500">
-            <span aria-hidden className="text-base">⚠️</span> Shutting Down — {site.shutdownNotice.date}
+            <span aria-hidden className="text-base">⚠️</span> Shutting Down. {site.shutdownNotice.date}
           </div>
           <p className="mt-2 text-sm sm:text-base leading-relaxed text-text">{site.shutdownNotice.message}</p>
         </div>
@@ -137,7 +137,7 @@ export default async function SitePage(
             {site.bonusCodes.reduce((a, c) => a + c.sc, 0)} SC in free bonus codes
           </div>
           <p className="mt-1 text-sm text-muted">
-            Enter these in the {site.name} promo area for free Sweeps Coins — no purchase needed:
+            Enter these in the {site.name} promo area for free Sweeps Coins. No purchase needed:
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
             {site.bonusCodes.map((c) => (
@@ -198,7 +198,7 @@ export default async function SitePage(
           <span aria-hidden className="text-base">💰</span>
           <span className="text-muted">
             <span className="font-semibold text-text">{site.name} gives {site.dailySC.display} in free SC daily</span>{" "}
-            just for logging in — see how it ranks on our{" "}
+            just for logging in. See how it ranks on our{" "}
             <span className="font-semibold text-accent">Free Daily SC list</span>.
           </span>
           <span aria-hidden className="ml-auto text-accent">→</span>
@@ -436,7 +436,7 @@ export default async function SitePage(
         </>
       )}
 
-      {/* More reviews — cross-links to peer sites */}
+      {/* More reviews. Cross-links to peer sites */}
       {moreReviews.length > 0 && (
         <section className="mt-8 rounded-2xl border border-border bg-panel/60 p-5">
           <p className="mb-3 text-sm font-semibold text-text">More sweepstakes casino reviews</p>
@@ -454,7 +454,7 @@ export default async function SitePage(
         </section>
       )}
 
-      {/* Keep exploring — hub links */}
+      {/* Keep exploring. Hub links */}
       <section className="mt-4 rounded-2xl border border-border bg-panel/60 p-5">
         <p className="mb-3 text-sm font-semibold text-text">Keep exploring</p>
         <div className="flex flex-wrap gap-2 text-sm">

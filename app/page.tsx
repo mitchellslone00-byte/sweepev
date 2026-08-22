@@ -95,7 +95,7 @@ export default function HomePage() {
               <span aria-hidden className="mr-1.5">🎟️</span>
               <span className="font-black text-accent">{codeSiteSc} free SC</span>{" "}
               <span className="text-text">in bonus codes at {codeSite.name}</span>{" "}
-              <span className="text-muted">— enter them for free Sweeps Coins, no purchase.</span>
+              <span className="text-muted">and enter them for free Sweeps Coins, no purchase.</span>
             </span>
             <span className="whitespace-nowrap rounded-lg bg-accent px-4 py-1.5 text-sm font-bold text-bg">
               Get the codes →
@@ -142,7 +142,7 @@ export default function HomePage() {
             <div className="max-w-[52ch]">
               <h2 className="text-2xl md:text-3xl font-bold">Where are sweepstakes casinos legal?</h2>
               <p className="mt-2 text-muted leading-relaxed">
-                The law is shifting fast — <span className="text-red-300 font-semibold">{legalCounts.banned} states</span>{" "}
+                The law is shifting fast. <span className="text-red-300 font-semibold">{legalCounts.banned} states</span>{" "}
                 now ban or don&apos;t serve sweeps play, and{" "}
                 <span className="text-amber-300 font-semibold">{legalCounts.iffy}</span> sit in a gray area.
                 Check your state before you sign up.
@@ -209,7 +209,7 @@ const faqs = [
   },
   {
     q: "How do I get free Sweeps Coins?",
-    a: "Common no-purchase methods: daily login bonuses, mail-in requests (a postcard with a specific format), social-media giveaways, and welcome SC granted on signup verification. Stack these across multiple sites and free SC adds up quickly. We also share free SC links, promotional drops, and limited-time offers regularly in our Discord community — joining is one of the easiest ways to stay on top of freebies across every platform we cover.",
+    a: "Common no-purchase methods: daily login bonuses, mail-in requests (a postcard with a specific format), social-media giveaways, and welcome SC granted on signup verification. Stack these across multiple sites and free SC adds up quickly. We also share free SC links, promotional drops, and limited-time offers regularly in our Discord community. Joining is one of the easiest ways to stay on top of freebies across every platform we cover.",
   },
   {
     q: "How do I redeem Sweeps Coins for cash?",
@@ -217,14 +217,14 @@ const faqs = [
   },
   {
     q: "How do I maximize value across these sites?",
-    a: "Always claim daily login bonuses, they add up fast. Stick to high-RTP slots (96%+) to clear playthrough efficiently. When available, cross-washing is even better — this involves using one game type to satisfy playthrough requirements on another, and it consistently produces higher returns than slot play alone. Use first-purchase offers, the SC value is often 5–10× ongoing offers. Verify your account early so redemptions aren't delayed later.",
+    a: "Always claim daily login bonuses, they add up fast. Stick to high-RTP slots (96%+) to clear playthrough efficiently. When available, cross-washing is even better. This involves using one game type to satisfy playthrough requirements on another, and it consistently produces higher returns than slot play alone. Use first-purchase offers, the SC value is often 5–10× ongoing offers. Verify your account early so redemptions aren't delayed later.",
   },
   {
     q: "How do I earn passive income from sweepstakes casinos?",
-    a: "Stack 5–10 sites and run the same daily routine on each: claim every free Sweeps Coin (login bonus, mail-in, social, scavenger hunts), buy only +EV welcome offers and discounted reload packages where bundled SC exceeds the dollar cost, then cross-wash or play minimum bets on a 97%+ RTP slot to clear the 1× playthrough and redeem. Realistic returns range from $500–$5,000+ per month depending on how much time and effort you put in — this can get quite lucrative at scale. Stack it with a good cashback credit card on your purchases for an additional layer of value on top of everything else. It's repeatable, legal sweepstakes-prize income, and the ceiling is higher than most people expect.",
+    a: "Stack 5–10 sites and run the same daily routine on each: claim every free Sweeps Coin (login bonus, mail-in, social, scavenger hunts), buy only +EV welcome offers and discounted reload packages where bundled SC exceeds the dollar cost, then cross-wash or play minimum bets on a 97%+ RTP slot to clear the 1× playthrough and redeem. Realistic returns range from $500–$5,000+ per month depending on how much time and effort you put in. This can get quite lucrative at scale. Stack it with a good cashback credit card on your purchases for an additional layer of value on top of everything else. It's repeatable, legal sweepstakes-prize income, and the ceiling is higher than most people expect.",
   },
   {
     q: "Why do you recommend these sites?",
-    a: "Our rankings are based on bonus value, redemption reliability, game catalog, and operator trust — and only sites we've personally vetted make the list. Unlike many affiliate platforms that rank casinos purely based on commission rates, we turn down or downrank sites that don't meet our standards regardless of what they pay. If a site has redemption issues, shady terms, or a track record of treating players poorly, it won't appear here. We may earn a commission when you sign up through our links, but that has never influenced a single ranking.",
+    a: "Our rankings are based on bonus value, redemption reliability, game catalog, and operator trust. And only sites we've personally vetted make the list. Unlike many affiliate platforms that rank casinos purely based on commission rates, we turn down or downrank sites that don't meet our standards regardless of what they pay. If a site has redemption issues, shady terms, or a track record of treating players poorly, it won't appear here. We may earn a commission when you sign up through our links, but that has never influenced a single ranking.",
   },
 ];

@@ -12,7 +12,7 @@ const PUBLISHED_ISO = "2026-08-10";
 export const metadata: Metadata = {
   title: "Where Are Sweepstakes Casinos Legal? 2026 State-by-State Map",
   description:
-    "An interactive map of sweepstakes casino legality in all 50 US states — available, gray-area, and banned states, with the law behind each. Re-verified regularly for 2026.",
+    "An interactive map of sweepstakes casino legality in all 50 US states. Available, gray-area, and banned states, with the law behind each. Re-verified regularly for 2026.",
   alternates: { canonical: `${siteConfig.url}/where-legal` },
 };
 
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Is it illegal for me to play sweepstakes casinos?",
-    a: "In the large majority of states, no — sweepstakes casinos are legal to play. Even in banned states, the laws and enforcement target operators, not individual players; the practical effect is simply that legitimate sites won't serve you there. This is general information rather than legal advice, so check your own state's rules if you're unsure.",
+    a: "In the large majority of states, no. Sweepstakes casinos are legal to play. Even in banned states, the laws and enforcement target operators, not individual players; the practical effect is simply that legitimate sites won't serve you there. This is general information rather than legal advice, so check your own state's rules if you're unsure.",
   },
   {
     q: "Why do some sweepstakes casinos work in my state and others don't?",
@@ -43,15 +43,15 @@ const faqs = [
   },
   {
     q: "Will more states ban sweepstakes casinos?",
-    a: "Probably — several more states had bills pending as of 2026. But the trend isn't strictly one-way: operators and industry groups are challenging some bans in court, and a few states have stalled or narrowed their legislation. Expect the map to keep shifting, which is exactly why we re-verify it regularly.",
+    a: "Probably. Several more states had bills pending as of 2026. But the trend isn't strictly one-way: operators and industry groups are challenging some bans in court, and a few states have stalled or narrowed their legislation. Expect the map to keep shifting, which is exactly why we re-verify it regularly.",
   },
   {
     q: "How do I know if a specific casino is available in my state?",
-    a: "The fastest way is our state pages — choose your state to see the exact list of casinos that accept players there. You can also check an operator's own terms and its restricted-states list before you sign up, since availability can change without much notice.",
+    a: "The fastest way is our state pages. Choose your state to see the exact list of casinos that accept players there. You can also check an operator's own terms and its restricted-states list before you sign up, since availability can change without much notice.",
   },
   {
     q: "How often is this map updated?",
-    a: `Sweepstakes law is changing fast — several states passed bans or took enforcement action in 2025 and 2026. We re-verify this map regularly; it was last checked on ${LAST_VERIFIED}. This is general information, not legal advice — always confirm the current rules for your state on the operator's site.`,
+    a: `Sweepstakes law is changing fast. Several states passed bans or took enforcement action in 2025 and 2026. We re-verify this map regularly; it was last checked on ${LAST_VERIFIED}. This is general information, not legal advice. Always confirm the current rules for your state on the operator's site.`,
   },
 ];
 
@@ -93,17 +93,17 @@ const CHANGELOG: { date: string; text: string; slug: string | null; upcoming?: b
 // Authoritative references we monitor for legal status.
 const SOURCES: { name: string; detail: string; url: string }[] = [
   {
-    name: "Venable LLP — States Escalate Crackdown on Sweepstakes Casinos",
+    name: "Venable LLP. States Escalate Crackdown on Sweepstakes Casinos",
     detail: "Law-firm analysis of 2025–2026 state bans and enforcement.",
     url: "https://www.venable.com/insights/publications/2026/05/states-escalate-crackdown-on-sweepstakes-casinos",
   },
   {
-    name: "VegasInsider — Legal States for Sweepstakes Casinos",
+    name: "VegasInsider. Legal States for Sweepstakes Casinos",
     detail: "State-by-state legality breakdown, updated for 2026.",
     url: "https://www.vegasinsider.com/sweepstakes-casinos/legal-states/",
   },
   {
-    name: "Lines.com — Sweepstakes Casinos by State",
+    name: "Lines.com. Sweepstakes Casinos by State",
     detail: "Independent legality tracker and map.",
     url: "https://www.lines.com/sweepstakes-casinos/states",
   },
@@ -119,7 +119,7 @@ const SECTIONS: { status: StateStatus; title: string; blurb: string; accent: str
   {
     status: "iffy",
     title: "Gray area",
-    blurb: "Contested, pending, or operator-restricted — confirm before playing.",
+    blurb: "Contested, pending, or operator-restricted. Confirm before playing.",
     accent: "text-amber-300",
   },
   {
@@ -157,7 +157,7 @@ export default function WhereLegalPage() {
     "@type": "Article",
     headline: "Where Are Sweepstakes Casinos Legal? 2026 State-by-State Map",
     description:
-      "An interactive map of sweepstakes casino legality in all 50 US states — available, gray-area, and banned states, with the law behind each.",
+      "An interactive map of sweepstakes casino legality in all 50 US states. Available, gray-area, and banned states, with the law behind each.",
     author: { "@type": "Person", name: "Jordan Thacker" },
     publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
     datePublished: PUBLISHED_ISO,
@@ -186,7 +186,7 @@ export default function WhereLegalPage() {
           Where are <span className="text-accent">sweepstakes casinos</span> legal?
         </h1>
         <p className="mt-3 max-w-[62ch] text-muted leading-relaxed">
-          Sweepstakes casino law is shifting fast — a wave of states passed bans or launched enforcement in
+          Sweepstakes casino law is shifting fast. A wave of states passed bans or launched enforcement in
           2025 and 2026. This is the current state-by-state picture: where sweeps play is available, where
           it&apos;s a gray area, and where it&apos;s banned or simply not served. Hover any state for the
           detail, or tap it to see the best casinos you can actually play there.
@@ -228,13 +228,13 @@ export default function WhereLegalPage() {
       <section className="mt-10 max-w-[72ch] space-y-4 text-muted leading-relaxed">
         <h2 className="text-2xl font-bold text-text">How sweepstakes casinos stay legal</h2>
         <p>
-          Sweepstakes casinos don&apos;t hold a traditional gambling license — and that&apos;s by design.
+          Sweepstakes casinos don&apos;t hold a traditional gambling license. And that&apos;s by design.
           They operate under the same promotional sweepstakes laws that let a fast-food chain run a
           &ldquo;no purchase necessary&rdquo; prize giveaway. The key is the{" "}
           <strong className="text-text">dual-currency model</strong>: you play with Gold Coins, which are
           just for entertainment and can be bought, and you win prizes with{" "}
           <strong className="text-text">Sweeps Coins</strong>, which can&apos;t be purchased directly and
-          must always be obtainable through a free method — a daily login bonus, a mail-in request, or an
+          must always be obtainable through a free method. A daily login bonus, a mail-in request, or an
           online{" "}
           <Link href="/guides/amoe" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">
             AMOE
@@ -243,7 +243,7 @@ export default function WhereLegalPage() {
         </p>
         <p>
           Because there&apos;s always a no-purchase path to the redeemable currency, the games legally
-          count as a sweepstakes rather than gambling — which is why they&apos;ve historically been
+          count as a sweepstakes rather than gambling. Which is why they&apos;ve historically been
           available across most of the US without a gambling license. That legal footing is exactly
           what&apos;s now being tested: as the industry has grown into a multi-billion-dollar business, a
           number of states have decided the model looks too much like unlicensed online gambling and have
@@ -272,7 +272,7 @@ export default function WhereLegalPage() {
           Some states passed dedicated sweeps-specific laws (California&apos;s AB 831, New York&apos;s
           S 5935A, and Montana&apos;s SB 555 among them), while others rely on attorneys general sending
           cease-and-desist letters or on long-standing gambling statutes to push operators out. The result
-          is a patchwork that changes month to month — a state that&apos;s fine today can flip to a gray
+          is a patchwork that changes month to month. A state that&apos;s fine today can flip to a gray
           area or an outright ban after a single bill or enforcement action.
         </p>
       </section>
@@ -327,7 +327,7 @@ export default function WhereLegalPage() {
           </div>
           <div className="rounded-xl border border-amber-500/30 bg-amber-500/[0.06] p-4 text-sm leading-relaxed text-muted">
             <span className="font-semibold text-amber-300">🟠 Gray area.</span> There&apos;s no clean
-            answer — the state may have a ban bill pending, an attorney general sending warnings, or broad
+            answer. The state may have a ban bill pending, an attorney general sending warnings, or broad
             gambling laws that make some operators pull out while others stay. You may still be able to
             play, but availability is inconsistent between sites and can change fast, so confirm you can
             register and redeem before depositing.
@@ -348,7 +348,7 @@ export default function WhereLegalPage() {
         </h2>
         <p>
           If your state is red, the honest answer is that there&apos;s no safe way to play for real
-          prizes — and we don&apos;t recommend trying to work around a block. A few things worth knowing:
+          prizes. And we don&apos;t recommend trying to work around a block. A few things worth knowing:
         </p>
         <ul className="space-y-2">
           <li className="before:mr-2 before:text-accent2 before:content-['◆']">
@@ -362,13 +362,13 @@ export default function WhereLegalPage() {
           </li>
           <li className="before:mr-2 before:text-accent2 before:content-['◆']">
             <strong className="text-text">Watch for changes.</strong> Sweepstakes law is moving in both
-            directions — states can add restrictions, and legal challenges can roll them back. We re-verify
+            directions. States can add restrictions, and legal challenges can roll them back. We re-verify
             this map regularly, so check back for your state&apos;s current status.
           </li>
         </ul>
         <p>
           For everyone else, the quickest next step is to open your state and see exactly which casinos
-          accept players there — tap your state on the map above, find it in the lists, or jump straight to
+          accept players there. Tap your state on the map above, find it in the lists, or jump straight to
           our <Link href="/states/texas" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">per-state guides</Link>.
           You can also stack free Sweeps Coins with our{" "}
           <Link href="/daily-sc" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">
@@ -391,21 +391,21 @@ export default function WhereLegalPage() {
           As more states move against the traditional sweepstakes model, a new type of platform has
           started to fill the gap: <strong className="text-text">card-based casinos</strong> (sometimes
           called cash-based or token-based sites). Instead of the Gold Coins / Sweeps Coins dual-currency
-          setup, these run on a different mechanism — typically loading value onto a prepaid card or token
-          system — which operates under a separate legal framework from sweepstakes law.
+          setup, these run on a different mechanism. Typically loading value onto a prepaid card or token
+          system. Which operates under a separate legal framework from sweepstakes law.
         </p>
         <p>
           The practical upside is availability. Because they aren&apos;t structured as sweepstakes, several
           card-based platforms have been able to accept players in states that have banned or restricted
           the classic sweeps model. For someone in a prohibited state, that can make them the closest thing
-          to a legitimate replacement — real games and real cash prizes, without the sweepstakes structure
+          to a legitimate replacement. Real games and real cash prizes, without the sweepstakes structure
           that triggered the bans in the first place.
         </p>
         <p>
           It&apos;s still early days. The card-based model is new and evolving, the law around it is being
           tested much like sweepstakes was, and availability varies by operator and state. But it&apos;s
           one of the more promising developments for players who&apos;ve been shut out by the recent wave of
-          bans — and it&apos;s a space we&apos;re watching closely and will add to this map as it matures.
+          bans. And it&apos;s a space we&apos;re watching closely and will add to this map as it matures.
         </p>
       </section>
 
@@ -414,7 +414,7 @@ export default function WhereLegalPage() {
         <div className="max-w-[72ch] border-l-[3px] border-accent py-1 pl-4 text-sm text-muted">
           <strong className="text-text">How we verify this map:</strong> we track state legislation,
           attorney-general actions, and each major operator&apos;s live availability, and we re-check the
-          status of all 50 states regularly — this map was last verified on{" "}
+          status of all 50 states regularly. This map was last verified on{" "}
           <span className="text-text">{LAST_VERIFIED}</span>. Because effective dates and enforcement vary,
           and availability can differ by operator even within the same state, treat this as general
           information and always confirm the current terms for your state on the operator&apos;s own site.
@@ -425,7 +425,7 @@ export default function WhereLegalPage() {
       <section className="mt-10">
         <h2 className="text-2xl font-bold">Every state, sorted by status</h2>
         <p className="mt-2 max-w-[72ch] text-sm text-muted">
-          Prefer a list to the map? Here&apos;s all 50 states grouped by status — tap any state to see the
+          Prefer a list to the map? Here&apos;s all 50 states grouped by status. Tap any state to see the
           casinos available there.
         </p>
         <div className="mt-5 space-y-6">
@@ -449,7 +449,7 @@ export default function WhereLegalPage() {
                       >
                         {s.name}
                       </Link>
-                      {s.note && <span className="text-muted"> — {s.note}</span>}
+                      {s.note && <span className="text-muted">. {s.note}</span>}
                     </li>
                   ))}
                 </ul>
@@ -503,8 +503,7 @@ export default function WhereLegalPage() {
       <section className="mt-8 rounded-2xl border border-border bg-panel/60 p-5 text-sm text-muted">
         <p>
           This map is general information, not legal advice, and sweepstakes law changes frequently. Effective
-          dates and enforcement vary, and availability can differ by operator even within the same state —
-          always confirm the current terms for your state on the operator&apos;s own site. 21+. If gambling
+          dates and enforcement vary, and availability can differ by operator even within the same state. Always confirm the current terms for your state on the operator&apos;s own site. 21+. If gambling
           stops being fun, call{" "}
           <a className="underline hover:text-text" href="tel:1-800-522-4700">
             1-800-GAMBLER

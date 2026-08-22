@@ -38,7 +38,7 @@ const FAQS = [
   },
   {
     q: "How is the playthrough multiplier applied?",
-    a: "Playthrough applies to your bonus / SC bundle, not your deposit. If you purchase 50 SC on a site with a 2× playthrough, you must wager 100 SC before redeeming. A 1× playthrough on a sweepstakes site means you wager the bundle once before redemption; online casino bonuses commonly run 20×–40×. Check your operator's terms — a few apply playthrough to deposit + bonus combined.",
+    a: "Playthrough applies to your bonus / SC bundle, not your deposit. If you purchase 50 SC on a site with a 2× playthrough, you must wager 100 SC before redeeming. A 1× playthrough on a sweepstakes site means you wager the bundle once before redemption; online casino bonuses commonly run 20×–40×. Check your operator's terms. A few apply playthrough to deposit + bonus combined.",
   },
   {
     q: "Why does volatility matter if RTP is the same?",
@@ -126,8 +126,8 @@ export default function EVCalculatorPage() {
         </h1>
         <p className="mt-3 text-muted text-base sm:text-lg max-w-2xl">
           Is that bonus actually worth it? Enter the offer and this free calculator tells you its{" "}
-          <span className="text-text">estimated value</span> — whether you come out ahead or behind on
-          average — plus your realistic cashout and bankroll risk. Results update as you type.
+          <span className="text-text">estimated value</span>. Whether you come out ahead or behind on
+          average. Plus your realistic cashout and bankroll risk. Results update as you type.
         </p>
         <p className="mt-3 text-sm text-muted">
           By <span className="font-medium text-text">Jordan Thacker</span> · Updated {UPDATED_DISPLAY}
@@ -144,7 +144,7 @@ export default function EVCalculatorPage() {
           played it out many times over. In plain terms, it answers one question:{" "}
           <span className="text-text">is this offer actually worth it?</span> A{" "}
           <strong className="text-text">positive EV (+EV)</strong> means that, on average, you finish
-          ahead — the bonus pays you. A <strong className="text-text">negative EV (−EV)</strong> means the
+          ahead. The bonus pays you. A <strong className="text-text">negative EV (−EV)</strong> means the
           math is against you and you&apos;d lose money on average, however any single session happens to
           go. For sweepstakes and social-casino players, EV is the whole game: it&apos;s the line between
           grinding offers that quietly pay you and ones that quietly cost you.
@@ -161,7 +161,7 @@ export default function EVCalculatorPage() {
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">2. Set the playthrough.</span> How many times you must
-            wager the bundle before you can redeem — <strong className="text-text">1×</strong> on most
+            wager the bundle before you can redeem. <strong className="text-text">1×</strong> on most
             sweepstakes sites, 20×–40× on typical online-casino bonuses.
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
@@ -192,11 +192,11 @@ export default function EVCalculatorPage() {
         </p>
         <p>
           A <strong className="text-text">50 SC bundle with a 1× playthrough on a 97% RTP slot</strong>{" "}
-          means you wager 50 SC once and expect to give back about 3% — roughly 1.5 SC — leaving about{" "}
+          means you wager 50 SC once and expect to give back about 3%. Roughly 1.5 SC. Leaving about{" "}
           <span className="text-emerald-300">48.5 SC to redeem</span>. That&apos;s a strong +EV setup. Now
           swap in a <strong className="text-text">40× playthrough</strong> (a typical online-casino bonus)
           on the same slot: you&apos;d wager 2,000 and expect to lose about{" "}
-          <span className="text-rose-300">60</span> — turning the exact same bonus deeply −EV. The
+          <span className="text-rose-300">60</span>. Turning the exact same bonus deeply −EV. The
           calculator runs this math instantly, so you can tell the good offers from the traps{" "}
           <em>before</em> you deposit.
         </p>

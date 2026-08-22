@@ -27,7 +27,7 @@ const LABELED_VIEWBOX = "192 9 1180 746";
 
 export function LegalityMap({ labels = false }: { labels?: boolean }) {
   const viewBox = labels ? LABELED_VIEWBOX : US_VIEWBOX;
-  // viewBox = "minX minY width height" — use the last two for the intrinsic size.
+  // viewBox = "minX minY width height". Use the last two for the intrinsic size.
   const [, , vbW, vbH] = viewBox.split(/\s+/).map(Number);
   return (
     <MapTooltip>
@@ -61,7 +61,7 @@ export function LegalityMap({ labels = false }: { labels?: boolean }) {
 
         {labels && (
           <>
-            {/* Internal labels — non-interactive; clicks fall through to the state */}
+            {/* Internal labels. Non-interactive; clicks fall through to the state */}
             <g pointerEvents="none">
               {Object.entries(US_CENTROIDS).map(([code, [cx, cy]]) =>
                 EXTERNAL_SET.has(code) ? null : (
@@ -78,7 +78,7 @@ export function LegalityMap({ labels = false }: { labels?: boolean }) {
                 )
               )}
             </g>
-            {/* External labels with leader lines — interactive so tiny states are clickable */}
+            {/* External labels with leader lines. Interactive so tiny states are clickable */}
             {EXTERNAL.map(([code, ly]) => {
               const c = US_CENTROIDS[code];
               const s = stateByCode[code];

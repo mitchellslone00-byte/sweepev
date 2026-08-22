@@ -1,4 +1,4 @@
-// Fall / Halloween falling emoji — weighted toward pumpkins.
+// Fall / Halloween falling emoji. Weighted toward pumpkins.
 const FALL_EMOJI = ["🎃", "🎃", "🎃", "🍂", "🍁", "👻", "🦇", "🍬"];
 
 type Sprite = {

@@ -9,7 +9,7 @@ const LAST_VERIFIED = "August 1, 2026";
 export const metadata: Metadata = {
   title: "Free Sweeps Coins Daily: Every Site's Free SC Ranked",
   description:
-    "Get free Sweeps Coins every day just for logging in. We rank every sweepstakes casino that gives free SC daily by what it's actually worth per month — no purchase, no deposit, no writing. Just sign in and collect. Re-verified monthly.",
+    "Get free Sweeps Coins every day just for logging in. We rank every sweepstakes casino that gives free SC daily by what it's actually worth per month. No purchase, no deposit, no writing. Just sign in and collect. Re-verified monthly.",
   alternates: { canonical: `${siteConfig.url}/daily-sc` },
 };
 
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Do I have to buy anything to get daily SC?",
-    a: "No. Every site on this page hands out free Sweeps Coins for simply logging in and clicking claim — no purchase required, ever. Sweepstakes casinos are legally required to offer a free way to collect SC.",
+    a: "No. Every site on this page hands out free Sweeps Coins for simply logging in and clicking claim. No purchase required, ever. Sweepstakes casinos are legally required to offer a free way to collect SC.",
   },
   {
     q: "How is monthly value calculated?",
@@ -61,15 +61,15 @@ const faqs = [
   },
   {
     q: "Is free daily SC actually free?",
-    a: "Yes. The daily login bonus is completely free — no purchase, no deposit, and no card required. Sweepstakes casinos are legally required to offer a no-purchase way to get Sweeps Coins, and the daily login bonus is the simplest one. The only cost is the minute it takes to log in and click claim.",
+    a: "Yes. The daily login bonus is completely free. No purchase, no deposit, and no card required. Sweepstakes casinos are legally required to offer a no-purchase way to get Sweeps Coins, and the daily login bonus is the simplest one. The only cost is the minute it takes to log in and click claim.",
   },
   {
     q: "Can I turn free daily SC into real cash?",
-    a: "Yes. Sweeps Coins from free daily bonuses are redeemable for cash prizes at about 1 SC = $1, once you meet the site's playthrough requirement (usually 1x — you just wager the SC once) and its minimum redemption, commonly 50–100 SC. Verify your account first, then cash out through the site's supported methods.",
+    a: "Yes. Sweeps Coins from free daily bonuses are redeemable for cash prizes at about 1 SC = $1, once you meet the site's playthrough requirement (usually 1x. You just wager the SC once) and its minimum redemption, commonly 50–100 SC. Verify your account first, then cash out through the site's supported methods.",
   },
   {
     q: "How long until daily SC adds up to a redeemable balance?",
-    a: "It depends on how many sites you stack and each site's minimum. On a site giving 1 SC per day with a 50 SC minimum, logins alone get you to a redeemable balance in under two months — faster once you factor in streak bonuses, VIP boosts, and the extra free SC links some sites drop. Spreading claims across many sites reaches redemptions much quicker.",
+    a: "It depends on how many sites you stack and each site's minimum. On a site giving 1 SC per day with a 50 SC minimum, logins alone get you to a redeemable balance in under two months. Faster once you factor in streak bonuses, VIP boosts, and the extra free SC links some sites drop. Spreading claims across many sites reaches redemptions much quicker.",
   },
   {
     q: "Do I need to verify my account to claim daily SC?",
@@ -77,7 +77,7 @@ const faqs = [
   },
   {
     q: "What happens if I miss a day?",
-    a: "You just miss that day's SC, and on sites with streak bonuses your streak may reset to day one. There's no other penalty — but because streaks can multiply the daily reward, logging in every day is where the real value is.",
+    a: "You just miss that day's SC, and on sites with streak bonuses your streak may reset to day one. There's no other penalty. But because streaks can multiply the daily reward, logging in every day is where the real value is.",
   },
   {
     q: "How often is this list updated?",
@@ -112,7 +112,7 @@ export default function DailySCPage() {
     itemListElement: rows.map((r, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      name: `${r.name} — ${r.display} daily`,
+      name: `${r.name}. ${r.display} daily`,
       url: `${siteConfig.url}/sites/${r.slug}`,
     })),
   };
@@ -158,7 +158,7 @@ export default function DailySCPage() {
           Free daily Sweeps Coins, ranked by <span className="text-accent">monthly value</span>
         </h1>
         <p className="mt-3 max-w-[62ch] text-muted leading-relaxed">
-          Every sweepstakes casino that hands out free Sweeps Coins (SC) just for showing up — how
+          Every sweepstakes casino that hands out free Sweeps Coins (SC) just for showing up. How
           much, how you claim it, and what the habit is worth per month. No purchase, no deposit, no
           surveys, no writing. Just sign in and collect your free SC. Re-verified on the first of
           every month.
@@ -176,7 +176,7 @@ export default function DailySCPage() {
           href="#discord-links"
           className="mt-4 flex w-fit items-center gap-2 rounded-full border border-accent/30 bg-accent/[0.06] px-3 py-1.5 text-xs font-medium text-accent transition-colors hover:bg-accent/10"
         >
-          💬 Several of these sites drop extra free SC links — we post every one in our Discord
+          💬 Several of these sites drop extra free SC links. We post every one in our Discord
           <span aria-hidden>↓</span>
         </a>
       </header>
@@ -217,12 +217,12 @@ export default function DailySCPage() {
           have no cash value, and <strong className="text-text">Sweeps Coins (SC)</strong>, which you
           can redeem for real cash prizes at roughly 1 SC = $1. Because sweepstakes law requires a free
           way to obtain the redeemable currency, nearly every site gives away free Sweeps Coins every
-          single day — usually just for logging in and tapping a &ldquo;claim&rdquo; button. That daily
+          single day. Usually just for logging in and tapping a &ldquo;claim&rdquo; button. That daily
           login bonus is exactly what this page tracks: what each sweepstakes casino pays out for
           showing up, ranked by what it&apos;s genuinely worth to you over a month.
         </p>
         <p>
-          A single site&apos;s daily SC can look small — often 0.3 to 1 SC a day — but the value is in
+          A single site&apos;s daily SC can look small. Often 0.3 to 1 SC a day. But the value is in
           the stacking. Claim across a dozen or more sites every day and those free, redeemable Sweeps
           Coins add up to real money over a month, with no purchase, no deposit, and no writing. Do it
           consistently and the free daily login bonus becomes the backbone of a completely free
@@ -255,7 +255,7 @@ export default function DailySCPage() {
               <p className="mt-1 max-w-[60ch] text-sm leading-relaxed text-muted">
                 Sites like <span className="text-text">RealPrize</span> and{" "}
                 <span className="text-text">LoneStar</span> hand out free Sweeps Coins links and spin
-                drops almost daily — on top of the login bonuses above. We catch every one and post
+                drops almost daily. On top of the login bonuses above. We catch every one and post
                 them in our Discord. One click, no purchase, no playthrough trick. It&apos;s the
                 easiest free SC on this whole page.
               </p>
@@ -282,7 +282,7 @@ export default function DailySCPage() {
           <p className="mt-1 max-w-[68ch] text-sm leading-relaxed text-muted">
             A full list of daily claims sounds like a chore, but it isn&apos;t. Drop every claim
             page into a single browser bookmark folder, open the whole folder at once, and click
-            through — you can rip through 40+ dailies in under 5 minutes. We break down the full
+            through. You can rip through 40+ dailies in under 5 minutes. We break down the full
             routine (plus the mobile version) in our{" "}
             <Link
               href="/guides#daily-farming"
@@ -300,12 +300,12 @@ export default function DailySCPage() {
         <div className="max-w-[70ch] border-l-[3px] border-accent py-1 pl-4 text-sm text-muted">
           <strong className="text-text">How we verify this list:</strong> we personally log into every
           site here and confirm its current daily bonus at the start of each month, so the figures
-          reflect what a real account actually receives — not just what a site advertises. This list was
+          reflect what a real account actually receives. Not just what a site advertises. This list was
           last fully verified on <span className="text-text">{LAST_VERIFIED}</span>.{" "}
           <strong className="text-text">How we calculate monthly value:</strong> base daily login SC
           × 30, at 1 SC ≈ $1 redeemable. Streak and VIP multipliers are listed but not counted in the
           headline number, so every site is compared at the rate a brand-new account actually gets.
-          This page covers login bonuses only — no mail-in or survey routes.{" "}
+          This page covers login bonuses only. No mail-in or survey routes.{" "}
           <span className="text-text">
             *Crown Coins and Modo are shown at Gold VIP, since their daily login is tier-based;
             the figure reflects the Gold-tier rate rather than a brand-new account.
@@ -329,12 +329,12 @@ export default function DailySCPage() {
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">2. Verify your identity early.</span> Complete KYC
             (ID and address) up front. You can usually claim daily SC before verifying, but you can&apos;t
-            redeem for cash until you do — so get it out of the way.
+            redeem for cash until you do. So get it out of the way.
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">3. Log in and hit &ldquo;claim&rdquo; every day.</span>{" "}
             The daily bonus resets every 24 hours. Some sites use a simple claim button, others a daily
-            wheel spin or a login streak calendar — all covered on each site&apos;s review page.
+            wheel spin or a login streak calendar. All covered on each site&apos;s review page.
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">4. Build your streak.</span> Many sites increase the
@@ -343,7 +343,7 @@ export default function DailySCPage() {
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">5. Grab the extra free SC links.</span> Several
-            sites drop bonus Sweeps Coins links on top of the login bonus — we post every one in our{" "}
+            sites drop bonus Sweeps Coins links on top of the login bonus. We post every one in our{" "}
             <a href="#discord-links" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">
               Discord
             </a>
@@ -359,10 +359,10 @@ export default function DailySCPage() {
           </li>
         </ol>
         <div className="mt-4 rounded-xl border border-accent/40 bg-accent/[0.07] p-4 text-sm leading-relaxed text-muted">
-          <span className="font-semibold text-accent">⚡ Pro tip — do it all in one click:</span> Save every
+          <span className="font-semibold text-accent">⚡ Pro tip. Do it all in one click:</span> Save every
           site&apos;s daily-claim page into a single browser bookmark folder. Then right-click the folder and
           choose <strong className="text-text">&ldquo;Open all&rdquo;</strong> to launch every site at once,
-          each in its own tab. Log in, claim, close the tab, repeat — you can rip through 20–40 dailies in a
+          each in its own tab. Log in, claim, close the tab, repeat. You can rip through 20–40 dailies in a
           few minutes instead of visiting each site one by one. It&apos;s the single biggest time-saver for
           stacking free daily SC, and it turns the whole routine into a quick morning habit.
         </div>
@@ -373,14 +373,14 @@ export default function DailySCPage() {
         <h2 className="text-2xl font-bold text-text">How much is free daily SC really worth?</h2>
         <p>
           At roughly 1 SC = $1 redeemable, a single site that gives{" "}
-          <strong className="text-text">1 SC a day works out to about $30 a month</strong> — for a few
+          <strong className="text-text">1 SC a day works out to about $30 a month</strong>. For a few
           seconds of clicking. That doesn&apos;t sound life-changing on its own, and it isn&apos;t. The
           real money comes from stacking every site at once.
         </p>
         <p>
           Right now we track <strong className="text-text">{rows.length} sweepstakes casinos</strong>{" "}
           paying free daily SC, and claiming all of them adds up to about{" "}
-          <strong className="text-accent">{totalDaily.toFixed(1)} SC per day</strong> — roughly{" "}
+          <strong className="text-accent">{totalDaily.toFixed(1)} SC per day</strong>. Roughly{" "}
           <strong className="text-accent">${monthlyTotal} a month</strong> in redeemable value at the
           base rate, before a single dollar spent. Layer in login streaks, VIP tiers that scale the
           daily higher, and the extra free SC links some sites drop, and the real number climbs from
@@ -395,7 +395,7 @@ export default function DailySCPage() {
         <h2 className="text-2xl font-bold">Which sites give the most free daily SC?</h2>
         <p className="mt-2 max-w-[72ch] text-muted leading-relaxed">
           As of {LAST_VERIFIED}, these are the highest-paying daily login bonuses we track. The figures
-          below are the base daily rate and its rough monthly worth at 1 SC ≈ $1 — and a couple of the top
+          below are the base daily rate and its rough monthly worth at 1 SC ≈ $1. And a couple of the top
           entries scale even higher with VIP tier or a login streak (flagged in the table above).
         </p>
         <ol className="mt-4 space-y-2">
@@ -430,7 +430,7 @@ export default function DailySCPage() {
         <ul className="mt-4 space-y-3">
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">Stack as many sites as you can.</span> The whole
-            game is breadth — every extra site you add is more free SC per day at effectively no extra
+            game is breadth. Every extra site you add is more free SC per day at effectively no extra
             cost. Work down the table above and sign up everywhere.
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
@@ -446,13 +446,13 @@ export default function DailySCPage() {
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">Handle the &ldquo;$0 balance&rdquo; sites.</span> A
             handful of sites only release the daily SC once your Sweeps Coins balance is zero. Wash your
-            balance down before claiming so the daily keeps stacking — the table flags which sites this
+            balance down before claiming so the daily keeps stacking. The table flags which sites this
             applies to.
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">Catch the free SC link drops.</span> Beyond the
             login bonus, sites like RealPrize and LoneStar post free SC links almost daily. They&apos;re
-            the easiest free SC on this page — join our Discord so you never miss one.
+            the easiest free SC on this page. Join our Discord so you never miss one.
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">Verify early and redeem efficiently.</span> Get KYC
@@ -466,7 +466,7 @@ export default function DailySCPage() {
       <section className="mt-10 max-w-[72ch] space-y-4 text-muted leading-relaxed">
         <h2 className="text-2xl font-bold text-text">Daily login SC vs. AMOE and other free routes</h2>
         <p>
-          The daily login bonus is the easiest free Sweeps Coins you&apos;ll ever get — one click, no
+          The daily login bonus is the easiest free Sweeps Coins you&apos;ll ever get. One click, no
           purchase, no writing. But it isn&apos;t the only no-cost route. <strong className="text-text">AMOE</strong>{" "}
           (an alternative method of entry, either mailed in or submitted online) gets you additional free
           SC on top of your logins, and it stacks cleanly with everything on this page. If you&apos;re
@@ -478,7 +478,7 @@ export default function DailySCPage() {
         </p>
         <p>
           Before you sign up anywhere, it&apos;s worth checking that sweepstakes play is available where
-          you live — the legal landscape has shifted fast. Our{" "}
+          you live. The legal landscape has shifted fast. Our{" "}
           <Link href="/where-legal" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">
             state-by-state legality map
           </Link>{" "}
@@ -509,7 +509,7 @@ export default function DailySCPage() {
       {/* Responsible play */}
       <section className="mt-8 rounded-2xl border border-border bg-panel/60 p-5 text-sm text-muted">
         <p>
-          Daily bonuses change often — always verify the current amount on the operator&apos;s own
+          Daily bonuses change often. Always verify the current amount on the operator&apos;s own
           site. Sweepstakes casinos are entertainment first. Set a budget, take breaks, and never
           chase losses. 21+. If gambling stops being fun, call{" "}
           <a className="underline hover:text-text" href="tel:1-800-522-4700">

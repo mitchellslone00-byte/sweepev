@@ -323,19 +323,19 @@ function Scenario({ label, inputs, onChange, out, onReset }: ScenarioProps) {
           {out.expectedValue > 0.5 ? (
             <>
               <strong className="text-emerald-300">✓ Worth it (+EV).</strong> On average this setup nets
-              you about <strong>{fmtMoney(out.expectedValue)}</strong> — you come out ahead over the long
+              you about <strong>{fmtMoney(out.expectedValue)}</strong>. You come out ahead over the long
               run.
             </>
           ) : out.expectedValue < -0.5 ? (
             <>
               <strong className="text-rose-300">✗ Not worth it (−EV).</strong> On average you&apos;d lose
-              about <strong>{fmtMoney(Math.abs(out.expectedValue))}</strong> — skip it unless the terms
+              about <strong>{fmtMoney(Math.abs(out.expectedValue))}</strong>. Skip it unless the terms
               improve.
             </>
           ) : (
             <>
               <strong className="text-text">≈ Roughly break-even.</strong> This setup is close to neutral on
-              average — small edges (a higher-RTP game, cashback, or a bigger bonus) tip it either way.
+              average. Small edges (a higher-RTP game, cashback, or a bigger bonus) tip it either way.
             </>
           )}
         </div>

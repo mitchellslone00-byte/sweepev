@@ -57,7 +57,7 @@ export async function generateMetadata(
       : `${count} Best Sweepstakes Casinos in ${state.name} (${year})`,
     description: banned
       ? `Is sweepstakes casino play legal in ${state.name}? Here's the ${year} status, what it means for ${state.name} players, free-play options, and where sweeps casinos are still available.`
-      : `The ${count} best sweepstakes & social casinos for ${state.name} players in ${year}, ranked by bonus value, payout speed, and trust — plus the fastest payouts, best free Sweeps Coins, and how to start.`,
+      : `The ${count} best sweepstakes & social casinos for ${state.name} players in ${year}, ranked by bonus value, payout speed, and trust. Plus the fastest payouts, best free Sweeps Coins, and how to start.`,
     alternates: { canonical: `${siteConfig.url}/states/${slug}` },
   };
 }
@@ -117,15 +117,15 @@ export default async function StatePage(
   const introParas: string[] =
     state.status === "available"
       ? [
-          `Looking for the best sweepstakes casinos in ${state.name}? You're in the right place. Sweepstakes and social casinos are available to ${state.name} residents, and below we rank the ${count} sites that currently accept ${state.name} players — scored on bonus value, redemption speed, game library, and trust. Every site here runs the dual-currency model: free Gold Coins for casual play, and Sweeps Coins you can redeem for real cash prizes.`,
-          `New to sweeps in ${state.name}? The short version: sign up free, claim your welcome Sweeps Coins, clear the low playthrough on a high-RTP game, and redeem. You never have to spend a cent — daily login bonuses and free AMOE entries keep topping up your Sweeps Coins. Below you'll find the top-rated sites for ${state.name}, plus the fastest payouts and the best free SC.`,
+          `Looking for the best sweepstakes casinos in ${state.name}? You're in the right place. Sweepstakes and social casinos are available to ${state.name} residents, and below we rank the ${count} sites that currently accept ${state.name} players. Scored on bonus value, redemption speed, game library, and trust. Every site here runs the dual-currency model: free Gold Coins for casual play, and Sweeps Coins you can redeem for real cash prizes.`,
+          `New to sweeps in ${state.name}? The short version: sign up free, claim your welcome Sweeps Coins, clear the low playthrough on a high-RTP game, and redeem. You never have to spend a cent. Daily login bonuses and free AMOE entries keep topping up your Sweeps Coins. Below you'll find the top-rated sites for ${state.name}, plus the fastest payouts and the best free SC.`,
         ]
       : state.status === "iffy"
       ? [
           `Can you play sweepstakes casinos in ${state.name}? Right now it's a gray area.${
             state.note ? " " + state.note : ""
-          } The ${count} sites listed below currently accept ${state.name} players, but the situation is fluid — operators can pull out or re-enter with little notice, so always confirm you can register and redeem before you deposit.`,
-          `We rank ${state.name}'s available sweeps and social casinos by bonus value, payout speed, game selection, and trust. All of them use the dual-currency model — free Gold Coins plus redeemable Sweeps Coins — and you can build a balance with no purchase through daily bonuses and AMOE. Here's the current picture for ${state.name}.`,
+          } The ${count} sites listed below currently accept ${state.name} players, but the situation is fluid. Operators can pull out or re-enter with little notice, so always confirm you can register and redeem before you deposit.`,
+          `We rank ${state.name}'s available sweeps and social casinos by bonus value, payout speed, game selection, and trust. All of them use the dual-currency model. Free Gold Coins plus redeemable Sweeps Coins. And you can build a balance with no purchase through daily bonuses and AMOE. Here's the current picture for ${state.name}.`,
         ]
       : [
           `Are sweepstakes casinos legal in ${state.name}? Not right now.${
@@ -141,7 +141,7 @@ export default async function StatePage(
         state.status === "available"
           ? `Yes. Sweepstakes casinos operate legally in ${state.name} under sweepstakes and promotional law rather than a gambling license, and the operators listed here accept ${state.name} players with full Sweeps Coins redemptions.`
           : state.status === "iffy"
-          ? `It's a gray area.${state.note ? " " + state.note : ""} Some operators still serve ${state.name} while others hold back, and the rules can change quickly — confirm current availability on each site before you sign up.`
+          ? `It's a gray area.${state.note ? " " + state.note : ""} Some operators still serve ${state.name} while others hold back, and the rules can change quickly. Confirm current availability on each site before you sign up.`
           : `Not currently.${state.note ? " " + state.note : ""} Sweeps Coins play and redemptions aren't offered to ${state.name} residents, though free-to-play Gold Coin games may still be available on some sites.`,
     },
   ];
@@ -155,16 +155,16 @@ export default async function StatePage(
     if (fastestPick?.redemption) {
       faqs.push({
         q: `What's the fastest-paying sweepstakes casino in ${state.name}?`,
-        a: `Among sites available in ${state.name}, ${fastestPick.name} is one of the fastest — ${fastestPick.redemption.fastestTime.toLowerCase()} via ${fastestPick.redemption.fastestMethod.toLowerCase()}. Compare all of them on our Fastest Payouts page.`,
+        a: `Among sites available in ${state.name}, ${fastestPick.name} is one of the fastest. ${fastestPick.redemption.fastestTime.toLowerCase()} via ${fastestPick.redemption.fastestMethod.toLowerCase()}. Compare all of them on our Fastest Payouts page.`,
       });
     }
     faqs.push({
       q: `How do I get free Sweeps Coins in ${state.name}?`,
-      a: `The best no-purchase routes are daily login bonuses and AMOE (a free postcard or online entry). Stack them across several sites and the free Sweeps Coins add up fast — see our Free Daily SC list and AMOE guide for the full routine.`,
+      a: `The best no-purchase routes are daily login bonuses and AMOE (a free postcard or online entry). Stack them across several sites and the free Sweeps Coins add up fast. See our Free Daily SC list and AMOE guide for the full routine.`,
     });
     faqs.push({
       q: `Do I have to pay taxes on sweepstakes winnings in ${state.name}?`,
-      a: `Generally, sweepstakes prizes are treated as taxable income in the US, so you may owe federal tax and, depending on ${state.name} rules, state tax on redemptions. We're not tax advisors — keep records of your redemptions and consult a professional.`,
+      a: `Generally, sweepstakes prizes are treated as taxable income in the US, so you may owe federal tax and, depending on ${state.name} rules, state tax on redemptions. We're not tax advisors. Keep records of your redemptions and consult a professional.`,
     });
     faqs.push({
       q: `How old do I have to be to play in ${state.name}?`,
@@ -181,7 +181,7 @@ export default async function StatePage(
     });
     faqs.push({
       q: `Will sweepstakes casinos come back to ${state.name}?`,
-      a: `It's hard to say — sweepstakes law is changing constantly across the US. Keep an eye on our legality map for the latest status in ${state.name} and every other state.`,
+      a: `It's hard to say. Sweepstakes law is changing constantly across the US. Keep an eye on our legality map for the latest status in ${state.name} and every other state.`,
     });
   }
 
@@ -320,7 +320,7 @@ export default async function StatePage(
               Some sites still offer free Gold Coin play for fun, but with no cash prizes.
             </li>
             <li className="before:mr-2 before:text-red-300 before:content-['•']">
-              Don&apos;t try to bypass the block with a VPN — it violates operator terms and can void winnings.
+              Don&apos;t try to bypass the block with a VPN. It violates operator terms and can void winnings.
             </li>
           </ul>
           <p className="mt-3 text-sm leading-relaxed text-text">
@@ -344,7 +344,7 @@ export default async function StatePage(
           <ol className="mt-4 space-y-3 text-muted leading-relaxed">
             <li className="rounded-xl border border-border bg-panel p-4">
               <span className="font-semibold text-text">1. Pick a site and sign up free.</span> Choose one of the
-              top-rated {state.name} casinos above and create a free account — no purchase required to get started.
+              top-rated {state.name} casinos above and create a free account. No purchase required to get started.
             </li>
             <li className="rounded-xl border border-border bg-panel p-4">
               <span className="font-semibold text-text">2. Claim your welcome Sweeps Coins.</span> Grab the no-purchase
@@ -356,7 +356,7 @@ export default async function StatePage(
             </li>
             <li className="rounded-xl border border-border bg-panel p-4">
               <span className="font-semibold text-text">4. Clear the playthrough efficiently.</span> Most sites use a
-              1x playthrough — cross-wash where you can, or play minimum bets on a 97%+ RTP slot to give back as little
+              1x playthrough. Cross-wash where you can, or play minimum bets on a 97%+ RTP slot to give back as little
               as possible.
             </li>
             <li className="rounded-xl border border-border bg-panel p-4">
@@ -380,13 +380,13 @@ export default async function StatePage(
               <Link href="/daily-sc" className="font-semibold text-accent underline underline-offset-2">
                 Daily login bonuses
               </Link>{" "}
-              — many sites hand out free Sweeps Coins just for logging in each day. See which pay the most.
+             . Many sites hand out free Sweeps Coins just for logging in each day. See which pay the most.
             </li>
             <li className="before:mr-2 before:text-accent2 before:content-['◆']">
               <Link href="/guides/amoe" className="font-semibold text-accent underline underline-offset-2">
                 AMOE
               </Link>{" "}
-              — a free postcard or quick online entry that gets you Sweeps Coins with no purchase, available to{" "}
+             . A free postcard or quick online entry that gets you Sweeps Coins with no purchase, available to{" "}
               {state.name} players.
             </li>
           </ul>
@@ -421,7 +421,7 @@ export default async function StatePage(
         <p className="mt-2 text-sm leading-relaxed text-muted">
           {state.note ??
             `Sweepstakes and social casinos operate in ${state.name} under sweepstakes and promotional law rather than a gambling license, which is why they're available without a state gambling license.`}{" "}
-          Sweepstakes rules are changing quickly across the US — {counts.banned} states have now banned or blocked play,
+          Sweepstakes rules are changing quickly across the US. {counts.banned} states have now banned or blocked play,
           {" "}
           {counts.iffy} sit in a gray area, and {counts.available} still allow it. See the full state-by-state picture
           on our{" "}
@@ -470,7 +470,7 @@ export default async function StatePage(
       {/* Responsible play */}
       <section className="mt-8 text-sm text-muted">
         <p>
-          21+. Availability and terms change — always confirm the current rules for {state.name} on the operator&apos;s
+          21+. Availability and terms change. Always confirm the current rules for {state.name} on the operator&apos;s
           own site. If gambling stops being fun, call{" "}
           <a className="underline hover:text-text" href="tel:1-800-522-4700">
             1-800-GAMBLER

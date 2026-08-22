@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sweepstakes Casinos in California — What Actually Works (2026)",
+  title: "Sweepstakes Casinos in California. What Actually Works (2026)",
   description:
     "Most sweepstakes casinos don't work in California. Here's which platforms are available for CA residents in 2026 and why card-based casinos are the best option.",
   alternates: {
@@ -35,7 +35,7 @@ const faqSchema = {
       name: "What online casinos can California residents use in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "California residents have a few solid options in 2026. Crown Coins Casino — the top-ranked sweepstakes casino overall — continues to operate in California. Card Crush and Clash 5 are also available, operating on a card-based model purpose-built for restricted states like California.",
+        text: "California residents have a few solid options in 2026. Crown Coins Casino. The top-ranked sweepstakes casino overall. Continues to operate in California. Card Crush and Clash 5 are also available, operating on a card-based model purpose-built for restricted states like California.",
       },
     },
     {
@@ -115,7 +115,7 @@ export default function CaliforniaPage() {
 
         <header>
           <h1 className="text-3xl md:text-4xl font-black leading-tight">
-            Sweepstakes Casinos in California — What Actually Works (2026)
+            Sweepstakes Casinos in California. What Actually Works (2026)
           </h1>
           <div className="mt-3 flex items-center gap-3 text-xs text-muted">
             <span>By <span className="text-text font-medium">Jordan Thacker</span></span>
@@ -126,9 +126,9 @@ export default function CaliforniaPage() {
 
         {/* Quick Answer */}
         <section className="mt-6 rounded-2xl border border-green-500/40 bg-green-500/5 p-5">
-          <p className="font-bold text-text text-lg">Good news — California has some solid options.</p>
+          <p className="font-bold text-text text-lg">Good news. California has some solid options.</p>
           <p className="mt-1 text-muted leading-relaxed">
-            While most sweepstakes casinos block California, a few notable platforms are fully available. Crown Coins Casino — our top-ranked site overall — still operates in California, which is a big deal. On top of that, card-based platforms like Card Crush and Clash 5 are purpose-built for states like California. You have real options here.
+            While most sweepstakes casinos block California, a few notable platforms are fully available. Crown Coins Casino. Our top-ranked site overall. Still operates in California, which is a big deal. On top of that, card-based platforms like Card Crush and Clash 5 are purpose-built for states like California. You have real options here.
           </p>
         </section>
 
@@ -139,7 +139,7 @@ export default function CaliforniaPage() {
             Sweepstakes casinos operate under promotional sweepstakes law, which varies significantly by state. California has stricter regulations around sweepstakes and promotional gaming than most of the country, and most operators have made the business decision to exclude California rather than navigate the state&apos;s compliance requirements. Idaho, Washington, and a handful of other states face similar restrictions.
           </p>
           <p className="mt-3 text-muted leading-relaxed">
-            That said, Crown Coins Casino — our number one ranked site — continues to operate in California. It is one of the few traditional sweepstakes casinos that has maintained California availability, which makes it a standout option for CA residents who want access to a full-featured sweepstakes platform. Beyond Crown Coins, card-based platforms like Card Crush and Clash 5 are purpose-built for restricted states and are also fully available here.
+            That said, Crown Coins Casino. Our number one ranked site. Continues to operate in California. It is one of the few traditional sweepstakes casinos that has maintained California availability, which makes it a standout option for CA residents who want access to a full-featured sweepstakes platform. Beyond Crown Coins, card-based platforms like Card Crush and Clash 5 are purpose-built for restricted states and are also fully available here.
           </p>
         </section>
 
@@ -167,7 +167,7 @@ export default function CaliforniaPage() {
               <div>
                 <div className="text-xs uppercase tracking-widest text-accent mb-1">Top Pick</div>
                 <h3 className="text-xl font-bold">Crown Coins Casino</h3>
-                <p className="mt-1 text-sm text-muted">Our #1 ranked sweepstakes casino — and one of the few that still operates in California</p>
+                <p className="mt-1 text-sm text-muted">Our #1 ranked sweepstakes casino. And one of the few that still operates in California</p>
               </div>
               <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in CA</span>
             </div>

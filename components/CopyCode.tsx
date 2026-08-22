@@ -11,7 +11,7 @@ export function CopyCode({ code, sc }: { code: string; sc: number }) {
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
     } catch {
-      // clipboard unavailable — no-op
+      // clipboard unavailable. No-op
     }
   };
 
