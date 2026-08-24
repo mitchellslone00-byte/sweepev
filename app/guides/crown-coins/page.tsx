@@ -43,8 +43,33 @@ export default function CrownCoinsGuidePage() {
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">Access to premium VIP benefits</li>
         </ul>
         <p className="mt-3 text-muted leading-relaxed">
-          If you&apos;re planning to play Crown Coins regularly, reaching Gold should be one of your primary goals.
+          The one that really adds up is the monthly loyalty drop. Once you hit Gold you collect a recurring <strong className="text-text">25 SC every single month</strong> just for holding the tier, on top of the one-time 50 SC you get for leveling up. That is 25 free Sweeps Coins a month, roughly $25 in redeemable value, before you even count the daily bonus or the Royal Club gift. If you plan to play Crown Coins regularly, reaching Gold should be one of your primary goals.
         </p>
+        <p className="mt-4 text-muted leading-relaxed">
+          The Gold daily bonus is a good example of the upgrade. It climbs across a seven-day streak, mixing Gold Coins with 1 to 1.5 SC most days plus a wheel spin on day 2 and a big payout on day 7, so just logging in adds up to roughly 6 to 7 SC a week at Gold.
+        </p>
+        <div className="mt-4 flex justify-center">
+          <img
+            src="/images/crown-coins-gold-daily.jpeg"
+            alt="Crown Coins Gold daily bonus seven-day calendar"
+            className="rounded-2xl max-w-xs border border-border shadow-lg"
+          />
+        </div>
+      </section>
+
+      {/* Royal Club */}
+      <section className="mt-4 rounded-2xl border border-accent/40 bg-panel p-5">
+        <h2 className="text-xl md:text-2xl font-bold text-accent">Royal Club: Free SC Every Sunday</h2>
+        <p className="mt-3 text-muted leading-relaxed">
+          One perk worth calling out on its own is the Royal Club gift that lands every Sunday. It shows up as a &ldquo;Gift for You&rdquo; drop you claim with a single tap, and ours came in at 60,000 Gold Coins plus 3 free Sweeps Coins. That is 3 SC a week, no purchase required, stacked right on top of your daily bonuses. If you are an active Gold member, make a habit of opening the app on Sundays to grab it.
+        </p>
+        <div className="mt-4 flex justify-center">
+          <img
+            src="/images/crown-coins-royal-club.jpeg"
+            alt="Crown Coins Royal Club Sunday gift of 60,000 GC plus 3 SC"
+            className="rounded-2xl max-w-xs border border-border shadow-lg"
+          />
+        </div>
       </section>
 
       {/* Building VIP Points Efficiently */}
@@ -52,6 +77,9 @@ export default function CrownCoinsGuidePage() {
         <h2 className="text-xl md:text-2xl font-bold text-accent">Building VIP Points Efficiently</h2>
         <p className="mt-3 text-muted leading-relaxed">
           Most players think they need to risk large amounts of Sweeps Coins to climb the VIP ladder. In reality, Gold Coins do most of the heavy lifting.
+        </p>
+        <p className="mt-3 text-muted leading-relaxed">
+          The exact rates make the strategy obvious. You earn <strong className="text-text">1 VIP point for every 1 SC</strong> you wager, and <strong className="text-text">1 VIP point for every 100,000 Gold Coins</strong> you wager. A Sweeps Coin is worth about a dollar, so you never want to burn SC just to chase points. The smart move is to buy the good value bundles and sales whenever they come around, then put those Gold Coins to work grinding VIP points while you wash the bundled Sweeps Coins for redemption. The same purchase does double duty: the Gold Coins climb your VIP level, and the Sweeps Coins turn into real money. To grind the Gold Coin points as efficiently as possible, stick to high-RTP games like <strong className="text-text">Magic Dice</strong> or <strong className="text-text">Fruity Girl</strong>, where you give back the least on each cycle.
         </p>
         <p className="mt-3 text-muted leading-relaxed">
           Whenever Crown Coins runs sales with large Gold Coin packages, consider stocking up. Those massive GC balances can be used to generate VIP points while preserving your Sweeps Coins for redemption opportunities.
