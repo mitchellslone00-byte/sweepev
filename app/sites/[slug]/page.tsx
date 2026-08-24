@@ -240,7 +240,7 @@ export default async function SitePage(
                         <img
                           src={site.bonusImage}
                           alt={`${site.name} welcome offer packages`}
-                          className={`rounded-2xl w-full border border-border shadow-lg${site.compactImages ? " max-w-lg" : ""}`}
+                          className={`rounded-2xl border border-border shadow-lg ${site.compactImages ? "max-w-sm" : "w-full"}`}
                         />
                       </div>
                     ) : para === "<<saleimage>>" && site.saleImage ? (
@@ -288,7 +288,7 @@ export default async function SitePage(
                         <img
                           src={site.dailyBonusImage}
                           alt={`${site.name} daily login bonus`}
-                          className={`rounded-2xl w-full border border-border shadow-lg${site.compactImages ? " max-w-lg" : ""}`}
+                          className={`rounded-2xl border border-border shadow-lg ${site.compactImages ? "max-w-sm" : "w-full"}`}
                         />
                       </div>
                     ) : para === "<<interfaceimage>>" && site.interfaceImage ? (
@@ -297,6 +297,14 @@ export default async function SitePage(
                           src={site.interfaceImage}
                           alt={`${site.name} lobby and game library`}
                           className="rounded-2xl w-full border border-border shadow-lg"
+                        />
+                      </div>
+                    ) : para === "<<dailyladderimage>>" && site.dailyLadderImage ? (
+                      <div key={pi} className="mt-4 flex justify-center">
+                        <img
+                          src={site.dailyLadderImage}
+                          alt={`${site.name} daily streak reward`}
+                          className="rounded-2xl max-w-md border border-border shadow-lg"
                         />
                       </div>
                     ) : (
