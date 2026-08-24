@@ -8,6 +8,7 @@ const LINKS = [
   { label: "Free Daily SC", href: "/daily-sc" },
   { label: "Fastest Payouts", href: "/fastest-payouts" },
   { label: "Where It's Legal", href: "/where-legal" },
+  { label: "Compare Casinos", href: "/compare" },
   { label: "Calculate EV", href: "/tools/ev-calculator" },
 ];
 

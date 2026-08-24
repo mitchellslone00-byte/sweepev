@@ -35,6 +35,10 @@ export function Header() {
             Where Legal
           </Link>
 
+          <Link href="/compare" className="hover:text-accent transition-colors hidden lg:inline">
+            Compare
+          </Link>
+
           <Link href="/tools/ev-calculator" className="hover:text-accent transition-colors">
             Calculate EV
           </Link>

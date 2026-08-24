@@ -5,6 +5,7 @@ import { sites } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
 import { GUIDE_SLUGS } from "@/lib/guides";
 import { states } from "@/lib/states";
+import { matchups } from "@/lib/comparisons";
 
 type ChangeFreq = "daily" | "weekly" | "monthly";
 
@@ -55,6 +56,7 @@ function rulesFor(pathname: string): { priority: number; changeFrequency: Change
   if (pathname === "/where-legal") return { priority: 0.9, changeFrequency: "weekly" };
   if (pathname.startsWith("/sites/")) return { priority: 0.8, changeFrequency: "weekly" };
   if (pathname.startsWith("/states/")) return { priority: 0.8, changeFrequency: "monthly" };
+  if (pathname.startsWith("/compare")) return { priority: 0.7, changeFrequency: "monthly" };
   if (pathname.startsWith("/guides")) return { priority: 0.7, changeFrequency: "monthly" };
   return { priority: 0.6, changeFrequency: "monthly" };
 }
@@ -74,8 +76,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Programmatic per-state pages (app/states/[state]).
   const statePaths = states.map((s) => `/states/${s.slug}`);
 
+  // Programmatic head-to-head comparison pages (app/compare/[matchup]).
+  const comparePaths = matchups.map((m) => `/compare/${m.slug}`);
+
   const all = Array.from(
-    new Set([...staticPaths, ...sitePaths, ...guidePaths, ...statePaths])
+    new Set([...staticPaths, ...sitePaths, ...guidePaths, ...statePaths, ...comparePaths])
   ).sort();
   const base = siteConfig.url.replace(/\/$/, "");
   const now = new Date();
