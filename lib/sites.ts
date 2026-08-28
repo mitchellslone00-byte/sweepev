@@ -21,6 +21,8 @@ export type Site = {
   };
   /** Custom page title for metadata and h1, used when the default "{name} Review" isn't enough. */
   reviewTitle?: string;
+  /** Custom meta description for the review page, for CTR-tuned search snippets. */
+  metaDescription?: string;
   restrictedStates?: string[];
   bonusImage?: string;
   saleImage?: string;

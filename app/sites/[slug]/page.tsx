@@ -18,7 +18,8 @@ export async function generateMetadata(
   if (!site) return {};
   return {
     title: site.reviewTitle ?? `${site.name} Review, Bonus, Promo Code & Payouts`,
-    description: `${site.name} review: ${site.tagline} Welcome offer: ${site.bonus}.`,
+    description:
+      site.metaDescription ?? `${site.name} review: ${site.tagline} Welcome offer: ${site.bonus}.`,
     alternates: {
       canonical: `${siteConfig.url}/sites/${slug}`,
     },
@@ -112,21 +113,32 @@ export default async function SitePage(
         </div>
       </header>
 
-      <div className="mt-6 rounded-2xl border border-accent/40 bg-panel p-4 sm:p-5">
-        <div className="text-xs uppercase tracking-widest text-accent">Welcome offer / Promo Code</div>
-        <div className="mt-1 text-base sm:text-lg font-semibold">{site.bonus}</div>
-        {site.promoCode && (
-          <div className="mt-1 text-sm">
-            Use code <span className="font-mono text-accent">{site.promoCode}</span> at signup.
+      <div className="mt-6 rounded-2xl border-2 border-accent/60 bg-gradient-to-b from-accent/[0.12] to-accent/[0.03] p-5 sm:p-6">
+        <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent">
+          <span aria-hidden className="text-base">🎁</span>
+          Exclusive {site.name} offer
+        </div>
+        <div className="mt-2 text-xl sm:text-2xl font-black text-text">{site.bonus}</div>
+        {site.promoCode ? (
+          <div className="mt-2 text-sm text-muted">
+            Use promo code{" "}
+            <span className="rounded bg-accent/15 px-2 py-0.5 font-mono font-bold text-accent">
+              {site.promoCode}
+            </span>{" "}
+            at signup.
+          </div>
+        ) : (
+          <div className="mt-2 text-sm text-muted">
+            No promo code needed. Sign up through our link and the offer is applied automatically.
           </div>
         )}
         <AffiliateLink
           slug={site.slug}
           name={site.name}
           source="review_top_cta"
-          className="mt-4 block sm:inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-3 text-center"
+          className="mt-4 block rounded-lg bg-accent px-6 py-3 text-center font-bold text-bg hover:opacity-90 sm:inline-block"
         >
-          Play at {site.name}
+          Claim your {site.name} bonus →
         </AffiliateLink>
       </div>
 
