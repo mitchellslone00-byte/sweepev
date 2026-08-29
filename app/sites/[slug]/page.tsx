@@ -125,7 +125,10 @@ export default async function SitePage(
             <span className="rounded bg-accent/15 px-2 py-0.5 font-mono font-bold text-accent">
               {site.promoCode}
             </span>{" "}
-            at signup.
+            to claim your bonus.
+            {site.promoCodeHow && (
+              <span className="text-muted"> ({site.promoCodeHow})</span>
+            )}
           </div>
         ) : (
           <div className="mt-2 text-sm text-muted">

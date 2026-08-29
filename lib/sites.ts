@@ -23,6 +23,8 @@ export type Site = {
   reviewTitle?: string;
   /** Custom meta description for the review page, for CTR-tuned search snippets. */
   metaDescription?: string;
+  /** Short path for where to redeem the promo code, shown in the offer box, e.g. "Get Coins → Redeem Code". */
+  promoCodeHow?: string;
   restrictedStates?: string[];
   bonusImage?: string;
   saleImage?: string;
