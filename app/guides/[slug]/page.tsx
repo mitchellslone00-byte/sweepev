@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getSite } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 import { GUIDE_SLUGS } from "@/lib/guides";
 import { AffiliateLink } from "@/components/AffiliateLink";
 
@@ -20,12 +21,15 @@ export async function generateMetadata(
   if (!GUIDE_SLUGS.includes(slug)) return {};
   const site = getSite(slug);
   if (!site || !site.strategy) return {};
+  const title = `${site.name} Strategy Guide`;
+  const description = `${site.name} strategy guide. How to clear playthrough, find +EV packages, and get the most value out of the daily SC drops.`;
   return {
-    title: `${site.name} Strategy Guide`,
-    description: `${site.name} strategy guide. How to clear playthrough, find +EV packages, and get the most value out of the daily SC drops.`,
+    title,
+    description,
     alternates: {
       canonical: `${siteConfig.url}/guides/${slug}`,
     },
+    ...ogMeta(`/guides/${slug}`, title, description),
   };
 }
 

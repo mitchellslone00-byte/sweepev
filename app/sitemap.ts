@@ -33,6 +33,8 @@ async function walkApp(dir: string, urlParts: string[], out: string[]) {
   if (base.startsWith(".") || base.startsWith("_")) return;
   if (urlParts[0] === "api") return;
   if (urlParts[0] === "go") return;
+  // The support form's confirmation page is noindex; keep it out of the sitemap.
+  if (urlParts[0] === "support" && urlParts[1] === "sent") return;
   if (isDynamic(base)) return;
 
   if (await hasPage(dir)) {

@@ -7,4 +7,6 @@ export const siteConfig = {
   tagline: "Find your +EV sweepstakes or social casino.",
   /** Site-wide content freshness stamp shown on reviews and guides. */
   lastUpdated: "July 21, 2026",
+  /** ISO 8601 form of lastUpdated, used for structured-data dates. Bump both together. */
+  lastUpdatedISO: "2026-07-21",
 };

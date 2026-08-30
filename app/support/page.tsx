@@ -1,11 +1,17 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Support",
   description: `Contact ${siteConfig.name} for support, feedback, or business inquiries.`,
   alternates: { canonical: `${siteConfig.url}/support` },
+  ...ogMeta(
+    "/support",
+    "Support",
+    `Contact ${siteConfig.name} for support, feedback, or business inquiries.`
+  ),
 };
 
 export default function SupportPage() {

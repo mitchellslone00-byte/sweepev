@@ -23,6 +23,10 @@ export type Site = {
   reviewTitle?: string;
   /** Custom meta description for the review page, for CTR-tuned search snippets. */
   metaDescription?: string;
+  /** ISO 8601 date the review was first published (Review schema datePublished). Falls back to siteConfig.lastUpdatedISO. */
+  publishedAt?: string;
+  /** ISO 8601 date the review was last updated (Review schema dateModified). Falls back to siteConfig.lastUpdatedISO. */
+  updatedAt?: string;
   /** Short path for where to redeem the promo code, shown in the offer box, e.g. "Get Coins → Redeem Code". */
   promoCodeHow?: string;
   restrictedStates?: string[];

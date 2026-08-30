@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { sites, getSite } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { CopyCode } from "@/components/CopyCode";
 
@@ -16,13 +17,16 @@ export async function generateMetadata(
   const { slug } = await params;
   const site = getSite(slug);
   if (!site) return {};
+  const title = site.reviewTitle ?? `${site.name} Review, Bonus, Promo Code & Payouts`;
+  const description =
+    site.metaDescription ?? `${site.name} review: ${site.tagline} ${site.bonus}.`;
   return {
-    title: site.reviewTitle ?? `${site.name} Review, Bonus, Promo Code & Payouts`,
-    description:
-      site.metaDescription ?? `${site.name} review: ${site.tagline} Welcome offer: ${site.bonus}.`,
+    title,
+    description,
     alternates: {
       canonical: `${siteConfig.url}/sites/${slug}`,
     },
+    ...ogMeta(`/sites/${slug}`, title, description),
   };
 }
 
@@ -47,6 +51,16 @@ export default async function SitePage(
     .sort((a, b) => a.dist - b.dist)
     .slice(0, 6)
     .map((x) => x.s);
+
+  // Real per-review publish date (from when the site was added); dateModified
+  // follows an explicit updatedAt when a review is re-verified, else the publish date.
+  const publishedISO = site.publishedAt ?? siteConfig.lastUpdatedISO;
+  const modifiedISO = site.updatedAt ?? site.publishedAt ?? siteConfig.lastUpdatedISO;
+  const modifiedDisplay = new Date(`${modifiedISO}T00:00:00`).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   const reviewLd = {
     "@context": "https://schema.org",
@@ -75,8 +89,9 @@ export default async function SitePage(
       name: siteConfig.name,
       url: siteConfig.url,
     },
-    datePublished: siteConfig.lastUpdated,
-    reviewBody: `${site.tagline} Welcome offer: ${site.bonus}.`,
+    datePublished: publishedISO,
+    dateModified: modifiedISO,
+    reviewBody: `${site.tagline} ${site.bonus}.`,
   };
 
   return (
@@ -103,7 +118,7 @@ export default async function SitePage(
         <div className="mt-2 flex items-center gap-2 text-xs text-muted">
           <span>By <span className="text-text font-medium">Jordan Thacker</span></span>
           <span>·</span>
-          <span>Last updated: {siteConfig.lastUpdated}</span>
+          <span>Last updated: {modifiedDisplay}</span>
         </div>
         <div className="mt-3 flex flex-wrap gap-2 text-xs sm:text-sm">
           <span className="rounded-full bg-panel border border-border px-3 py-1">

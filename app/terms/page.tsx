@@ -1,11 +1,17 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: `${siteConfig.name} Terms of Service: rules, disclaimers, and limitations of liability for the rankings, reviews, and strategy content.`,
   alternates: { canonical: `${siteConfig.url}/terms` },
+  ...ogMeta(
+    "/terms",
+    "Terms of Service",
+    `${siteConfig.name} Terms of Service: rules, disclaimers, and limitations of liability for the rankings, reviews, and strategy content.`
+  ),
 };
 
 export default function TermsPage() {

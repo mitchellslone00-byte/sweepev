@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/seo";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.sweepev.com/states/texas",
   },
+  ...ogMeta(
+    "/states/texas",
+    "Best Sweepstakes Casinos in Texas (2026). Top Sites for TX Players",
+    "Sweepstakes casinos are fully available in Texas. Here are the best platforms for TX residents in 2026, ranked by bonus value, redemption speed, and trust."
+  ),
 };
 
 const faqSchema = {

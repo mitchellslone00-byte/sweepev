@@ -1,11 +1,17 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Disclaimer",
   description: `Important disclaimers about ${siteConfig.name}, affiliate relationships, editorial independence, and the limits of strategy content.`,
   alternates: { canonical: `${siteConfig.url}/disclaimer` },
+  ...ogMeta(
+    "/disclaimer",
+    "Disclaimer",
+    `Important disclaimers about ${siteConfig.name}, affiliate relationships, editorial independence, and the limits of strategy content.`
+  ),
 };
 
 export default function DisclaimerPage() {

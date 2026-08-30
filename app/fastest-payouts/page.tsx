@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { sites } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 import { FastPayoutsTable, type FastRow } from "@/components/FastPayoutsTable";
 
 const LAST_VERIFIED = "August 9, 2026";
@@ -14,6 +15,11 @@ export const metadata: Metadata = {
   description:
     "Which sweepstakes casinos pay out the fastest. Ranked by real redemption speed. Instant crypto, gift card, and debit cashouts, the fastest method for each site, and redemption minimums. Re-verified monthly.",
   alternates: { canonical: `${siteConfig.url}/fastest-payouts` },
+  ...ogMeta(
+    "/fastest-payouts",
+    "Fastest Paying Sweepstakes Casinos: Instant Redemptions (2026)",
+    "Which sweepstakes casinos pay out the fastest. Ranked by real redemption speed. Instant crypto, gift card, and debit cashouts, the fastest method for each site, and redemption minimums. Re-verified monthly."
+  ),
 };
 
 function buildRows(): FastRow[] {

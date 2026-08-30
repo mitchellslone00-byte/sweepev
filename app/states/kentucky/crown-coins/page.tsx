@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/seo";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.sweepev.com/states/kentucky/crown-coins",
   },
+  ...ogMeta(
+    "/states/kentucky/crown-coins",
+    "Can Kentucky Residents Play Crown Coins? (2026 Guide)",
+    "Yes. Kentucky residents can play Crown Coins Casino in 2026. Here's everything you need to know about availability, purchases, and redemptions from Kentucky."
+  ),
 };
 
 const AFFILIATE_URL =

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogMeta } from "@/lib/seo";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.sweepev.com/states/new-york",
   },
+  ...ogMeta(
+    "/states/new-york",
+    "Sweepstakes Casinos in New York. What Actually Works (2026)",
+    "Most sweepstakes casinos don't work in New York. Here's which platforms are available for NY residents in 2026, including Card Crush and Clash 5."
+  ),
 };
 
 const faqSchema = {

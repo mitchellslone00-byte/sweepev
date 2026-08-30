@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 import { AffiliateLink } from "@/components/AffiliateLink";
 
 export const metadata: Metadata = {
@@ -10,6 +11,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/guides/amoe`,
   },
+  ...ogMeta(
+    "/guides/amoe",
+    "AMOE Guide: Free Sweeps Coins",
+    "How AMOE works. Lead with digital AMOE to claim free Sweeps Coins through a site's online form (no mail, no writing), plus the full mail-in method for scaling up. Which sites offer it, how fast credits land, and how to make it a routine."
+  ),
 };
 
 const faqs = [

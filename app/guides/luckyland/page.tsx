@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "LuckyLand Slots & Casino, VIP Leveling Guide",
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/guides/luckyland`,
   },
+  ...ogMeta(
+    "/guides/luckyland",
+    "LuckyLand Slots & Casino, VIP Leveling Guide",
+    "How to climb LuckyLand Slots / LuckyLand Casino VIP tiers each month for exclusive package offers, Quacky Hour sales, and free SC scavenger hunts."
+  ),
 };
 
 export default function LuckyLandGuidePage() {

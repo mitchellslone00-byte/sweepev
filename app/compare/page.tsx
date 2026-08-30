@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 import { matchups } from "@/lib/comparisons";
 
 export const metadata: Metadata = {
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
   description:
     "Side-by-side sweepstakes casino comparisons. Bonuses, free daily SC, payout speed, and which site wins in every head-to-head matchup.",
   alternates: { canonical: `${siteConfig.url}/compare` },
+  ...ogMeta(
+    "/compare",
+    "Sweepstakes Casino Comparisons: Head-to-Head Matchups",
+    "Side-by-side sweepstakes casino comparisons. Bonuses, free daily SC, payout speed, and which site wins in every head-to-head matchup."
+  ),
 };
 
 export default function CompareIndexPage() {

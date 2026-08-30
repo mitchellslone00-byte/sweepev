@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 import type { Site } from "@/lib/sites";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { matchups, matchupBySlug, tierOf, rankOfSite } from "@/lib/comparisons";
@@ -19,10 +20,16 @@ export async function generateMetadata(
   const m = matchupBySlug[matchup];
   if (!m) return {};
   const year = new Date().getFullYear();
+  // Long dual-name pairs blow past the ~600px desktop SERP title cap with the full
+  // "Which Is Better in {year}?" phrasing, so fall back to a compact "(year)" form.
+  const longTitle = `${m.a.name} vs ${m.b.name}: Which Is Better in ${year}?`;
+  const title = longTitle.length > 60 ? `${m.a.name} vs ${m.b.name} (${year})` : longTitle;
+  const description = `${m.a.name} vs ${m.b.name} compared side by side. Welcome bonuses, free daily SC, payout speed, game libraries, and which sweepstakes casino comes out on top.`;
   return {
-    title: `${m.a.name} vs ${m.b.name}: Which Is Better in ${year}?`,
-    description: `${m.a.name} vs ${m.b.name} compared side by side. Welcome bonuses, free daily SC, payout speed, game libraries, and which sweepstakes casino comes out on top.`,
+    title,
+    description,
     alternates: { canonical: `${siteConfig.url}/compare/${matchup}` },
+    ...ogMeta(`/compare/${matchup}`, title, description),
   };
 }
 

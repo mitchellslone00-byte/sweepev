@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "General Sweeps Strategy",
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/guides`,
   },
+  ...ogMeta(
+    "/guides",
+    "General Sweeps Strategy",
+    "How to collect free Sweeps Coins daily and how to actually use welcome offers on Sweepstakes casinos."
+  ),
 };
 
 export default function GuidesPage() {

@@ -6,6 +6,7 @@ import path from "node:path";
 import { sites } from "@/lib/sites";
 import type { Site } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 import { states, stateBySlug, statusCounts, STATUS_LABEL, type StateInfo } from "@/lib/states";
 import { SiteCard } from "@/components/SiteCard";
 
@@ -51,14 +52,17 @@ export async function generateMetadata(
   const year = new Date().getFullYear();
   const banned = state.status === "banned";
   const count = availableSites(state).length;
+  const title = banned
+    ? `Are Sweepstakes Casinos Legal in ${state.name}? (${year})`
+    : `${count} Best Sweepstakes Casinos in ${state.name} (${year})`;
+  const description = banned
+    ? `Is sweepstakes casino play legal in ${state.name}? Here's the ${year} status, what it means for ${state.name} players, free-play options, and where sweeps casinos are still available.`
+    : `The ${count} best sweepstakes & social casinos for ${state.name} players in ${year}, ranked by bonus value, payout speed, and trust. Plus the fastest payouts, best free Sweeps Coins, and how to start.`;
   return {
-    title: banned
-      ? `Are Sweepstakes Casinos Legal in ${state.name}? (${year})`
-      : `${count} Best Sweepstakes Casinos in ${state.name} (${year})`,
-    description: banned
-      ? `Is sweepstakes casino play legal in ${state.name}? Here's the ${year} status, what it means for ${state.name} players, free-play options, and where sweeps casinos are still available.`
-      : `The ${count} best sweepstakes & social casinos for ${state.name} players in ${year}, ranked by bonus value, payout speed, and trust. Plus the fastest payouts, best free Sweeps Coins, and how to start.`,
+    title,
+    description,
     alternates: { canonical: `${siteConfig.url}/states/${slug}` },
+    ...ogMeta(`/states/${slug}`, title, description),
   };
 }
 

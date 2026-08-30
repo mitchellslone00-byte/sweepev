@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { sites } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 import { DailySCTable, type DailyRow } from "@/components/DailySCTable";
 
 const LAST_VERIFIED = "August 1, 2026";
@@ -11,6 +12,11 @@ export const metadata: Metadata = {
   description:
     "Get free Sweeps Coins every day just for logging in. We rank every sweepstakes casino that gives free SC daily by what it's actually worth per month. No purchase, no deposit, no writing. Just sign in and collect. Re-verified monthly.",
   alternates: { canonical: `${siteConfig.url}/daily-sc` },
+  ...ogMeta(
+    "/daily-sc",
+    "Free Sweeps Coins Daily: Every Site's Free SC Ranked",
+    "Get free Sweeps Coins every day just for logging in. We rank every sweepstakes casino that gives free SC daily by what it's actually worth per month. No purchase, no deposit, no writing. Just sign in and collect. Re-verified monthly."
+  ),
 };
 
 // Build the rows from the structured dailySC data, ranked by base rate.

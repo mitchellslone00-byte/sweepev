@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Crown Coins Casino Strategy Guide",
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/guides/crown-coins`,
   },
+  ...ogMeta(
+    "/guides/crown-coins",
+    "Crown Coins Casino Strategy Guide",
+    "Crown Coins Casino strategy guide. VIP progression, best washing games, daily routine, and how to get the most value out of CCC in 2026."
+  ),
 };
 
 const AFFILIATE_URL =

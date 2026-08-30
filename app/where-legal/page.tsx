@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { ogMeta } from "@/lib/seo";
 import { states, stateBySlug, statusCounts, type StateStatus } from "@/lib/states";
 import { LegalityMap, LegalityLegend } from "@/components/LegalityMap";
 
@@ -14,6 +15,11 @@ export const metadata: Metadata = {
   description:
     "An interactive map of sweepstakes casino legality in all 50 US states. Available, gray-area, and banned states, with the law behind each. Re-verified regularly for 2026.",
   alternates: { canonical: `${siteConfig.url}/where-legal` },
+  ...ogMeta(
+    "/where-legal",
+    "Where Are Sweepstakes Casinos Legal? 2026 State-by-State Map",
+    "An interactive map of sweepstakes casino legality in all 50 US states. Available, gray-area, and banned states, with the law behind each. Re-verified regularly for 2026."
+  ),
 };
 
 const faqs = [
@@ -457,6 +463,16 @@ export default function WhereLegalPage() {
             );
           })}
         </div>
+        <p className="mt-5 text-sm text-muted">
+          Not a state, but we cover it too:{" "}
+          <Link
+            href="/states/district-of-columbia"
+            className="font-semibold text-text underline decoration-dotted decoration-border underline-offset-4 hover:text-accent hover:decoration-accent/50"
+          >
+            Washington, D.C.
+          </Link>
+          <span className="text-muted"> — sweepstakes play is currently available.</span>
+        </p>
       </section>
 
       {/* FAQ */}
