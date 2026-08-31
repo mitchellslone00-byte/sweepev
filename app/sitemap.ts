@@ -85,13 +85,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     new Set([...staticPaths, ...sitePaths, ...guidePaths, ...statePaths, ...comparePaths])
   ).sort();
   const base = siteConfig.url.replace(/\/$/, "");
-  const now = new Date();
+
+  // Per-URL last-modified from real content dates (reviews carry their own
+  // publish/update dates) rather than the build timestamp. A sitemap that claims
+  // every page changed on every deploy is a freshness signal Google learns to ignore.
+  const reviewDate = new Map(
+    sites.map((s) => [`/sites/${s.slug}`, s.updatedAt ?? s.publishedAt ?? siteConfig.lastUpdatedISO])
+  );
 
   return all.map((p) => {
     const r = rulesFor(p);
     return {
       url: base + (p === "" ? "/" : p),
-      lastModified: now,
+      lastModified: reviewDate.get(p) ?? siteConfig.lastUpdatedISO,
       changeFrequency: r.changeFrequency,
       priority: r.priority,
     };
