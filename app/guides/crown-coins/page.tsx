@@ -40,15 +40,15 @@ export default function CrownCoinsGuidePage() {
         <h2 className="text-xl md:text-2xl font-bold text-accent">Start Here: Claim Your Signup Bonus</h2>
         <p className="mt-3 text-muted leading-relaxed">
           Before any of the VIP strategy below matters, grab the free welcome bonus. New Crown Coins
-          players get <strong className="text-text">100,000 Gold Coins plus 2 free Sweeps Coins</strong>{" "}
-          just for creating an account. No purchase and no deposit required. Those 2 SC are yours to
-          play with, and once you clear the standard 1&times; playthrough they can be redeemed for real cash.
+          players get <strong className="text-text">2 free Sweeps Coins</strong> just for creating an
+          account. No purchase and no deposit required. Those 2 SC are yours to play with, and once you
+          clear the standard 1&times; playthrough they can be redeemed for real cash.
         </p>
         <p className="mt-3 text-muted font-semibold">How to claim it:</p>
         <ol className="mt-2 list-decimal pl-6 text-muted space-y-1.5 leading-relaxed">
           <li>Create your free account through our link below.</li>
           <li>Verify your email and phone number so your account is ready to redeem later.</li>
-          <li>Your 100,000 GC and 2 free SC land automatically. No code needed.</li>
+          <li>Your 2 free SC land automatically. No code needed.</li>
         </ol>
         <div className="mt-4">
           <a
