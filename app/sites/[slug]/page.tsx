@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 import { ogMeta } from "@/lib/seo";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { CopyCode } from "@/components/CopyCode";
+import { PublicImg } from "@/components/PublicImg";
 
 export function generateStaticParams() {
   return sites.map((s) => ({ slug: s.slug }));
@@ -267,7 +268,7 @@ export default async function SitePage(
                       </p>
                     ) : para === "<<bonusimage>>" && site.bonusImage ? (
                       <div key={pi} className={`mt-4${site.compactImages ? " flex justify-center" : ""}`}>
-                        <img
+                        <PublicImg
                           src={site.bonusImage}
                           alt={`${site.name} welcome offer packages`}
                           className={`rounded-2xl border border-border shadow-lg ${site.compactImages ? "max-w-sm" : "w-full"}`}
@@ -275,7 +276,7 @@ export default async function SitePage(
                       </div>
                     ) : para === "<<saleimage>>" && site.saleImage ? (
                       <div key={pi} className="mt-4 flex justify-center">
-                        <img
+                        <PublicImg
                           src={site.saleImage}
                           alt={`${site.name} current sale package`}
                           className="rounded-2xl border border-border shadow-lg max-w-[260px] w-full"
@@ -283,7 +284,7 @@ export default async function SitePage(
                       </div>
                     ) : para === "<<promoimage>>" && site.promoImage ? (
                       <div key={pi} className="mt-4 flex justify-center">
-                        <img
+                        <PublicImg
                           src={site.promoImage}
                           alt={`${site.name} free spins promotion`}
                           className="rounded-2xl border border-border shadow-lg max-w-[260px] w-full"
@@ -315,7 +316,7 @@ export default async function SitePage(
                       </div>
                     ) : para === "<<dailybonusimage>>" && site.dailyBonusImage ? (
                       <div key={pi} className={`mt-4${site.compactImages ? " flex justify-center" : ""}`}>
-                        <img
+                        <PublicImg
                           src={site.dailyBonusImage}
                           alt={`${site.name} daily login bonus`}
                           className={`rounded-2xl border border-border shadow-lg ${site.compactImages ? "max-w-sm" : "w-full"}`}
@@ -323,7 +324,7 @@ export default async function SitePage(
                       </div>
                     ) : para === "<<interfaceimage>>" && site.interfaceImage ? (
                       <div key={pi} className="mt-4">
-                        <img
+                        <PublicImg
                           src={site.interfaceImage}
                           alt={`${site.name} lobby and game library`}
                           className="rounded-2xl w-full border border-border shadow-lg"
@@ -331,7 +332,7 @@ export default async function SitePage(
                       </div>
                     ) : para === "<<dailyladderimage>>" && site.dailyLadderImage ? (
                       <div key={pi} className="mt-4 flex justify-center">
-                        <img
+                        <PublicImg
                           src={site.dailyLadderImage}
                           alt={`${site.name} daily streak reward`}
                           className="rounded-2xl max-w-md border border-border shadow-lg"

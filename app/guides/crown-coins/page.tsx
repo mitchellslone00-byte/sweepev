@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { ogMeta } from "@/lib/seo";
+import { PublicImg } from "@/components/PublicImg";
 
 export const metadata: Metadata = {
   title: "Crown Coins Casino Strategy Guide",
@@ -28,11 +29,38 @@ export default function CrownCoinsGuidePage() {
 
       <header className="mt-4">
         <h1 className="text-3xl md:text-4xl font-black">Crown Coins Casino Strategy Guide</h1>
-        <p className="mt-2 text-xs text-muted">Last Updated: July 21, 2026</p>
+        <p className="mt-2 text-xs text-muted">Last Updated: September 1, 2026</p>
         <p className="mt-3 text-muted leading-relaxed">
           Crown Coins Casino continues to be one of the best sweepstakes casinos available and remains one of our favorite sites for consistent value. Between the daily rewards, frequent promotions, VIP program, and weekly events, it&apos;s a site that can generate steady returns if you&apos;re willing to stay active.
         </p>
       </header>
+
+      {/* Claim the signup bonus */}
+      <section className="mt-6 rounded-2xl border-2 border-accent/60 bg-accent/[0.06] p-5">
+        <h2 className="text-xl md:text-2xl font-bold text-accent">Start Here: Claim Your Signup Bonus</h2>
+        <p className="mt-3 text-muted leading-relaxed">
+          Before any of the VIP strategy below matters, grab the free welcome bonus. New Crown Coins
+          players get <strong className="text-text">100,000 Gold Coins plus 2 free Sweeps Coins</strong>{" "}
+          just for creating an account. No purchase and no deposit required. Those 2 SC are yours to
+          play with, and once you clear the standard 1&times; playthrough they can be redeemed for real cash.
+        </p>
+        <p className="mt-3 text-muted font-semibold">How to claim it:</p>
+        <ol className="mt-2 list-decimal pl-6 text-muted space-y-1.5 leading-relaxed">
+          <li>Create your free account through our link below.</li>
+          <li>Verify your email and phone number so your account is ready to redeem later.</li>
+          <li>Your 100,000 GC and 2 free SC land automatically. No code needed.</li>
+        </ol>
+        <div className="mt-4">
+          <a
+            href={AFFILIATE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-lg bg-accent text-bg font-semibold px-6 py-3 hover:opacity-90"
+          >
+            Claim your Crown Coins signup bonus &rarr;
+          </a>
+        </div>
+      </section>
 
       {/* Why Gold VIP Matters */}
       <section className="mt-6 rounded-2xl border border-accent/40 bg-panel p-5">
@@ -48,6 +76,13 @@ export default function CrownCoinsGuidePage() {
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">Better promotional opportunities</li>
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">Access to premium VIP benefits</li>
         </ul>
+        <div className="mt-4 flex justify-center">
+          <PublicImg
+            src="/images/crown-coins-gold-vip.jpeg"
+            alt="Crown Coins Gold VIP tier benefits at 500,000 VIP points"
+            className="rounded-2xl max-w-xs border border-border shadow-lg"
+          />
+        </div>
         <p className="mt-3 text-muted leading-relaxed">
           The one that really adds up is the monthly loyalty drop. Once you hit Gold you collect a recurring <strong className="text-text">25 SC every single month</strong> just for holding the tier, on top of the one-time 50 SC you get for leveling up. That is 25 free Sweeps Coins a month, roughly $25 in redeemable value, before you even count the daily bonus or the Royal Club gift. If you plan to play Crown Coins regularly, reaching Gold should be one of your primary goals.
         </p>
@@ -55,7 +90,7 @@ export default function CrownCoinsGuidePage() {
           The Gold daily bonus is a good example of the upgrade. It climbs across a seven-day streak, mixing Gold Coins with 1 to 1.5 SC most days plus a wheel spin on day 2 and a big payout on day 7, so just logging in adds up to roughly 6 to 7 SC a week at Gold.
         </p>
         <div className="mt-4 flex justify-center">
-          <img
+          <PublicImg
             src="/images/crown-coins-gold-daily.jpeg"
             alt="Crown Coins Gold daily bonus seven-day calendar"
             className="rounded-2xl max-w-xs border border-border shadow-lg"
@@ -70,7 +105,7 @@ export default function CrownCoinsGuidePage() {
           One perk worth calling out on its own is the Royal Club gift that lands every Sunday. It shows up as a &ldquo;Gift for You&rdquo; drop you claim with a single tap, and ours came in at 60,000 Gold Coins plus 3 free Sweeps Coins. That is 3 SC a week, no purchase required, stacked right on top of your daily bonuses. If you are an active Gold member, make a habit of opening the app on Sundays to grab it.
         </p>
         <div className="mt-4 flex justify-center">
-          <img
+          <PublicImg
             src="/images/crown-coins-royal-club.jpeg"
             alt="Crown Coins Royal Club Sunday gift of 60,000 GC plus 3 SC"
             className="rounded-2xl max-w-xs border border-border shadow-lg"
@@ -87,6 +122,18 @@ export default function CrownCoinsGuidePage() {
         <p className="mt-3 text-muted leading-relaxed">
           The exact rates make the strategy obvious. You earn <strong className="text-text">1 VIP point for every 1 SC</strong> you wager, and <strong className="text-text">1 VIP point for every 100,000 Gold Coins</strong> you wager. A Sweeps Coin is worth about a dollar, so you never want to burn SC just to chase points. The smart move is to buy the good value bundles and sales whenever they come around, then put those Gold Coins to work grinding VIP points while you wash the bundled Sweeps Coins for redemption. The same purchase does double duty: the Gold Coins climb your VIP level, and the Sweeps Coins turn into real money. To grind the Gold Coin points as efficiently as possible, stick to high-RTP games like <strong className="text-text">Magic Dice</strong> or <strong className="text-text">Fruity Girl</strong>, where you give back the least on each cycle.
         </p>
+        <div className="mt-4 flex justify-center gap-3">
+          <PublicImg
+            src="/images/crown-coins-magic-dice.jpeg"
+            alt="Magic Dice high-RTP game on Crown Coins Casino"
+            className="rounded-xl max-w-[150px] border border-border shadow-lg"
+          />
+          <PublicImg
+            src="/images/crown-coins-fruity-girl.jpeg"
+            alt="Fruity Girl high-RTP game on Crown Coins Casino"
+            className="rounded-xl max-w-[150px] border border-border shadow-lg"
+          />
+        </div>
         <p className="mt-3 text-muted leading-relaxed">
           Whenever Crown Coins runs sales with large Gold Coin packages, consider stocking up. Those massive GC balances can be used to generate VIP points while preserving your Sweeps Coins for redemption opportunities.
         </p>
