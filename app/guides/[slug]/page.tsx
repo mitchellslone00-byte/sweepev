@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getSite } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
+import { guideDate } from "@/lib/guide-dates";
 import { ogMeta } from "@/lib/seo";
 import { GUIDE_SLUGS } from "@/lib/guides";
 import { AffiliateLink } from "@/components/AffiliateLink";
@@ -56,7 +57,7 @@ export default async function SiteGuidePage(
           site is and why it ranks where it does. This guide covers how to get
           the most out of it day-to-day.
         </p>
-        <p className="mt-2 text-xs text-muted">Last updated: {siteConfig.lastUpdated}</p>
+        <p className="mt-2 text-xs text-muted">Last updated: {guideDate(`/guides/${slug}`).modifiedDisplay}</p>
       </header>
 
       <section className="mt-8 rounded-2xl border border-accent/40 bg-panel p-5">

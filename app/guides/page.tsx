@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { guideDate } from "@/lib/guide-dates";
 import { ogMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function GuidesPage() {
         <p className="mt-2 text-muted">
           Everything you need to know to get started, stay profitable, and avoid common mistakes on sweepstakes casinos.
         </p>
-        <p className="mt-2 text-xs text-muted">Last updated: {siteConfig.lastUpdated}</p>
+        <p className="mt-2 text-xs text-muted">Last updated: {guideDate("/guides").modifiedDisplay}</p>
       </header>
 
       {/* Disclaimer */}

@@ -1,8 +1,8 @@
 #!/bin/sh
-# Auto-stamp updatedAt on any casino whose data changed in this commit.
-# Only runs when data/sites.json is actually staged. Never blocks a commit.
-if git diff --cached --name-only | grep -q '^data/sites\.json$'; then
+# Auto-stamp last-updated dates for any review or guide changed in this commit.
+# Never blocks a commit.
+if git diff --cached --name-only | grep -qE '^(data/sites\.json|app/guides/.*page\.tsx)$'; then
   node scripts/stamp-updated.js || exit 0
-  git add data/sites.json 2>/dev/null || true
+  git add data/sites.json data/guide-dates.json 2>/dev/null || true
 fi
 exit 0

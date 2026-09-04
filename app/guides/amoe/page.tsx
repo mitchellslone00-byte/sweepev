@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { guideDate } from "@/lib/guide-dates";
 import { ogMeta } from "@/lib/seo";
 import { AffiliateLink } from "@/components/AffiliateLink";
 
@@ -75,7 +76,7 @@ export default function AmoeGuidePage() {
         <h1 className="text-3xl md:text-4xl font-black">
           AMOE: Free Sweeps Coins
         </h1>
-        <p className="mt-2 text-xs text-muted">Last updated: July 21, 2026</p>
+        <p className="mt-2 text-xs text-muted">Last updated: {guideDate("/guides/amoe").modifiedDisplay}</p>
         <p className="mt-3 text-muted leading-relaxed">
           AMOE lets you claim free Sweeps Coins with no purchase. There are two flavors:{" "}
           <strong className="text-text">digital AMOE</strong>. Handwrite an entry on an index card and

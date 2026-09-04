@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { guideDate } from "@/lib/guide-dates";
 import { ogMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function LuckyLandGuidePage() {
           The monthly play on LuckyLand. Climb VIP at the start of each month
           to unlock the discounted packages that scale with your tier.
         </p>
-        <p className="mt-2 text-xs text-muted">Last updated: {siteConfig.lastUpdated}</p>
+        <p className="mt-2 text-xs text-muted">Last updated: {guideDate("/guides/luckyland").modifiedDisplay}</p>
       </header>
 
       <section className="mt-8 rounded-2xl border border-accent/40 bg-panel p-5">
