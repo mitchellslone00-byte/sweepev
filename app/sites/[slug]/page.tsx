@@ -7,6 +7,7 @@ import { ogMeta } from "@/lib/seo";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { CopyCode } from "@/components/CopyCode";
 import { PublicImg } from "@/components/PublicImg";
+import { LegitCallout } from "@/components/LegitCallout";
 
 export function generateStaticParams() {
   return sites.map((s) => ({ slug: s.slug }));
@@ -178,6 +179,8 @@ export default async function SitePage(
         </div>
       )}
 
+      {!site.shutdownNotice && <LegitCallout name={site.name} rating={site.rating} />}
+
       <section className="mt-8">
         <h2 className="text-xl font-bold mb-2">Highlights</h2>
         <ul className="grid gap-1 text-muted">
@@ -256,7 +259,7 @@ export default async function SitePage(
               return sections.filter(s => s.paras.length > 0).map((section, si) => (
                 <div key={si} className="mt-4 rounded-xl border border-accent/40 bg-panel p-5">
                   {section.heading && (
-                    <h3 className="text-lg font-bold text-accent mb-3">{section.heading}</h3>
+                    <h2 className="text-lg font-bold text-accent mb-3">{section.heading}</h2>
                   )}
                   {section.paras.map((para, pi) =>
                     para === "<<guide>>" && guideUrl ? (
