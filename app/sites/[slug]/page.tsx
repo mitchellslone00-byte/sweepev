@@ -338,6 +338,22 @@ export default async function SitePage(
                           className="rounded-2xl max-w-md border border-border shadow-lg"
                         />
                       </div>
+                    ) : para === "<<vipimage>>" && site.vipImage ? (
+                      <div key={pi} className="mt-4 flex justify-center">
+                        <PublicImg
+                          src={site.vipImage}
+                          alt={`${site.name} VIP program and how to earn points`}
+                          className="rounded-2xl max-w-md border border-border shadow-lg"
+                        />
+                      </div>
+                    ) : para === "<<missionsimage>>" && site.missionsImage ? (
+                      <div key={pi} className="mt-4 flex justify-center">
+                        <PublicImg
+                          src={site.missionsImage}
+                          alt={`${site.name} daily missions and rewards`}
+                          className="rounded-2xl max-w-md border border-border shadow-lg"
+                        />
+                      </div>
                     ) : (
                       <p key={pi} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
                     )

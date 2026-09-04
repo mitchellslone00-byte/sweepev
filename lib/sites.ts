@@ -38,6 +38,10 @@ export type Site = {
   interfaceImage?: string;
   /** Tall/portrait screenshot (e.g. a daily streak ladder), always rendered capped and centered. */
   dailyLadderImage?: string;
+  /** Screenshot of the VIP / loyalty program, always rendered capped and centered. */
+  vipImage?: string;
+  /** Screenshot of the missions or quests panel, always rendered capped and centered. */
+  missionsImage?: string;
   /** Redeemable bonus codes for free SC — shown as a bold callout on the review and a homepage banner. */
   bonusCodes?: { code: string; sc: number }[];
   /** Render bonus/daily images centered and capped (for lower-res screenshots) instead of full-width. */
