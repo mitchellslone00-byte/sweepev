@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stamp": "node scripts/stamp-updated.js"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

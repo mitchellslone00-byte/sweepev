@@ -1,0 +1,8 @@
+#!/bin/sh
+# Auto-stamp updatedAt on any casino whose data changed in this commit.
+# Only runs when data/sites.json is actually staged. Never blocks a commit.
+if git diff --cached --name-only | grep -q '^data/sites\.json$'; then
+  node scripts/stamp-updated.js || exit 0
+  git add data/sites.json 2>/dev/null || true
+fi
+exit 0

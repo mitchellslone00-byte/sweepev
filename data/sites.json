@@ -266,7 +266,8 @@
       "min": "100 SC",
       "note": null
     },
-    "dailyLadderImage": "/images/crown-coins-gold-vip.jpeg"
+    "dailyLadderImage": "/images/crown-coins-gold-vip.jpeg",
+    "updatedAt": "2026-09-03"
   },
   {
     "slug": "sweet-sweeps",
@@ -1629,7 +1630,8 @@
     "compactImages": true,
     "bonusImage": "/images/clash5-special-offers.jpeg",
     "missionsImage": "/images/clash5-missions.jpeg",
-    "vipImage": "/images/clash5-vip-points.jpeg"
+    "vipImage": "/images/clash5-vip-points.jpeg",
+    "updatedAt": "2026-09-03"
   },
   {
     "slug": "moozi",
