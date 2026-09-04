@@ -17,8 +17,9 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const year = new Date().getFullYear();
   const legalCounts = statusCounts();
-  const codeSite = sites.find((s) => s.bonusCodes && s.bonusCodes.length > 0 && !s.shutdownNotice);
-  const codeSiteSc = codeSite?.bonusCodes?.reduce((a, c) => a + c.sc, 0) ?? 0;
+  // Unlaunched sites are not ranked, since there is nothing to score them on yet.
+  const ranked = sites.filter((s) => !s.comingSoon);
+  const upcoming = sites.filter((s) => s.comingSoon);
 
   const itemListLd = {
     "@context": "https://schema.org",
@@ -27,8 +28,8 @@ export default function HomePage() {
     description:
       "Independent editorial ranking of US sweepstakes and social casinos by bonus value, redemption speed, game library, and trust.",
     itemListOrder: "https://schema.org/ItemListOrderDescending",
-    numberOfItems: sites.length,
-    itemListElement: sites.map((s, i) => ({
+    numberOfItems: ranked.length,
+    itemListElement: ranked.map((s, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: s.name,
@@ -113,25 +114,26 @@ export default function HomePage() {
           <span className="text-sm text-muted hidden md:block">Ranked by editorial score</span>
         </div>
 
-        {codeSite && (
+        {upcoming.map((s) => (
           <Link
-            href={`/sites/${codeSite.slug}`}
-            className="mb-4 flex flex-col gap-2 rounded-2xl border-2 border-accent/60 bg-accent/[0.08] p-4 transition-colors hover:bg-accent/[0.12] sm:flex-row sm:items-center sm:justify-between"
+            key={s.slug}
+            href={`/sites/${s.slug}`}
+            className="mb-4 flex flex-col gap-2 rounded-2xl border border-sky-500/50 bg-sky-500/[0.07] p-4 transition-colors hover:bg-sky-500/[0.12] sm:flex-row sm:items-center sm:justify-between"
           >
             <span className="text-sm sm:text-base">
-              <span aria-hidden className="mr-1.5">🎟️</span>
-              <span className="font-black text-accent">{codeSiteSc} free SC</span>{" "}
-              <span className="text-text">in bonus codes at {codeSite.name}</span>{" "}
-              <span className="text-muted">and enter them for free Sweeps Coins, no purchase.</span>
+              <span aria-hidden className="mr-1.5">🕒</span>
+              <span className="font-black text-sky-300">Coming soon:</span>{" "}
+              <span className="text-text">{s.name}</span>{" "}
+              <span className="text-muted">is launching soon. Here is what we know so far.</span>
             </span>
-            <span className="whitespace-nowrap rounded-lg bg-accent px-4 py-1.5 text-sm font-bold text-bg">
-              Get the codes →
+            <span className="whitespace-nowrap rounded-lg bg-sky-500 px-4 py-1.5 text-sm font-bold text-bg">
+              Read more →
             </span>
           </Link>
-        )}
+        ))}
 
         <div className="grid gap-2">
-          {sites.map((site, i) =>
+          {ranked.map((site, i) =>
             i === 0 ? (
               <FeaturedSite key={site.slug} site={site} />
             ) : (

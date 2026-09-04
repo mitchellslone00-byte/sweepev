@@ -47,6 +47,7 @@ export default async function SitePage(
       (s) =>
         s.slug !== site.slug &&
         !s.shutdownNotice &&
+        !s.comingSoon &&
         !(site.relatedSites ?? []).includes(s.slug)
     )
     .map((s) => ({ s, dist: Math.abs(sites.indexOf(s) - idx) }))
@@ -98,12 +99,33 @@ export default async function SitePage(
 
   return (
     <article className="container-x py-8 md:py-14 max-w-3xl">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewLd) }}
-      />
+      {/* No Review schema until the site opens and we can actually test it. */}
+      {!site.comingSoon && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewLd) }}
+        />
+      )}
 
       <Link href="/" className="text-sm text-muted hover:text-text">← Back to rankings</Link>
+
+      {site.comingSoon && (
+        <div className="mt-4 rounded-2xl border-2 border-sky-500/60 bg-sky-500/10 p-4 sm:p-5">
+          <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-sky-400">
+            <span aria-hidden className="text-base">🕒</span> Coming soon. Registration not open yet
+          </div>
+          <p className="mt-2 text-sm sm:text-base leading-relaxed text-text">{site.comingSoon.message}</p>
+          {site.comingSoon.image && (
+            <div className="mt-3">
+              <PublicImg
+                src={site.comingSoon.image}
+                alt={`${site.name} registration is not open yet`}
+                className="rounded-xl max-w-sm border border-border"
+              />
+            </div>
+          )}
+        </div>
+      )}
 
       {site.shutdownNotice && (
         <div className="mt-4 rounded-2xl border-2 border-red-500/60 bg-red-500/10 p-4 sm:p-5">
@@ -123,13 +145,16 @@ export default async function SitePage(
           <span>Last updated: {modifiedDisplay}</span>
         </div>
         <div className="mt-3 flex flex-wrap gap-2 text-xs sm:text-sm">
-          <span className="rounded-full bg-panel border border-border px-3 py-1">
-            Rating: <span className="text-accent2">{site.rating.toFixed(1)} / 5</span>
-          </span>
+          {!site.comingSoon && (
+            <span className="rounded-full bg-panel border border-border px-3 py-1">
+              Rating: <span className="text-accent2">{site.rating.toFixed(1)} / 5</span>
+            </span>
+          )}
           {site.available && <span className="rounded-full bg-panel border border-border px-3 py-1">{site.available}</span>}
         </div>
       </header>
 
+      {!site.comingSoon && (
       <div className="mt-6 rounded-2xl border-2 border-accent/60 bg-gradient-to-b from-accent/[0.12] to-accent/[0.03] p-5 sm:p-6">
         <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent">
           <span aria-hidden className="text-base">🎁</span>
@@ -161,6 +186,7 @@ export default async function SitePage(
           Claim your {site.name} bonus →
         </AffiliateLink>
       </div>
+      )}
 
       {site.bonusCodes && site.bonusCodes.length > 0 && (
         <div className="mt-4 rounded-2xl border-2 border-accent/60 bg-accent/[0.08] p-4 sm:p-5">
@@ -179,7 +205,9 @@ export default async function SitePage(
         </div>
       )}
 
-      {!site.shutdownNotice && <LegitCallout name={site.name} rating={site.rating} />}
+      {!site.shutdownNotice && !site.comingSoon && (
+        <LegitCallout name={site.name} rating={site.rating} />
+      )}
 
       <section className="mt-8">
         <h2 className="text-xl font-bold mb-2">Highlights</h2>
@@ -190,6 +218,7 @@ export default async function SitePage(
         </ul>
       </section>
 
+      {(site.pros.length > 0 || site.cons.length > 0) && (
       <section className="mt-8 grid md:grid-cols-2 gap-4">
         <div className="rounded-xl border border-border bg-panel p-4">
           <h3 className="font-semibold text-accent mb-2">Pros</h3>
@@ -204,6 +233,7 @@ export default async function SitePage(
           </ul>
         </div>
       </section>
+      )}
 
       {(site.restrictedStates || site.strategy?.washingGames) && (
         <section className="mt-4 grid md:grid-cols-2 gap-4">

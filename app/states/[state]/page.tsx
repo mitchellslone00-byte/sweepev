@@ -35,12 +35,12 @@ function availableSites(state: StateInfo) {
   // A site is available unless it lists this state as restricted, and we don't
   // recommend sites that are winding down operations.
   return sites.filter(
-    (s) => !s.shutdownNotice && !(s.restrictedStates ?? []).includes(state.name)
+    (s) => !s.shutdownNotice && !s.comingSoon && !(s.restrictedStates ?? []).includes(state.name)
   );
 }
 
 function restrictedSites(state: StateInfo) {
-  return sites.filter((s) => !s.shutdownNotice && (s.restrictedStates ?? []).includes(state.name));
+  return sites.filter((s) => !s.shutdownNotice && !s.comingSoon && (s.restrictedStates ?? []).includes(state.name));
 }
 
 export async function generateMetadata(

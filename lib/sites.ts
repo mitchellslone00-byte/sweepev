@@ -49,6 +49,9 @@ export type Site = {
   faqs?: { q: string; a: string }[];
   /** Optional tier override. Otherwise tier is derived from rank in SiteCard. */
   tier?: "S" | "A" | "B" | "C";
+  /** When set, the site is announced but registration is not open yet. Renders a launch
+   * banner, suppresses the rating and Review schema, and keeps it out of rankings and comparisons. */
+  comingSoon?: { message: string; image?: string };
   /** When set, renders a prominent closure banner (review) and a "shutting down" overlay (ranking card). */
   shutdownNotice?: {
     /** Display date shown in the banner/overlay headline, e.g. "September 26th". */

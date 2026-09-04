@@ -21,7 +21,7 @@ export function tierOf(site: Site, rank: number): "S" | "A" | "B" | "C" {
  * canonicalize each pair so A-vs-B and B-vs-A resolve to one page.
  */
 export function buildMatchups(): Matchup[] {
-  const active = sites.filter((s) => !s.shutdownNotice);
+  const active = sites.filter((s) => !s.shutdownNotice && !s.comingSoon);
   const rankOf = new Map(active.map((s, i) => [s.slug, i]));
   const pairs = new Map<string, Matchup>();
 
