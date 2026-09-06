@@ -189,6 +189,16 @@ export default async function SitePage(
         >
           Claim your {site.name} bonus →
         </AffiliateLink>
+        {calcHref && (
+          <Link
+            href={calcHref}
+            className="mt-3 block text-sm text-muted transition-colors hover:text-text sm:mt-4"
+          >
+            <span aria-hidden className="mr-1.5">🧮</span>
+            Check whether this bundle is +EV
+            <span aria-hidden className="ml-1 text-accent">→</span>
+          </Link>
+        )}
       </div>
       )}
 
@@ -207,20 +217,6 @@ export default async function SitePage(
             ))}
           </div>
         </div>
-      )}
-
-      {calcHref && !site.comingSoon && (
-        <Link
-          href={calcHref}
-          className="mt-4 flex flex-wrap items-center gap-2 rounded-xl border border-accent/30 bg-accent/[0.05] p-4 text-sm transition-colors hover:bg-accent/10"
-        >
-          <span aria-hidden className="text-base">🧮</span>
-          <span className="text-muted">
-            <span className="font-semibold text-text">Is this offer actually +EV?</span>{" "}
-            Run the {site.name} bundle through our calculator, numbers already filled in.
-          </span>
-          <span className="ml-auto whitespace-nowrap font-semibold text-accent">Check the EV →</span>
-        </Link>
       )}
 
       {!site.shutdownNotice && !site.comingSoon && (
