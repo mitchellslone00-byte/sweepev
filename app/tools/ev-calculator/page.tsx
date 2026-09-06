@@ -4,28 +4,79 @@ import { siteConfig } from "@/lib/site-config";
 import { sites } from "@/lib/sites";
 import { buildRecommendations } from "@/lib/calculators/recommendations";
 import { EVCalculator } from "@/components/EVCalculator";
+import { computeEV, evVerdict, type EVInputs } from "@/lib/calculators/ev";
+import { decodeInputs } from "@/lib/calculators/ev-url";
 
-export const metadata: Metadata = {
-  title: "Estimated Value Calculator",
-  description:
-    "Free analytical tool for estimating the net value and realistic cashout of a sweepstakes bundle. Enter what the package costs and the Sweeps Coins it gives you. Probability-based analysis, not promotional hype.",
-  alternates: { canonical: "/tools/ev-calculator" },
-  openGraph: {
-    title: `Estimated Value Calculator | ${siteConfig.name}`,
-    description:
-      "Estimate net value, wagering loss, and realistic cashout for any casino or sweepstakes bonus. Probability-based, not hype.",
-    url: `${siteConfig.url}/tools/ev-calculator`,
-    siteName: siteConfig.name,
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `Estimated Value Calculator | ${siteConfig.name}`,
-    description:
-      "Estimate net value, wagering loss, and realistic cashout for any casino or sweepstakes bonus.",
-  },
-  robots: { index: true, follow: true },
+/** Mirrors the calculator's own defaults so a partial link still resolves sensibly. */
+const SHARE_DEFAULTS: EVInputs = {
+  deposit: 20,
+  bonus: 60,
+  playthroughMultiplier: 1,
+  rtp: 0.96,
+  cashbackPct: 0,
+  averageBet: 0.2,
+  volatility: "medium",
+  redemptionMin: 0,
 };
+
+/** Calculator keys we mirror onto the share-card URL. */
+const CALC_KEYS = ["dp", "bn", "pt", "rtp", "cb", "ab", "rm", "vol", "cmp"];
+
+/**
+ * Metadata reflects the calculation in the URL, so a shared link previews the actual
+ * numbers and verdict rather than a generic tool card. Reading searchParams opts this
+ * page out of static rendering, which is the trade for shareable results.
+ */
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}): Promise<Metadata> {
+  const sp = await searchParams;
+  const query = new URLSearchParams();
+  for (const key of CALC_KEYS) {
+    const value = sp[key];
+    const single = Array.isArray(value) ? value[0] : value;
+    if (single) query.set(key, single);
+  }
+
+  const hasCalc = [...query.keys()].some((k) => k !== "cmp");
+  const ogImage = `${siteConfig.url}/api/og/ev${query.toString() ? `?${query}` : ""}`;
+
+  let title = "Estimated Value Calculator";
+  let description =
+    "Free analytical tool for estimating the net value and realistic cashout of a sweepstakes bundle. Enter what the package costs and the Sweeps Coins it gives you. Probability-based analysis, not promotional hype.";
+
+  if (hasCalc) {
+    const inputs = decodeInputs(query, SHARE_DEFAULTS);
+    const out = computeEV(inputs);
+    const verdict = evVerdict(inputs, out);
+    title = `${verdict.label}: $${Math.round(inputs.deposit)} for ${Math.round(inputs.bonus)} SC`;
+    description = verdict.detail;
+  }
+
+  return {
+    title,
+    description,
+    // Always the clean URL, so shared variants do not fragment indexing.
+    alternates: { canonical: "/tools/ev-calculator" },
+    openGraph: {
+      title: hasCalc ? title : `Estimated Value Calculator | ${siteConfig.name}`,
+      description,
+      url: `${siteConfig.url}/tools/ev-calculator`,
+      siteName: siteConfig.name,
+      type: "website",
+      images: [{ url: ogImage, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: hasCalc ? title : `Estimated Value Calculator | ${siteConfig.name}`,
+      description,
+      images: [ogImage],
+    },
+    robots: { index: true, follow: true },
+  };
+}
 
 const FAQS = [
   {
