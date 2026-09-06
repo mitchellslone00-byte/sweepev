@@ -8,7 +8,7 @@ import { EVCalculator } from "@/components/EVCalculator";
 export const metadata: Metadata = {
   title: "Estimated Value Calculator",
   description:
-    "Free analytical tool for estimating net value, bankroll risk, and realistic cashout amounts on sweepstakes and online casino bonuses. Probability-based analysis, not promotional hype.",
+    "Free analytical tool for estimating the net value and realistic cashout of a sweepstakes bundle. Enter what the package costs and the Sweeps Coins it gives you. Probability-based analysis, not promotional hype.",
   alternates: { canonical: "/tools/ev-calculator" },
   openGraph: {
     title: `Estimated Value Calculator | ${siteConfig.name}`,
@@ -42,11 +42,11 @@ const FAQS = [
   },
   {
     q: "Why does volatility matter if RTP is the same?",
-    a: "Higher volatility means a wider distribution of outcomes around the same estimated value. A 97% RTP low-volatility slot will land you near the average loss most of the time, while a 97% RTP high-volatility slot might bust your bankroll before you finish playthrough or pay big in rare hits. Volatility doesn't change EV; it changes your bankroll survival probability.",
+    a: "Higher volatility means a wider distribution of outcomes around the same estimated value. A 97% RTP low-volatility slot lands you near the average loss most of the time, while a 97% RTP high-volatility slot can wipe out your Sweeps Coins before you finish playthrough, or pay big in rare hits. Volatility doesn't change EV; it changes how far a single run can land from it.",
   },
   {
-    q: "How accurate is the bankroll survival estimate?",
-    a: "The survival probability is a normal-distribution approximation based on the expected loss and total variance over the playthrough. Real slot distributions are heavily skewed by jackpot hits and bonus rounds, so treat this number as a directional estimate rather than a precise probability.",
+    q: "Why doesn't the calculator ask for my bankroll?",
+    a: "Because it doesn't change the answer. On a sweepstakes bundle you are washing a fixed number of Sweeps Coins, and the most you can lose is what the package cost. Your balance outside the site has no bearing on whether the offer is worth buying, so the only figures that matter are the price, the Sweeps Coins it gives you, the playthrough, and the RTP you clear it on.",
   },
   {
     q: "Is positive EV a guarantee of profit?",
@@ -89,7 +89,7 @@ const webAppLd = {
   operatingSystem: "Web",
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
   description:
-    "Free calculator that estimates the net value, wagering loss, realistic cashout, and bankroll risk of any sweepstakes or casino bonus.",
+    "Free calculator that estimates the net value, wagering loss, and realistic cashout of any sweepstakes bundle or casino bonus.",
   publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
 };
 
@@ -127,7 +127,7 @@ export default function EVCalculatorPage() {
         <p className="mt-3 text-muted text-base sm:text-lg max-w-2xl">
           Is that bonus actually worth it? Enter the offer and this free calculator tells you its{" "}
           <span className="text-text">estimated value</span>. Whether you come out ahead or behind on
-          average. Plus your realistic cashout and bankroll risk. Results update as you type.
+          average. Plus the Sweeps Coins you can expect to redeem. Results update as you type.
         </p>
         <p className="mt-3 text-sm text-muted">
           By <span className="font-medium text-text">Jordan Thacker</span> · Updated {UPDATED_DISPLAY}
@@ -171,7 +171,7 @@ export default function EVCalculatorPage() {
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">4. (Optional) Fine-tune the risk.</span> Add cashback,
-            your average bet, and volatility to get a bankroll-survival read for higher-playthrough plays.
+            your average bet, and volatility to see how wide the realistic range of outcomes gets.
           </li>
           <li className="rounded-xl border border-border bg-panel p-4 text-muted leading-relaxed">
             <span className="font-semibold text-text">5. Read the verdict.</span> The green or red line at

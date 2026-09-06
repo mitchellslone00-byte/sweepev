@@ -9,24 +9,26 @@ import {
   type EVOutputs,
   type Volatility,
   type RiskRating,
+  evVerdict,
 } from "@/lib/calculators/ev";
+import { decodeInputs, buildQuery, hasInputs } from "@/lib/calculators/ev-url";
 import { type Recommendation } from "@/lib/calculators/recommendations";
 
 const DEFAULTS: EVInputs = {
-  bankroll: 100,
   deposit: 20,
   bonus: 60,
   playthroughMultiplier: 1,
-  rtp: 0.97,
+  rtp: 0.96,
   cashbackPct: 0,
   averageBet: 0.2,
   volatility: "medium",
+  redemptionMin: 0,
 };
 
 // Slightly different defaults for Scenario B so the comparison demonstrates impact.
 const DEFAULTS_B: EVInputs = {
   ...DEFAULTS,
-  rtp: 0.96,
+  rtp: 0.94,
   averageBet: 0.5,
   volatility: "high",
 };
@@ -199,25 +201,17 @@ function Scenario({ label, inputs, onChange, out, onReset }: ScenarioProps) {
 
         <div className="mt-3 sm:mt-5 grid grid-cols-2 gap-2.5 sm:gap-4">
           <InputRow
-            label="Bankroll"
-            tooltip="Cash you have available before depositing. Used to model survival probability."
-            prefix="$"
-            value={inputs.bankroll}
-            step={10}
-            onChange={(v) => update("bankroll", v)}
-          />
-          <InputRow
-            label="Deposit"
-            tooltip="Cash you put in to claim the bonus."
+            label="Bundle price"
+            tooltip="What the package costs you. This money is spent, unlike a casino deposit that stays in your balance."
             prefix="$"
             value={inputs.deposit}
             step={5}
             onChange={(v) => update("deposit", v)}
           />
           <InputRow
-            label="Bonus / SC bundled"
-            tooltip="Bonus credit or Sweeps Coins granted on top of the deposit."
-            prefix="$"
+            label="Sweeps Coins you get"
+            tooltip="Sweeps Coins the bundle gives you. This is the only part with redeemable value; the Gold Coins do not count. Redeems at 1 SC to $1."
+            suffix=" SC"
             value={inputs.bonus}
             step={5}
             onChange={(v) => update("bonus", v)}
@@ -232,8 +226,17 @@ function Scenario({ label, inputs, onChange, out, onReset }: ScenarioProps) {
             onChange={(v) => update("playthroughMultiplier", v)}
           />
           <InputRow
+            label="Redemption minimum"
+            tooltip="The balance the site requires before it lets you cash out. A bonus you cannot physically reach the minimum on is not worth taking, whatever the EV says. Leave at 0 to ignore."
+            prefix="$"
+            value={inputs.redemptionMin ?? 0}
+            step={10}
+            min={0}
+            onChange={(v) => update("redemptionMin", v)}
+          />
+          <InputRow
             label="RTP"
-            tooltip="Return to Player on the slot you'll clear playthrough on. Higher RTP = lower expected loss. Published in each game's paytable."
+            tooltip="Return to Player of the game you'll clear playthrough on, from its paytable. Higher RTP means less of your Sweeps Coins burns off on the way to a redemption. Most slots run 94-97%."
             suffix="%"
             value={Math.round(inputs.rtp * 1000) / 10}
             step={0.1}
@@ -255,7 +258,7 @@ function Scenario({ label, inputs, onChange, out, onReset }: ScenarioProps) {
           />
           <InputRow
             label="Average bet"
-            tooltip="Average bet per spin. Lower bet sizes have lower variance and better bankroll survival."
+            tooltip="Average bet per spin. Smaller bets mean lower variance, so your result lands closer to the average."
             prefix="$"
             value={inputs.averageBet}
             step={0.05}
@@ -350,7 +353,7 @@ function Scenario({ label, inputs, onChange, out, onReset }: ScenarioProps) {
           />
           <ResultCell
             label="Realistic cashout"
-            tooltip="Estimated total cash you'll have at the end: bankroll held outside the casino plus whatever's left in the account after playthrough."
+            tooltip="Sweeps Coins you can expect to have left once playthrough is cleared, at 1 SC to $1."
             value={fmtMoney(out.realisticCashout)}
             emphasis
           />
@@ -373,11 +376,6 @@ function Scenario({ label, inputs, onChange, out, onReset }: ScenarioProps) {
             label="Break-even RTP"
             tooltip="The slot RTP at which estimated value crosses zero, given your bonus and playthrough."
             value={fmtPct(out.breakEvenRtp)}
-          />
-          <ResultCell
-            label="Bankroll survival"
-            tooltip="Approximate probability of clearing playthrough without busting your bankroll, modeled with the chosen volatility."
-            value={fmtPct(out.bankrollSurvival)}
           />
           <div className="col-span-2">
             <ResultCell
@@ -414,22 +412,21 @@ function Scenario({ label, inputs, onChange, out, onReset }: ScenarioProps) {
             </p>
             <p>
               <strong className="text-text">Estimated value</strong> = (deposit
-              + bonus) − expected loss + cashback − deposit. Positive means a
-              profitable setup on average; negative means a losing one.
+              Sweeps Coins − expected loss + cashback − bundle price. Positive
+              means a profitable buy on average; negative means a losing one.
             </p>
             <p>
-              <strong className="text-text">Bankroll survival</strong> uses a
+              <strong className="text-text">The likely range</strong> uses a
               normal approximation: variance per spin scales with bet size and
-              volatility, total variance scales with the number of spins, and
-              survival is the probability your loss stays below your starting
-              bankroll. Real slot distributions are skewed by jackpots, so
-              treat this as directional, not exact.
+              volatility, and total variance scales with the number of spins.
+              Real slot distributions are skewed by jackpots, so treat the
+              range as directional, not exact.
             </p>
             <p>
               <strong className="text-text">Likely range</strong> is roughly
               one standard deviation either side of the estimated value (the
               middle ~68% of outcomes), with the worst case floored at losing
-              your full starting bankroll.
+              what the bundle cost you.
             </p>
           </div>
         </details>
@@ -450,6 +447,18 @@ export function EVCalculator({
   const [compareMode, setCompareMode] = useState(false);
   const [activeTab, setActiveTab] = useState<"a" | "b" | "results">("a");
 
+  const [copied, setCopied] = useState(false);
+
+  // Restore a shared calculation. Read from window rather than useSearchParams so the
+  // page can stay statically rendered.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (!hasInputs(params)) return;
+    setInputsA((prev) => decodeInputs(params, prev));
+    setInputsB((prev) => decodeInputs(params, prev, "2"));
+    if (params.get("cmp") === "1") setCompareMode(true);
+  }, []);
+
   const outA = useMemo(() => computeEV(inputsA), [inputsA]);
   const outB = useMemo(() => computeEV(inputsB), [inputsB]);
 
@@ -461,13 +470,42 @@ export function EVCalculator({
     [recommendations]
   );
 
+  const query = useMemo(
+    () => buildQuery(inputsA, inputsB, compareMode),
+    [inputsA, inputsB, compareMode]
+  );
+
+  useEffect(() => {
+    window.history.replaceState(null, "", `${window.location.pathname}?${query}`);
+  }, [query]);
+
+  const verdictA = useMemo(() => evVerdict(inputsA, outA), [inputsA, outA]);
+
   const diff = outB.expectedValue - outA.expectedValue;
   const winner = Math.abs(diff) < 0.01 ? "tie" : diff > 0 ? "B" : "A";
 
   return (
     <>
-      {/* Compare toggle */}
-      <div className="mt-6 flex items-center justify-end">
+      {/* Compare toggle + shareable link */}
+      <div className="mt-6 flex flex-wrap items-center justify-end gap-2">
+        <button
+          type="button"
+          onClick={async () => {
+            const url = `${window.location.origin}${window.location.pathname}?${query}`;
+            try {
+              await navigator.clipboard.writeText(url);
+            } catch {
+              // Clipboard can be blocked; the URL bar already holds the same link.
+            }
+            setCopied(true);
+            track("ev_calculator_share");
+            window.setTimeout(() => setCopied(false), 2000);
+          }}
+          className="inline-flex items-center gap-1.5 rounded-full border border-border bg-panel px-4 py-1.5 text-xs font-semibold text-muted transition-colors hover:text-text"
+        >
+          <span aria-hidden className="text-sm leading-none">{copied ? "✓" : "🔗"}</span>
+          {copied ? "Link copied" : "Copy link to this calc"}
+        </button>
         <button
           type="button"
           onClick={() => {
@@ -514,6 +552,31 @@ export function EVCalculator({
           compareMode && activeTab !== "a" ? "hidden md:block" : ""
         }`}
       >
+        {!compareMode && (
+          <div
+            className={`mt-4 mb-6 sm:mb-8 rounded-2xl border-2 p-4 sm:p-5 ${
+              verdictA.tone === "good"
+                ? "border-accent/60 bg-accent/[0.08]"
+                : verdictA.tone === "marginal"
+                ? "border-accent2/60 bg-accent2/[0.08]"
+                : "border-red-500/60 bg-red-500/10"
+            }`}
+          >
+            <div
+              className={`text-sm font-black uppercase tracking-wide ${
+                verdictA.tone === "good"
+                  ? "text-accent"
+                  : verdictA.tone === "marginal"
+                  ? "text-accent2"
+                  : "text-red-400"
+              }`}
+            >
+              {verdictA.label}
+            </div>
+            <p className="mt-1 text-sm sm:text-base leading-relaxed text-text">{verdictA.detail}</p>
+          </div>
+        )}
+
         <Scenario
           label={compareMode ? "Scenario A" : undefined}
           inputs={inputsA}
@@ -581,19 +644,19 @@ export function EVCalculator({
                   Higher estimated value wins
                 </p>
               </div>
-              <div className="rounded-lg border border-border bg-panel2 px-4 py-3">
+              <div className="rounded-xl border border-border bg-panel p-4">
                 <div className="text-[10px] uppercase tracking-widest text-muted font-semibold">
-                  Survival difference
+                  Cashout difference
                 </div>
                 <div className="mt-1 text-xl font-bold tabular-nums">
-                  {fmtPct(outB.bankrollSurvival - outA.bankrollSurvival)}
+                  {fmtMoney(outB.realisticCashout - outA.realisticCashout)}
                 </div>
-                <p className="mt-1 text-xs text-muted">B minus A bankroll survival</p>
+                <p className="mt-1 text-xs text-muted">B minus A redeemable balance</p>
               </div>
             </div>
             <p className="mt-4 text-xs text-muted leading-relaxed">
               The winning scenario has the higher long-run estimated value, but
-              variance and bankroll survival differ too.
+              the redeemable balance and variance differ too.
               <span className="hidden md:inline">
                 {" "}Check the full results cards above for the full picture.
               </span>

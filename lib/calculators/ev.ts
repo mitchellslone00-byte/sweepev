@@ -5,11 +5,9 @@ export type Volatility = "low" | "medium" | "high";
 export type RiskRating = "low" | "moderate" | "high";
 
 export interface EVInputs {
-  /** Starting bankroll outside the deposit (used for survival modeling). */
-  bankroll: number;
-  /** Cash deposited / spent on the package. */
+  /** Price of the bundle. Money spent, which does not come back. */
   deposit: number;
-  /** Bonus / bundled SC value the deposit unlocks. */
+  /** Sweeps Coins the bundle gives you. This is the only redeemable value. */
   bonus: number;
   /** Playthrough multiplier (e.g. 1 for 1x, 2 for 2x). Applied to the bonus / SC bundle.
    *  Example: a 50 SC bundle with a 2x playthrough means 100 SC must be wagered before redemption. */
@@ -22,6 +20,9 @@ export interface EVInputs {
   averageBet: number;
   /** Volatility profile of the games being played. */
   volatility: Volatility;
+  /** Minimum balance the site requires before a redemption is allowed. 0 = no minimum.
+   *  A bonus you cannot physically cash out is not +EV no matter what the math says. */
+  redemptionMin?: number;
 }
 
 export interface EVOutputs {
@@ -35,9 +36,11 @@ export interface EVOutputs {
   realisticCashout: number;
   /** RTP at which expected value crosses zero, given current bonus and wagering. */
   breakEvenRtp: number;
-  /** Probability the player clears playthrough without busting their bankroll. */
-  bankrollSurvival: number;
   riskRating: RiskRating;
+  /** True when the realistic cashout clears the site redemption minimum. */
+  meetsRedemptionMin: boolean;
+  /** How far short of the redemption minimum the realistic cashout lands. 0 when met. */
+  redemptionShortfall: number;
   outcomes: {
     /** ~95th percentile outcome on net result. */
     best: number;
@@ -77,7 +80,6 @@ function clamp(n: number, min: number, max: number): number {
 
 export function computeEV(inputs: EVInputs): EVOutputs {
   const {
-    bankroll,
     deposit,
     bonus,
     playthroughMultiplier,
@@ -87,7 +89,9 @@ export function computeEV(inputs: EVInputs): EVOutputs {
     volatility,
   } = inputs;
 
-  const totalFunds = Math.max(0, deposit + bonus);
+  // Only the Sweeps Coins are redeemable. The bundle price buys Gold Coins, which carry
+  // no cash value, so that money never returns as balance the way a casino deposit does.
+  const totalFunds = Math.max(0, bonus);
   // Playthrough applies to the bonus / SC bundle, not to the deposit. A 50 SC
   // bundle with a 2x playthrough requires wagering 100 SC before redemption.
   const totalWagered = Math.max(0, bonus * playthroughMultiplier);
@@ -97,12 +101,8 @@ export function computeEV(inputs: EVInputs): EVOutputs {
   const cashbackRecovered = expectedLoss * cb;
 
   const finalAccountValue = totalFunds - expectedLoss + cashbackRecovered;
-  // Total cash position at the end: bankroll held outside the casino plus
-  // whatever's left in the account after playthrough. The deposit is netted
-  // out against the bankroll since that's the cash that went into the casino.
-  const totalEndCash = Math.max(0, bankroll - deposit) + Math.max(0, finalAccountValue);
-  const realisticCashout = totalEndCash;
-  const expectedValue = finalAccountValue - deposit;
+  const realisticCashout = Math.max(0, finalAccountValue);
+  const expectedValue = realisticCashout - deposit;
 
   // Break-even RTP only has a meaningful value when there is wagering, the
   // user has a bonus to recoup, and cashback is below 100%. Anything else
@@ -110,8 +110,8 @@ export function computeEV(inputs: EVInputs): EVOutputs {
   // that as NaN so the UI can render an em-dash.
   const breakEvenDenom = totalWagered * (1 - cb);
   const breakEvenRtp =
-    bonus > 0 && breakEvenDenom > 0
-      ? clamp(1 - bonus / breakEvenDenom, 0, 1)
+    bonus > deposit && breakEvenDenom > 0
+      ? clamp(1 - (bonus - deposit) / breakEvenDenom, 0, 1)
       : NaN;
 
   // Variance over full playthrough. Floor numBets at 1 when there is any
@@ -124,10 +124,6 @@ export function computeEV(inputs: EVInputs): EVOutputs {
   const totalVariance = numBets * variancePerBet;
   const stddev = Math.sqrt(totalVariance);
 
-  const startingBankroll = Math.max(0, bankroll + totalFunds);
-  const survivalZ =
-    stddev > 0 ? (startingBankroll - expectedLoss) / stddev : 4;
-  const bankrollSurvival = clamp(normalCdf(survivalZ), 0, 1);
 
   // Typical ~68% range using ±1σ. ±2σ produced visually misleading "best
   // case" values for high-volatility scenarios because the long tail of a
@@ -135,40 +131,38 @@ export function computeEV(inputs: EVInputs): EVOutputs {
   const outcomes = {
     best: expectedValue + stddev,
     average: expectedValue,
-    worst: Math.max(-startingBankroll, expectedValue - stddev),
+    // You cannot lose more than the bundle cost. The SC came free on top of it.
+    worst: Math.max(-deposit, expectedValue - stddev),
   };
 
-  // Risk rating blends survival probability, worst-case outcome relative to
-  // deposit, EV sign, and bundle quality (bonus value vs deposit). Shifts
+  // Risk rating blends worst-case outcome relative to the bundle price, EV sign,
+  // and bundle quality (SC value vs price). Shifts
   // meaningfully when bonus, deposit, RTP, wagering, volatility, or bet
   // size change. Use the −2σ tail (not the displayed 1σ range) so the rating
   // honestly reflects downside risk.
   const stake = Math.max(deposit, 5);
-  const tailWorst = Math.max(-startingBankroll, expectedValue - 2 * stddev);
+  const tailWorst = Math.max(-deposit, expectedValue - 2 * stddev);
   const worstAsLoss = -tailWorst; // positive = how much you'd lose at the −2σ tail
   const negativeEv = expectedValue < 0;
   // Bundle quality: how much bonus value the deposit unlocks.
   // Treat a $0-deposit scenario (free SC, no purchase) as a great bundle.
   const bundleRatio = deposit > 0 ? bonus / deposit : Infinity;
 
+  // Swing relative to what you paid: how far a normal run can move off the average.
+  const swing = stake > 0 ? stddev / stake : 0;
+
   let riskRating: RiskRating;
-  if (
-    bankrollSurvival < 0.4 ||
-    worstAsLoss > stake * 2 ||
-    expectedValue < -stake * 0.5 ||
-    bundleRatio < 0.3
-  ) {
+  if (negativeEv || bundleRatio < 1 || swing > 3) {
     riskRating = "high";
-  } else if (
-    bankrollSurvival < 0.7 ||
-    worstAsLoss > stake * 0.5 ||
-    negativeEv ||
-    bundleRatio < 1
-  ) {
+  } else if (worstAsLoss > stake * 0.5 || bundleRatio < 1.5 || swing > 1.5) {
     riskRating = "moderate";
   } else {
     riskRating = "low";
   }
+
+  const redemptionMin = Math.max(0, inputs.redemptionMin ?? 0);
+  const meetsRedemptionMin = redemptionMin <= 0 || realisticCashout >= redemptionMin;
+  const redemptionShortfall = meetsRedemptionMin ? 0 : redemptionMin - realisticCashout;
 
   return {
     totalFunds,
@@ -178,8 +172,66 @@ export function computeEV(inputs: EVInputs): EVOutputs {
     expectedValue,
     realisticCashout,
     breakEvenRtp,
-    bankrollSurvival,
     riskRating,
+    meetsRedemptionMin,
+    redemptionShortfall,
     outcomes,
+  };
+}
+
+export type VerdictTone = "good" | "marginal" | "bad";
+
+export interface Verdict {
+  tone: VerdictTone;
+  /** Short call, safe to use as a headline or in a share card. */
+  label: string;
+  /** One sentence explaining the call. */
+  detail: string;
+}
+
+/**
+ * Plain-language call on an offer. Kept in the engine rather than the component so a
+ * share card or embed renders exactly the same verdict the page shows.
+ */
+export function evVerdict(inputs: EVInputs, out: EVOutputs): Verdict {
+  const money = (n: number) =>
+    `$${Math.abs(n).toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
+
+  if (!out.meetsRedemptionMin) {
+    return {
+      tone: "bad",
+      label: "Can not cash out",
+      detail: `This lands about ${money(out.redemptionShortfall)} short of the ${money(
+        inputs.redemptionMin ?? 0
+      )} redemption minimum, so the balance is stuck on the site.`,
+    };
+  }
+  if (out.expectedValue <= 0) {
+    return {
+      tone: "bad",
+      label: "Negative EV",
+      detail: `Expected result is about ${money(out.expectedValue)} down on a ${money(
+        inputs.deposit
+      )} spend. Skip it.`,
+    };
+  }
+  const returnPct = inputs.deposit > 0 ? out.expectedValue / inputs.deposit : Infinity;
+  if (out.riskRating === "high" || returnPct < 0.15) {
+    return {
+      tone: "marginal",
+      label: "Marginal",
+      detail: `About ${money(out.realisticCashout)} back on a ${money(
+        inputs.deposit
+      )} spend, a profit of only about ${money(out.expectedValue)}${
+        out.riskRating === "high" ? ", and the swing on the way there is wide" : ""
+      }. Only worth it if you were buying anyway.`,
+    };
+  }
+  return {
+    tone: "good",
+    label: "Positive EV, worth taking",
+    detail: `Expected to leave you about ${money(out.realisticCashout)} to redeem from a ${money(
+      inputs.deposit
+    )} spend once playthrough is cleared, a profit of about ${money(out.expectedValue)}.`,
   };
 }
