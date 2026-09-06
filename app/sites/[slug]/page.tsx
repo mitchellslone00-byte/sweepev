@@ -7,6 +7,7 @@ import { ogMeta } from "@/lib/seo";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { CopyCode } from "@/components/CopyCode";
 import { PublicImg } from "@/components/PublicImg";
+import { evCalcHref } from "@/lib/calculators/site-preset";
 import { LegitCallout } from "@/components/LegitCallout";
 
 export function generateStaticParams() {
@@ -64,6 +65,9 @@ export default async function SitePage(
     month: "long",
     day: "numeric",
   });
+
+  // Deep link to the EV calculator with this offer prefilled, when the bundle is modellable.
+  const calcHref = evCalcHref(site);
 
   const reviewLd = {
     "@context": "https://schema.org",
@@ -205,6 +209,20 @@ export default async function SitePage(
         </div>
       )}
 
+      {calcHref && !site.comingSoon && (
+        <Link
+          href={calcHref}
+          className="mt-4 flex flex-wrap items-center gap-2 rounded-xl border border-accent/30 bg-accent/[0.05] p-4 text-sm transition-colors hover:bg-accent/10"
+        >
+          <span aria-hidden className="text-base">🧮</span>
+          <span className="text-muted">
+            <span className="font-semibold text-text">Is this offer actually +EV?</span>{" "}
+            Run the {site.name} bundle through our calculator, numbers already filled in.
+          </span>
+          <span className="ml-auto whitespace-nowrap font-semibold text-accent">Check the EV →</span>
+        </Link>
+      )}
+
       {!site.shutdownNotice && !site.comingSoon && (
         <LegitCallout name={site.name} rating={site.rating} />
       )}
@@ -287,9 +305,12 @@ export default async function SitePage(
                 }
               }
               return sections.filter(s => s.paras.length > 0).map((section, si) => (
-                <div key={si} className="mt-4 rounded-xl border border-accent/40 bg-panel p-5">
+                <section
+                  key={si}
+                  className="mt-8 border-t border-border pt-7 first:mt-6 first:border-t-0 first:pt-0"
+                >
                   {section.heading && (
-                    <h2 className="text-lg font-bold text-accent mb-3">{section.heading}</h2>
+                    <h2 className="text-xl sm:text-2xl font-bold text-accent mb-3">{section.heading}</h2>
                   )}
                   {section.paras.map((para, pi) =>
                     para === "<<guide>>" && guideUrl ? (
@@ -391,7 +412,7 @@ export default async function SitePage(
                       <p key={pi} className="text-muted leading-relaxed mt-3 first:mt-0">{para}</p>
                     )
                   )}
-                </div>
+                </section>
               ));
             })()}
           </>
@@ -510,11 +531,11 @@ export default async function SitePage(
               }),
             }}
           />
-          <section className="mt-8">
-            <h2 className="text-xl font-bold mb-4">Frequently Asked Questions</h2>
-            <div className="space-y-3">
+          <section className="mt-8 border-t border-border pt-7">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+            <div className="divide-y divide-border border-b border-border">
               {site.faqs.map((faq) => (
-                <div key={faq.q} className="rounded-xl border border-border bg-panel p-4">
+                <div key={faq.q} className="py-4 first:pt-0">
                   <p className="font-semibold text-text">{faq.q}</p>
                   <p className="mt-2 text-sm text-muted leading-relaxed">{faq.a}</p>
                 </div>
