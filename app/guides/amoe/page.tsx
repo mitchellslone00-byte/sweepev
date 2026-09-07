@@ -134,7 +134,7 @@ export default function AmoeGuidePage() {
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">
             <AffiliateLink slug="chumba-casino" name="Chumba Casino" source="amoe_guide" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">Chumba</AffiliateLink>,{" "}
             <AffiliateLink slug="luckyland-casino" name="LuckyLand Casino" source="amoe_guide" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">LuckyLand Casino</AffiliateLink>, and{" "}
-            <strong className="text-text">Global Poker</strong> each pay{" "}
+            <AffiliateLink slug="global-poker" name="Global Poker" source="amoe_guide" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">Global Poker</AffiliateLink> each pay{" "}
             <strong className="text-text">5 SC per day</strong> for a photo entry, credited the next day. Run
             all three and that&apos;s <strong className="text-text">15 SC per day</strong>.
           </li>
@@ -161,15 +161,15 @@ export default function AmoeGuidePage() {
         </p>
         <ul className="mt-3 space-y-2.5 text-muted leading-relaxed">
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">
-            <strong className="text-text">Chumba</strong>. Scroll to the bottom of the main page and open{" "}
+            <AffiliateLink slug="chumba-casino" name="Chumba" source="amoe_guide_steps" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">Chumba</AffiliateLink>. Scroll to the bottom of the main page and open{" "}
             <strong className="text-text">Entry Request</strong>.
           </li>
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">
-            <strong className="text-text">Global Poker</strong>. Go to{" "}
+            <AffiliateLink slug="global-poker" name="Global Poker" source="amoe_guide_steps" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">Global Poker</AffiliateLink>. Go to{" "}
             <strong className="text-text">Play for Free</strong> near the shop, then submit a request.
           </li>
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">
-            <strong className="text-text">LuckyLand Casino</strong>. Tap the gem icon at the
+            <AffiliateLink slug="luckyland-casino" name="LuckyLand Casino" source="amoe_guide_steps" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">LuckyLand Casino</AffiliateLink>. Tap the gem icon at the
             top, then go to <strong className="text-text">Profile → Entry Request</strong>.
           </li>
         </ul>
