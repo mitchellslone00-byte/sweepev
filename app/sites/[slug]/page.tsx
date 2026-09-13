@@ -396,6 +396,14 @@ export default async function SitePage(
                           className="rounded-2xl max-w-md border border-border shadow-lg"
                         />
                       </div>
+                    ) : para === "<<redemptionimage>>" && site.redemptionImage ? (
+                      <div key={pi} className="mt-4 flex justify-center">
+                        <PublicImg
+                          src={site.redemptionImage}
+                          alt={`A processed ${site.name} redemption and the redemptions timetable`}
+                          className="rounded-2xl max-w-xs border border-border shadow-lg"
+                        />
+                      </div>
                     ) : para === "<<missionsimage>>" && site.missionsImage ? (
                       <div key={pi} className="mt-4 flex justify-center">
                         <PublicImg

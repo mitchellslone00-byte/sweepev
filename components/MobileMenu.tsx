@@ -15,6 +15,7 @@ const LINKS = [
 const GUIDES = [
   { label: "General strategy", href: "/guides" },
   { label: "AMOE", href: "/guides/amoe" },
+  { label: "Pulsz & Pulsz Bingo", href: "/guides/pulsz" },
   { label: "CrownCoins", href: "/guides/crown-coins" },
   { label: "LuckyLand", href: "/guides/luckyland" },
   { label: "ReBet / Dogg House", href: "/guides/rebet" },
