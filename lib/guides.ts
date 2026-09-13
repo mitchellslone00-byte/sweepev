@@ -4,4 +4,4 @@
  * guide. Static guides (general, amoe, crown-coins, luckyland) live in their
  * own folders and are not listed here. Keep in sync with the Guides dropdown.
  */
-export const GUIDE_SLUGS = ["rebet"];
+export const GUIDE_SLUGS: string[] = [];

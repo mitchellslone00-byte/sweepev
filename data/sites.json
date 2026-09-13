@@ -651,12 +651,13 @@
       "Sports-focused, fewer slot promos"
     ],
     "strategy": {
-      "edge": "Our favorite sports-and-sweeps casino. The free pick promos, the monthly pass, and the steady daily SC make it more valuable over time than most sports-first social books. Strong opening welcome offer on top. Quick trick: the 1 SC daily will not stack if your balance is above $1, so place a long-term future bet that's heavily favored to stack up the freebies. Redemptions are fast. Instant to debit for amounts under $500, with a low 20 SC minimum.",
+      "edge": "Our favorite sports-and-sweeps casino. The free pick promos, the monthly pass, and the steady daily SC make it more valuable over time than most sports-first social books. Strong opening welcome offer on top. Quick trick: the 1 SC daily will not stack if your balance is above $1, so place a long-term future bet that's heavily favored to stack up the freebies. Redemptions are fast. Instant to debit for amounts under $500, with a low 20 SC minimum.\n\n<<guide>>",
       "washingGames": [
         "Plinko XY, high-90s RTP across risk levels and the standout choice on the site",
         "Low-risk Plinko (8-row, low-volatility) for slower variance on larger SC balances",
         "Casino originals, check posted RTP first and stick to 96%+ titles"
-      ]
+      ],
+      "guideUrl": "/guides/rebet"
     },
     "tier": "S",
     "relatedSites": [
@@ -676,7 +677,8 @@
       "speedHours": 0.4,
       "min": "20 SC",
       "note": "Instant on debit for redemptions under $500"
-    }
+    },
+    "updatedAt": "2026-09-12"
   },
   {
     "slug": "dogghouse",
@@ -704,7 +706,8 @@
       "Smaller catalog vs. major sites"
     ],
     "strategy": {
-      "edge": "One of the newer S-tier sites and built on the same UI engine as ReBet, so the experience feels familiar from day one. Daily SC drops are steady and the welcome bundle is one of the strongest openings in the space. Similar to ReBet, the daily SC won't stack with a non-zero balance, so place a heavily favored futures pick to stack them up. Redemptions are fast too. Instant to debit for amounts under $500, with a low 20 SC minimum."
+      "edge": "One of the newer S-tier sites and built on the same UI engine as ReBet, so the experience feels familiar from day one. Daily SC drops are steady and the welcome bundle is one of the strongest openings in the space. Similar to ReBet, the daily SC won't stack with a non-zero balance, so place a heavily favored futures pick to stack them up. Redemptions are fast too. Instant to debit for amounts under $500, with a low 20 SC minimum.\n\n<<guide>>",
+      "guideUrl": "/guides/rebet"
     },
     "tier": "S",
     "relatedSites": [
@@ -724,7 +727,8 @@
       "speedHours": 0.5,
       "min": "20 SC",
       "note": "Instant on debit for redemptions under $500"
-    }
+    },
+    "updatedAt": "2026-09-12"
   },
   {
     "slug": "legendz-casino",
