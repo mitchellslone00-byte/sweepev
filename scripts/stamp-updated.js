@@ -88,6 +88,35 @@ function stampReviews(stamp) {
   return changed.length + added.length;
 }
 
+/**
+ * The visible words on a guide page, with JSX markup removed. Comparing this
+ * instead of the raw file means an id, a className or a layout tweak does not
+ * move the last-updated date, while any change to the copy still does.
+ */
+function prose(src) {
+  return src
+    .replace(/<[^>]*>/g, " ") // tags, and every attribute inside them
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** True if the file's visible copy differs from the committed version. */
+function proseChanged(file) {
+  let head;
+  try {
+    head = git(`git show HEAD:${file}`);
+  } catch {
+    return true; // new file, nothing to compare against
+  }
+  let working;
+  try {
+    working = fs.readFileSync(file, "utf8");
+  } catch {
+    return true; // deleted
+  }
+  return prose(head) !== prose(working);
+}
+
 function stampGuides(stamp) {
   if (!fs.existsSync(GUIDE_DATES)) return 0;
   let files = [];
@@ -96,7 +125,7 @@ function stampGuides(stamp) {
   } catch {
     return 0;
   }
-  const routes = new Set(files.flatMap(routesForGuideFile));
+  const routes = new Set(files.filter(proseChanged).flatMap(routesForGuideFile));
   if (!routes.size) return 0;
 
   const dates = JSON.parse(fs.readFileSync(GUIDE_DATES, "utf8"));
