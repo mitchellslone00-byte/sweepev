@@ -404,6 +404,14 @@ export default async function SitePage(
                           className="rounded-2xl max-w-xs border border-border shadow-lg"
                         />
                       </div>
+                    ) : para === "<<viptiersimage>>" && site.vipTiersImage ? (
+                      <div key={pi} className="mt-4 flex justify-center">
+                        <PublicImg
+                          src={site.vipTiersImage}
+                          alt={`${site.name} VIP tiers, cashback rates and package discounts`}
+                          className="rounded-2xl max-w-2xl border border-border shadow-lg"
+                        />
+                      </div>
                     ) : para === "<<missionsimage>>" && site.missionsImage ? (
                       <div key={pi} className="mt-4 flex justify-center">
                         <PublicImg

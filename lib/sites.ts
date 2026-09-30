@@ -40,6 +40,8 @@ export type Site = {
   dailyLadderImage?: string;
   /** Screenshot of the VIP / loyalty program, always rendered capped and centered. */
   vipImage?: string;
+  /** Screenshot of the VIP tier table, always rendered capped and centered. */
+  vipTiersImage?: string;
   /** Screenshot of the missions or quests panel, always rendered capped and centered. */
   missionsImage?: string;
   /** Screenshot of a processed redemption receipt, always rendered capped and centered. */
