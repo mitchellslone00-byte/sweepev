@@ -354,7 +354,8 @@
       "speedHours": 2,
       "min": "60 SC",
       "note": null
-    }
+    },
+    "updatedAt": "2026-08-09"
   },
   {
     "slug": "lonestar",
@@ -460,7 +461,8 @@
       "speedHours": 96,
       "min": "100 SC",
       "note": null
-    }
+    },
+    "updatedAt": "2026-08-10"
   },
   {
     "slug": "realprize",
@@ -579,7 +581,8 @@
       "speedHours": 96,
       "min": "100 SC",
       "note": null
-    }
+    },
+    "updatedAt": "2026-08-22"
   },
   {
     "slug": "modo",
@@ -1172,7 +1175,8 @@
       }
     ],
     "bonusImage": "/images/onyx-games.png",
-    "compactImages": true
+    "compactImages": true,
+    "updatedAt": "2026-08-22"
   },
   {
     "slug": "wow-vegas",
@@ -1447,7 +1451,8 @@
     ],
     "bonusImage": "/images/coinsback-home.png",
     "dailyBonusImage": "/images/coinsback-feature.png",
-    "dailyLadderImage": "/images/coinsback-daily-bonus.png"
+    "dailyLadderImage": "/images/coinsback-daily-bonus.png",
+    "updatedAt": "2026-08-30"
   },
   {
     "slug": "coin-wizard",
@@ -1538,7 +1543,8 @@
     ],
     "compactImages": true,
     "dailyBonusImage": "/images/coin-wizard-daily-bonus.png",
-    "bonusImage": "/images/coin-wizard-earn-coins.png"
+    "bonusImage": "/images/coin-wizard-earn-coins.png",
+    "updatedAt": "2026-08-22"
   },
   {
     "slug": "golden-hearts",
@@ -1826,7 +1832,8 @@
         "a": "Yes. Moozi runs a full live dealer section powered by Evolution, including blackjack, baccarat, roulette, and game shows. Those live tables also make cross-washing possible, which a lot of newer sites do not offer."
       }
     ],
-    "promoCodeHow": "Get Coins → Redeem Code"
+    "promoCodeHow": "Get Coins → Redeem Code",
+    "updatedAt": "2026-08-28"
   },
   {
     "slug": "zula-casino",
@@ -2559,7 +2566,8 @@
         "code": "J476265",
         "sc": 1
       }
-    ]
+    ],
+    "updatedAt": "2026-08-22"
   },
   {
     "slug": "blitzmania",
@@ -2898,7 +2906,8 @@
     "reviewTitle": "Sweepstars Review 2026: Bonus, Redemptions, & Real EV+",
     "bonusImage": "/images/sweepstars-welcome.png",
     "dailyBonusImage": "/images/sweepstars-daily-bonus.png",
-    "compactImages": true
+    "compactImages": true,
+    "updatedAt": "2026-08-22"
   },
   {
     "slug": "acebet",
