@@ -623,7 +623,26 @@
       "speedHours": 0.5,
       "min": "50 SC",
       "note": "A small fee applies for instant cashout"
-    }
+    },
+    "restrictedStates": [
+      "Arizona",
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington",
+      "West Virginia"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "rebet",
@@ -678,7 +697,20 @@
       "min": "20 SC",
       "note": "Instant on debit for redemptions under $500"
     },
-    "updatedAt": "2026-09-12"
+    "updatedAt": "2026-09-30",
+    "restrictedStates": [
+      "Arizona",
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Louisiana",
+      "Maryland",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York"
+    ]
   },
   {
     "slug": "dogghouse",
@@ -728,7 +760,23 @@
       "min": "20 SC",
       "note": "Instant on debit for redemptions under $500"
     },
-    "updatedAt": "2026-09-12"
+    "updatedAt": "2026-09-30",
+    "restrictedStates": [
+      "Arizona",
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Maryland",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee"
+    ]
   },
   {
     "slug": "legendz-casino",
@@ -765,7 +813,24 @@
       "speedHours": 1,
       "min": "100 SC",
       "note": null
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Indiana",
+      "Kentucky",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "card-crush",
@@ -795,7 +860,12 @@
     "strategy": {
       "edge": "Card Crush has quickly become one of the more interesting sweepstakes platforms available today. Recently expanding to 48 states, it's now accessible to players across most of the United States, with only Nevada and Washington excluded. This makes it a great option for players who often run into state restrictions on other platforms.\n\nNew players receive 2 MC just for signing up, along with a solid lineup of welcome offers and ongoing promotions. The site regularly runs sales and bonus events, making it easy to stretch your playtime and find extra value throughout the month.\n\nOne of Card Crush's biggest strengths is its low $10 gift card redemption minimum, making rewards more accessible than many competing platforms. Cash redemptions start at $75, and the site also includes a VIP program for players looking to earn additional perks over time.\n\nOverall, Card Crush combines strong promotions, a large game selection, and broad state availability into a package that's easy to recommend. If you're eligible to play, it's definitely worth adding to your rotation."
     },
-    "tier": "S"
+    "tier": "S",
+    "restrictedStates": [
+      "Nevada",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "chumba-casino",
@@ -845,7 +915,23 @@
       "min": "100 SC",
       "note": null
     },
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-09-30",
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Mississippi",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington",
+      "West Virginia"
+    ]
   },
   {
     "slug": "global-poker",
@@ -993,7 +1079,23 @@
       "min": "100 SC",
       "note": null
     },
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-09-30",
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Mississippi",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington",
+      "West Virginia"
+    ]
   },
   {
     "slug": "onyx-odds",
@@ -1103,7 +1205,25 @@
     "relatedSites": [
       "rolla"
     ],
-    "tier": "A"
+    "tier": "A",
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Maryland",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "pulsz-bingo",
@@ -1211,7 +1331,24 @@
       "speedHours": 0,
       "min": "100 SC",
       "note": null
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Mississippi",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "coinsback-casino",
@@ -1440,7 +1577,21 @@
       "claim": "Login streak",
       "note": "2.7 SC/week via streak",
       "scales": false
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Indiana",
+      "Maine",
+      "Michigan",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "clash5",
@@ -1724,7 +1875,25 @@
       "speedHours": 60,
       "min": "50 SC",
       "note": null
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "sportzino",
@@ -1764,7 +1933,26 @@
       "claim": "Login streak",
       "note": "5.35 SC/week via streak",
       "scales": false
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Georgia",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "yay-casino",
@@ -1802,7 +1990,25 @@
       "claim": "Login streak",
       "note": "5 SC/week via streak",
       "scales": false
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "american-luck",
@@ -1843,7 +2049,22 @@
       "claim": "Login streak",
       "note": "3.5 SC/week via streak",
       "scales": false
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Indiana",
+      "Louisiana",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "reel-zappy",
@@ -2024,7 +2245,25 @@
       "speedHours": 60,
       "min": "50 SC",
       "note": null
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "luck-party",
@@ -2072,7 +2311,25 @@
       "speedHours": 60,
       "min": "50 SC",
       "note": null
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "win-bonanza",
@@ -2113,7 +2370,25 @@
       "speedHours": 60,
       "min": "50 SC",
       "note": null
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Illinois",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "rolla",
@@ -2146,7 +2421,23 @@
     "tier": "A",
     "relatedSites": [
       "wow-vegas"
-    ]
+    ],
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Indiana",
+      "Louisiana",
+      "Maine",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "fortune-purple",
@@ -2299,7 +2590,23 @@
     "strategy": {
       "edge": "Blitzmania is one of the newer sweepstakes sites we've added to SweepEV, and it's quickly become a favorite for a lot of players. The welcome offer is solid, and they've consistently run some pretty good promotions and sales.\n\nOne thing that stands out is the 1x playthrough requirement, which makes it much easier to convert your rewards compared to sites with higher wagering requirements. For players who like to wash strategically, Blitzmania is generally a straightforward site to work with.\n\nIf you're interested in VIP programs, Blitzmania is worth paying attention to as well. The rewards start becoming noticeably better once you reach Silver VIP, and the daily benefits can add up over time. Players focused on long-term value may find that VIP farming here is a worthwhile strategy.\n\nBetween the welcome package, frequent sales, low playthrough requirement, and decent VIP perks, Blitzmania offers a lot to like. If you haven't given it a try yet, it's definitely a site worth checking out and keeping on your radar for future promotions."
     },
-    "tier": "B"
+    "tier": "B",
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Louisiana",
+      "Maryland",
+      "Michigan",
+      "Mississippi",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "spinquest",
@@ -2343,7 +2650,20 @@
       "speedHours": 0,
       "min": "50 SC",
       "note": "Instant on debit for redemptions under $500"
-    }
+    },
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "spinpals",
@@ -2376,7 +2696,25 @@
     "tier": "B",
     "relatedSites": [
       "clash5"
-    ]
+    ],
+    "restrictedStates": [
+      "Alabama",
+      "Arizona",
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington",
+      "West Virginia"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "babacasino",
@@ -2406,7 +2744,28 @@
     "strategy": {
       "edge": "Baba is a newer sweepstakes casino that offers a decent daily streak, farmable SC accumulation, and some decent sales. It's a reliable platform that you should definitely add to your list. Baba has a $50 minimum gift-card redemption and $100 for a cash prize, so use that to your advantage for your daily farming."
     },
-    "tier": "B"
+    "tier": "B",
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Hawaii",
+      "Idaho",
+      "Louisiana",
+      "Maryland",
+      "Michigan",
+      "Mississippi",
+      "Montana",
+      "Nebraska",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "North Dakota",
+      "Vermont",
+      "Washington",
+      "West Virginia"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "jackpotdaily",
@@ -2435,7 +2794,25 @@
     "strategy": {
       "edge": "JackpotDaily has a strong welcome offer at 134 SC for $60, a 30% daily purchase bonus, and a decent daily login streak. The playthrough requirements can get unusual depending on the game. Rocket Dice XY has been our personal go-to. There's some great juice here, don't miss it."
     },
-    "tier": "B"
+    "tier": "B",
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Indiana",
+      "Louisiana",
+      "Maryland",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington",
+      "West Virginia"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "sweepstars",
@@ -2556,7 +2933,17 @@
       "claim": "Login",
       "note": "Balance must be $0 to claim",
       "scales": false
-    }
+    },
+    "restrictedStates": [
+      "Connecticut",
+      "Louisiana",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "speedsweeps",
@@ -2589,7 +2976,22 @@
     "relatedSites": [
       "dimesweeps",
       "sweepsroyal"
-    ]
+    ],
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Hawaii",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "dimesweeps",
@@ -2622,7 +3024,22 @@
     "relatedSites": [
       "speedsweeps",
       "sweepsroyal"
-    ]
+    ],
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Hawaii",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "sweepsroyal",
@@ -2655,7 +3072,22 @@
     "relatedSites": [
       "speedsweeps",
       "richsweeps"
-    ]
+    ],
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Hawaii",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "richsweeps",
@@ -2688,7 +3120,22 @@
     "relatedSites": [
       "sweepsroyal",
       "bangcoins"
-    ]
+    ],
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Hawaii",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "bangcoins",
@@ -2721,7 +3168,22 @@
     "relatedSites": [
       "richsweeps",
       "dimesweeps"
-    ]
+    ],
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Hawaii",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Washington"
+    ],
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "united-slots",
@@ -2776,6 +3238,22 @@
       }
     ],
     "publishedAt": "2026-09-03",
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-09-30",
+    "restrictedStates": [
+      "California",
+      "Connecticut",
+      "Delaware",
+      "Idaho",
+      "Louisiana",
+      "Michigan",
+      "Mississippi",
+      "Montana",
+      "Nevada",
+      "New Jersey",
+      "New York",
+      "Tennessee",
+      "Washington",
+      "West Virginia"
+    ]
   }
 ]
