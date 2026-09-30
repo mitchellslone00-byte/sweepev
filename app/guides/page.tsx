@@ -208,7 +208,7 @@ export default function GuidesPage() {
             { name: "Crown Coins", slug: "crown-coins" },
             { name: "Sweet Sweeps", slug: "sweet-sweeps" },
             { name: "Chumba Casino", slug: "chumba-casino" },
-            { name: "LuckyLand Slots", slug: "luckyland-slots" },
+            { name: "LuckyLand Casino", slug: "luckyland-casino" },
             { name: "Pulsz", slug: "pulsz" },
             { name: "Modo", slug: "modo" },
             { name: "ReBet", slug: "rebet" },

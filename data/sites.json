@@ -826,10 +826,9 @@
       "No crypto redemption"
     ],
     "strategy": {
-      "edge": "Chumba Casino is VGW's flagship sweepstakes platform and one of the most established names in the space. The same company runs LuckyLand Slots and LuckyLand Casino, and that Malta gaming license and proven infrastructure carries across all three. If you want a platform you can trust completely, Chumba is about as reliable as it gets.\n\nThe daily login streak gives you 1 SC per day, and staying consistent compounds over time. On top of that, Chumba offers a digital AMOE worth up to 5 SC per day, which is one of the more generous free entry options available on any platform right now. Combining both, players who stay active can build up meaningful SC without making any purchases at all.\n\nRedemptions are fast and consistent. Chumba has been processing cashouts for years and the track record speaks for itself. No crypto option is available, but cash and standard transfer options are reliable and well tested.\n\nThere is no traditional VIP farming structure at Chumba. If VIP farming is a core part of your strategy, pair it with LuckyLand Slots where the VIP program is much more developed. Chumba's value comes from the daily accumulation, the digital AMOE, and the overall reliability of the platform.\n\nBottom line: Chumba Casino is a cornerstone site for any serious sweepstakes rotation in 2026. The daily SC, the generous AMOE, and the operator track record make it a permanent fixture."
+      "edge": "Chumba Casino is VGW's flagship sweepstakes platform and one of the most established names in the space. The same company runs LuckyLand Casino and Global Poker, and that Malta gaming license and proven infrastructure carries across all of them. If you want a platform you can trust completely, Chumba is about as reliable as it gets.\n\nThe daily login streak gives you 1 SC per day, and staying consistent compounds over time. On top of that, Chumba offers a digital AMOE worth up to 5 SC per day, which is one of the more generous free entry options available on any platform right now. Combining both, players who stay active can build up meaningful SC without making any purchases at all.\n\nRedemptions are fast and consistent. Chumba has been processing cashouts for years and the track record speaks for itself. No crypto option is available, but cash and standard transfer options are reliable and well tested.\n\nThere is no traditional VIP farming structure at Chumba. If VIP farming is a core part of your strategy, pair it with LuckyLand Casino where the VIP program is much more developed. Chumba's value comes from the daily accumulation, the digital AMOE, and the overall reliability of the platform.\n\nBottom line: Chumba Casino is a cornerstone site for any serious sweepstakes rotation in 2026. The daily SC, the generous AMOE, and the operator track record make it a permanent fixture."
     },
     "relatedSites": [
-      "luckyland-slots",
       "luckyland-casino"
     ],
     "dailySC": {
@@ -845,58 +844,8 @@
       "speedHours": 36,
       "min": "100 SC",
       "note": null
-    }
-  },
-  {
-    "slug": "luckyland-slots",
-    "name": "LuckyLand Slots",
-    "tagline": "VGW sweepstakes casino with farmable VIP, up to 80 SC per month, and a $10 gift card floor.",
-    "publishedAt": "2026-06-07",
-    "rating": 4.9,
-    "tier": "S",
-    "bonus": "$10 for 30 SC welcome offer + 1 SC daily login bonus",
-    "promoCode": "",
-    "homepageUrl": "https://luckylandslots.com",
-    "affiliateUrl": "https://luckylandslots.com",
-    "available": "Available in most US states",
-    "highlights": [
-      "1 SC daily login bonus",
-      "VIP earns up to 80 SC per month",
-      "Frequent flash sales and free SC for VIP",
-      "Digital AMOE worth up to 5 SC/day"
-    ],
-    "pros": [
-      "1 SC daily",
-      "Amazing VIP farming (up to 80 SC/month)",
-      "Frequent flash sales",
-      "$10 gift card redemption minimum",
-      "Malta licensed and VGW backed",
-      "Digital AMOE worth up to 5 SC/day"
-    ],
-    "cons": [
-      "No live games",
-      "No crypto redemption",
-      "Flash sales require active monitoring"
-    ],
-    "strategy": {
-      "edge": "LuckyLand Slots is VGW's sweepstakes platform, the same operator behind Chumba Casino. That operator backing matters: it means reliable redemptions, a Malta gaming license, and a proven track record that most newer platforms simply cannot match.\n\nThe VIP program is the main reason LuckyLand earns its spot at the top of our list. As you climb through tiers, you earn additional monthly SC bonuses on top of your daily login, up to 80 SC per month at higher VIP levels. That kind of passive accumulation compounding alongside your daily bonus puts LuckyLand in a different category than most sites. For players serious about building a sweepstakes rotation around long-term value, this is one of the best VIP systems available.\n\n<<guide>>\n\nThe daily login bonus is strong and farmable, and the promotional cadence is genuinely high. Flash sales drop regularly and tend to offer real value when you catch them. We share LuckyLand flash sale alerts in our Discord, so make sure you are in there.\n\nOn the redemption side, the gift card floor is one of the lowest we have seen anywhere at just $10. Cash redemptions start at $50. No crypto, but the ability to pull small gift card redemptions frequently is useful for players who do not want balances sitting idle.\n\nBottom line: LuckyLand Slots is a consistent, high-value site with one of the most rewarding VIP programs in the space. If you are not running it as part of your regular rotation in 2026, you are leaving monthly SC on the table.",
-      "guideUrl": "/guides/luckyland"
     },
-    "relatedSites": [
-      "chumba-casino",
-      "luckyland-casino"
-    ],
-    "redemption": {
-      "fastestMethod": "Skrill / bank",
-      "fastestTime": "1-2 days",
-      "speedHours": 36,
-      "min": "100 SC",
-      "note": null
-    },
-    "shutdownNotice": {
-      "date": "September 14th",
-      "message": "LuckyLand Slots has announced it is closing operations and will shut down on September 14th, 2026. If you still have a Sweeps Coins balance, redeem it before then. New signups are no longer recommended. We have removed LuckyLand Slots from our Free Daily SC rankings and AMOE guide."
-    }
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "global-poker",
@@ -976,7 +925,7 @@
     "tier": "S",
     "relatedSites": [
       "chumba-casino",
-      "luckyland-slots"
+      "luckyland-casino"
     ],
     "redemption": {
       "fastestMethod": "Gift card / Skrill",
@@ -991,7 +940,8 @@
       "claim": "Login streak",
       "note": "Climbs to 1 SC on a 7-day streak",
       "scales": true
-    }
+    },
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "luckyland-casino",
@@ -1007,7 +957,7 @@
     "available": "Available in most US states",
     "highlights": [
       "VGW backed, Malta licensed",
-      "Same operator as Chumba and LuckyLand Slots",
+      "Same operator as Chumba Casino and Global Poker",
       "Get in early for launch welcome offers",
       "Digital AMOE worth up to 5 SC/day"
     ],
@@ -1022,12 +972,12 @@
       "No crypto redemption"
     ],
     "strategy": {
-      "edge": "LuckyLand Casino is a VGW platform, the same company behind Chumba Casino and LuckyLand Slots. VGW has one of the strongest track records in the sweepstakes space, backed by a Malta gaming license and years of consistent, reliable operations.\n\nThe daily login streak gives you 1 SC per day, which stacks up quickly when you stay consistent. Pair that with one of the stronger VIP farming setups we have seen and you are looking at up to 80 SC per month in additional value on top of your daily. For players focused on long-term accumulation, LuckyLand Casino delivers.\n\n<<guide>>\n\nThe welcome offer is solid at $10 for 30 SC, and the operator track record means you can trust the redemption process. Cash redemptions start at $100, and there is no crypto or gift card option currently, so plan accordingly.\n\nOverall, LuckyLand Casino is a well-rounded platform with real recurring value through its daily streak and VIP program. The VGW name behind it gives you confidence that it will continue to develop. Get signed up, stay consistent, and let the daily SC and VIP bonuses do the work.",
+      "edge": "LuckyLand Casino is a VGW platform, the same company behind Chumba Casino and Global Poker. VGW has one of the strongest track records in the sweepstakes space, backed by a Malta gaming license and years of consistent, reliable operations.\n\nThe daily login streak gives you 1 SC per day, which stacks up quickly when you stay consistent. Pair that with one of the stronger VIP farming setups we have seen and you are looking at up to 80 SC per month in additional value on top of your daily. For players focused on long-term accumulation, LuckyLand Casino delivers.\n\n<<guide>>\n\nThe welcome offer is solid at $10 for 30 SC, and the operator track record means you can trust the redemption process. Cash redemptions start at $100, and there is no crypto or gift card option currently, so plan accordingly.\n\nOverall, LuckyLand Casino is a well-rounded platform with real recurring value through its daily streak and VIP program. The VGW name behind it gives you confidence that it will continue to develop. Get signed up, stay consistent, and let the daily SC and VIP bonuses do the work.",
       "guideUrl": "/guides/luckyland"
     },
     "relatedSites": [
       "chumba-casino",
-      "luckyland-slots"
+      "global-poker"
     ],
     "dailySC": {
       "amount": 1,
@@ -1042,7 +992,8 @@
       "speedHours": 36,
       "min": "100 SC",
       "note": null
-    }
+    },
+    "updatedAt": "2026-09-30"
   },
   {
     "slug": "onyx-odds",
@@ -1260,62 +1211,6 @@
       "speedHours": 0,
       "min": "100 SC",
       "note": null
-    }
-  },
-  {
-    "slug": "coin-frenzy",
-    "name": "Coin Frenzy",
-    "tagline": "Promising new social casino with a 1 SC daily login bonus, juicy welcome offers, and originals like Mines and Plinko.",
-    "publishedAt": "2026-06-29",
-    "metaDescription": "Coin Frenzy review: social casino with a 1 SC daily login bonus, welcome offers, and originals like Mines and Plinko. 10,000 GC + 1 SC free on signup.",
-    "rating": 4.7,
-    "bonus": "10,000 GC + 1 SC free on signup (best offer $100 for 150 SC)",
-    "promoCode": "",
-    "homepageUrl": "https://coinfrenzy.com",
-    "affiliateUrl": "https://coinfrenzy.com/?referralcode=theturbokermit",
-    "available": "",
-    "reviewTitle": "Coin Frenzy Review 2026: Bonus, Redemptions, & Real EV+",
-    "highlights": [
-      "1 SC daily login bonus",
-      "Juicy welcome offers",
-      "Originals like Mines & Plinko"
-    ],
-    "pros": [
-      "10,000 GC + 1 SC free on signup, no purchase",
-      "1 SC daily login bonus",
-      "Juicy welcome offers. Best is $100 for 150 SC",
-      "Nice game library with originals like Mines and Plinko",
-      "Live dealers enable cross-washing"
-    ],
-    "cons": [
-      "3x SC playthrough on most games, 5x on tables. Higher than the 1x most top sites run",
-      "Newer brand with a shorter track record",
-      "100 SC cash redemption minimum",
-      "Not available in 9 states"
-    ],
-    "restrictedStates": [
-      "California",
-      "Connecticut",
-      "Idaho",
-      "Louisiana",
-      "Michigan",
-      "Montana",
-      "Nevada",
-      "New Jersey",
-      "New York"
-    ],
-    "strategy": {
-      "edge": "Coin Frenzy is a newer social casino that has quickly earned a spot on our A-tier list thanks to a massive 1,300+ game library, live dealer tables, and one of the more generous daily login bonuses in the space. Between the free signup SC, the daily 1 SC, and a full slate of races, cashback, and tournaments, there is real recurring value here for active players.\n\n<<section:Bonuses & Promotions>>\n\nNew players get 10,000 GC + 1 SC just for completing signup. No purchase needed. On the purchase side the welcome offers are genuinely juicy, with the best value being $100 for 150 SC. The daily login bonus is a strong 1 SC (plus 1,000 GC), with hourly Gold Coin check-ins on top. Coin Frenzy also runs recurring races, cashback, and monthly tournaments with SC prizes.\n\nWe post Coin Frenzy free SC links and promo drops in our Discord as they come up, so make sure you are in there to catch them.\n\n<<discord>>\n\n<<section:Game Selection>>\n\nCoin Frenzy runs a large 1,300+ game library, including 500+ slots and 250+ table and live dealer titles, from providers like Hacksaw Gaming, Booming Games, and 3 Oaks Gaming, plus ICONIC21-powered live tables. The originals are a highlight. Mines and Plinko are both here and are some of the best options for low-variance play.\n\nOne important note for washing: the playthrough is 3x on most games but 5x on table games, so the live tables are not your best cross-wash option here. Stick to the 3x originals like Plinko and Mines (or high-RTP slots) at minimum bet to clear your balance with the least risk.\n\n<<section:Redemptions>>\n\nCash redemptions require a 100 SC minimum and process within 1-5 business days after approval. Bonus SC carries a 3x playthrough requirement on most games and 5x on table games before it can be redeemed. Higher than the 1x you will find at most top sites, so factor that into your washing. KYC verification is required before your first redemption.\n\n<<section:State Availability>>\n\nCoin Frenzy is NOT available in California, Connecticut, Idaho, Louisiana, Michigan, Montana, Nevada, New Jersey, or New York. It is available in the remaining US states.\n\n<<section:Trust & Legitimacy>>\n\nCoin Frenzy is a newer entrant, so it has a shorter track record than established names. It runs licensed, RNG-tested games from reputable providers, and KYC verification is required before your first redemption. As with any newer site, start small and confirm your first redemption clears smoothly before scaling up.",
-      "washingGames": [
-        "Plinko, low-variance original at the lower 3x playthrough",
-        "Mines, high-EV+ original at the 3x playthrough with optimal play",
-        "High-RTP slots. Also 3x, far better than the 5x on tables"
-      ]
-    },
-    "tier": "A",
-    "shutdownNotice": {
-      "date": "September 26th",
-      "message": "Coin Frenzy has announced it is closing operations and will shut down on September 26th, 2026. If you still have a Sweeps Coins balance, redeem it before then. New signups are no longer recommended. We have removed Coin Frenzy from our Free Daily SC rankings."
     }
   },
   {
@@ -2852,7 +2747,7 @@
     "pros": [],
     "cons": [],
     "strategy": {
-      "edge": "United Slots is the newest sweepstakes casino from VGW, the operator behind Chumba Casino, LuckyLand Slots, LuckyLand Casino, and Global Poker. The brand is live and the site is up, but you cannot sign up yet. Attempting to create an account returns a \"coming soon\" notice saying registration is not available.\n\nWe are publishing this early because United Slots is worth knowing about before it opens, not because we have tested it. There is no rating on this page and no recommendation attached to it. The moment registration goes live we will sign up, run the welcome offer, test a redemption, and replace this with a full review scored the same way as every other site here.\n\n<<section:What we know so far>>\n\nThe site is live at unitedslots.com under VGW Group branding, carrying the standard \"no purchase necessary\" sweepstakes language. The homepage confirms the dual-currency setup: you play with Gold Coins for fun, and collect free Sweeps Coins that can be redeemed for real prizes. That is the same structure VGW runs across its existing brands.\n\nWhat is not available yet: the welcome offer, purchase packages, redemption minimums and methods, the game library and providers, and the confirmed state list. None of that has been published, and we are not going to guess at numbers for a site nobody can join yet.\n\n<<section:Who is VGW, and why it matters>>\n\nVGW is one of the most established operators in the US sweepstakes space, which is the single most useful thing to know about United Slots right now. A brand-new site from an unknown operator is a risk. A brand-new site from VGW comes with a track record you can actually check.\n\nYou can read our reviews of their existing brands to get a feel for what the operator does well and where it falls short. Chumba Casino and LuckyLand Slots are the long-running originals, LuckyLand Casino is the newer sibling, and Global Poker is the poker-focused arm. All four support digital AMOE, where a photographed handwritten entry earns free Sweeps Coins with no purchase, which is one of the more valuable habits in the space. Whether United Slots offers the same is unconfirmed, but it would be consistent with how VGW runs its other sites.\n\n<<section:What to expect at launch>>\n\nEverything in this section is reported or expected rather than confirmed, so treat it as a preview and not as fact.\n\nIndustry coverage of the launch describes weekly leaderboards, daily login rewards, and a Sweeps Coins redemption flow. United Slots is also reported to be the debut of a new centralized VGW tech platform intended to serve all of its brands, which is the more interesting detail: if that holds, the site may feel faster and more modern than VGW's older properties rather than being a reskin of them.\n\nVGW applies a 21+ minimum age across its brands, so expect the same here rather than the 18+ you will find on some competitors.\n\n<<section:Will United Slots be available in my state?>>\n\nThere is no confirmed state list yet. Pre-launch coverage suggested United Slots would skip a substantial number of states, in line with VGW pulling back from several markets, but no official availability list has been published and we are not going to present an unverified list as if it were settled.\n\nIf you are in a restricted state, the practical answer is not to wait on this one. Our state pages list the casinos that actually accept players where you live today, and card-based sites are the usual route in states where the dual-currency model is banned.\n\n<<section:What happens when it opens>>\n\nWe will sign up on day one, claim whatever the welcome offer turns out to be, play through it, and put a redemption through end to end. Only after that will this page get a rating and a place in the rankings. Until then it stays unrated on purpose, because every site we score is one we have actually tested."
+      "edge": "United Slots is the newest sweepstakes casino from VGW, the operator behind Chumba Casino, LuckyLand Casino, and Global Poker. The brand is live and the site is up, but you cannot sign up yet. Attempting to create an account returns a \"coming soon\" notice saying registration is not available.\n\nWe are publishing this early because United Slots is worth knowing about before it opens, not because we have tested it. There is no rating on this page and no recommendation attached to it. The moment registration goes live we will sign up, run the welcome offer, test a redemption, and replace this with a full review scored the same way as every other site here.\n\n<<section:What we know so far>>\n\nThe site is live at unitedslots.com under VGW Group branding, carrying the standard \"no purchase necessary\" sweepstakes language. The homepage confirms the dual-currency setup: you play with Gold Coins for fun, and collect free Sweeps Coins that can be redeemed for real prizes. That is the same structure VGW runs across its existing brands.\n\nWhat is not available yet: the welcome offer, purchase packages, redemption minimums and methods, the game library and providers, and the confirmed state list. None of that has been published, and we are not going to guess at numbers for a site nobody can join yet.\n\n<<section:Who is VGW, and why it matters>>\n\nVGW is one of the most established operators in the US sweepstakes space, which is the single most useful thing to know about United Slots right now. A brand-new site from an unknown operator is a risk. A brand-new site from VGW comes with a track record you can actually check.\n\nYou can read our reviews of their existing brands to get a feel for what the operator does well and where it falls short. Chumba Casino is the long-running original, LuckyLand Casino is the newer sibling, and Global Poker is the poker-focused arm. All four support digital AMOE, where a photographed handwritten entry earns free Sweeps Coins with no purchase, which is one of the more valuable habits in the space. Whether United Slots offers the same is unconfirmed, but it would be consistent with how VGW runs its other sites.\n\n<<section:What to expect at launch>>\n\nEverything in this section is reported or expected rather than confirmed, so treat it as a preview and not as fact.\n\nIndustry coverage of the launch describes weekly leaderboards, daily login rewards, and a Sweeps Coins redemption flow. United Slots is also reported to be the debut of a new centralized VGW tech platform intended to serve all of its brands, which is the more interesting detail: if that holds, the site may feel faster and more modern than VGW's older properties rather than being a reskin of them.\n\nVGW applies a 21+ minimum age across its brands, so expect the same here rather than the 18+ you will find on some competitors.\n\n<<section:Will United Slots be available in my state?>>\n\nThere is no confirmed state list yet. Pre-launch coverage suggested United Slots would skip a substantial number of states, in line with VGW pulling back from several markets, but no official availability list has been published and we are not going to present an unverified list as if it were settled.\n\nIf you are in a restricted state, the practical answer is not to wait on this one. Our state pages list the casinos that actually accept players where you live today, and card-based sites are the usual route in states where the dual-currency model is banned.\n\n<<section:What happens when it opens>>\n\nWe will sign up on day one, claim whatever the welcome offer turns out to be, play through it, and put a redemption through end to end. Only after that will this page get a rating and a place in the rankings. Until then it stays unrated on purpose, because every site we score is one we have actually tested."
     },
     "faqs": [
       {
@@ -2861,7 +2756,7 @@
       },
       {
         "q": "Who owns United Slots?",
-        "a": "VGW, the same operator behind Chumba Casino, LuckyLand Slots, LuckyLand Casino, and Global Poker. That is the most useful thing to know about it right now, since it means the site launches with an established operator behind it rather than an unknown one."
+        "a": "VGW, the same operator behind Chumba Casino, LuckyLand Casino, and Global Poker. That is the most useful thing to know about it right now, since it means the site launches with an established operator behind it rather than an unknown one."
       },
       {
         "q": "What is the United Slots welcome bonus?",
@@ -2880,6 +2775,7 @@
         "a": "No official list has been published. Pre-launch coverage suggested a number of states would be excluded, but nothing is confirmed. If you want to know what you can actually play today, check our state pages instead."
       }
     ],
-    "publishedAt": "2026-09-03"
+    "publishedAt": "2026-09-03",
+    "updatedAt": "2026-09-30"
   }
 ]

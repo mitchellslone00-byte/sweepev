@@ -8,7 +8,7 @@ const items = [
   { label: "AMOE", href: "/guides/amoe" },
   { label: "Pulsz & Pulsz Bingo", href: "/guides/pulsz" },
   { label: "CrownCoins", href: "/guides/crown-coins" },
-  { label: "LuckyLand Slots/Casino", href: "/guides/luckyland" },
+  { label: "LuckyLand Casino", href: "/guides/luckyland" },
   { label: "ReBet / Dogg House", href: "/guides/rebet" },
 ];
 

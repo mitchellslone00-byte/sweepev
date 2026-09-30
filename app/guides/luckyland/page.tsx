@@ -5,15 +5,15 @@ import { guideDate } from "@/lib/guide-dates";
 import { ogMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "LuckyLand Slots & Casino, VIP Leveling Guide",
-  description: "How to climb LuckyLand Slots / LuckyLand Casino VIP tiers each month for exclusive package offers, Quacky Hour sales, and free SC scavenger hunts.",
+  title: "LuckyLand Casino VIP Leveling Guide",
+  description: "How to climb LuckyLand Casino VIP tiers each month for exclusive package offers, Quacky Hour sales, and free SC scavenger hunts.",
   alternates: {
     canonical: `${siteConfig.url}/guides/luckyland`,
   },
   ...ogMeta(
     "/guides/luckyland",
-    "LuckyLand Slots & Casino, VIP Leveling Guide",
-    "How to climb LuckyLand Slots / LuckyLand Casino VIP tiers each month for exclusive package offers, Quacky Hour sales, and free SC scavenger hunts."
+    "LuckyLand Casino VIP Leveling Guide",
+    "How to climb LuckyLand Casino VIP tiers each month for exclusive package offers, Quacky Hour sales, and free SC scavenger hunts."
   ),
 };
 
@@ -24,7 +24,7 @@ export default function LuckyLandGuidePage() {
 
       <header className="mt-4">
         <h1 className="text-3xl md:text-4xl font-black">
-          LuckyLand Slots &amp; LuckyLand Casino, VIP Leveling Guide
+          LuckyLand Casino VIP Leveling Guide
         </h1>
         <p className="mt-2 text-muted">
           The monthly play on LuckyLand. Climb VIP at the start of each month
@@ -39,8 +39,8 @@ export default function LuckyLandGuidePage() {
         </h2>
         <p className="mt-3 text-muted leading-relaxed">
           At the beginning of each month, your VIP level{" "}
-          <strong className="text-text">resets</strong> on both LuckyLand Slots
-          and LuckyLand Casino. You climb back up by wagering Gold Coins ,{" "}
+          <strong className="text-text">resets</strong> on LuckyLand Casino. You
+          climb back up by wagering Gold Coins,{" "}
           <strong className="text-text">spin size doesn&apos;t matter</strong>,
           only wagered volume counts. Run GC auto-spin overnight in the first
           few days of the month to climb fast.
