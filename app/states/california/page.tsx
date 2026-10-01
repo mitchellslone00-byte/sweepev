@@ -41,7 +41,7 @@ const faqSchema = {
       name: "What online casinos can California residents use in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "California residents have a few solid options in 2026. Crown Coins Casino. The top-ranked sweepstakes casino overall. Continues to operate in California. Card Crush and Clash 5 are also available, operating on a card-based model purpose-built for restricted states like California.",
+        text: "California residents have a few solid options in 2026. Crown Coins Casino. The top-ranked sweepstakes casino overall. Continues to operate in California. Card Crush and Clash 5 are also available, operating on a card-based model purpose-built for restricted states like California. Candy Coins, which launched in August 2026 from the same operator as Sweet Sweeps, plays in 48 states and is available in California too.",
       },
     },
     {
@@ -50,6 +50,14 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "Yes. Card Crush is available in 48 US states including California. It operates on a card-based model rather than a sweepstakes framework, which is why it is accessible where most sweepstakes casinos are not.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Candy Coins available in California?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Candy Coins is available in 48 US states, with Nevada and Washington the only exclusions, so California residents can play. It launched in August 2026 under Inimitable Solutions Limited, the same operator behind Sweet Sweeps, and gives 2 SC free on signup with no purchase needed.",
       },
     },
     {
@@ -134,7 +142,7 @@ export default function CaliforniaPage() {
         <section className="mt-6 rounded-2xl border border-green-500/40 bg-green-500/5 p-5">
           <p className="font-bold text-text text-lg">Good news. California has some solid options.</p>
           <p className="mt-1 text-muted leading-relaxed">
-            While most sweepstakes casinos block California, a few notable platforms are fully available. Crown Coins Casino. Our top-ranked site overall. Still operates in California, which is a big deal. On top of that, card-based platforms like Card Crush and Clash 5 are purpose-built for states like California. You have real options here.
+            While most sweepstakes casinos block California, a few notable platforms are fully available. Crown Coins Casino. Our top-ranked site overall. Still operates in California, which is a big deal. On top of that, Card Crush and Clash 5 are purpose-built for states like California, and Candy Coins is the newest arrival, playable in 48 states. You have real options here.
           </p>
         </section>
 
@@ -145,7 +153,7 @@ export default function CaliforniaPage() {
             Sweepstakes casinos operate under promotional sweepstakes law, which varies significantly by state. California has stricter regulations around sweepstakes and promotional gaming than most of the country, and most operators have made the business decision to exclude California rather than navigate the state&apos;s compliance requirements. Idaho, Washington, and a handful of other states face similar restrictions.
           </p>
           <p className="mt-3 text-muted leading-relaxed">
-            That said, Crown Coins Casino. Our number one ranked site. Continues to operate in California. It is one of the few traditional sweepstakes casinos that has maintained California availability, which makes it a standout option for CA residents who want access to a full-featured sweepstakes platform. Beyond Crown Coins, card-based platforms like Card Crush and Clash 5 are purpose-built for restricted states and are also fully available here.
+            That said, Crown Coins Casino. Our number one ranked site. Continues to operate in California. It is one of the few traditional sweepstakes casinos that has maintained California availability, which makes it a standout option for CA residents who want access to a full-featured sweepstakes platform. Beyond Crown Coins, Card Crush and Clash 5 are purpose-built for restricted states and are also fully available here, as is Candy Coins, which launched in August 2026 from the same group behind Sweet Sweeps and plays everywhere except Nevada and Washington.
           </p>
         </section>
 
@@ -257,6 +265,36 @@ export default function CaliforniaPage() {
               </Link>
             </div>
           </div>
+
+          {/* Candy Coins */}
+          <div className="mt-4 rounded-2xl border border-accent/40 bg-panel p-5">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h3 className="text-xl font-bold">Candy Coins</h3>
+                <p className="mt-1 text-sm text-muted">Newest option from the Sweet Sweeps group, playable in 48 states</p>
+              </div>
+              <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in CA</span>
+            </div>
+            <ul className="mt-4 space-y-1.5 text-sm text-muted">
+              <li className="before:content-['✓'] before:text-accent before:mr-2">2 SC free on signup, no purchase needed</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">Welcome Series up to 70 SC for $34.99</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">No playthrough on purchased coins</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">VIP tiers climb through skill-based Battle Arena</li>
+            </ul>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href="https://candycoins.com?referralCode=REFNDQ1NTY="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 text-sm hover:opacity-90"
+              >
+                Sign Up for Candy Coins
+              </a>
+              <Link href="/sites/candy-coins" className="inline-block rounded-lg border border-border px-5 py-2.5 text-sm text-muted hover:text-text">
+                Read the Review
+              </Link>
+            </div>
+          </div>
         </section>
 
         {/* Comparison Table */}
@@ -284,6 +322,12 @@ export default function CaliforniaPage() {
                   <td className="px-4 py-3 text-green-400 font-semibold">Yes</td>
                   <td className="px-4 py-3">Card-based</td>
                   <td className="px-4 py-3">Near-instant</td>
+                </tr>
+                <tr className="bg-panel">
+                  <td className="px-4 py-3 font-medium text-text">Candy Coins</td>
+                  <td className="px-4 py-3 text-green-400 font-semibold">Yes</td>
+                  <td className="px-4 py-3">Sweeps alternative</td>
+                  <td className="px-4 py-3">Card, 2 to 3 business days</td>
                 </tr>
                 <tr className="bg-panel">
                   <td className="px-4 py-3 font-medium text-text">Crown Coins</td>

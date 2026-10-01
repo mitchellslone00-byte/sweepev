@@ -5,14 +5,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Sweepstakes Casinos in New York. What Actually Works (2026)",
   description:
-    "Most sweepstakes casinos don't work in New York. Here's which platforms are available for NY residents in 2026, including Card Crush and Clash 5.",
+    "Most sweepstakes casinos don't work in New York. Here's which platforms are available for NY residents in 2026, including Card Crush, Clash 5 and Candy Coins.",
   alternates: {
     canonical: "https://www.sweepev.com/states/new-york",
   },
   ...ogMeta(
     "/states/new-york",
     "Sweepstakes Casinos in New York. What Actually Works (2026)",
-    "Most sweepstakes casinos don't work in New York. Here's which platforms are available for NY residents in 2026, including Card Crush and Clash 5."
+    "Most sweepstakes casinos don't work in New York. Here's which platforms are available for NY residents in 2026, including Card Crush, Clash 5 and Candy Coins."
   ),
 };
 
@@ -41,7 +41,7 @@ const faqSchema = {
       name: "What online casinos can New York residents use in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "New York residents have a few solid options in 2026. Card Crush and Clash 5 are card-based platforms explicitly available in New York. AceBet is a sweepstakes casino that also operates in New York, offering 1 SC daily and instant redemptions.",
+        text: "New York residents have a few solid options in 2026. Card Crush and Clash 5 are card-based platforms explicitly available in New York. AceBet is a sweepstakes casino that also operates in New York, offering 1 SC daily and instant redemptions. Candy Coins, which launched in August 2026 from the same operator as Sweet Sweeps, plays in 48 states and is available in New York too.",
       },
     },
     {
@@ -50,6 +50,14 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "Yes. Card Crush is available in New York. It operates on a card-based model rather than a sweepstakes framework, which is why it is accessible where most sweepstakes casinos are not.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Candy Coins available in New York?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Candy Coins is available in 48 US states, with Nevada and Washington the only exclusions, so New York residents can play. It launched in August 2026 under Inimitable Solutions Limited, the same operator behind Sweet Sweeps, and gives 2 SC free on signup with no purchase needed.",
       },
     },
     {
@@ -134,7 +142,7 @@ export default function NewYorkPage() {
         <section className="mt-6 rounded-2xl border border-yellow-500/40 bg-yellow-500/5 p-5">
           <p className="font-bold text-text text-lg">Most sweepstakes casinos are not available in New York.</p>
           <p className="mt-1 text-muted leading-relaxed">
-            New York is one of the more restricted states for sweepstakes casinos. Most major platforms. Including Crown Coins, Pulsz, WOW Vegas, and Chumba. Do not operate in New York. The good news is that you still have real options. Card Crush and Clash 5 are card-based platforms built specifically for restricted states like New York, and AceBet is a sweepstakes casino that also operates here with a 1 SC daily bonus and instant redemptions.
+            New York is one of the more restricted states for sweepstakes casinos. Most major platforms. Including Crown Coins, Pulsz, WOW Vegas, and Chumba. Do not operate in New York. The good news is that you still have real options. Card Crush and Clash 5 are card-based platforms built specifically for restricted states like New York, AceBet is a sweepstakes casino that also operates here with a 1 SC daily bonus and instant redemptions, and Candy Coins is the newest arrival, playable in 48 states and available here too.
           </p>
         </section>
 
@@ -242,6 +250,36 @@ export default function NewYorkPage() {
               </Link>
             </div>
           </div>
+
+          {/* Candy Coins */}
+          <div className="mt-4 rounded-2xl border border-accent/40 bg-panel p-5">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h3 className="text-xl font-bold">Candy Coins</h3>
+                <p className="mt-1 text-sm text-muted">Newest option from the Sweet Sweeps group, playable in 48 states</p>
+              </div>
+              <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in NY</span>
+            </div>
+            <ul className="mt-4 space-y-1.5 text-sm text-muted">
+              <li className="before:content-['✓'] before:text-accent before:mr-2">2 SC free on signup, no purchase needed</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">Welcome Series up to 70 SC for $34.99</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">No playthrough on purchased coins</li>
+              <li className="before:content-['✓'] before:text-accent before:mr-2">VIP tiers climb through skill-based Battle Arena</li>
+            </ul>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href="https://candycoins.com?referralCode=REFNDQ1NTY="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 text-sm hover:opacity-90"
+              >
+                Sign Up for Candy Coins
+              </a>
+              <Link href="/sites/candy-coins" className="inline-block rounded-lg border border-border px-5 py-2.5 text-sm text-muted hover:text-text">
+                Read the Review
+              </Link>
+            </div>
+          </div>
         </section>
 
         {/* Comparison Table */}
@@ -269,6 +307,12 @@ export default function NewYorkPage() {
                   <td className="px-4 py-3 text-green-400 font-semibold">Yes</td>
                   <td className="px-4 py-3">Card-based</td>
                   <td className="px-4 py-3">Near-instant</td>
+                </tr>
+                <tr className="bg-panel">
+                  <td className="px-4 py-3 font-medium text-text">Candy Coins</td>
+                  <td className="px-4 py-3 text-green-400 font-semibold">Yes</td>
+                  <td className="px-4 py-3">Sweeps alternative</td>
+                  <td className="px-4 py-3">Card, 2 to 3 business days</td>
                 </tr>
                 <tr className="bg-panel">
                   <td className="px-4 py-3 font-medium text-text">AceBet</td>
