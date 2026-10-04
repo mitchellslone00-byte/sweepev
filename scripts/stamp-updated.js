@@ -43,6 +43,15 @@ function guideSlugs() {
   }
 }
 
+/** app/states/x/page.tsx -> ["/states/x"]. The dynamic [state] route is skipped. */
+function routesForStateFile(file) {
+  const m = file.match(/^app\/states\/(.*)page\.tsx$/);
+  if (!m) return [];
+  const mid = m[1].replace(/\/$/, "");
+  if (mid === "" || mid.startsWith("[")) return [];
+  return [`/states/${mid}`];
+}
+
 /** app/guides/x/page.tsx -> ["/guides/x"];  the [slug] template -> one route per slug. */
 function routesForGuideFile(file) {
   const m = file.match(/^app\/guides\/(.*)page\.tsx$/);
@@ -121,11 +130,15 @@ function stampGuides(stamp) {
   if (!fs.existsSync(GUIDE_DATES)) return 0;
   let files = [];
   try {
-    files = git("git diff --name-only HEAD -- app/guides").split("\n").map((s) => s.trim()).filter(Boolean);
+    files = git("git diff --name-only HEAD -- app/guides app/states").split("\n").map((s) => s.trim()).filter(Boolean);
   } catch {
     return 0;
   }
-  const routes = new Set(files.filter(proseChanged).flatMap(routesForGuideFile));
+  const routes = new Set(
+    files
+      .filter(proseChanged)
+      .flatMap((f) => [...routesForGuideFile(f), ...routesForStateFile(f)])
+  );
   if (!routes.size) return 0;
 
   const dates = JSON.parse(fs.readFileSync(GUIDE_DATES, "utf8"));

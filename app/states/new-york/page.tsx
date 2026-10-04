@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { ogMeta } from "@/lib/seo";
 import Link from "next/link";
+import { StateFaq } from "@/components/StateFaq";
+import { guideDate } from "@/lib/guide-dates";
+import { StateSiteList } from "@/components/StateSiteList";
 
 export const metadata: Metadata = {
   title: "Sweepstakes Casinos in New York. What Actually Works (2026)",
@@ -16,68 +19,36 @@ export const metadata: Metadata = {
   ),
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Can New York residents play sweepstakes casinos?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most traditional sweepstakes casinos are not available in New York. However, card-based social casino platforms like Card Crush and Clash 5 operate under a different model and are fully available to New York residents.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Why are sweepstakes casinos not available in New York?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "New York has strict regulations around sweepstakes and promotional gaming. Most sweepstakes casino operators have chosen to exclude New York rather than navigate the state's compliance requirements.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What online casinos can New York residents use in 2026?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "New York residents have a few solid options in 2026. Card Crush and Clash 5 are card-based platforms explicitly available in New York. AceBet is a sweepstakes casino that also operates in New York, offering 1 SC daily and instant redemptions. Candy Coins, which launched in August 2026 from the same operator as Sweet Sweeps, plays in 48 states and is available in New York too.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is Card Crush available in New York?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Card Crush is available in New York. It operates on a card-based model rather than a sweepstakes framework, which is why it is accessible where most sweepstakes casinos are not.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is Candy Coins available in New York?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Candy Coins is available in 48 US states, with Nevada and Washington the only exclusions, so New York residents can play. It launched in August 2026 under Inimitable Solutions Limited, the same operator behind Sweet Sweeps, and gives 2 SC free on signup with no purchase needed.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is Clash 5 available in New York?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Clash 5 is available in New York. Like Card Crush, it uses a card-based mechanism rather than traditional sweepstakes law, making it fully accessible to New York residents.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is Crown Coins available in New York?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. Crown Coins Casino is not available in New York. New York residents should use Card Crush or Clash 5 as their primary platforms.",
-      },
-    },
-  ],
-};
+const faqs = [
+  {
+    q: "Can New York residents play sweepstakes casinos?",
+    a: "Most traditional sweepstakes casinos are not available in New York. However, card-based social casino platforms like Card Crush and Clash 5 operate under a different model and are fully available to New York residents.",
+  },
+  {
+    q: "Why are sweepstakes casinos not available in New York?",
+    a: "New York has strict regulations around sweepstakes and promotional gaming. Most sweepstakes casino operators have chosen to exclude New York rather than navigate the state's compliance requirements.",
+  },
+  {
+    q: "What online casinos can New York residents use in 2026?",
+    a: "New York residents have a few solid options in 2026. Card Crush and Clash 5 are card-based platforms explicitly available in New York. AceBet is a sweepstakes casino that also operates in New York, offering 1 SC daily and instant redemptions. Candy Coins, which launched in August 2026 from the same operator as Sweet Sweeps, plays in 48 states and is available in New York too.",
+  },
+  {
+    q: "Is Card Crush available in New York?",
+    a: "Yes. Card Crush is available in New York. It operates on a card-based model rather than a sweepstakes framework, which is why it is accessible where most sweepstakes casinos are not.",
+  },
+  {
+    q: "Is Candy Coins available in New York?",
+    a: "Yes. Candy Coins is available in 48 US states, with Nevada and Washington the only exclusions, so New York residents can play. It launched in August 2026 under Inimitable Solutions Limited, the same operator behind Sweet Sweeps, and gives 2 SC free on signup with no purchase needed.",
+  },
+  {
+    q: "Is Clash 5 available in New York?",
+    a: "Yes. Clash 5 is available in New York. Like Card Crush, it uses a card-based mechanism rather than traditional sweepstakes law, making it fully accessible to New York residents.",
+  },
+  {
+    q: "Is Crown Coins available in New York?",
+    a: "No. Crown Coins Casino is not available in New York. New York residents should use Card Crush or Clash 5 as their primary platforms.",
+  },
+];
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -109,10 +80,6 @@ export default function NewYorkPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
@@ -134,7 +101,7 @@ export default function NewYorkPage() {
           <div className="mt-3 flex items-center gap-3 text-xs text-muted">
             <span>By <span className="text-text font-medium">Jordan Thacker</span></span>
             <span>·</span>
-            <span>Last updated: July 21, 2026</span>
+            <span>Last updated: {guideDate("/states/new-york").modifiedDisplay}</span>
           </div>
         </header>
 
@@ -161,125 +128,52 @@ export default function NewYorkPage() {
         <section className="mt-8">
           <h2 className="text-2xl font-bold">Best Options for New York Residents in 2026</h2>
 
-          {/* Card Crush */}
-          <div className="mt-5 rounded-2xl border border-accent/40 bg-panel p-5">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <div className="text-xs uppercase tracking-widest text-accent mb-1">Top Pick</div>
-                <h3 className="text-xl font-bold">Card Crush</h3>
-                <p className="mt-1 text-sm text-muted">Card-based social casino available in 48 states. Explicitly NY friendly</p>
-              </div>
-              <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in NY</span>
-            </div>
-            <ul className="mt-4 space-y-1.5 text-sm text-muted">
-              <li className="before:content-['✓'] before:text-accent before:mr-2">Rolling welcome offers up to 120 SC for $60</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">VIP matching program</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">$10 gift card redemption minimum</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">Available in New York and California</li>
-            </ul>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <a
-                href="https://www.cardcrush.com/lp/raf?r=5cce8358%2F47169795"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 text-sm hover:opacity-90"
-              >
-                Sign Up for Card Crush
-              </a>
-              <Link href="/sites/card-crush" className="inline-block rounded-lg border border-border px-5 py-2.5 text-sm text-muted hover:text-text">
-                Read the Review
-              </Link>
-            </div>
-          </div>
-
-          {/* AceBet */}
-          <div className="mt-4 rounded-2xl border border-accent/40 bg-panel p-5">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <h3 className="text-xl font-bold">AceBet</h3>
-                <p className="mt-1 text-sm text-muted">Sweepstakes casino with 1 SC daily and instant redemptions. Available in New York</p>
-              </div>
-              <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in NY</span>
-            </div>
-            <ul className="mt-4 space-y-1.5 text-sm text-muted">
-              <li className="before:content-['✓'] before:text-accent before:mr-2">1 SC daily login bonus</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">Decent rakeback</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">Instant redemptions</li>
-            </ul>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <a
-                href="https://acebet.cc/welcome/r/theturbokermit"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 text-sm hover:opacity-90"
-              >
-                Sign Up for AceBet
-              </a>
-              <Link href="/sites/acebet" className="inline-block rounded-lg border border-border px-5 py-2.5 text-sm text-muted hover:text-text">
-                Read the Review
-              </Link>
-            </div>
-          </div>
-
-          {/* Clash 5 */}
-          <div className="mt-4 rounded-2xl border border-accent/40 bg-panel p-5">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <h3 className="text-xl font-bold">Clash 5</h3>
-                <p className="mt-1 text-sm text-muted">Card-based sister site to SpinPals. Available in New York and California</p>
-              </div>
-              <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in NY</span>
-            </div>
-            <ul className="mt-4 space-y-1.5 text-sm text-muted">
-              <li className="before:content-['✓'] before:text-accent before:mr-2">5 Clash Coins free on signup</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">Near-instant redemptions</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">1x playthrough requirement</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">Available in New York and California</li>
-            </ul>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <a
-                href="https://www.clash5.com?referralcode=198af5dd-3f48-4ffb-a99a-c9f9606303d5"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 text-sm hover:opacity-90"
-              >
-                Sign Up for Clash 5
-              </a>
-              <Link href="/sites/clash5" className="inline-block rounded-lg border border-border px-5 py-2.5 text-sm text-muted hover:text-text">
-                Read the Review
-              </Link>
-            </div>
-          </div>
-
-          {/* Candy Coins */}
-          <div className="mt-4 rounded-2xl border border-accent/40 bg-panel p-5">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <h3 className="text-xl font-bold">Candy Coins</h3>
-                <p className="mt-1 text-sm text-muted">Newest option from the Sweet Sweeps group, playable in 48 states</p>
-              </div>
-              <span className="shrink-0 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-semibold px-3 py-1">Available in NY</span>
-            </div>
-            <ul className="mt-4 space-y-1.5 text-sm text-muted">
-              <li className="before:content-['✓'] before:text-accent before:mr-2">2 SC free on signup, no purchase needed</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">Welcome Series up to 70 SC for $34.99</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">No playthrough on purchased coins</li>
-              <li className="before:content-['✓'] before:text-accent before:mr-2">VIP tiers climb through skill-based Battle Arena</li>
-            </ul>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <a
-                href="https://candycoins.com?referralCode=REFNDQ1NTY="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 text-sm hover:opacity-90"
-              >
-                Sign Up for Candy Coins
-              </a>
-              <Link href="/sites/candy-coins" className="inline-block rounded-lg border border-border px-5 py-2.5 text-sm text-muted hover:text-text">
-                Read the Review
-              </Link>
-            </div>
-          </div>
+          <StateSiteList
+            state="New York"
+            stateAbbr="NY"
+            source="state_new_york"
+            entries={[
+              {
+                slug: "card-crush",
+                blurb: "Card-based social casino available in 48 states including New York",
+                bullets: [
+                  "Rolling welcome offers up to 120 SC for $60",
+                  "VIP matching program",
+                  "$10 gift card redemption minimum",
+                  "Available in California and New York",
+                ],
+              },
+              {
+                slug: "acebet",
+                blurb: "Sweepstakes casino that operates in New York, with a 1 SC daily bonus",
+                bullets: [
+                  "1 SC daily bonus",
+                  "Instant redemptions",
+                  "Available in New York",
+                ],
+              },
+              {
+                slug: "clash5",
+                blurb: "Card-based sister site to SpinPals, available in California and New York",
+                bullets: [
+                  "5 Clash Coins free on signup",
+                  "Near-instant redemptions",
+                  "1x playthrough requirement",
+                  "Available in California and New York",
+                ],
+              },
+              {
+                slug: "candy-coins",
+                blurb: "Newest option from the Sweet Sweeps group, playable in 48 states",
+                bullets: [
+                  "2 SC free on signup, no purchase needed",
+                  "Welcome Series up to 70 SC for $34.99",
+                  "No playthrough on purchased coins",
+                  "VIP tiers climb through skill-based Battle Arena",
+                ],
+              },
+            ]}
+          />
         </section>
 
         {/* Comparison Table */}
@@ -379,6 +273,8 @@ export default function NewYorkPage() {
             Join our Discord
           </a>
         </section>
+
+        <StateFaq faqs={faqs} heading="Sweepstakes Casinos in New York: FAQ" />
 
         {/* Responsible Gaming */}
         <section className="mt-8 rounded-2xl border border-border bg-panel/60 p-5 text-sm text-muted">

@@ -1,7 +1,7 @@
 #!/bin/sh
 # Auto-stamp last-updated dates for any review or guide changed in this commit.
 # Never blocks a commit.
-if git diff --cached --name-only | grep -qE '^(data/sites\.json|app/guides/.*page\.tsx)$'; then
+if git diff --cached --name-only | grep -qE '^(data/sites\.json|app/(guides|states)/.*page\.tsx)$'; then
   node scripts/stamp-updated.js || exit 0
   git add data/sites.json data/guide-dates.json 2>/dev/null || true
 fi

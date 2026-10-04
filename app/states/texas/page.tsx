@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { ogMeta } from "@/lib/seo";
 import Link from "next/link";
+import { StateFaq } from "@/components/StateFaq";
+import { guideDate } from "@/lib/guide-dates";
 
 export const metadata: Metadata = {
   title: "Best Sweepstakes Casinos in Texas (2026). Top Sites for TX Players",
@@ -16,60 +18,32 @@ export const metadata: Metadata = {
   ),
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Can Texas residents play sweepstakes casinos?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Sweepstakes casinos are fully available in Texas. Texas residents can sign up, play, make purchases, and redeem Sweeps Coins for real prizes without any state-specific restrictions.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are sweepstakes casinos legal in Texas?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Sweepstakes casinos operate under promotional sweepstakes law rather than gambling law, which makes them legal in Texas. They use a dual-currency model where Sweeps Coins can always be obtained for free, keeping them outside the scope of traditional gambling regulations.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is the best sweepstakes casino for Texas residents?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Crown Coins Casino is our top pick for Texas residents in 2026. It offers one of the strongest welcome packages available, a daily SC login bonus that scales with VIP level, weekly Thursday races, and fast Skrill redemptions. Pulsz, WOW Vegas, and Chumba Casino are also strong options worth running alongside Crown Coins.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do I have to pay to play sweepstakes casinos in Texas?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. Every legitimate sweepstakes casino is required by law to offer a no-purchase-necessary path to Sweeps Coins. Texas residents can collect free SC through daily login bonuses, mail-in requests, and promotional offers without ever making a purchase.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can Texas residents redeem Sweeps Coins for cash?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Texas residents can redeem Sweeps Coins for real cash prizes through standard methods including Skrill, bank transfer, and gift cards. There are no Texas-specific redemption restrictions.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How much can Texas residents earn from sweepstakes casinos?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Results vary, but players who run a consistent daily routine across multiple sites and take advantage of welcome offers and sales can realistically earn $500 to several thousand dollars per month. Stacking a cashback credit card on top of purchases adds an additional layer of value.",
-      },
-    },
-  ],
-};
+const faqs = [
+  {
+    q: "Can Texas residents play sweepstakes casinos?",
+    a: "Yes. Sweepstakes casinos are fully available in Texas. Texas residents can sign up, play, make purchases, and redeem Sweeps Coins for real prizes without any state-specific restrictions.",
+  },
+  {
+    q: "Are sweepstakes casinos legal in Texas?",
+    a: "Yes. Sweepstakes casinos operate under promotional sweepstakes law rather than gambling law, which makes them legal in Texas. They use a dual-currency model where Sweeps Coins can always be obtained for free, keeping them outside the scope of traditional gambling regulations.",
+  },
+  {
+    q: "What is the best sweepstakes casino for Texas residents?",
+    a: "Crown Coins Casino is our top pick for Texas residents in 2026. It offers one of the strongest welcome packages available, a daily SC login bonus that scales with VIP level, weekly Thursday races, and fast Skrill redemptions. Pulsz, WOW Vegas, and Chumba Casino are also strong options worth running alongside Crown Coins.",
+  },
+  {
+    q: "Do I have to pay to play sweepstakes casinos in Texas?",
+    a: "No. Every legitimate sweepstakes casino is required by law to offer a no-purchase-necessary path to Sweeps Coins. Texas residents can collect free SC through daily login bonuses, mail-in requests, and promotional offers without ever making a purchase.",
+  },
+  {
+    q: "Can Texas residents redeem Sweeps Coins for cash?",
+    a: "Yes. Texas residents can redeem Sweeps Coins for real cash prizes through standard methods including Skrill, bank transfer, and gift cards. There are no Texas-specific redemption restrictions.",
+  },
+  {
+    q: "How much can Texas residents earn from sweepstakes casinos?",
+    a: "Results vary, but players who run a consistent daily routine across multiple sites and take advantage of welcome offers and sales can realistically earn $500 to several thousand dollars per month. Stacking a cashback credit card on top of purchases adds an additional layer of value.",
+  },
+];
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -144,10 +118,6 @@ export default function TexasPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
@@ -169,7 +139,7 @@ export default function TexasPage() {
           <div className="mt-3 flex items-center gap-3 text-xs text-muted">
             <span>By <span className="text-text font-medium">Jordan Thacker</span></span>
             <span>·</span>
-            <span>Last updated: July 21, 2026</span>
+            <span>Last updated: {guideDate("/states/texas").modifiedDisplay}</span>
           </div>
         </header>
 
@@ -279,6 +249,8 @@ export default function TexasPage() {
             for a full breakdown on how to clear playthrough, find +EV offers, build a daily routine, and maximize your returns across every platform.
           </p>
         </section>
+
+        <StateFaq faqs={faqs} heading="Sweepstakes Casinos in Texas: FAQ" />
 
         {/* Responsible Gaming */}
         <section className="mt-4 rounded-2xl border border-border bg-panel/60 p-5 text-sm text-muted">

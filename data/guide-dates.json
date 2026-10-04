@@ -22,5 +22,17 @@
   "/guides/pulsz": {
     "publishedAt": "2026-09-12",
     "updatedAt": "2026-09-12"
+  },
+  "/states/california": {
+    "publishedAt": "2026-06-07",
+    "updatedAt": "2026-10-04"
+  },
+  "/states/new-york": {
+    "publishedAt": "2026-06-07",
+    "updatedAt": "2026-10-04"
+  },
+  "/states/texas": {
+    "publishedAt": "2026-06-09",
+    "updatedAt": "2026-10-04"
   }
 }
