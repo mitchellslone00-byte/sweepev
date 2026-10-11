@@ -1,21 +1,23 @@
 import type { Metadata } from "next";
+import { guideDate } from "@/lib/guide-dates";
 import Link from "next/link";
 import { sites } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
 import { ogMeta } from "@/lib/seo";
 import { DailySCTable, type DailyRow } from "@/components/DailySCTable";
 
-const LAST_VERIFIED = "August 1, 2026";
+// Stamped automatically when this page or the dailySC data behind it changes.
+const LAST_VERIFIED = guideDate("/daily-sc").modifiedDisplay;
 
 export const metadata: Metadata = {
   title: "Free Sweeps Coins Daily: Every Site's Free SC Ranked",
   description:
-    "Get free Sweeps Coins every day just for logging in. We rank every sweepstakes casino that gives free SC daily by what it's actually worth per month. No purchase, no deposit, no writing. Just sign in and collect. Re-verified monthly.",
+    "Get free Sweeps Coins every day just for logging in. We rank every sweepstakes casino that gives free SC daily by what it's actually worth per month. No purchase, no deposit, no writing. Just sign in and collect. Re-checked whenever a site changes its daily.",
   alternates: { canonical: `${siteConfig.url}/daily-sc` },
   ...ogMeta(
     "/daily-sc",
     "Free Sweeps Coins Daily: Every Site's Free SC Ranked",
-    "Get free Sweeps Coins every day just for logging in. We rank every sweepstakes casino that gives free SC daily by what it's actually worth per month. No purchase, no deposit, no writing. Just sign in and collect. Re-verified monthly."
+    "Get free Sweeps Coins every day just for logging in. We rank every sweepstakes casino that gives free SC daily by what it's actually worth per month. No purchase, no deposit, no writing. Just sign in and collect. Re-checked whenever a site changes its daily."
   ),
 };
 
@@ -51,7 +53,7 @@ function buildRows(): DailyRow[] {
 const faqs = [
   {
     q: "Which sweepstakes casino gives the most free daily SC?",
-    a: "Several sites give 1.0 SC per day just for logging in, including Chumba, LuckyLand, ReBet, Zula, SpinQuest, AceBet, and Dogg House. At roughly 1 SC = $1 redeemable, that's about $30 a month per site before any VIP or streak boosts.",
+    a: "Several sites give 1.0 SC per day just for logging in, including Chumba, LuckyLand, ReBet, SpinQuest, AceBet, LoneStar, RealPrize, and Dogg House. At roughly 1 SC = $1 redeemable, that's about $30 a month per site before any VIP or streak boosts.",
   },
   {
     q: "Do I have to buy anything to get daily SC?",
@@ -87,7 +89,7 @@ const faqs = [
   },
   {
     q: "How often is this list updated?",
-    a: `We re-verify every figure on the first of each month. This list was last fully verified on ${LAST_VERIFIED}. Daily bonuses change often, so always confirm the current amount on the operator's site.`,
+    a: `We re-check these figures whenever a site changes its daily bonus, and this list was last fully verified on ${LAST_VERIFIED}. Daily bonuses change often, so always confirm the current amount on the operator's site.`,
   },
 ];
 
@@ -166,8 +168,8 @@ export default function DailySCPage() {
         <p className="mt-3 max-w-[62ch] text-muted leading-relaxed">
           Every sweepstakes casino that hands out free Sweeps Coins (SC) just for showing up. How
           much, how you claim it, and what the habit is worth per month. No purchase, no deposit, no
-          surveys, no writing. Just sign in and collect your free SC. Re-verified on the first of
-          every month.
+          surveys, no writing. Just sign in and collect your free SC. Re-checked whenever a site
+          changes its daily.
         </p>
         <p className="mt-3 text-sm text-muted">
           By <span className="font-medium text-text">Jordan Thacker</span> · Last fully verified{" "}

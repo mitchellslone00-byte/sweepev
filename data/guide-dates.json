@@ -34,5 +34,9 @@
   "/states/texas": {
     "publishedAt": "2026-06-09",
     "updatedAt": "2026-10-04"
+  },
+  "/daily-sc": {
+    "publishedAt": "2026-06-03",
+    "updatedAt": "2026-10-11"
   }
 }

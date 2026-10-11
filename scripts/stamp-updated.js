@@ -43,6 +43,17 @@ function guideSlugs() {
   }
 }
 
+/**
+ * Static pages outside guides and states that show their own verified date.
+ * The daily SC tracker is built from the dailySC fields in sites.json, so it is
+ * also stamped when that data changes, not only when the page file does.
+ */
+const EXTRA_PAGES = { "app/daily-sc/page.tsx": "/daily-sc" };
+function routesForExtraFile(file) {
+  const route = EXTRA_PAGES[file];
+  return route ? [route] : [];
+}
+
 /** app/states/x/page.tsx -> ["/states/x"]. The dynamic [state] route is skipped. */
 function routesForStateFile(file) {
   const m = file.match(/^app\/states\/(.*)page\.tsx$/);
@@ -130,15 +141,29 @@ function stampGuides(stamp) {
   if (!fs.existsSync(GUIDE_DATES)) return 0;
   let files = [];
   try {
-    files = git("git diff --name-only HEAD -- app/guides app/states").split("\n").map((s) => s.trim()).filter(Boolean);
+    files = git("git diff --name-only HEAD -- app/guides app/states app/daily-sc").split("\n").map((s) => s.trim()).filter(Boolean);
   } catch {
     return 0;
   }
   const routes = new Set(
     files
       .filter(proseChanged)
-      .flatMap((f) => [...routesForGuideFile(f), ...routesForStateFile(f)])
+      .flatMap((f) => [...routesForGuideFile(f), ...routesForStateFile(f), ...routesForExtraFile(f)])
   );
+
+  // The tracker's figures live in sites.json, so a dailySC change dates it too.
+  try {
+    const touched = git("git diff --name-only HEAD -- data/sites.json").trim();
+    if (touched) {
+      const head = JSON.parse(git("git show HEAD:data/sites.json"));
+      const now = JSON.parse(fs.readFileSync(SITES, "utf8"));
+      const key = (arr) =>
+        JSON.stringify(arr.map((s) => [s.slug, s.dailySC ?? null]));
+      if (key(head) !== key(now)) routes.add("/daily-sc");
+    }
+  } catch {
+    // Never block a commit over the tracker date.
+  }
   if (!routes.size) return 0;
 
   const dates = JSON.parse(fs.readFileSync(GUIDE_DATES, "utf8"));
