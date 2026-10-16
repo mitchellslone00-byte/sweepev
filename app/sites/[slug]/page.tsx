@@ -400,7 +400,7 @@ export default async function SitePage(
                       <div key={pi} className="mt-4 flex justify-center">
                         <PublicImg
                           src={site.redemptionImage}
-                          alt={`A processed ${site.name} redemption and the redemptions timetable`}
+                          alt={site.redemptionImageAlt ?? `A processed ${site.name} redemption and the redemptions timetable`}
                           className="rounded-2xl max-w-xs border border-border shadow-lg"
                         />
                       </div>

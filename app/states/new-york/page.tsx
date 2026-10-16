@@ -145,11 +145,11 @@ export default function NewYorkPage() {
               },
               {
                 slug: "acebet",
-                blurb: "Sweepstakes casino that operates in New York, with a 1 SC daily bonus",
+                blurb: "Takes New York players, but through a card-pack model rather than the standard sweeps setup",
                 bullets: [
-                  "1 SC daily bonus",
-                  "Instant redemptions",
-                  "Available in New York",
+                  "In New York, SC comes with card-pack purchases",
+                  "No daily login bonus for New York players",
+                  "Instant payouts, including to a Solana wallet",
                 ],
               },
               {

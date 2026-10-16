@@ -173,12 +173,12 @@ export default function CaliforniaPage() {
               },
               {
                 slug: "acebet",
-                blurb: "Sweepstakes casino that still takes California players, with a 1 SC daily bonus",
+                blurb: "Takes California players, but through a card-pack model rather than the standard sweeps setup",
                 bullets: [
-                  "1 SC daily login bonus",
-                  "Instant redemptions",
-                  "Decent rakeback",
-                  "Only excluded from seven states",
+                  "In California, SC comes with card-pack purchases",
+                  "No daily login bonus for California players",
+                  "Instant payouts, including to a Solana wallet",
+                  "Rakeback on every wager",
                 ],
               },
             ]}

@@ -53,7 +53,7 @@ function buildRows(): DailyRow[] {
 const faqs = [
   {
     q: "Which sweepstakes casino gives the most free daily SC?",
-    a: "Several sites give 1.0 SC per day just for logging in, including Chumba, LuckyLand, ReBet, SpinQuest, AceBet, LoneStar, RealPrize, and Dogg House. At roughly 1 SC = $1 redeemable, that's about $30 a month per site before any VIP or streak boosts.",
+    a: "Several sites give 1.0 SC per day just for logging in, including Chumba, LuckyLand, ReBet, SpinQuest, LoneStar, RealPrize, and Dogg House. At roughly 1 SC = $1 redeemable, that's about $30 a month per site before any VIP or streak boosts.",
   },
   {
     q: "Do I have to buy anything to get daily SC?",
