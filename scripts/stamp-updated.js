@@ -109,18 +109,29 @@ function stampReviews(stamp) {
 }
 
 /**
- * The visible words on a guide page, with JSX markup removed. Comparing this
- * instead of the raw file means an id, a className or a layout tweak does not
- * move the last-updated date, while any change to the copy still does.
+ * Attributes that carry no reader-visible words. Styling, identifiers,
+ * routing and analytics all change without the page saying anything new.
+ */
+const NON_CONTENT_ATTRS =
+  /\b(?:className|class|id|key|style|type|rel|target|role|href|src|slug|source|width|height|loading|aria-[\w-]+|data-[\w-]+)=(?:"[^"]*"|\{[^{}]*\})/g;
+
+/**
+ * The visible words on a page, with markup removed.
+ *
+ * Tag syntax goes, but quoted strings left inside a tag stay. Copy that lives
+ * in a prop, like a card's blurb or bullets, is read by a human even though it
+ * sits in an attribute, so moving copy into a component must not hide it from
+ * the stamper. Styling, ids and analytics props are stripped first so a
+ * restyle or a new anchor still leaves the date alone.
  */
 function prose(src) {
   return src
-    .replace(/<[^>]*>/g, " ") // tags, and every attribute inside them
+    .replace(NON_CONTENT_ATTRS, " ")
+    .replace(/<[^>]*>/g, (tag) => " " + (tag.match(/"[^"]*"/g) || []).join(" ") + " ")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-/** True if the file's visible copy differs from the committed version. */
 function proseChanged(file) {
   let head;
   try {
