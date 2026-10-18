@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     q: "What does \"balance must be $0\" mean?",
-    a: "A few sites (ReBet, Dogg House, AceBet) only release the daily SC once your Sweeps Coins balance hits zero. A common trick is to place a heavily favored pick or wash your balance down before claiming so the daily keeps stacking.",
+    a: "A few sites (ReBet and Dogg House) only release the daily SC once your Sweeps Coins balance hits zero. A common trick is to place a heavily favored pick or wash your balance down before claiming so the daily keeps stacking.",
   },
   {
     q: "Is free daily SC actually free?",
