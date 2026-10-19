@@ -19,8 +19,13 @@ export type Site = {
     washingNotes?: string;
     guideUrl?: string;
   };
-  /** Custom page title for metadata and h1, used when the default "{name} Review" isn't enough. */
+  /** Visible h1 on the review page. Falls back to "{name} Review". */
   reviewTitle?: string;
+  /**
+   * The <title> tag, tuned for a search listing rather than as a page heading.
+   * Budget 50 characters: the layout template appends " · SweepEV".
+   */
+  seoTitle?: string;
   /** Custom meta description for the review page, for CTR-tuned search snippets. */
   metaDescription?: string;
   /** ISO 8601 date the review was first published (Review schema datePublished). Falls back to siteConfig.lastUpdatedISO. */

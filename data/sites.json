@@ -134,7 +134,8 @@
       "note": null
     },
     "redemptionImage": "/images/pulsz-redemption.jpeg",
-    "updatedAt": "2026-09-12"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Pulsz Review 2026: 30 SC for $10 + 2 SC Daily"
   },
   {
     "slug": "crown-coins",
@@ -274,7 +275,7 @@
       "note": null
     },
     "dailyLadderImage": "/images/crown-coins-gold-daily.jpeg",
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "bannedStateAccess": {
       "note": "Restructured rather than withdrawing, so it still serves some states that ended the standard model.",
       "states": {
@@ -285,7 +286,8 @@
         "Indiana": "/states/indiana/crown-coins"
       }
     },
-    "vipImage": "/images/crown-coins-gold-vip.jpeg"
+    "vipImage": "/images/crown-coins-gold-vip.jpeg",
+    "seoTitle": "Crown Coins Review 2026: 2 SC Free on Signup"
   },
   {
     "slug": "sweet-sweeps",
@@ -369,7 +371,7 @@
       "min": "60 SC",
       "note": null
     },
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "dailySC": {
       "amount": 0.37,
       "display": "0.37 SC avg",
@@ -377,7 +379,8 @@
       "note": "~11 SC over a 30-day run, resets if you miss a day",
       "scales": true,
       "tip": "Not a flat daily. Sweet Sweeps runs a tiered monthly event where the rewards grow through the month and the bigger drops sit in the back half. A full 30-day run pays around 11 SC and 75,000 GC. Miss one day and you restart at the beginning, so the average only holds if you start on the 1st and never break the chain."
-    }
+    },
+    "seoTitle": "Sweet Sweeps Review 2026: 40 SC + Fast Cashouts"
   },
   {
     "slug": "lonestar",
@@ -502,7 +505,8 @@
       "min": "100 SC",
       "note": "Processing has sped up again after a slow spell"
     },
-    "updatedAt": "2026-10-18"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "LoneStar Review 2026: 50 SC for $20 + 1 SC Daily"
   },
   {
     "slug": "realprize",
@@ -639,8 +643,9 @@
       "min": "100 SC",
       "note": "Processing has sped up again after a slow spell"
     },
-    "updatedAt": "2026-10-18",
-    "metaDescription": "RealPrize review: 2 SC free on signup, 1 SC a day from logins and free SC drops, 700+ games and live dealer tables. Cash out from $100."
+    "updatedAt": "2026-10-19",
+    "metaDescription": "RealPrize review: 2 SC free on signup, 1 SC a day from logins and free SC drops, 700+ games and live dealer tables. Cash out from $100.",
+    "seoTitle": "RealPrize Review 2026: 2 SC Free + 1 SC Daily"
   },
   {
     "slug": "modo",
@@ -703,7 +708,8 @@
       "Washington",
       "West Virginia"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Modo.us Review 2026: Instant Payouts from 50 SC"
   },
   {
     "slug": "rebet",
@@ -758,7 +764,7 @@
       "min": "20 SC",
       "note": "Instant on debit for redemptions under $500"
     },
-    "updatedAt": "2026-09-30",
+    "updatedAt": "2026-10-19",
     "restrictedStates": [
       "Arizona",
       "California",
@@ -771,7 +777,8 @@
       "Nevada",
       "New Jersey",
       "New York"
-    ]
+    ],
+    "seoTitle": "ReBet Review 2026: Cash Out from Just 20 SC"
   },
   {
     "slug": "dogghouse",
@@ -821,7 +828,7 @@
       "min": "20 SC",
       "note": "Instant on debit for redemptions under $500"
     },
-    "updatedAt": "2026-09-30",
+    "updatedAt": "2026-10-19",
     "restrictedStates": [
       "Arizona",
       "California",
@@ -837,7 +844,8 @@
       "New Jersey",
       "New York",
       "Tennessee"
-    ]
+    ],
+    "seoTitle": "Dogg House Review 2026: 20 SC Cashout, Instant"
   },
   {
     "slug": "legendz-casino",
@@ -891,7 +899,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Legendz Review 2026: 200 SC for $100, 1hr Payout"
   },
   {
     "slug": "card-crush",
@@ -926,11 +935,12 @@
       "Nevada",
       "Washington"
     ],
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "bannedStateAccess": {
       "note": "Runs a card-based model that sits outside the sweepstakes framework, which is why it still operates where the dual-currency model is banned."
     },
-    "metaDescription": "Card Crush review: playable in 48 states including California and New York, with a $10 gift card cashout floor and rolling offers up to 120 SC for $60."
+    "metaDescription": "Card Crush review: playable in 48 states including California and New York, with a $10 gift card cashout floor and rolling offers up to 120 SC for $60.",
+    "seoTitle": "Card Crush Review 2026: Works in CA & NY"
   },
   {
     "slug": "chumba-casino",
@@ -980,7 +990,7 @@
       "min": "100 SC",
       "note": null
     },
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "restrictedStates": [
       "California",
       "Connecticut",
@@ -997,7 +1007,8 @@
       "Washington",
       "West Virginia"
     ],
-    "metaDescription": "Chumba Casino review: 1 SC daily plus up to 5 SC a day with no purchase needed, and $10 for 30 SC to start. Payouts land in 1 to 2 days."
+    "metaDescription": "Chumba Casino review: 1 SC daily plus up to 5 SC a day with no purchase needed, and $10 for 30 SC to start. Payouts land in 1 to 2 days.",
+    "seoTitle": "Chumba Casino Review 2026: 1 SC Daily + 30 SC"
   },
   {
     "slug": "global-poker",
@@ -1093,7 +1104,8 @@
       "note": "Climbs to 1 SC on a 7-day streak",
       "scales": true
     },
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Global Poker Review 2026: +20 SC With Our Code"
   },
   {
     "slug": "luckyland-casino",
@@ -1145,7 +1157,7 @@
       "min": "100 SC",
       "note": null
     },
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "restrictedStates": [
       "California",
       "Connecticut",
@@ -1162,7 +1174,8 @@
       "Washington",
       "West Virginia"
     ],
-    "metaDescription": "LuckyLand Casino review: $10 for 30 SC plus a 1 SC daily login streak, with bank and card payouts inside two days. Same operator as Chumba."
+    "metaDescription": "LuckyLand Casino review: $10 for 30 SC plus a 1 SC daily login streak, with bank and card payouts inside two days. Same operator as Chumba.",
+    "seoTitle": "LuckyLand Casino Review 2026: 30 SC + 1 SC Daily"
   },
   {
     "slug": "onyx-odds",
@@ -1240,7 +1253,8 @@
     ],
     "bonusImage": "/images/onyx-games.png",
     "compactImages": true,
-    "updatedAt": "2026-08-22"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Onyx Odds Review 2026: $50 in Picks for $10"
   },
   {
     "slug": "acebet",
@@ -1298,7 +1312,7 @@
       "New Jersey",
       "Washington"
     ],
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "dailyBonusImage": "/images/acebet-daily-bonus.png",
     "compactImages": true,
     "redemption": {
@@ -1358,7 +1372,8 @@
         "Idaho": "Sweeps Coins come with card-pack purchases rather than free bonuses, and the daily login streak is not available here.",
         "New York": "Sweeps Coins come with card-pack purchases rather than free bonuses, and the daily login streak is not available here."
       }
-    }
+    },
+    "seoTitle": "AceBet Review 2026: 1 SC Daily, Instant Crypto"
   },
   {
     "slug": "wow-vegas",
@@ -1409,7 +1424,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "WOW Vegas Review 2026: 30 SC for $10 + Free SC"
   },
   {
     "slug": "pulsz-bingo",
@@ -1479,7 +1495,8 @@
       "scales": false,
       "tip": "Pulsz Bingo runs a much smaller daily than Pulsz itself, around 0.2 SC a day against a mature Pulsz streak worth roughly 5.5 SC a week."
     },
-    "updatedAt": "2026-09-12"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Pulsz Bingo Review 2026: 30 SC for $10, 21+"
   },
   {
     "slug": "legacy-casino",
@@ -1534,7 +1551,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Legacy Casino Review 2026: Instant Payouts"
   },
   {
     "slug": "coinsback-casino",
@@ -1634,7 +1652,7 @@
     "bonusImage": "/images/coinsback-home.png",
     "dailyBonusImage": "/images/coinsback-feature.png",
     "dailyLadderImage": "/images/coinsback-daily-bonus.png",
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "dailySC": {
       "amount": 0.07,
       "display": "0.07 → 10.5 SC",
@@ -1643,7 +1661,8 @@
       "scales": true,
       "vip": true,
       "tip": "A 30-day ladder with free spins on the milestone days at 7, 14, 21 and 28, and a guaranteed Vault jackpot at day 30. On the starting Bronze ladder it is modest, about 0.5 SC across a week, but it climbs sharply as you rank up: at Silver and above the top daily prizes reach 10.5 SC. The ranking figure uses the Bronze base, which is what a new account actually gets."
-    }
+    },
+    "seoTitle": "CoinsBack Review 2026: 10 SC Free + 50% Back"
   },
   {
     "slug": "coin-wizard",
@@ -1735,13 +1754,14 @@
     "compactImages": true,
     "dailyBonusImage": "/images/coin-wizard-daily-bonus.png",
     "bonusImage": "/images/coin-wizard-earn-coins.png",
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "shutdownNotice": {
       "date": "October 28th",
       "message": "Coin Wizard is closing and will shut down on October 28th, 2026. If you still have a Sweeps Coins balance, redeem it before then, and do not post any more AMOE entries. New signups are no longer recommended. We have removed Coin Wizard from our Free Daily SC rankings.",
       "endsAt": "2026-10-28"
     },
-    "metaDescription": "Coin Wizard review: the site is closing on October 28, 2026. Redeem any balance before then, and stop posting mail-in entries now."
+    "metaDescription": "Coin Wizard review: the site is closing on October 28, 2026. Redeem any balance before then, and stop posting mail-in entries now.",
+    "seoTitle": "Coin Wizard Is Closing: Redeem by Oct 28, 2026"
   },
   {
     "slug": "golden-hearts",
@@ -1796,13 +1816,14 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "faqs": [
       {
         "q": "Does Golden Hearts have an AMOE?",
         "a": "Yes. The mail-in AMOE pays 3 SC per approved entry, halved from 6 SC in October 2026. Golden Hearts does not cap how many entries you send, but you can only redeem one returned code per day, so your limit is really how many you are willing to write and mail."
       }
-    ]
+    ],
+    "seoTitle": "Golden Hearts Review 2026: 25 SC for $10"
   },
   {
     "slug": "candy-coins",
@@ -1914,7 +1935,7 @@
       "min": "75 SC",
       "note": "Purchased coins carry no playthrough at all before redeeming"
     },
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "bonusImage": "/images/candy-coins-welcome-offer.jpeg",
     "vipImage": "/images/candy-coins-battle-arena.jpeg",
     "compactImages": true,
@@ -1930,7 +1951,8 @@
       "scales": true,
       "tip": "This is a monthly tiered event rather than a permanent daily, and it lives in the Quests tab rather than popping up in the lobby. Tiers grow through the month and a full unbroken run pays about 10.2 SC. Miss one night and it restarts at Tier 1, so start on the 1st: joining mid-month puts the biggest tiers out of reach entirely."
     },
-    "dailyBonusImage": "/images/candy-coins-daily-bonus.png"
+    "dailyBonusImage": "/images/candy-coins-daily-bonus.png",
+    "seoTitle": "Candy Coins Review 2026: Plays in CA & NY"
   },
   {
     "slug": "clash5",
@@ -2054,10 +2076,11 @@
     "bonusImage": "/images/clash5-special-offers.jpeg",
     "missionsImage": "/images/clash5-missions.jpeg",
     "vipImage": "/images/clash5-vip-points.jpeg",
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "bannedStateAccess": {
       "note": "A digital trading-card platform rather than a sweepstakes casino, which is what keeps it available in banned states."
-    }
+    },
+    "seoTitle": "Clash 5 Review 2026: Works in CA & NY"
   },
   {
     "slug": "moozi",
@@ -2169,7 +2192,8 @@
       }
     ],
     "promoCodeHow": "Get Coins → Redeem Code",
-    "updatedAt": "2026-08-28"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Moozi Promo Code FREE10: 15 SC Free (2026)"
   },
   {
     "slug": "zula-casino",
@@ -2236,7 +2260,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-10-11"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Zula Casino Review 2026: 10 SC Free on Signup"
   },
   {
     "slug": "sportzino",
@@ -2295,7 +2320,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Sportzino Review 2026: Daily SC + 30 SC for $10"
   },
   {
     "slug": "yay-casino",
@@ -2351,7 +2377,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Yay Casino Review 2026: 0.71 SC a Day Free"
   },
   {
     "slug": "american-luck",
@@ -2407,7 +2434,8 @@
       "New York",
       "Tennessee"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "American Luck Review 2026: Free Daily SC"
   },
   {
     "slug": "reel-zappy",
@@ -2541,7 +2569,8 @@
       "Washington"
     ],
     "metaDescription": "Reel Zappy gives 3.5 SC free on signup plus a strong first week, with a low 50 SC cashout. Here is what the daily bonus is really worth after week one.",
-    "updatedAt": "2026-09-03"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Reel Zappy Review 2026: 3.5 SC Free on Signup"
   },
   {
     "slug": "fortune-coins",
@@ -2606,7 +2635,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Fortune Wins Review 2026: Daily SC from 50 SC"
   },
   {
     "slug": "luck-party",
@@ -2672,7 +2702,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Luck Party Review 2026: Free Daily SC, 50 SC Min"
   },
   {
     "slug": "win-bonanza",
@@ -2731,7 +2762,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Win Bonanza Review 2026: 30 SC for $10"
   },
   {
     "slug": "rolla",
@@ -2780,7 +2812,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Rolla Casino Review 2026: Bonus & Payout Speed"
   },
   {
     "slug": "fortune-purple",
@@ -2903,8 +2936,9 @@
         "sc": 1
       }
     ],
-    "updatedAt": "2026-10-18",
-    "metaDescription": "Fortune Purple review: instant payouts from just 50 SC, a clean 1x playthrough, and 1,385+ slots on a brand-new dual-currency social casino."
+    "updatedAt": "2026-10-19",
+    "metaDescription": "Fortune Purple review: instant payouts from just 50 SC, a clean 1x playthrough, and 1,385+ slots on a brand-new dual-currency social casino.",
+    "seoTitle": "Fortune Purple Review 2026: Instant from 50 SC"
   },
   {
     "slug": "blitzmania",
@@ -2951,7 +2985,8 @@
       "Tennessee",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Blitzmania Review 2026: 75 SC for $25"
   },
   {
     "slug": "spinquest",
@@ -3008,7 +3043,8 @@
       "New York",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "SpinQuest Review 2026: 1 SC Daily + Instant Pay"
   },
   {
     "slug": "spinpals",
@@ -3059,7 +3095,8 @@
       "Washington",
       "West Virginia"
     ],
-    "updatedAt": "2026-10-18"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "SpinPals Review 2026: Is It Legit? 30 SC Offer"
   },
   {
     "slug": "babacasino",
@@ -3110,7 +3147,8 @@
       "Washington",
       "West Virginia"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "Baba Casino Review 2026: 60 SC for $20"
   },
   {
     "slug": "jackpotdaily",
@@ -3157,7 +3195,8 @@
       "Washington",
       "West Virginia"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "JackpotDaily Review 2026: 134 SC for $60"
   },
   {
     "slug": "sweepstars",
@@ -3244,7 +3283,7 @@
     "bonusImage": "/images/sweepstars-welcome.png",
     "dailyBonusImage": "/images/sweepstars-daily-bonus.png",
     "compactImages": true,
-    "updatedAt": "2026-10-18",
+    "updatedAt": "2026-10-19",
     "metaDescription": "Sweepstars review: 2 SC free on signup, a daily bonus that grows the longer you play, and 2,000+ games. Best value is $45 for 79 SC.",
     "dailySC": {
       "amount": 0.15,
@@ -3253,7 +3292,8 @@
       "note": "Small daily, builds to a mega prize on day 7",
       "scales": true,
       "tip": "The daily itself is small, roughly 0.1 to 0.2 SC, and builds to a mega prize on your seventh consecutive login. Pure daily-bonus farming has a low ceiling here; the StarDust currency and the daily missions are where the rest of the free value sits."
-    }
+    },
+    "seoTitle": "Sweepstars Review 2026: 2 SC Free on Signup"
   },
   {
     "slug": "speedsweeps",
@@ -3301,7 +3341,8 @@
       "New York",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "SpeedSweeps Review 2026: 30 SC Offer, Legit?"
   },
   {
     "slug": "dimesweeps",
@@ -3349,7 +3390,8 @@
       "New York",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "DimeSweeps Review 2026: Is This Site Legit?"
   },
   {
     "slug": "sweepsroyal",
@@ -3397,7 +3439,8 @@
       "New York",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "SweepsRoyal Review 2026: Bonus, Payouts & Trust"
   },
   {
     "slug": "richsweeps",
@@ -3445,7 +3488,8 @@
       "New York",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "RichSweeps Review 2026: 30 SC Offer, Any Good?"
   },
   {
     "slug": "bangcoins",
@@ -3493,7 +3537,8 @@
       "New York",
       "Washington"
     ],
-    "updatedAt": "2026-09-30"
+    "updatedAt": "2026-10-19",
+    "seoTitle": "BangCoins Review 2026: What You Actually Get"
   },
   {
     "slug": "united-slots",
@@ -3548,7 +3593,7 @@
       }
     ],
     "publishedAt": "2026-09-03",
-    "updatedAt": "2026-09-30",
+    "updatedAt": "2026-10-19",
     "restrictedStates": [
       "California",
       "Connecticut",
@@ -3564,6 +3609,7 @@
       "Tennessee",
       "Washington",
       "West Virginia"
-    ]
+    ],
+    "seoTitle": "United Slots: Launch Date & What to Expect 2026"
   }
 ]

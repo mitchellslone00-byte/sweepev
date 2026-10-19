@@ -21,7 +21,9 @@ export async function generateMetadata(
   const { slug } = await params;
   const site = getSite(slug);
   if (!site) return {};
-  const title = site.reviewTitle ?? `${site.name} Review, Bonus, Promo Code & Payouts`;
+  // Search listing first, then the page heading, then a default.
+  const title =
+    site.seoTitle ?? site.reviewTitle ?? `${site.name} Review, Bonus, Promo Code & Payouts`;
   const description = clampDescription(
     site.metaDescription ?? `${site.name} review: ${site.tagline} ${site.bonus}.`
   );
