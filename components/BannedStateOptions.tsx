@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { sites } from "@/lib/sites";
+import { sites, hasClosed } from "@/lib/sites";
 import { AffiliateLink } from "./AffiliateLink";
 
 /**
@@ -13,7 +13,8 @@ import { AffiliateLink } from "./AffiliateLink";
  */
 export function bannedStateOptions(state: string) {
   return sites.filter((s) => {
-    if (s.shutdownNotice || s.comingSoon) return false;
+    if (hasClosed(s) || s.comingSoon) return false;
+    if (s.shutdownNotice) return false;
     const access = s.bannedStateAccess;
     if (!access) return false;
     if ((s.restrictedStates ?? []).includes(state)) return false;

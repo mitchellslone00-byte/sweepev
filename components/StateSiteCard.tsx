@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getSite } from "@/lib/sites";
+import { getSite, hasClosed } from "@/lib/sites";
 import { AffiliateLink } from "./AffiliateLink";
 
 interface StateSiteCardProps {
@@ -47,7 +47,7 @@ export function StateSiteCard({
   const site = getSite(slug);
   if (!site) return null;
   if ((site.restrictedStates ?? []).includes(state)) return null;
-  if (site.shutdownNotice || site.comingSoon) return null;
+  if (hasClosed(site) || site.shutdownNotice || site.comingSoon) return null;
 
   return (
     <div

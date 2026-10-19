@@ -1,4 +1,4 @@
-import { getSite } from "@/lib/sites";
+import { getSite, hasClosed } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
 import { StateSiteCard } from "./StateSiteCard";
 
@@ -36,7 +36,7 @@ export function StateSiteList({
   const live = entries.filter((e) => {
     const site = getSite(e.slug);
     if (!site) return false;
-    if (site.shutdownNotice || site.comingSoon) return false;
+    if (hasClosed(site) || site.shutdownNotice || site.comingSoon) return false;
     return !(site.restrictedStates ?? []).includes(state);
   });
 

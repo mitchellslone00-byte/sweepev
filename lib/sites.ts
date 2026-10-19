@@ -74,6 +74,8 @@ export type Site = {
   shutdownNotice?: {
     /** Display date shown in the banner/overlay headline, e.g. "September 26th". */
     date: string;
+    /** ISO date of the final day, e.g. "2026-10-28". Drives hasClosed(). */
+    endsAt?: string;
     /** Full notice paragraph shown in the review-page banner. */
     message: string;
   };
@@ -105,6 +107,23 @@ export type Site = {
 
 export const sites: Site[] = sitesData as Site[];
 
+/**
+ * True once a closing site's final day has passed.
+ *
+ * Both previous closures sat on the site in future tense for weeks after the
+ * fact, because taking them down was a thing someone had to remember. This
+ * makes listings stop recommending a dead site on the next build instead.
+ */
+export function hasClosed(site: Site): boolean {
+  const endsAt = site.shutdownNotice?.endsAt;
+  if (!endsAt) return false;
+  return new Date().toISOString().slice(0, 10) > endsAt;
+}
+
+/** Sites eligible for rankings and listings: open, launched, and not past their closing date. */
+export const listableSites: Site[] = sites.filter(
+  (s) => !hasClosed(s) && !s.comingSoon
+);
 export function getSite(slug: string): Site | undefined {
   return sites.find((s) => s.slug === slug);
 }

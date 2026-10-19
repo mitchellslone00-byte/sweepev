@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { sites, getSite } from "@/lib/sites";
+import { sites, getSite, hasClosed } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
 import { ogMeta } from "@/lib/seo";
 import { AffiliateLink } from "@/components/AffiliateLink";
@@ -134,9 +134,16 @@ export default async function SitePage(
       {site.shutdownNotice && (
         <div className="mt-4 rounded-2xl border-2 border-red-500/60 bg-red-500/10 p-4 sm:p-5">
           <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-red-500">
-            <span aria-hidden className="text-base">⚠️</span> Shutting Down. {site.shutdownNotice.date}
+            <span aria-hidden className="text-base">⚠️</span>{" "}
+            {hasClosed(site)
+              ? `Closed. Shut down ${site.shutdownNotice.date}`
+              : `Shutting Down. ${site.shutdownNotice.date}`}
           </div>
-          <p className="mt-2 text-sm sm:text-base leading-relaxed text-text">{site.shutdownNotice.message}</p>
+          <p className="mt-2 text-sm sm:text-base leading-relaxed text-text">
+            {hasClosed(site)
+              ? `${site.name} has closed and is no longer operating. This review is kept for reference only. Do not sign up, do not buy coins, and if you are owed a balance, contact the operator directly.`
+              : site.shutdownNotice.message}
+          </p>
         </div>
       )}
 

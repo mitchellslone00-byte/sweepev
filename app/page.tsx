@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { sites } from "@/lib/sites";
+import { sites, hasClosed } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
 import { statusCounts } from "@/lib/states";
 import { CoinRain } from "@/components/CoinRain";
@@ -18,7 +18,7 @@ export default function HomePage() {
   const year = new Date().getFullYear();
   const legalCounts = statusCounts();
   // Unlaunched sites are not ranked, since there is nothing to score them on yet.
-  const ranked = sites.filter((s) => !s.comingSoon);
+  const ranked = sites.filter((s) => !s.comingSoon && !hasClosed(s));
   const upcoming = sites.filter((s) => s.comingSoon);
 
   const itemListLd = {

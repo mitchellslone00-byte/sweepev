@@ -26,7 +26,8 @@ export const metadata: Metadata = {
 // "$0 balance" friction note last, then alphabetical.
 function buildRows(): DailyRow[] {
   return sites
-    .filter((s) => s.dailySC)
+    // Never rank a site that is closing or not yet open.
+    .filter((s) => s.dailySC && !s.shutdownNotice && !s.comingSoon)
     .map((s) => ({
       slug: s.slug,
       name: s.name,

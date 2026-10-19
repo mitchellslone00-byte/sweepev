@@ -24,7 +24,8 @@ export const metadata: Metadata = {
 
 function buildRows(): FastRow[] {
   return sites
-    .filter((s) => s.redemption)
+    // Never rank a site that is closing, closed, or not yet open.
+    .filter((s) => s.redemption && !s.shutdownNotice && !s.comingSoon)
     .map((s) => ({
       slug: s.slug,
       name: s.name,
