@@ -142,6 +142,56 @@ export default function CrownCoinsIndianaPage() {
             Crown VIP Club tiers get everywhere else does not apply in Indiana.
           </li>
         </ul>
+
+        <h3 className="mt-6 text-lg font-bold text-text">Side by side</h3>
+        <div className="mt-3 overflow-x-auto rounded-xl border border-border">
+          <table className="w-full min-w-[520px] border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-border bg-panel2 text-left">
+                <th className="px-4 py-3 font-semibold text-text"></th>
+                <th className="px-4 py-3 font-semibold text-text">Standard Crown Coins</th>
+                <th className="px-4 py-3 font-semibold text-text">Indiana</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border text-muted">
+              <tr className="bg-panel">
+                <td className="px-4 py-3 font-medium text-text">Currency</td>
+                <td className="px-4 py-3">Sweeps Coins</td>
+                <td className="px-4 py-3">Sweeps Crown Tickets</td>
+              </tr>
+              <tr className="bg-panel/60">
+                <td className="px-4 py-3 font-medium text-text">How you play</td>
+                <td className="px-4 py-3">Wager down an SC balance</td>
+                <td className="px-4 py-3">Spend a ticket on each spin</td>
+              </tr>
+              <tr className="bg-panel">
+                <td className="px-4 py-3 font-medium text-text">Where winnings go</td>
+                <td className="px-4 py-3">Redeemable Sweeps Coins</td>
+                <td className="px-4 py-3">A separate cash balance</td>
+              </tr>
+              <tr className="bg-panel/60">
+                <td className="px-4 py-3 font-medium text-text">Cashout floor</td>
+                <td className="px-4 py-3">100 SC</td>
+                <td className="px-4 py-3 font-semibold text-green-400">$50</td>
+              </tr>
+              <tr className="bg-panel">
+                <td className="px-4 py-3 font-medium text-text">Coinback</td>
+                <td className="px-4 py-3">4% at Gold, 6% at Emerald</td>
+                <td className="px-4 py-3 text-red-400">Not included</td>
+              </tr>
+              <tr className="bg-panel/60">
+                <td className="px-4 py-3 font-medium text-text">Games, VIP ladder, races, apps</td>
+                <td className="px-4 py-3" colSpan={2}>
+                  The same in both
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 text-sm text-muted leading-relaxed">
+          Two rows change the maths and one row is the point: almost everything about the site is
+          identical, so this is the same casino with a different currency bolted to the front of it.
+        </p>
       </section>
 
       {/* Better and worse */}
