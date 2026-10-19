@@ -30,6 +30,18 @@ export type Site = {
   /** Short path for where to redeem the promo code, shown in the offer box, e.g. "Get Coins → Redeem Code". */
   promoCodeHow?: string;
   restrictedStates?: string[];
+  /**
+   * Sites we have positively confirmed still serve states that ban the standard
+   * dual-currency model. Banned-state pages list only these, so a site missing
+   * restrictedStates data is never surfaced there by accident. The optional
+   * per-state note explains how the product differs.
+   */
+  bannedStateAccess?: {
+    note: string;
+    states?: Record<string, string>;
+    /** Optional deeper page per state, e.g. /states/indiana/crown-coins. */
+    guides?: Record<string, string>;
+  };
   bonusImage?: string;
   saleImage?: string;
   promoImage?: string;

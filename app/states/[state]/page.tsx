@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { BannedStateOptions } from "@/components/BannedStateOptions";
 import type { Metadata } from "next";
 import Link from "next/link";
 import fs from "node:fs";
@@ -340,6 +341,8 @@ export default async function StatePage(
           </p>
         </section>
       )}
+
+      {!showList && <BannedStateOptions state={state.name} />}
 
       {/* How to start */}
       {showList && count > 0 && (

@@ -404,6 +404,16 @@ export default async function SitePage(
                           className="rounded-2xl max-w-xs border border-border shadow-lg"
                         />
                       </div>
+                    ) : para === "<<indianaguide>>" ? (
+                      <div key={pi} className="mt-3">
+                        <Link
+                          href="/states/indiana/crown-coins"
+                          className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/[0.06] px-3.5 py-1.5 text-sm font-medium text-accent transition-colors hover:bg-accent/10"
+                        >
+                          Crown Coins in Indiana, explained
+                          <span aria-hidden>→</span>
+                        </Link>
+                      </div>
                     ) : para === "<<viptiersimage>>" && site.vipTiersImage ? (
                       <div key={pi} className="mt-4 flex justify-center">
                         <PublicImg
