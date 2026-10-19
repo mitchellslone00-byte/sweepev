@@ -433,6 +433,22 @@ export default async function SitePage(
                           className="rounded-2xl max-w-2xl border border-border shadow-lg"
                         />
                       </div>
+                    ) : para === "<<gamepassimage>>" && site.gamePassImage ? (
+                      <div key={pi} className="mt-4 flex justify-center">
+                        <PublicImg
+                          src={site.gamePassImage}
+                          alt={`${site.name} game pass tier task and its rewards`}
+                          className="rounded-2xl max-w-md border border-border shadow-lg"
+                        />
+                      </div>
+                    ) : para === "<<challengesimage>>" && site.monthlyChallengesImage ? (
+                      <div key={pi} className="mt-4 flex justify-center">
+                        <PublicImg
+                          src={site.monthlyChallengesImage}
+                          alt={`${site.name} monthly challenges and their tier rewards`}
+                          className="rounded-2xl max-w-md border border-border shadow-lg"
+                        />
+                      </div>
                     ) : para === "<<missionsimage>>" && site.missionsImage ? (
                       <div key={pi} className="mt-4 flex justify-center">
                         <PublicImg

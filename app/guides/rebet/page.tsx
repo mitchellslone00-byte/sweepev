@@ -33,11 +33,15 @@ const faqs = [
   },
   {
     q: "What is the minimum cashout on ReBet and Dogg House?",
-    a: "20 SC on both, which is one of the lowest minimums in the space. Debit is the fastest route and lands instantly for redemptions under $500. A low minimum matters more here than on most sites because clearing your balance is also what unlocks your next daily.",
+    a: "20 SC on both, which is one of the lowest minimums in the space, and the ceiling is 1,000 SC per redemption. That range covers everything a normal account will hold, so a win comes out in one transfer. Bank transfer is free and debit costs a 1% fee; both land near instantly. A low minimum matters more here than on most sites because clearing your balance is also what unlocks your next daily.",
   },
   {
     q: "Is the $200 welcome offer worth buying?",
-    a: "It is the strongest pricing either site offers, at 300 SC for $200, or 1.5 SC per dollar. Against a light playthrough on a high-RTP game you would expect to keep roughly 290 SC of that, so around $90 of expected profit on a $200 spend. That is an expectation across many runs rather than a promise on any single one, and you should never spend money you would mind losing.",
+    a: "It is the strongest standing pricing either site offers, at 300 SC for $200, or 1.5 SC per dollar. Against a light playthrough on a high-RTP game you would expect to keep roughly 290 SC of that, so around $90 of expected profit on a $200 spend. That is an expectation across many runs rather than a promise on any single one, and you should never spend money you would mind losing.",
+  },
+  {
+    q: "What is the best time to buy on ReBet or Dogg House?",
+    a: "During a 100% casino match purchase. Both sites run them periodically and a match doubles the Sweeps Coins on a buy outright, taking the pricing to 3 SC per dollar. That beats the welcome offer, so if you are planning to spend at all, waiting for a match is the easiest way to improve your return.",
   },
   {
     q: "What is the best game to clear playthrough on ReBet?",
@@ -49,7 +53,7 @@ const faqs = [
   },
   {
     q: "Is Dogg House Casino just a reskin of ReBet?",
-    a: "It is built on the same UI engine, so the layout, the daily mechanic, the 20 SC minimum and the promo structure all carry over. The catalog is smaller because the brand is newer. Treat it as a genuine second account rather than a copy, because the balances and bonuses are entirely separate.",
+    a: "It is built on the same UI engine, so the layout, the daily mechanic and the 20 SC minimum all carry over, as do the game pass and the 100% match purchases. The promo layer is not identical, though: ReBet has a monthly challenge ladder that Dogg House does not run, and Dogg House has no VIP program at all. The libraries differ more than you would expect too, with Dogg House carrying 40+ live dealer tables against ReBet's 25 or so. Treat it as a genuine second account rather than a copy, because the balances and bonuses are entirely separate.",
   },
   {
     q: "How much free SC can you collect across both sites?",
@@ -313,6 +317,52 @@ export default function ReBetGuidePage() {
           decide it is a deal.
         </p>
         <p className="mt-3 text-muted leading-relaxed">
+          The exception, and the one worth setting a reminder for, is the{" "}
+          <strong className="text-text">100% casino match purchase</strong>. Both sites run them
+          periodically, and a match doubles the Sweeps Coins on a buy outright. That takes the welcome
+          pricing to <strong className="text-text">3 SC per dollar</strong> and turns an ordinary reload
+          into better value than the welcome offer. If you are planning to spend on either site at all,
+          waiting for a match rather than buying at the standard rate is the single easiest improvement
+          you can make to your return.
+        </p>
+        <p className="mt-3 text-muted leading-relaxed">
+          Before you spend anything at all, though, open the{" "}
+          <strong className="text-text">ReBet Game Pass</strong>. It is a hub with three tabs, a
+          seasonal event, the Monthly Challenges and a leaderboard, and the first two both pay out. The
+          seasonal event is the important one: its opening tier is a single task that ReBet itself
+          describes as <strong className="text-text">no cash needed</strong>, so you clear it on{" "}
+          <strong className="text-text">Gold Coins</strong>, the free play currency, and the Free Cash
+          Picks it pays out are free. That is unusual: most progression rewards in this space make you
+          stake redeemable coins to move through them, which means you are buying the reward with
+          expected value whether the marketing says so or not.
+        </p>
+        <p className="mt-3 text-muted leading-relaxed">
+          The <strong className="text-text">Monthly Challenges</strong> tab runs six ladders in
+          parallel on a monthly reset. The <strong className="text-text">Login Challenge</strong> is the
+          one to prioritise because it pays purely for turning up, with consecutive-day milestones at 7,
+          14, 21 and 28 days. Tier 1 is a 10% profit boost, and{" "}
+          <strong className="text-text">tiers 3 and 4 are where the money is</strong>: a 10 Free Cash
+          pick and a 25 purchase match, which gives you 25 SC on a $50 purchase.
+        </p>
+        <p className="mt-3 text-muted leading-relaxed">
+          Because the rewards are back-loaded to days 21 and 28, and because a missed window resets the
+          streak to <strong className="text-text">1</strong>, breaking the chain late in the month is
+          expensive in a way one day of coins is not. There is no way to climb back inside the same
+          reset. It resets at 9:00 AM EST, so pick a time of day you will actually keep to, and treat it
+          like the monthly events on Sweet Sweeps and Candy Coins: start on day one and do not miss.
+        </p>
+        <p className="mt-3 text-muted leading-relaxed">
+          <strong className="text-text">The Dogg House game pass is not the same offer</strong>, and
+          this is the one place where treating the two sites as interchangeable will cost you. Its pass
+          runs on picks with a <strong className="text-text">1 SC minimum wager</strong>, so you stake
+          your own redeemable coins to progress, and against the 15 SC at the end it does not come out
+          ahead. It is not +EV. Skip it and just take the daily.
+        </p>
+        <p className="mt-3 text-muted leading-relaxed">
+          Dogg House has no Monthly Challenges tab either. Between the free seasonal tier and the six
+          challenge ladders, ReBet has a real progression layer and Dogg House has the daily.
+        </p>
+        <p className="mt-3 text-muted leading-relaxed">
           You can run the numbers on any offer either site puts in front of you with our{" "}
           <Link href="/tools/ev-calculator" className={LINK_CLS}>
             EV calculator
@@ -420,8 +470,9 @@ export default function ReBetGuidePage() {
             means you are never stuck watching a balance you cannot touch.
           </li>
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">
-            <strong className="text-text">Instant to debit under $500.</strong> Not one to three days.
-            Instant, on the payout method most people actually use.
+            <strong className="text-text">Near-instant payouts.</strong> Not one to three days. Bank
+            transfer is free, debit costs 1%, and both land almost immediately. The ceiling is 1,000 SC
+            per redemption, high enough that most accounts will never meet it.
           </li>
         </ul>
         <p className="mt-4 text-muted leading-relaxed">
@@ -442,15 +493,28 @@ export default function ReBetGuidePage() {
         <h2 className="text-xl md:text-2xl font-bold text-accent">What is different about Dogg House</h2>
         <p className="mt-3 text-muted leading-relaxed">
           Almost everything in this guide applies to Dogg House Casino unchanged. It runs on the same UI
-          engine, so the daily mechanic, the balance rule, the 20 SC minimum, the instant debit
-          redemptions and the promo layer all carry across.
+          engine, so the daily mechanic, the balance rule, the 20 SC minimum, the near-instant
+          redemptions, the game pass and the 100% match purchases all carry across.
         </p>
         <p className="mt-3 text-muted font-semibold">The differences that actually matter:</p>
         <ul className="mt-2 space-y-2 text-muted leading-relaxed">
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">
-            <strong className="text-text">A smaller catalog.</strong> Dogg House is the newer brand and
-            the game selection has not caught up with ReBet yet. If you are hunting for a specific
-            title, check ReBet first.
+            <strong className="text-text">A thinner promo layer.</strong> Dogg House has no VIP
+            program at all, so no loyalty tiers, no points on purchases and no expedited-redemption
+            perk, and it does not run ReBet's monthly challenge ladder either. The game pass and the
+            100% match purchases do carry across. The upshot is that Dogg House has no progression to
+            it: month six looks much like month one, where on ReBet it does not.
+          </li>
+          <li className="before:content-['◆'] before:text-accent2 before:mr-2">
+            <strong className="text-text">A different catalog, not just a smaller one.</strong> Dogg
+            House actually runs more live dealer tables than ReBet does, 40+ against 25 or so, and both
+            sit at roughly 300 titles overall. ReBet is the better of the two for the sportsbook; Dogg
+            House is the better one if you want to wash a balance at a live table.
+          </li>
+          <li className="before:content-['◆'] before:text-accent2 before:mr-2">
+            <strong className="text-text">A shorter restricted list on ReBet.</strong> Indiana, Maine
+            and Tennessee are open to ReBet but closed to Dogg House, so in those three states the
+            two-account play is off the table.
           </li>
           <li className="before:content-['◆'] before:text-accent2 before:mr-2">
             <strong className="text-text">A shorter track record.</strong> ReBet has been around longer
@@ -502,8 +566,16 @@ export default function ReBetGuidePage() {
           </li>
           <li>
             Only buy if the maths works. The welcome offer at{" "}
-            <strong className="text-text">1.5 SC per dollar</strong> is the best pricing you will see,
-            so if you are going to spend at all, spend there rather than on a later reload.
+            <strong className="text-text">1.5 SC per dollar</strong> is the best standing pricing, and a{" "}
+            <strong className="text-text">100% casino match</strong> doubles that when one is running.
+            Wait for a match rather than buying at the standard rate on a reload.
+          </li>
+          <li>
+            Clear the <strong className="text-text">ReBet Game Pass seasonal tier on Gold Coins</strong>.
+            It costs nothing and the picks are free. Work the{" "}
+            <strong className="text-text">Login Challenge</strong> alongside it, and{" "}
+            <strong className="text-text">skip the Dogg House pass</strong>, which needs 1 SC wagers and
+            is not +EV.
           </li>
           <li>
             Clear playthrough on <strong className="text-text">Plinko XY</strong> at a small stake.

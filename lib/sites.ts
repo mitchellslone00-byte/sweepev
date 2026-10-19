@@ -61,6 +61,10 @@ export type Site = {
   vipTiersImage?: string;
   /** Screenshot of the missions or quests panel, always rendered capped and centered. */
   missionsImage?: string;
+  /** Screenshot of a seasonal game pass and its tier rewards, always rendered capped and centered. */
+  gamePassImage?: string;
+  /** Screenshot of the monthly challenge list and tier milestones, always rendered capped and centered. */
+  monthlyChallengesImage?: string;
   /** Screenshot of a processed redemption receipt, always rendered capped and centered. */
   redemptionImage?: string;
   /** Overrides the generated alt for redemptionImage, for shots that are not a receipt. */

@@ -42,7 +42,7 @@ function buildRows(): FastRow[] {
 const faqs = [
   {
     q: "Which sweepstakes casino pays out the fastest?",
-    a: "Several pay effectively instantly. Legacy Casino pays instantly, Sweet Sweeps is near-instant via USDC crypto, and Modo is instant with a small fee. ReBet, Dogg House, and SpinQuest pay instantly via debit for redemptions under $500, and Legendz pays to a debit card within about an hour.",
+    a: "Several pay effectively instantly. Legacy Casino pays instantly, Sweet Sweeps is near-instant via USDC crypto, and Modo is instant with a small fee. ReBet and Dogg House are near-instant by bank transfer or debit across a wide 20 to 1,000 SC range, SpinQuest pays instantly via debit for redemptions under $500, and Legendz pays to a debit card within about an hour.",
   },
   {
     q: "What's the fastest redemption method?",
