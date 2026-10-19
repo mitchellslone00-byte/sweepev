@@ -1,3 +1,20 @@
+/** Google cuts meta descriptions around here, so anything longer is wasted. */
+export const META_DESCRIPTION_LIMIT = 160;
+
+/**
+ * Trim a description to the limit on a word boundary.
+ *
+ * Only generated fallbacks should ever need this. A hand-written description
+ * that trips it is a mistake to fix at the source, which is what
+ * `npm run check:meta` is for.
+ */
+export function clampDescription(text: string, limit = META_DESCRIPTION_LIMIT): string {
+  if (text.length <= limit) return text;
+  const cut = text.slice(0, limit - 1);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > limit * 0.6 ? cut.slice(0, lastSpace) : cut).replace(/[\s,.;:]+$/, '') + '\u2026';
+}
+
 import { siteConfig } from "./site-config";
 
 /**

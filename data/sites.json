@@ -594,7 +594,8 @@
       "min": "100 SC",
       "note": "Processing has sped up again after a slow spell"
     },
-    "updatedAt": "2026-10-18"
+    "updatedAt": "2026-10-18",
+    "metaDescription": "RealPrize review: 2 SC free on signup, 1 SC a day from logins and free SC drops, 700+ games and live dealer tables. Cash out from $100."
   },
   {
     "slug": "modo",
@@ -883,7 +884,8 @@
     "updatedAt": "2026-10-18",
     "bannedStateAccess": {
       "note": "Runs a card-based model that sits outside the sweepstakes framework, which is why it still operates where the dual-currency model is banned."
-    }
+    },
+    "metaDescription": "Card Crush review: playable in 48 states including California and New York, with a $10 gift card cashout floor and rolling offers up to 120 SC for $60."
   },
   {
     "slug": "chumba-casino",
@@ -933,7 +935,7 @@
       "min": "100 SC",
       "note": null
     },
-    "updatedAt": "2026-09-30",
+    "updatedAt": "2026-10-18",
     "restrictedStates": [
       "California",
       "Connecticut",
@@ -949,7 +951,8 @@
       "Tennessee",
       "Washington",
       "West Virginia"
-    ]
+    ],
+    "metaDescription": "Chumba Casino review: 1 SC daily plus up to 5 SC a day with no purchase needed, and $10 for 30 SC to start. Payouts land in 1 to 2 days."
   },
   {
     "slug": "global-poker",
@@ -1097,7 +1100,7 @@
       "min": "100 SC",
       "note": null
     },
-    "updatedAt": "2026-09-30",
+    "updatedAt": "2026-10-18",
     "restrictedStates": [
       "California",
       "Connecticut",
@@ -1113,7 +1116,8 @@
       "Tennessee",
       "Washington",
       "West Virginia"
-    ]
+    ],
+    "metaDescription": "LuckyLand Casino review: $10 for 30 SC plus a 1 SC daily login streak, with bank and card payouts inside two days. Same operator as Chumba."
   },
   {
     "slug": "onyx-odds",
@@ -1296,7 +1300,7 @@
       }
     ],
     "reviewTitle": "AceBet Review 2026: Daily Streak, Rakeback & Instant Payouts",
-    "metaDescription": "AceBet review: a login streak that parks on day seven paying 1 SC or more a day at 1x playthrough, stacking rakeback, and instant payouts to crypto or a Solana wallet. What to check before buying a sale package.",
+    "metaDescription": "AceBet review: a login streak worth 1 SC a day or more once it matures, rakeback on every wager, and instant payouts to crypto or a Solana wallet.",
     "relatedSites": [
       "rebet",
       "dogghouse"
@@ -1492,7 +1496,7 @@
     "name": "Coinsback Casino",
     "tagline": "WOW Vegas sister site with a standout 50% CoinsBack refund on every SC spin and 1,400+ games.",
     "publishedAt": "2026-06-03",
-    "metaDescription": "Coinsback Casino review: WOW Vegas sister site with a 50% CoinsBack refund on every SC spin, 1,400+ games, and 500,000 GC + 10 SC free on signup.",
+    "metaDescription": "Coinsback Casino review: 10 SC free on signup and 50% of every losing SC spin refunded, across 1,400+ games. Sister site to WOW Vegas.",
     "rating": 4.7,
     "bonus": "500,000 GC + 10 SC free on signup (best offer $9.99 for 1.5M GC + 30 SC)",
     "promoCode": "",
@@ -1585,7 +1589,7 @@
     "bonusImage": "/images/coinsback-home.png",
     "dailyBonusImage": "/images/coinsback-feature.png",
     "dailyLadderImage": "/images/coinsback-daily-bonus.png",
-    "updatedAt": "2026-08-30"
+    "updatedAt": "2026-10-18"
   },
   {
     "slug": "coin-wizard",
@@ -1682,7 +1686,8 @@
       "date": "October 28th",
       "message": "Coin Wizard is closing and will shut down on October 28th, 2026. If you still have a Sweeps Coins balance, redeem it before then, and do not post any more AMOE entries. New signups are no longer recommended. We have removed Coin Wizard from our Free Daily SC rankings.",
       "endsAt": "2026-10-28"
-    }
+    },
+    "metaDescription": "Coin Wizard review: the site is closing on October 28, 2026. Redeem any balance before then, and stop posting mail-in entries now."
   },
   {
     "slug": "golden-hearts",
@@ -1792,7 +1797,7 @@
       ]
     },
     "reviewTitle": "Candy Coins Review 2026: 48 States, Bonuses & Real EV",
-    "metaDescription": "Candy Coins review: playable in 48 states including California and New York. Welcome Series up to 70 SC for $35, no playthrough on purchased coins, 75 SC minimum redemption.",
+    "metaDescription": "Candy Coins review: playable in 48 states including California and New York, with no playthrough on purchased coins and 70 SC for $34.99.",
     "restrictedStates": [
       "Nevada",
       "Washington"
@@ -2834,7 +2839,8 @@
         "sc": 1
       }
     ],
-    "updatedAt": "2026-08-22"
+    "updatedAt": "2026-10-18",
+    "metaDescription": "Fortune Purple review: instant payouts from just 50 SC, a clean 1x playthrough, and 1,385+ slots on a brand-new dual-currency social casino."
   },
   {
     "slug": "blitzmania",
@@ -3174,7 +3180,8 @@
     "bonusImage": "/images/sweepstars-welcome.png",
     "dailyBonusImage": "/images/sweepstars-daily-bonus.png",
     "compactImages": true,
-    "updatedAt": "2026-08-22"
+    "updatedAt": "2026-10-18",
+    "metaDescription": "Sweepstars review: 2 SC free on signup, a daily bonus that grows the longer you play, and 2,000+ games. Best value is $45 for 79 SC."
   },
   {
     "slug": "speedsweeps",

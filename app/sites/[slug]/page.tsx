@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { sites, getSite, hasClosed } from "@/lib/sites";
 import { siteConfig } from "@/lib/site-config";
-import { ogMeta } from "@/lib/seo";
+import { ogMeta, clampDescription } from "@/lib/seo";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { CopyCode } from "@/components/CopyCode";
 import { PublicImg } from "@/components/PublicImg";
@@ -21,8 +21,9 @@ export async function generateMetadata(
   const site = getSite(slug);
   if (!site) return {};
   const title = site.reviewTitle ?? `${site.name} Review, Bonus, Promo Code & Payouts`;
-  const description =
-    site.metaDescription ?? `${site.name} review: ${site.tagline} ${site.bonus}.`;
+  const description = clampDescription(
+    site.metaDescription ?? `${site.name} review: ${site.tagline} ${site.bonus}.`
+  );
   return {
     title,
     description,
