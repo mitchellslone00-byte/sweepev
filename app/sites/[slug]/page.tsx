@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { CompareLinks } from "@/components/CompareLinks";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { sites, getSite, hasClosed } from "@/lib/sites";
@@ -544,6 +545,12 @@ export default async function SitePage(
           </div>
         </section>
       )}
+
+      <CompareLinks
+        slug={site.slug}
+        name={site.name}
+        relatedSites={site.relatedSites}
+      />
 
       {site.faqs && site.faqs.length > 0 && (
         <>
