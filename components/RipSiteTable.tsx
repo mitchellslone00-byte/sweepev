@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { AffiliateLink } from "@/components/AffiliateLink";
 
 export type RipRow = {
@@ -10,6 +11,9 @@ export type RipRow = {
   hasReferral: boolean;
   rating: number;
   signupOffer: string;
+  /** Null means none, undefined means we have not confirmed either way. */
+  dailyReward?: string | null;
+  dailyNeedsPurchase?: boolean;
   buybackRate: string;
   buybackPaidIn: string;
   buybackIsCash: boolean;
@@ -36,27 +40,28 @@ function initials(name: string): string {
     .toUpperCase();
 }
 
-type SortKey = "rating" | "site";
+type SortKey = "rank" | "site";
 
 export function RipSiteTable({ rows }: { rows: RipRow[] }) {
-  const [sort, setSort] = useState<SortKey>("rating");
-  const [asc, setAsc] = useState(false);
+  // Rows arrive in our running order. That is the default, and "rank" restores
+  // it, because the order reflects judgement that no single column captures.
+  const [sort, setSort] = useState<SortKey>("rank");
+  const [asc, setAsc] = useState(true);
 
   const sorted = useMemo(() => {
-    const copy = [...rows];
-    copy.sort((a, b) => {
-      const cmp = sort === "site" ? a.name.localeCompare(b.name) : a.rating - b.rating;
+    const ranked = rows.map((r, i) => ({ r, i }));
+    ranked.sort((a, b) => {
+      const cmp = sort === "site" ? a.r.name.localeCompare(b.r.name) : a.i - b.i;
       return asc ? cmp : -cmp;
     });
-    return copy;
+    return ranked.map((x) => x.r);
   }, [rows, sort, asc]);
 
   function toggle(key: SortKey) {
     if (sort === key) setAsc((v) => !v);
-    // Rating reads best-first, name reads A to Z.
     else {
       setSort(key);
-      setAsc(key === "site");
+      setAsc(true); // rank reads best-first, name reads A to Z
     }
   }
 
@@ -66,10 +71,15 @@ export function RipSiteTable({ rows }: { rows: RipRow[] }) {
 
   return (
     <div className="overflow-x-auto rounded-2xl border border-border bg-panel">
-      <table className="w-full min-w-[820px] border-collapse text-sm">
+      <table className="w-full min-w-[950px] border-collapse text-sm">
         <thead>
           <tr className="border-b border-border text-left">
-            <th className={th}>#</th>
+            <th
+              className={`${th} cursor-pointer select-none hover:text-text`}
+              onClick={() => toggle("rank")}
+            >
+              # <span className="text-accent">{arrow("rank")}</span>
+            </th>
             <th
               className={`${th} cursor-pointer select-none hover:text-text`}
               onClick={() => toggle("site")}
@@ -77,12 +87,8 @@ export function RipSiteTable({ rows }: { rows: RipRow[] }) {
               Site <span className="text-accent">{arrow("site")}</span>
             </th>
             <th className={th}>Signup offer</th>
-            <th
-              className={`${th} cursor-pointer select-none hover:text-text`}
-              onClick={() => toggle("rating")}
-            >
-              Buyback <span className="text-accent">{arrow("rating")}</span>
-            </th>
+            <th className={th}>Daily reward</th>
+            <th className={th}>Buyback</th>
             <th className={th}>Ships</th>
             <th className={th}>Odds</th>
             <th className="px-3 py-3" />
@@ -120,15 +126,38 @@ export function RipSiteTable({ rows }: { rows: RipRow[] }) {
                   >
                     {initials(r.name)}
                   </span>
-                  <a
-                    href={`#${r.slug}`}
+                  <Link
+                    href={`/card-rips/${r.slug}`}
                     className="font-semibold text-text underline decoration-dotted decoration-accent/40 underline-offset-4 hover:text-accent"
                   >
                     {r.name}
-                  </a>
+                  </Link>
                 </div>
               </td>
               <td className="px-3 py-3 text-muted">{r.signupOffer}</td>
+              <td className="px-3 py-3">
+                {r.dailyReward === undefined ? (
+                  <span className="text-muted/60" title="Not yet confirmed">—</span>
+                ) : r.dailyReward === null ? (
+                  <span className="text-muted">None</span>
+                ) : (
+                  <>
+                    <span
+                      className={
+                        r.dailyNeedsPurchase ? "text-muted" : "font-semibold text-accent"
+                      }
+                    >
+                      {r.dailyReward}
+                    </span>
+                    {/* A daily you must buy into is not free value, so say so. */}
+                    {r.dailyNeedsPurchase && (
+                      <span className="mt-1 block w-fit rounded border border-border px-1.5 py-0.5 font-mono text-[10px] text-muted">
+                        needs purchase
+                      </span>
+                    )}
+                  </>
+                )}
+              </td>
               <td className="whitespace-nowrap px-3 py-3">
                 <span className="font-semibold text-text">{r.buybackRate}</span>
                 {/* Cash and credit are not the same thing, so the table says which. */}
