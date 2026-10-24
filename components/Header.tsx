@@ -1,56 +1,43 @@
 import Link from "next/link";
-import { siteConfig } from "@/lib/site-config";
-import { GuidesDropdown } from "@/components/GuidesDropdown";
+import { NavDropdown } from "@/components/NavDropdown";
 import { MobileMenu } from "@/components/MobileMenu";
 import { DiscordBanner } from "@/components/DiscordBanner";
+import { CARD_RIPS, DAILY_SC, GUIDES, RANKINGS, STANDALONE } from "@/lib/nav";
 
 export function Header() {
   return (
-    <header className="border-b border-border bg-bg/80 backdrop-blur sticky top-0 z-30">
+    <header className="sticky top-0 z-30 border-b border-border bg-bg/80 backdrop-blur">
       <DiscordBanner />
-      <div className="container-x flex h-14 sm:h-16 items-center justify-between gap-2">
-        <Link href="/" className="flex items-center gap-2 font-bold text-base sm:text-lg shrink-0">
-          <span className="inline-block h-7 w-7 rounded bg-accent text-bg grid place-items-center text-sm font-black">
+      <div className="container-x flex h-14 items-center justify-between gap-2 sm:h-16">
+        {/* Doubles as the Home link, so the nav does not repeat it. */}
+        <Link href="/" className="flex shrink-0 items-center gap-2 text-base font-bold sm:text-lg">
+          <span className="grid h-7 w-7 place-items-center rounded bg-accent text-sm font-black text-bg">
             EV
           </span>
           <span>
             Sweep<span className="text-accent">EV</span>
           </span>
         </Link>
+
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-6 text-sm text-muted">
-          <Link href="/" className="hover:text-text">Home</Link>
-
-          <GuidesDropdown />
-
-          <Link href="/daily-sc" className="hover:text-accent transition-colors">
-            Free Daily SC
+        <nav className="hidden items-center gap-5 text-sm text-muted md:flex lg:gap-6">
+          <Link href={CARD_RIPS.href} className="transition-colors hover:text-accent">
+            {CARD_RIPS.label}
           </Link>
 
-          <Link href="/fastest-payouts" className="hover:text-accent transition-colors">
-            Fastest Payouts
+          <Link href={DAILY_SC.href} className="transition-colors hover:text-accent">
+            {DAILY_SC.label}
           </Link>
 
-          <Link href="/where-legal" className="hover:text-accent transition-colors">
-            Where Legal
-          </Link>
+          <NavDropdown label="Rankings" items={RANKINGS} />
 
-          <Link href="/compare" className="hover:text-accent transition-colors hidden lg:inline">
-            Compare
-          </Link>
+          <NavDropdown label="Guides" items={GUIDES} />
 
-          <Link href="/tools/ev-calculator" className="hover:text-accent transition-colors">
-            Calculate EV
-          </Link>
-
-          <a
-            href="https://discord.gg/A62yrjBPZN"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-text"
-          >
-            Discord
-          </a>
+          {STANDALONE.map((l) => (
+            <Link key={l.href} href={l.href} className="transition-colors hover:text-accent">
+              {l.label}
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile nav */}

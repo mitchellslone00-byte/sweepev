@@ -2,24 +2,11 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { CARD_RIPS, DAILY_SC, DISCORD_URL, GUIDES, RANKINGS, STANDALONE } from "@/lib/nav";
 
-const LINKS = [
-  { label: "Home", href: "/" },
-  { label: "Free Daily SC", href: "/daily-sc" },
-  { label: "Fastest Payouts", href: "/fastest-payouts" },
-  { label: "Where It's Legal", href: "/where-legal" },
-  { label: "Compare Casinos", href: "/compare" },
-  { label: "Calculate EV", href: "/tools/ev-calculator" },
-];
-
-const GUIDES = [
-  { label: "General strategy", href: "/guides" },
-  { label: "AMOE", href: "/guides/amoe" },
-  { label: "Pulsz & Pulsz Bingo", href: "/guides/pulsz" },
-  { label: "CrownCoins", href: "/guides/crown-coins" },
-  { label: "LuckyLand", href: "/guides/luckyland" },
-  { label: "ReBet / Dogg House", href: "/guides/rebet" },
-];
+// Mirrors the desktop grouping, but as sections rather than dropdowns: there is
+// room to show everything at once here, and a menu inside a menu is worse.
+const TOP = [{ label: "Home", href: "/" }, CARD_RIPS, DAILY_SC, ...STANDALONE];
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -41,6 +28,24 @@ export function MobileMenu() {
   }, []);
 
   const close = () => setOpen(false);
+
+  const section = (title: string, items: typeof GUIDES) => (
+    <div className="mt-1 border-t border-border pt-1">
+      <div className="px-3 pb-1 pt-2 text-[10px] font-semibold uppercase tracking-wider text-muted">
+        {title}
+      </div>
+      {items.map((i) => (
+        <Link
+          key={i.href}
+          href={i.href}
+          onClick={close}
+          className="block rounded-lg px-3 py-2 text-sm text-muted hover:bg-panel2 hover:text-text"
+        >
+          {i.label}
+        </Link>
+      ))}
+    </div>
+  );
 
   return (
     <div className="relative md:hidden" ref={ref}>
@@ -64,7 +69,7 @@ export function MobileMenu() {
 
       {open && (
         <div className="absolute right-0 top-full z-50 mt-2 w-60 rounded-xl border border-border bg-panel p-2 shadow-xl">
-          {LINKS.map((l) => (
+          {TOP.map((l) => (
             <Link
               key={l.href}
               href={l.href}
@@ -75,25 +80,12 @@ export function MobileMenu() {
             </Link>
           ))}
 
-          <div className="mt-1 border-t border-border pt-1">
-            <div className="px-3 pb-1 pt-2 text-[10px] font-semibold uppercase tracking-wider text-muted">
-              Guides
-            </div>
-            {GUIDES.map((g) => (
-              <Link
-                key={g.href}
-                href={g.href}
-                onClick={close}
-                className="block rounded-lg px-3 py-2 text-sm text-muted hover:bg-panel2 hover:text-text"
-              >
-                {g.label}
-              </Link>
-            ))}
-          </div>
+          {section("Rankings", RANKINGS)}
+          {section("Guides", GUIDES)}
 
           <div className="mt-1 border-t border-border pt-1">
             <a
-              href="https://discord.gg/A62yrjBPZN"
+              href={DISCORD_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={close}
