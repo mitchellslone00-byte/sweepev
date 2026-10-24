@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 
-export function CopyCode({ code, sc }: { code: string; sc: number }) {
+// `sc` is omitted for referral codes outside the casino vertical, where the
+// reward is a card pack rather than an amount of Sweeps Coins.
+export function CopyCode({ code, sc }: { code: string; sc?: number }) {
   const [copied, setCopied] = useState(false);
 
   const copy = async () => {
@@ -24,7 +26,9 @@ export function CopyCode({ code, sc }: { code: string; sc: number }) {
       className="inline-flex items-center gap-2 rounded-lg border border-accent/40 bg-panel px-3 py-1.5 transition-colors hover:border-accent"
     >
       <code className="font-mono text-sm font-bold text-text">{code}</code>
-      <span className="rounded bg-accent/15 px-1.5 py-0.5 text-xs font-bold text-accent">{sc} SC</span>
+      {sc !== undefined && (
+        <span className="rounded bg-accent/15 px-1.5 py-0.5 text-xs font-bold text-accent">{sc} SC</span>
+      )}
       <span className={`text-xs ${copied ? "text-accent" : "text-muted"}`} aria-hidden>
         {copied ? "Copied!" : "Copy"}
       </span>
