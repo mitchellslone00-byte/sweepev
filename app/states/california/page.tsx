@@ -342,7 +342,7 @@ export default function CaliforniaPage() {
 
         {/* What is card-based */}
         <section className="mt-8">
-          <h2 className="text-2xl font-bold">The Three Ways a Site Can Still Serve California</h2>
+          <h2 className="text-2xl font-bold">The Four Ways a Site Can Still Serve California</h2>
           <p className="mt-3 text-muted leading-relaxed">
             The sites on this page are not all doing the same thing, and the difference is worth understanding before you pick one.
           </p>
@@ -356,7 +356,31 @@ The third is simply a conventional sweepstakes casino that has chosen not to exc
 Whatever the route, the practical experience is similar. You get coins on signup, can buy more, play casino-style games, and redeem winnings for prizes. What changes is the legal structure underneath, and that is what determines whether you can play at all.
           </p>
           <p className="mt-3 text-muted leading-relaxed">
-            Alternative models have been growing quickly through 2025 and 2026 as operators look for ways to serve players in restricted states, and we expect more platforms to adopt them. The flip side is that conventional sweeps casinos keep withdrawing from California, so the balance between those three routes is still shifting.
+            The fourth route sidesteps the question altogether, and it is the one that has grown
+            fastest this year.{" "}
+            <Link href="/card-rips" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">
+              Card rip sites
+            </Link>{" "}
+            sell you a product rather than running a sweepstakes: you buy a digital pack, open it,
+            and a real trading card is inside, which you can either have shipped to you or sell back
+            to the operator. Because nothing about that is a dual-currency promotional sweepstakes,
+            California&apos;s rules do not reach it, and most of these platforms serve the state
+            without any special arrangement.
+          </p>
+          <p className="mt-3 text-muted leading-relaxed">
+            It is a genuinely different activity rather than a workaround dressed up as one, so
+            treat it as an addition to the options above rather than a replacement for them. The
+            thing to check before signing up is the buyback, meaning what percentage the operator
+            pays for a card you do not want and whether it pays cash or store credit you can only
+            spend on more packs. Several of them also hand out free packs daily, which is the one
+            part of the model that costs you nothing. Our{" "}
+            <Link href="/card-rips" className="font-semibold text-accent underline underline-offset-2 hover:opacity-80">
+              card rip site rankings
+            </Link>{" "}
+            compare all eight on exactly those terms.
+          </p>
+          <p className="mt-3 text-muted leading-relaxed">
+            Alternative models have been growing quickly through 2025 and 2026 as operators look for ways to serve players in restricted states, and we expect more platforms to adopt them. The flip side is that conventional sweeps casinos keep withdrawing from California, so the balance between those four routes is still shifting.
           </p>
         </section>
 

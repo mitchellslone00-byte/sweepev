@@ -26,7 +26,6 @@ export function bannedStateOptions(state: string) {
 
 export function BannedStateOptions({ state }: { state: string }) {
   const options = bannedStateOptions(state);
-  if (!options.length) return null;
 
   return (
     <section className="mt-6 rounded-2xl border border-accent/40 bg-panel p-5 sm:p-6">
@@ -34,10 +33,21 @@ export function BannedStateOptions({ state }: { state: string }) {
         What still works in {state}
       </h2>
       <p className="mt-3 text-sm text-muted leading-relaxed">
-        The ban covers the standard dual-currency sweepstakes model. A handful of
-        platforms run on a different footing and still accept {state} players, so you
-        are not out of options entirely. Expect a different experience from the one
-        the rest of the country gets.
+        {options.length ? (
+          <>
+            The ban covers the standard dual-currency sweepstakes model. A handful of
+            platforms run on a different footing and still accept {state} players, so you
+            are not out of options entirely. Expect a different experience from the one
+            the rest of the country gets.
+          </>
+        ) : (
+          <>
+            The ban covers the standard dual-currency sweepstakes model, and we do not
+            currently list a sweeps casino that still accepts {state} players. That does
+            not leave you with nothing, because card rips are a different product
+            entirely and the ban does not reach them.
+          </>
+        )}
       </p>
       <div className="mt-4 space-y-3">
         {options.map((s) => {
@@ -80,10 +90,35 @@ export function BannedStateOptions({ state }: { state: string }) {
           );
         })}
       </div>
+      {/* Card rips are a different product rather than another sweeps workaround,
+          so they sit apart from the list above rather than inside it. */}
+      <div className="mt-5 rounded-xl border border-border bg-panel2/40 p-4">
+        <h3 className="font-bold text-text">Card rips are an option here too</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted">
+          Worth knowing about separately, because they are not sweepstakes at all. On a card
+          rip site you buy a digital pack, open it, and a real trading card is inside, which you
+          either have shipped to you or sell back to the operator. That is a product purchase
+          rather than a dual-currency promotion, so the rules that pushed sweeps casinos out of{" "}
+          {state} generally do not apply to them.
+        </p>
+        <p className="mt-2 text-sm leading-relaxed text-muted">
+          Several hand out free packs every day, which costs nothing to collect. Check the buyback
+          before you spend, though: what the operator pays for a card you do not want, and whether
+          it pays cash or store credit you can only spend on more packs.
+        </p>
+        <Link
+          href="/card-rips"
+          className="mt-3 inline-block rounded-lg border border-accent/40 px-4 py-2 text-sm font-semibold text-accent hover:border-accent"
+        >
+          Compare card rip sites →
+        </Link>
+      </div>
+
       <p className="mt-4 text-xs leading-relaxed text-muted">
         Availability changes quickly in states that have legislated, and operators do
         not always announce it. Confirm the current position at signup rather than
-        relying on any list, ours included.
+        relying on any list, ours included. Card rip operators set their own state and
+        age rules as well, and at least one cannot ship to every state.
       </p>
     </section>
   );

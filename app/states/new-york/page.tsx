@@ -122,6 +122,35 @@ export default function NewYorkPage() {
           <p className="mt-3 text-muted leading-relaxed">
             Card-based platforms sidestep this entirely. Instead of operating under sweepstakes promotional law, they use a proprietary token or card currency system that sits outside the sweepstakes framework. That is why Card Crush and Clash 5 can serve New York residents while most sweepstakes casinos cannot.
           </p>
+          <p className="mt-3 text-muted leading-relaxed">
+            There is a second category worth knowing about, and it has grown quickly through 2026.{" "}
+            <Link
+              href="/card-rips"
+              className="font-semibold text-accent underline underline-offset-2 hover:opacity-80"
+            >
+              Card rip sites
+            </Link>{" "}
+            are not sweepstakes at all. You buy a digital pack, open it, and a real trading card is
+            inside, which you either have shipped to you or sell straight back to the operator.
+            Because that is a product purchase rather than a dual-currency promotion, New York&apos;s
+            promotional gaming rules do not reach it, and most of these platforms serve the state
+            without any special arrangement.
+          </p>
+          <p className="mt-3 text-muted leading-relaxed">
+            Treat it as a different activity rather than a substitute for the two platforms below.
+            Several of them give out free packs every day, which costs nothing to collect, but the
+            term that decides whether one is worth using is the buyback: what the operator pays for a
+            card you do not want, and whether that arrives as cash or as store credit you can only
+            spend on more packs. Our{" "}
+            <Link
+              href="/card-rips"
+              className="font-semibold text-accent underline underline-offset-2 hover:opacity-80"
+            >
+              card rip site rankings
+            </Link>{" "}
+            compare all eight on exactly that. Operators set their own state rules, so confirm yours
+            at signup.
+          </p>
         </section>
 
         {/* Available options */}
