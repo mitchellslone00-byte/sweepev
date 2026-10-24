@@ -47,7 +47,7 @@ export function CardRipsTeaser() {
         <ul className="mt-5 grid gap-3 sm:grid-cols-3">
           {top.map((s) => (
             <li key={s.slug} className="rounded-xl border border-border bg-panel p-3">
-              <Link href={`/card-rips#${s.slug}`} className="flex items-center gap-2.5">
+              <Link href={`/card-rips/${s.slug}`} className="flex items-center gap-2.5">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={logoUrl(s.homepageUrl)}

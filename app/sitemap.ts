@@ -57,6 +57,7 @@ function rulesFor(pathname: string): { priority: number; changeFrequency: Change
   if (pathname === "/daily-sc") return { priority: 0.9, changeFrequency: "weekly" };
   if (pathname === "/where-legal") return { priority: 0.9, changeFrequency: "weekly" };
   if (pathname === "/card-rips") return { priority: 0.9, changeFrequency: "weekly" };
+  if (pathname.startsWith("/card-rips/")) return { priority: 0.8, changeFrequency: "weekly" };
   if (pathname.startsWith("/sites/")) return { priority: 0.8, changeFrequency: "weekly" };
   if (pathname.startsWith("/states/")) return { priority: 0.8, changeFrequency: "monthly" };
   if (pathname.startsWith("/compare")) return { priority: 0.7, changeFrequency: "monthly" };

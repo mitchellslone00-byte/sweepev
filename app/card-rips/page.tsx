@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { ogMeta } from "@/lib/seo";
-import { AffiliateLink } from "@/components/AffiliateLink";
-import { CopyCode } from "@/components/CopyCode";
 import { RipSiteTable, type RipRow } from "@/components/RipSiteTable";
 import { buybackIsCash, rankedRipSites } from "@/lib/rip-sites";
 
@@ -45,6 +43,10 @@ const faqs = [
     a: "Several do. Rips by Triumph, Tilt Rips and Pullz all hand new accounts a free pack with a referral code, and Crown Rips gives a free $1 welcome pack. A few others attach their offer to a first purchase instead, which is not the same thing, so check which kind you are being offered.",
   },
   {
+    q: "Do card rip sites have daily rewards?",
+    a: "Some do, and they work much like the daily Sweeps Coins drops on the casino side. Crown Rips runs a seven-day cycle that pays three free packs plus about $0.70 in cash across a week, with extra gift drops at days 8, 15, 22 and 30. The packs carry a maximum value rather than a fixed one, so treat the headline figure as a ceiling. Where a site offers a daily, it is listed in the Daily reward column above.",
+  },
+  {
     q: "Are card rip sites legal in California, New York and Texas?",
     a: "Generally yes, because you are buying a product rather than entering a sweepstakes. That is why these have picked up so quickly in states where sweepstakes casinos are blocked. Individual operators still set their own state and age rules, so check the terms before depositing.",
   },
@@ -72,6 +74,8 @@ export default function CardRipsPage() {
     hasReferral: Boolean(s.affiliateUrl),
     rating: s.rating,
     signupOffer: s.signupOffer,
+    dailyReward: s.dailyReward === undefined ? undefined : s.dailyReward?.display ?? null,
+    dailyNeedsPurchase: s.dailyReward?.requiresPurchase,
     buybackRate: s.buyback.rate,
     buybackPaidIn: s.buyback.paidIn,
     buybackIsCash: buybackIsCash(s),
@@ -102,7 +106,7 @@ export default function CardRipsPage() {
       "@type": "ListItem",
       position: i + 1,
       name: `${s.name}. ${s.buyback.rate} buyback`,
-      url: `${siteConfig.url}/card-rips#${s.slug}`,
+      url: `${siteConfig.url}/card-rips/${s.slug}`,
     })),
   };
 
@@ -235,108 +239,36 @@ export default function CardRipsPage() {
             page for how the rules differ by state.
           </p>
         </section>
-
         <section className="mt-12">
-          <h2 className="text-xl font-bold md:text-2xl">Every site, in detail</h2>
-          <div className="mt-5 space-y-5">
+          <h2 className="text-xl font-bold md:text-2xl">Read the full reviews</h2>
+          <p className="mt-3 max-w-[64ch] text-muted leading-relaxed">
+            Each site has its own review covering the buyback terms, the daily reward, what
+            shipping costs you and where the catches are.
+          </p>
+          <ul className="mt-5 grid gap-3 sm:grid-cols-2">
             {sites.map((s, i) => (
-              <article
-                key={s.slug}
-                id={s.slug}
-                className="scroll-mt-24 rounded-2xl border border-border bg-panel p-5"
-              >
-                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <li key={s.slug} className="rounded-xl border border-border bg-panel p-4">
+                <div className="flex flex-wrap items-baseline gap-x-2.5">
                   <span className="font-mono text-xs text-muted">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-lg font-bold text-text">{s.name}</h3>
+                  <Link
+                    href={`/card-rips/${s.slug}`}
+                    className="font-semibold text-text hover:text-accent"
+                  >
+                    {s.name} review
+                  </Link>
                   <span className="rounded-full bg-accent/15 px-2 py-0.5 text-xs font-bold text-accent">
                     {s.rating.toFixed(1)}
                   </span>
-                  {!buybackIsCash(s) && (
-                    <span className="rounded-full border border-border px-2 py-0.5 font-mono text-[10px] text-muted">
-                      buyback not paid in cash
-                    </span>
-                  )}
                 </div>
-
-                <p className="mt-2 text-muted leading-relaxed">{s.tagline}</p>
-
-                <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm md:grid-cols-4">
-                  <div>
-                    <dt className="font-mono text-[10px] uppercase tracking-wider text-muted">Buyback</dt>
-                    <dd className="text-text">{s.buyback.rate}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-mono text-[10px] uppercase tracking-wider text-muted">Paid in</dt>
-                    <dd className="text-text">{s.buyback.paidIn}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-mono text-[10px] uppercase tracking-wider text-muted">Packs</dt>
-                    <dd className="text-text">{s.packPrices}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-mono text-[10px] uppercase tracking-wider text-muted">Platform</dt>
-                    <dd className="text-text">{s.platform}</dd>
-                  </div>
-                </dl>
-
-                <p className="mt-4 text-sm text-muted leading-relaxed">{s.buyback.note}</p>
-                <p className="mt-2 text-sm text-muted leading-relaxed">{s.shipping.note}</p>
-
-                <div className="mt-4 grid gap-4 md:grid-cols-2">
-                  <div>
-                    <h4 className="font-mono text-[11px] uppercase tracking-wider text-accent">Pros</h4>
-                    <ul className="mt-2 space-y-1 text-sm text-muted">
-                      {s.pros.map((t) => (
-                        <li key={t} className="before:mr-2 before:text-accent before:content-['+']">
-                          {t}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-mono text-[11px] uppercase tracking-wider text-muted">Cons</h4>
-                    <ul className="mt-2 space-y-1 text-sm text-muted">
-                      {s.cons.map((t) => (
-                        <li key={t} className="before:mr-2 before:content-['−']">
-                          {t}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <p className="mt-4 text-sm text-muted leading-relaxed">
-                  <strong className="text-text">Our take.</strong> {s.verdict}
+                <p className="mt-2 text-sm text-muted leading-relaxed">{s.verdict}</p>
+                <p className="mt-2 font-mono text-[11px] text-muted">
+                  {s.buyback.rate} buyback, paid in {s.buyback.paidIn}
                 </p>
-
-                <div className="mt-4 flex flex-wrap items-center gap-3">
-                  {s.affiliateUrl ? (
-                    <AffiliateLink
-                      slug={s.slug}
-                      name={s.name}
-                      source="card_rips_detail"
-                      className="rounded-lg bg-accent px-4 py-2 text-sm font-bold text-bg hover:opacity-90"
-                    >
-                      Get the {s.name} offer
-                    </AffiliateLink>
-                  ) : (
-                    <a
-                      href={s.homepageUrl}
-                      target="_blank"
-                      rel="nofollow noopener"
-                      className="rounded-lg border border-border px-4 py-2 text-sm font-bold text-muted hover:text-text"
-                    >
-                      Visit {s.name}
-                    </a>
-                  )}
-                  {s.promoCode && <CopyCode code={s.promoCode} />}
-                  <span className="font-mono text-xs text-muted">{s.operator}</span>
-                </div>
-              </article>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
         <section className="mt-12">
