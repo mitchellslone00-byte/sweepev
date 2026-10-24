@@ -7,6 +7,9 @@ import { CoinRain } from "@/components/CoinRain";
 import { FeaturedSite } from "@/components/FeaturedSite";
 import { SiteCard } from "@/components/SiteCard";
 import { LegalityMap, LegalityLegend } from "@/components/LegalityMap";
+import { CardRipsTeaser } from "@/components/CardRipsTeaser";
+import { HeroSlider, type Slide } from "@/components/HeroSlider";
+import { ripSites } from "@/lib/rip-sites";
 
 export const metadata: Metadata = {
   alternates: {
@@ -20,6 +23,38 @@ export default function HomePage() {
   // Unlaunched sites are not ranked, since there is nothing to score them on yet.
   const ranked = sites.filter((s) => !s.comingSoon && !hasClosed(s));
   const upcoming = sites.filter((s) => s.comingSoon);
+
+  // Card rips leads because it is the newest vertical and the one we are
+  // pushing. Figures come from the data so they cannot go stale.
+  const freePacks = ripSites.filter((s) => /free/i.test(s.signupOffer)).length;
+  const dailyCount = ranked.filter((s) => s.dailySC).length;
+  const instantCount = ranked.filter(
+    (s) => s.redemption && s.redemption.speedHours < 1
+  ).length;
+
+  const heroSlides: Slide[] = [
+    {
+      eyebrow: "New",
+      title: "Card rips: open a pack, get a real card",
+      body: `Rip a digital pack and there is a real trading card inside. ${freePacks} of the ${ripSites.length} sites we track give new accounts a free pack, and most work in states where sweepstakes casinos do not.`,
+      href: "/card-rips",
+      cta: "Compare card rip sites",
+    },
+    {
+      eyebrow: "Free every day",
+      title: "Claim free Sweeps Coins daily",
+      body: `${dailyCount} sites hand out free Sweeps Coins just for logging in. We track what each one actually pays, so you know which logins are worth your time.`,
+      href: "/daily-sc",
+      cta: "See the daily SC tracker",
+    },
+    {
+      eyebrow: "Cash out fast",
+      title: "Which sites actually pay instantly",
+      body: `${instantCount} of the casinos we rank pay out in under an hour. We rank every site by its real redemption speed, not the one in the marketing.`,
+      href: "/fastest-payouts",
+      cta: "See the fastest payouts",
+    },
+  ];
 
   const itemListLd = {
     "@context": "https://schema.org",
@@ -105,6 +140,8 @@ export default function HomePage() {
               How Sweeps casinos work
             </a>
           </div>
+
+          <HeroSlider slides={heroSlides} />
         </div>
       </section>
 
@@ -163,6 +200,9 @@ export default function HomePage() {
           </span>
         </div>
       </section>
+
+      {/* Card rips: separate vertical, placed high because it is the growth bet */}
+      <CardRipsTeaser />
 
       {/* Legality map teaser */}
       <section id="where-legal" className="container-x py-8">
