@@ -50,6 +50,10 @@ export default async function RipSiteReview({
   // Triumph's is padlocked behind a purchase, so it does not belong there.
   const freeDaily = Boolean(site.dailyReward && !site.dailyReward.requiresPurchase);
 
+  const blocked = site.eligibility.restrictedStates;
+  const stateSummary =
+    blocked === null ? "Unverified" : blocked.length ? blocked.join(", ") : "None named";
+
   const reviewLd = {
     "@context": "https://schema.org",
     "@type": "Review",
@@ -108,6 +112,8 @@ export default async function RipSiteReview({
     ["Odds published", site.oddsPublished ? "Yes" : "No"],
     ["Platform", site.platform],
     ["Operator", site.operator],
+    ["Blocked states", stateSummary],
+    ["Minimum age", site.eligibility.minAge ? `${site.eligibility.minAge}+` : "Not stated"],
   ];
 
   return (
@@ -278,6 +284,19 @@ export default async function RipSiteReview({
           )}
         </section>
 
+
+        <section className="mt-10">
+          <h2 className="text-xl font-bold md:text-2xl">
+            Can you use {site.name} in your state?
+          </h2>
+          <p className="mt-3 text-muted leading-relaxed">{site.eligibility.note}</p>
+          <p className="mt-3 font-mono text-xs text-muted">
+            {blocked === null
+              ? "Source: could not be verified."
+              : `Source: ${site.eligibility.source}.`}{" "}
+            Operators change eligible locations without announcing it, so confirm at signup.
+          </p>
+        </section>
 
         <section className="mt-10">
           <h2 className="text-xl font-bold md:text-2xl">Shipping and getting the card</h2>
