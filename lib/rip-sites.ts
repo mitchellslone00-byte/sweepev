@@ -54,6 +54,19 @@ export interface RipSite {
     /** Describes what the screenshot shows, for the alt text. */
     imageAlt?: string;
   } | null;
+  /**
+   * Read from the operator's own terms, not from round-ups.
+   *
+   * `restrictedStates: []` means we read the terms and they name no state.
+   * `null` means we could not reach them. The two render differently, so a site
+   * we could not check is never shown as available everywhere.
+   */
+  eligibility: {
+    restrictedStates: string[] | null;
+    minAge: number | null;
+    note: string;
+    source: string;
+  };
   shipping: { available: boolean; note: string };
   oddsPublished: boolean;
   platform: string;

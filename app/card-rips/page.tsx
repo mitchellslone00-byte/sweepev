@@ -154,8 +154,9 @@ export default function CardRipsPage() {
           We rank them on the number that decides whether one is worth using:{" "}
           <strong className="text-text">the buyback</strong>, and specifically whether it pays you in
           cash or in store credit you can only spend on more packs. Of the {sites.length} sites here,
-          only <strong className="text-text">{cashBuyback}</strong> pay into a balance you can actually
-          withdraw.
+          <strong className="text-text">{cashBuyback}</strong> pay into a balance you can actually
+          withdraw. The other {sites.length - cashBuyback} do not, and that is the difference between
+          a payout and a voucher.
         </p>
         <p className="mt-2 font-mono text-xs text-muted">Last reviewed {LAST_VERIFIED}</p>
 

@@ -68,7 +68,7 @@
         "body": [
           "Crown Rips advertises a 100% fair-market-value buyback, which is the best rate available in this category alongside Rips by Triumph. Two things are worth understanding about what that number actually promises.",
           "First, it is 100% of the operator's own valuation of the card you pulled. It is not 100% of what you paid for the pack, and the two are rarely close. If you buy a $30 pack and pull a card Crown Rips values at $4, a 100% buyback pays you $4.",
-          "Second, and more positively, it pays into a withdrawable cash balance rather than site credit. Of the sites we track, only a couple do this. It is the single most important term on any rip site and the one most of them are quietest about.",
+          "Second, and more positively, it pays into a withdrawable cash balance rather than site credit. Most of this category does the same, but not all of it: Packz pays its 90% in store credit that can only buy more packs, and Courtside converts cards to coins instead. Check which you are getting before you judge a percentage.",
           "One condition to know going in: cash you deposit has to be played through before you can withdraw it, and identity verification is required before any withdrawal clears. Get the verification done on the day you sign up rather than the day you first try to cash out."
         ]
       },
@@ -103,7 +103,7 @@
       },
       {
         "q": "Does Crown Rips pay out in cash?",
-        "a": "Yes. The 100% buyback credits a cash balance you can withdraw, rather than store credit that can only buy more packs. Only a couple of sites in this category do that, and it is the most important term on any of them."
+        "a": "Yes. The 100% buyback credits a cash balance you can withdraw, rather than store credit that can only buy more packs. Six of the eight sites we track now pay out this way; Packz pays in site credit and Courtside converts cards to coins."
       },
       {
         "q": "Does a 100% buyback mean I break even on a pack?",
@@ -121,7 +121,13 @@
         "q": "How old do you have to be to use Crown Rips?",
         "a": "19, rather than the 18 most sites in this category require. It is also not available in every state, so check before signing up."
       }
-    ]
+    ],
+    "eligibility": {
+      "restrictedStates": null,
+      "minAge": null,
+      "note": "We could not verify this one. The Crown Rips site blocks automated access to its terms, and the third-party lists in circulation disagree with each other and mostly describe the Crown Coins sweepstakes casino rather than Crown Rips. One list cites Idaho, Louisiana, Michigan, Montana, Nevada, Washington, Connecticut and New Jersey, but it is months old and we would not publish it as fact. Sources also split on whether the minimum age is 18 or 19. Check at signup.",
+      "source": "Unverified. Terms not reachable."
+    }
   },
   {
     "slug": "tilt-rips",
@@ -138,8 +144,8 @@
     ],
     "buyback": {
       "rate": "90% FMV",
-      "paidIn": "unconfirmed",
-      "note": "Sell-back pays 90% of market value. Vault claim window is longer than most rivals."
+      "paidIn": "cash balance",
+      "note": "Tilt Rips' FAQ puts the sell-back at 90% of market value, credited instantly to your Tilt Rips wallet, which can be withdrawn in USD or in several cryptocurrencies. There are no fees beyond what the app shows you, and the price is set from live market data rather than negotiated, so you cannot dispute a valuation. Fiat withdrawals require identity verification."
     },
     "shipping": {
       "available": true,
@@ -196,7 +202,8 @@
         "body": [
           "Delivery can take up to six weeks. That is the longest wait on our list by a wide margin and it is the main reason Tilt Rips does not rank higher.",
           "In practice it matters less than it reads, because most people on these apps are selling back rather than shipping. If you are treating the daily as a small cash stream, you will never touch the post. But if you pull something you genuinely want in your hands, you are waiting a month and a half for it.",
-          "The buyback is 90% of market value rather than the 100% Crown Rips and Triumph advertise. On a free pack that distinction barely registers. On a balance you built by spending, it does."
+          "The buyback is 90% of market value rather than the 100% Crown Rips and Triumph advertise. On a free pack that distinction barely registers. On a balance you built by spending, it does.",
+          "On the buyback itself, the wallet is withdrawable in USD or crypto, and Tilt Rips charges no fees beyond what the app displays before you confirm. Valuations come from live market data and are not open to dispute, which cuts both ways: you will not get a negotiated price, but you are also not at the mercy of someone's opinion of your card."
         ]
       },
       {
@@ -230,13 +237,19 @@
       },
       {
         "q": "What is the Tilt Rips buyback rate?",
-        "a": "90% of market value, against the 100% advertised by Crown Rips and Rips by Triumph. On a free daily pack that gap is negligible; on a balance you paid for, it is not."
+        "a": "90% of market value, credited instantly to your Tilt Rips wallet and withdrawable in USD or several cryptocurrencies, with no fees beyond what the app shows. Crown Rips, CrownCards, Rips by Triumph and PrizePicks all pay 100%, so this is the lowest cash rate among the sites we recommend."
       },
       {
         "q": "Is Tilt Rips legit?",
         "a": "It is a real operator, Tilt Rips LLC of Nevada, running since May 2026 with published odds and live market values. The app rates around 3.6 on the App Store, with complaints focused on support speed and shipping costs rather than on non-payment. As with any newer site, test a small withdrawal before building a balance."
       }
-    ]
+    ],
+    "eligibility": {
+      "restrictedStates": [],
+      "minAge": 18,
+      "note": "The Tilt Rips collectibles terms restrict access by country rather than by state, and name no US state at all. Shipping carries a quantity cap of three graded and three raw cards rather than any geographic limit. The operator is Tilt Rips LLC, a Nevada company, which does not by itself bar Nevada residents.",
+      "source": "Tilt Rips collectibles terms, section 2"
+    }
   },
   {
     "slug": "triumph-rips",
@@ -273,7 +286,8 @@
       "App only, with no browser version",
       "KYC verification required before you can ship or withdraw",
       "Seven-day window to decide, or the choice is made for you",
-      "Daily, weekly and monthly rewards are all locked until you buy a pack"
+      "Daily, weekly and monthly rewards are all locked until you buy a pack",
+      "Not available in Nevada"
     ],
     "verdict": "The cleanest of the rip apps we looked at. A 100% buyback paid in cash is the thing to look for in this category, and Triumph is the only one on this list reported to do both.",
     "promoCode": "FHIFKMV",
@@ -349,7 +363,15 @@
         "q": "Is Rips by Triumph legit?",
         "a": "Yes. It operates as Triumph TCG, LLC out of San Francisco, publishes pack odds before purchase, and requires identity verification before any withdrawal or shipment. Reviewers consistently report the buyback paying as advertised."
       }
-    ]
+    ],
+    "eligibility": {
+      "restrictedStates": [
+        "Nevada"
+      ],
+      "minAge": 18,
+      "note": "Triumph's own regulatory FAQ says Rips is offered throughout the United States except for Nevada. Worth separating from the longer exclusion list you may see quoted elsewhere, which covers Triumph Arcade's cash skill tournaments rather than Rips: that product also bars Arizona, Connecticut, Delaware, Louisiana, Maine, Michigan, Montana, South Dakota and Tennessee. Those do not apply here.",
+      "source": "Triumph regulatory and legal FAQ"
+    }
   },
   {
     "slug": "crowncards",
@@ -357,7 +379,7 @@
     "tagline": "The most complete odds disclosure of any rip site we looked at.",
     "homepageUrl": "https://crowncards.io",
     "affiliateUrl": "https://cc.link/r/4J5CKZGW",
-    "rating": 4.1,
+    "rating": 4.5,
     "signupOffer": "Bonus pack up to $100 after a $20 deposit, code 4J5CKZGW",
     "packPrices": "Varies by pack",
     "categories": [
@@ -365,9 +387,9 @@
       "Graded cards"
     ],
     "buyback": {
-      "rate": "Not published",
-      "paidIn": "unconfirmed",
-      "note": "No buyback rate published at the time of writing. Confirm before depositing."
+      "rate": "100% FMV",
+      "paidIn": "cash balance",
+      "note": "CrownCards' own FAQ states that you can accept an available buyback offer for 100% of fair market value, and withdrawals run through Cash Out on your profile once identity verification is done, which takes a couple of minutes. That puts it level with Crown Rips and Rips by Triumph on the term that matters most. Note the wording: a buyback offer has to be available on the item, so it is not guaranteed on everything."
     },
     "shipping": {
       "available": true,
@@ -383,11 +405,11 @@
       "Bonus pack worth up to $100 on a $20 deposit"
     ],
     "cons": [
-      "No published buyback rate, which is the number that matters most",
+      "A buyback offer has to be available on the item, so it is not guaranteed on everything",
       "Launched June 2026, so the track record is short",
       "Despite the name, no connection to Crown Coins or Crown Rips"
     ],
-    "verdict": "Best-in-class odds disclosure, but the missing buyback rate is a real gap. Worth a look if you want to actually keep the cards rather than flip them back.",
+    "verdict": "The quiet overachiever on this list. Best-in-class odds disclosure, a 100% buyback into a balance you can actually cash out, graded cards rather than raw, and a free daily that pays four packs across a month. The short track record is the only real reason for caution.",
     "promoCode": "4J5CKZGW",
     "dailyReward": {
       "display": "Pack on day 7, small cash daily",
@@ -398,7 +420,7 @@
       "imageAlt": "CrownCards daily reward screen showing the seven-day cycle and the milestone pack track at days 7, 14, 21 and 30"
     },
     "seoTitle": "CrownCards Review 2026: Free Daily Packs",
-    "metaDescription": "CrownCards runs a free daily paying a Pokemon pack on day 7, and better packs at 21 and 30 days. Strong odds disclosure, but no published buyback rate.",
+    "metaDescription": "CrownCards pays 100% of fair market value into a withdrawable balance, runs a free daily paying packs at days 7, 14, 21 and 30, and discloses pull rates in full.",
     "sections": [
       {
         "heading": "Graded cards, which makes this a different product",
@@ -416,11 +438,12 @@
         ]
       },
       {
-        "heading": "So why is it not ranked higher? The buyback",
+        "heading": "The buyback is 100%, and it pays out",
         "body": [
-          "There is no published buyback rate. For a site this transparent about odds, that is a strange and frustrating gap, and it is the one thing keeping CrownCards out of the top of this list.",
-          "The buyback is the term that decides whether money can leave a rip site. Crown Rips pays 100% into a withdrawable balance. Rips by Triumph pays 100% in cash. Packz pays 90% into credit you can only spend on more packs. Those are wildly different propositions and the number alone does not tell you which you are getting.",
-          "Until CrownCards publishes a rate, we would go in assuming you may not get a good one, and find out with a small amount before committing anything meaningful."
+          "We originally marked this down because CrownCards did not publish a buyback rate anywhere obvious. It does, in its own FAQ: you can accept an available buyback offer for 100% of fair market value, and withdrawals run through a Cash Out option on your profile once you have verified your identity, which takes a couple of minutes.",
+          "That puts CrownCards level with Crown Rips and Rips by Triumph on the single most important term in this category, and ahead of Packz, whose 90% is paid in store credit that can only ever buy more packs.",
+          "One piece of wording to hold onto. The FAQ says you can accept an available buyback offer, which implies the offer has to exist on that item rather than being guaranteed on everything you pull. We have not seen it documented when an offer would not be available, so treat 100% as the rate when a buyback is offered rather than as a promise on every card.",
+          "As always, 100% is measured against the operator's valuation of what you pulled, not against what the pack cost you. Those are different numbers on every site in this category."
         ]
       },
       {
@@ -446,7 +469,7 @@
       },
       {
         "q": "What is the CrownCards buyback rate?",
-        "a": "It is not published, which is the site's biggest gap given how transparent it is about pull rates. Treat that as a reason to test with a small amount before depositing anything significant."
+        "a": "100% of fair market value, per the site's own FAQ, paid into a balance you withdraw through Cash Out on your profile after identity verification. The wording refers to accepting an available buyback offer, so it may not be offered on every item."
       },
       {
         "q": "Does CrownCards have a free daily?",
@@ -456,7 +479,13 @@
         "q": "Do you get graded cards from CrownCards?",
         "a": "Yes, which separates it from most rip sites that deal in raw cards. A graded card carries an independent condition assessment, so its value depends far less on the operator's own opinion."
       }
-    ]
+    ],
+    "eligibility": {
+      "restrictedStates": [],
+      "minAge": 18,
+      "note": "CrownCards' terms name no prohibited US state. They require you to reside in and access the platform from a jurisdiction where it is permitted, and note the platform may be unavailable in some, without listing any. Shipping is limited to eligible US domestic addresses.",
+      "source": "CrownCards terms, sections 2.1 and 5.9"
+    }
   },
   {
     "slug": "pullz",
@@ -473,8 +502,8 @@
     ],
     "buyback": {
       "rate": "Not published",
-      "paidIn": "balance",
-      "note": "Terms reportedly allow buyback offers at, above or below fair market value, including pricing set per user. No fixed percentage is published. The referral link opens the App Store listing, so the code must be entered in the app during signup."
+      "paidIn": "cash balance",
+      "note": "Pullz markets an instant buyback, telling you that funds hit your balance in seconds and that you can withdraw any time. No percentage is published anywhere, and its terms reportedly allow buyback offers at, above or below fair market value, including pricing set per individual user. The referral link opens the App Store listing, so the code must be entered in the app during signup. Read the marketing alongside the user reports below rather than on its own."
     },
     "shipping": {
       "available": true,
@@ -521,7 +550,8 @@
           "Pullz does not publish a fixed buyback percentage. The marketing says you can sell any pull back at market value with funds hitting your balance in seconds, which sounds fine.",
           "The terms reportedly allow buyback offers at, above or below fair market value, including pricing set per individual user.",
           "Read that again, because it is the single most unusual clause we have come across in this category. Every other site on this list commits to a number. Crown Rips says 100%. Tilt Rips says 90%. Packz says 90% and tells you it is credit. Pullz reserves the right to decide what your card is worth, and to decide it differently for you than for someone else.",
-          "There may be a benign operational reason for that wording. But a buyback with no published floor and per-user pricing is not something you can plan around, and it is not something we can tell readers is safe."
+          "There may be a benign operational reason for that wording. But a buyback with no published floor and per-user pricing is not something you can plan around, and it is not something we can tell readers is safe.",
+          "The marketing is also worth holding up against the complaints. Pullz tells you funds hit your balance in seconds and that you can withdraw whenever you like. A large share of recent one-star reviews are from people saying precisely that did not happen. We are not calling the claim false, because plenty of users do get paid quickly. But a promise of instant withdrawals carries less weight when the loudest feedback about the site concerns withdrawals that never arrived."
         ]
       },
       {
@@ -569,7 +599,13 @@
         "q": "Can Pullz ship cards to my state?",
         "a": "Possibly not. Shipping is reportedly unavailable to thirteen US states, and the list is not published anywhere we could find, so check before assuming you can have a card posted to you."
       }
-    ]
+    ],
+    "eligibility": {
+      "restrictedStates": [],
+      "minAge": 18,
+      "note": "Pullz's terms name no prohibited US state. They define a Prohibited Jurisdiction without listing one, and reserve the right to add or remove jurisdictions at any time and to decline shipment to certain addresses. Reports of shipping being unavailable in thirteen states come from users rather than from the terms, and we could not confirm which states those are. The contracting entity is Delta Two.",
+      "source": "Pullz terms and conditions, sections 1.13, 5.2 and 11.8"
+    }
   },
   {
     "slug": "prizepicks",
@@ -577,7 +613,7 @@
     "tagline": "The biggest name in pick'em launched digital rips in October 2026.",
     "homepageUrl": "https://prizepicks.com",
     "affiliateUrl": "https://prizepicks.onelink.me/FjtC/vn13htqm",
-    "rating": 4.4,
+    "rating": 4.6,
     "signupOffer": "Referral signup offer, Packs sit inside the main app",
     "packPrices": "$1 to $2,500",
     "categories": [
@@ -586,9 +622,9 @@
       "Pokemon"
     ],
     "buyback": {
-      "rate": "Fair market value",
-      "paidIn": "unconfirmed",
-      "note": "PrizePicks states cards can be shipped or sold back at fair market value. No fixed percentage published at launch."
+      "rate": "100% FMV",
+      "paidIn": "cash balance",
+      "note": "PrizePicks states its buyback offer is 100% of a card's fair market value, with proceeds added to your PrizePicks balance and usable across all its products or withdrawn to a bank account. The buyback offer holds for three days and does not move during that window, which is more generous than the moving valuations elsewhere. Leave it longer and the card sells back automatically."
     },
     "shipping": {
       "available": true,
@@ -598,6 +634,7 @@
     "platform": "App and web",
     "operator": "PrizePicks",
     "pros": [
+      "Available in all 50 states, per PrizePicks' own help centre",
       "By far the most established operator in this category",
       "Odds and potential card values shown before you open",
       "Highest-value inventory of any rip product, including an eight-figure headline card",
@@ -605,13 +642,14 @@
     ],
     "cons": [
       "Launched October 2026, so there is no track record yet",
-      "Buyback percentage not published at launch",
+      "No daily or recurring reward, unlike most of the sites above it",
+      "Cards sell back automatically if you do not act within three days",
       "Terms frame it as ecommerce rather than a regulated gambling product"
     ],
-    "verdict": "The name alone makes this the one most people will try first, and an operator this size has far more to lose from mishandling payouts than a startup does. Worth watching rather than committing to until the buyback terms firm up.",
+    "verdict": "The most credible operator in the category, and the terms now back that up: 100% of fair market value into a balance you can withdraw, with a three-day buyback offer that does not move while you think about it. What is missing is any recurring free value and any track record at all. Strong if you are going to spend, thin if you are not.",
     "dailyReward": null,
     "seoTitle": "PrizePicks Packs Review 2026: Digital Rips",
-    "metaDescription": "PrizePicks launched digital pack ripping in October 2026, with odds shown before you open and packs from $1 to $2,500. Our review of what it offers.",
+    "metaDescription": "PrizePicks launched digital rips in October 2026, buying cards back at 100% of fair market value into a withdrawable balance. Our review of the terms and the catch.",
     "sections": [
       {
         "heading": "The biggest name in pick'em just entered card rips",
@@ -630,18 +668,20 @@
         ]
       },
       {
-        "heading": "What we do not know yet",
+        "heading": "The terms are better than we expected",
         "body": [
-          "The buyback is described as fair market value with no published percentage, and we have not seen it confirmed whether it pays cash or credit. That is the single most important term on any rip site and it is currently unanswered here.",
-          "There is no daily or recurring reward that we have found, which puts it behind Tilt Rips, Crown Rips and CrownCards for anyone looking to get value without spending.",
-          "And the product is days old. There is no track record, no body of user reports about withdrawals, and no sense yet of how disputes get handled."
+          "At launch there was no published buyback percentage, which for a few days made PrizePicks impossible to judge on the one term that decides whether a rip site is worth using. That has been answered, and the answer is good.",
+          "The buyback is 100% of a card's fair market value. Proceeds go to your PrizePicks balance, where they can be spent across the company's other products or withdrawn to a bank account. That is a withdrawable balance rather than ring-fenced store credit, which puts PrizePicks level with the best terms in this category.",
+          "There is a detail here that is genuinely better than the competition. The buyback offer holds for three days and does not change during that window. On most rip sites a valuation moves with the market while you are deciding, so the number you were offered is not necessarily the number you get. A frozen offer gives you three days to think without the price drifting under you.",
+          "The catch attached to it: if you do nothing for three days, the card sells back automatically. Shipping has a tighter window still, reportedly needing to be actioned from your Locker within about 24 hours, and shipping fees apply. If you pull something you want to keep, act on the day."
         ]
       },
       {
-        "heading": "The eight million dollar card",
+        "heading": "What is still missing",
         "body": [
-          "The launch headline is a 2025/26 Topps Chrome Update Cooper Flagg rookie patch auto, one of one, graded PSA 10, valued in the press release at just over eight million dollars.",
-          "Treat that the way you should treat every ceiling figure in this category. It is a marketing asset, not a realistic outcome, and the odds of pulling it are not meaningfully distinguishable from zero. PrizePicks says it holds the highest-valued inventory in the sector, which may well be true and still tells you nothing useful about what a $20 pack returns."
+          "There is no daily or recurring reward of any kind. Tilt Rips gives a free pack every single day, Crown Rips gives three a week and CrownCards pays packs at four milestones a month, all without a purchase. PrizePicks gives you nothing for turning up, which is the main reason it sits where it does on this list despite having excellent terms.",
+          "And the product is days old. There is no body of user reports about how disputes or withdrawals actually go, no sense of how valuations hold up over time, and no track record to point at. Good terms on paper are not the same as a record of honouring them, and every operator in this category looks fine in week one.",
+          "The usual advice applies with more force here than anywhere: rip something small, sell it back, withdraw it, and confirm the whole pipeline works before you treat it as somewhere to build a balance."
         ]
       },
       {
@@ -663,13 +703,19 @@
       },
       {
         "q": "What is the PrizePicks Packs buyback rate?",
-        "a": "Not published at launch. The company says cards can be shipped or sold back at fair market value, but no fixed percentage has been stated and it is not yet confirmed whether proceeds are cash or credit."
+        "a": "100% of fair market value. Proceeds go to your PrizePicks balance, where they can be used across its other products or withdrawn to a bank account. The buyback offer holds for three days without changing, after which the card sells back automatically."
       },
       {
         "q": "How much do PrizePicks packs cost?",
         "a": "From $1 up to $2,500, covering basketball, football and Pokemon. Odds and potential card values are displayed before you open a pack."
       }
-    ]
+    ],
+    "eligibility": {
+      "restrictedStates": [],
+      "minAge": null,
+      "note": "PrizePicks states that Packs is available in all 50 states, which is unusual enough to be a genuine selling point. Note that this is the Packs product specifically: the PrizePicks pick'em product is restricted in a number of states, and the two are not the same thing. Eligibility still requires that you are legally allowed to use PrizePicks where you are.",
+      "source": "PrizePicks help centre, PrizePicks Packs"
+    }
   },
   {
     "slug": "courtside",
@@ -753,7 +799,13 @@
         "q": "Is Courtside worth using for card rips?",
         "a": "Only if you already use it as a sportsbook and have coins sitting idle. As a dedicated card rip platform it is the weakest option here, mainly because you can never take delivery of a card."
       }
-    ]
+    ],
+    "eligibility": {
+      "restrictedStates": [],
+      "minAge": 18,
+      "note": "Courtside's terms name no prohibited US state, referring only to jurisdictions where use is prohibited without listing any. Given it runs a social sportsbook alongside the rips, confirm your own state at signup rather than relying on the absence of a list.",
+      "source": "Courtside terms, sections 3.1 and 3.4"
+    }
   },
   {
     "slug": "packz",
@@ -791,7 +843,8 @@
       "Trustpilot rating of 1.7 against an App Store rating of 4.7",
       "Unshipped cards are sold back automatically after 72 hours",
       "Reports of repeated ID and selfie verification checks",
-      "Scratch card reward requires a first pack purchase"
+      "Scratch card reward requires a first pack purchase",
+      "Not available in Nevada"
     ],
     "verdict": "The pull-rate transparency is genuinely good and it has been running longer than most. The catch is the buyback: 90% in credit you can only spend on more packs is not the same as 90% in cash, and the Trustpilot gap is worth reading before you deposit.",
     "promoCode": "MDPR5JJY",
@@ -856,6 +909,14 @@
         "q": "How long do I have to ship a card from Packz?",
         "a": "72 hours. Anything you have not shipped by then is automatically sold back, and the proceeds arrive as site credit rather than cash."
       }
-    ]
+    ],
+    "eligibility": {
+      "restrictedStates": [
+        "Nevada"
+      ],
+      "minAge": 18,
+      "note": "Section 3.3 of the Packz terms states plainly that the service is not available in Nevada. The same section reserves the right to change eligible locations at any time and at its sole discretion, so it is worth re-checking rather than assuming.",
+      "source": "Packz terms, section 3.3"
+    }
   }
 ]
