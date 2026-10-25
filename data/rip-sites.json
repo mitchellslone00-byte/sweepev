@@ -34,7 +34,8 @@
       "Vaulted cards are sold back automatically after only 3 days",
       "100% is of the operator's valuation, not of what the pack cost you",
       "Deposited funds must be played before withdrawal",
-      "Terms are vague on state eligibility, naming no restrictions either way"
+      "19+ rather than 18+, the only site here that asks for it",
+      "Not available in Nevada"
     ],
     "verdict": "The free $1 pack makes this the easiest one on the list to try for nothing, and a withdrawable cash balance puts it ahead of the credit-only options. Watch the 3-day vault window, which is the shortest here.",
     "dailyReward": {
@@ -52,7 +53,7 @@
         "body": [
           "Crown Rips is a digital pack-opening app covering Pokemon and sports cards. You buy a pack, the app rips it on screen, and a real card lands in your account. From there you have three choices: have it shipped to you, leave it in the vault, or sell it back to Crown Rips for its market value.",
           "That last option is the one that matters, and it is where Crown Rips separates itself from most of the field. The buyback credits a cash balance you can withdraw, rather than store credit that can only ever buy more packs. On a lot of these sites the money technically never leaves the building. Here it can.",
-          "Packs start at $1 for the Entry tier and run up to $3,000 for Mythic, with the top advertised pull somewhere around $100,000. The minimum age is 18, despite a few write-ups claiming 19, and the terms name no restricted states."
+          "Packs start at $1 for the Entry tier and run up to $3,000 for Mythic, with the top advertised pull somewhere around $100,000. It is available everywhere in the US except Nevada, and the minimum age is 19 rather than the 18 the rest of this category settles on, which catches people out."
         ]
       },
       {
@@ -118,15 +119,17 @@
         "a": "Across a week it pays $0.70 in cash and three free packs, with packs on days 2, 5 and 7. There are also milestone gifts at days 8, 15, 22 and 30 paying $0.50, $1, $1.50 and $2. No purchase is needed for any of it."
       },
       {
-        "q": "How old do you have to be to use Crown Rips?",
-        "a": "18. Some write-ups claim 19, but the Crown Rips terms of service set it at 18, the same as every other site in this category."
+        "q": "How old do you have to be to use Crown Rips, and where is it available?",
+        "a": "19, which is a year older than every other card rip site on our list, and it is available across the US except Nevada. Some write-ups add Idaho, Louisiana, Michigan, Montana, Washington, Connecticut and New Jersey to that list, but those are Crown Coins sweepstakes casino restrictions and Crown Coins is a different operator."
       }
     ],
     "eligibility": {
-      "restrictedStates": [],
-      "minAge": 18,
-      "note": "Checked directly in the Crown Rips terms of service, which set the minimum age at 18 and contain no state eligibility section at all. That matters because several third-party lists claim otherwise, one citing Idaho, Louisiana, Michigan, Montana, Nevada, Washington, Connecticut and New Jersey. Those lists mostly describe the Crown Coins sweepstakes casino, which is a different operator, and we could not find their restrictions anywhere in the Crown Rips terms. Several of the same sources also report a 19+ age limit, which the terms do not support.",
-      "source": "Crown Rips terms of service, read directly"
+      "restrictedStates": [
+        "Nevada"
+      ],
+      "minAge": 19,
+      "note": "Crown Rips is available across the United States except Nevada, and the minimum age is 19 rather than the 18 every other site in this category sets. That is worth knowing if you are 18: this is the one place on the list you cannot use yet. The terms carry no prominent state eligibility section, which is why several third-party lists get the states wrong, claiming Crown Rips also bars Idaho, Louisiana, Michigan, Montana, Washington, Connecticut and New Jersey. Those are Crown Coins sweepstakes casino restrictions, a different operator, and they do not apply here.",
+      "source": "Crown Rips terms of service"
     }
   },
   {

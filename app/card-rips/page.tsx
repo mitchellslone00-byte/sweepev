@@ -234,8 +234,23 @@ export default function CardRipsPage() {
             casinos have withdrawn, can generally use these.
           </p>
           <p className="mt-3 max-w-3xl text-muted leading-relaxed">
-            Generally, not universally. Each operator sets its own eligibility, and at least one on this
-            list cannot ship to 13 states. Check the terms for your state before depositing, and see our{" "}
+            We read all eight sets of terms, and the answer is cleaner than the round-ups suggest.{" "}
+            <strong className="text-text">Nevada is the only state any of them excludes.</strong>{" "}
+            Crown Rips, Rips by Triumph and Packz all bar it; the other five name no US state at all,
+            restricting by country instead, and PrizePicks states outright that Packs is available in
+            all 50. On age, <strong className="text-text">Crown Rips is the odd one out at 19+</strong>,
+            while everyone else sets 18. If you are 18, that is the one site here you cannot use yet.
+          </p>
+          <p className="mt-3 max-w-3xl text-muted leading-relaxed">
+            Be careful with lists that say otherwise. Several claim Crown Rips also bars Idaho,
+            Louisiana, Michigan, Montana, Washington, Connecticut and New Jersey. Those are Crown
+            Coins sweepstakes casino restrictions, and Crown Coins is a separate operator that
+            happens to share a word. The long exclusion list quoted for Rips by Triumph has the same
+            problem: it belongs to Triumph Arcade&apos;s cash tournaments, not to Rips.
+          </p>
+          <p className="mt-3 max-w-3xl text-muted leading-relaxed">
+            Operators can change eligible locations without announcing it, so confirm at signup rather
+            than relying on any list, ours included. See our{" "}
             <Link href="/where-legal" className={LINK_CLS}>where sweepstakes casinos are legal</Link>{" "}
             page for how the rules differ by state.
           </p>
