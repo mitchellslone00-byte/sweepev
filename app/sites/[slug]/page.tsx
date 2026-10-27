@@ -331,7 +331,7 @@ export default async function SitePage(
                       <div key={pi} className={`mt-4${site.compactImages ? " flex justify-center" : ""}`}>
                         <PublicImg
                           src={site.bonusImage}
-                          alt={`${site.name} welcome offer packages`}
+                          alt={site.bonusImageAlt ?? `${site.name} welcome offer packages`}
                           className={`rounded-2xl border border-border shadow-lg ${site.compactImages ? "max-w-sm" : "w-full"}`}
                         />
                       </div>
@@ -431,6 +431,14 @@ export default async function SitePage(
                           src={site.vipTiersImage}
                           alt={`${site.name} VIP tiers, cashback rates and package discounts`}
                           className="rounded-2xl max-w-2xl border border-border shadow-lg"
+                        />
+                      </div>
+                    ) : para === "<<providersimage>>" && site.providersImage ? (
+                      <div key={pi} className="mt-4">
+                        <PublicImg
+                          src={site.providersImage}
+                          alt={`${site.name} game providers and how many titles each supplies`}
+                          className="w-full rounded-2xl border border-border shadow-lg"
                         />
                       </div>
                     ) : para === "<<gamepassimage>>" && site.gamePassImage ? (

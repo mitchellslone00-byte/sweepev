@@ -61,6 +61,10 @@ export type Site = {
   vipTiersImage?: string;
   /** Screenshot of the missions or quests panel, always rendered capped and centered. */
   missionsImage?: string;
+  /** Overrides the generated alt for bonusImage, for offers that are not the welcome bundle. */
+  bonusImageAlt?: string;
+  /** Screenshot of the game provider breakdown, rendered full width. */
+  providersImage?: string;
   /** Screenshot of a seasonal game pass and its tier rewards, always rendered capped and centered. */
   gamePassImage?: string;
   /** Screenshot of the monthly challenge list and tier milestones, always rendered capped and centered. */
