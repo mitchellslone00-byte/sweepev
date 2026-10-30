@@ -212,7 +212,7 @@
       {
         "heading": "What the user reviews actually say",
         "body": [
-          "Tilt Rips sits around 3.6 on the App Store across more than four hundred reviews, and roughly a hundred and seventy on Trustpilot averaging somewhere in the middle. We read through them rather than quoting the number and leaving it there.",
+          "Tilt Rips sits around 3.6 on the App Store across more than four hundred reviews. We read through them rather than quoting the number and leaving it there.",
           "The praise is consistent: people like the app design and the quality of what they pull. The complaints cluster into three piles, and they are the same three every time. Support is slow. Shipping costs more than expected. And a recurring theme of people describing it as a gambling app wearing a collector's jacket, which is a fair thing to sit with before you deposit.",
           "The operator is Tilt Rips LLC, a Nevada company, and the app launched in May 2026. That is a short track record, so treat it accordingly: test a withdrawal before you build a balance worth caring about."
         ]
@@ -843,13 +843,13 @@
     "cons": [
       "Standard buyback pays site credit rather than cash",
       "Welcome bonus funds are non-withdrawable and expire in 48 hours",
-      "Trustpilot rating of 1.7 against an App Store rating of 4.7",
+      "US-only shipping, with no PayPal or crypto option",
       "Unshipped cards are sold back automatically after 72 hours",
       "Reports of repeated ID and selfie verification checks",
       "Scratch card reward requires a first pack purchase",
       "Not available in Nevada"
     ],
-    "verdict": "The pull-rate transparency is genuinely good and it has been running longer than most. The catch is the buyback: 90% in credit you can only spend on more packs is not the same as 90% in cash, and the Trustpilot gap is worth reading before you deposit.",
+    "verdict": "The pull-rate transparency is genuinely good and it has been running longer than most. The catch is the buyback: 90% in credit you can only spend on more packs is not the same as 90% in cash, and that is worth understanding properly before you deposit.",
     "promoCode": "MDPR5JJY",
     "dailyReward": null,
     "seoTitle": "Packz Review 2026: 90% Buyback, Paid in Credit",
@@ -880,11 +880,11 @@
         ]
       },
       {
-        "heading": "The ratings gap is worth a hard look",
+        "heading": "The friction is at the cashier, not the rip",
         "body": [
-          "Packz holds roughly 4.7 on the App Store and roughly 1.7 on Trustpilot. That is not a small discrepancy, it is a chasm, and it is a pattern worth recognising because it recurs across this whole category.",
-          "App store ratings are easy to influence. A well-timed prompt after a good pull captures people at their happiest, and the rating reflects the moment rather than the relationship. Trustpilot tends to collect people who went looking for somewhere to complain, which usually means something went wrong at the cashier rather than at the rip.",
-          "Neither number is the truth on its own. But when the gap is three full points, the thing to pay attention to is what the low reviews are specifically about. Here they cluster on repeated identity and selfie verification requests, which is the sort of friction that turns up between a user and their money."
+          "Opening packs on Packz is not where the problems are. The pull rates are published, the product is real, and the ripping itself works as advertised. Everything awkward about this site happens afterwards, when you try to turn a card into something you can spend.",
+          "Start with the buyback paying credit rather than cash, so the proceeds cannot leave the site. Add the 72-hour clock that converts anything unshipped into more of that credit. Add shipping that is US-only, with no PayPal and no crypto to move money by. Then add the repeated identity and selfie verification checks users report running into.",
+          "None of those is damning by itself. Together they describe a system that is easy to put money into and awkward to take value out of, and that pattern is worth recognising before you deposit rather than after."
         ]
       },
       {
@@ -905,8 +905,8 @@
         "a": "A first pack of up to $100 carrying a 100% buyback instead of the usual 90%. The bonus funds are non-withdrawable and the offer expires 48 hours after signup."
       },
       {
-        "q": "Why does Packz have good App Store reviews but bad Trustpilot ones?",
-        "a": "It sits around 4.7 on the App Store and 1.7 on Trustpilot. App ratings tend to capture people right after a good pull, while Trustpilot collects people who went looking to complain. The low reviews here focus on repeated identity and selfie verification checks."
+        "q": "What is the catch with Packz?",
+        "a": "The ripping works fine; the friction is all at the cashier. The buyback pays credit rather than cash, unshipped cards convert to more credit after 72 hours, shipping is US-only with no PayPal or crypto, and users report repeated identity and selfie verification checks."
       },
       {
         "q": "How long do I have to ship a card from Packz?",
