@@ -102,6 +102,14 @@ export type Site = {
     min?: string | null;
     note?: string | null;
   };
+  /** Alt text override for `<<interfaceimage>>`. */
+  interfaceImageAlt?: string;
+  /** Alt text override for `<<promoimage>>`. */
+  promoImageAlt?: string;
+  /** Level-progression rows for sites built around a levelling system, shown by `<<leveltable>>`. */
+  levelTable?: { level: number; name: string; unlocks: string }[];
+  /** Optional caption shown under the level table. */
+  levelTableCaption?: string;
   /** Daily login SC for the Free Daily SC page. amount = base (non-VIP) rate used for ranking/monthly calc. */
   dailySC?: {
     amount: number;

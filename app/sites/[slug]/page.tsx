@@ -7,6 +7,8 @@ import { siteConfig } from "@/lib/site-config";
 import { ogMeta, clampDescription } from "@/lib/seo";
 import { AffiliateLink } from "@/components/AffiliateLink";
 import { CopyCode } from "@/components/CopyCode";
+import { LevelTable } from "@/components/LevelTable";
+import { imgSize } from "@/lib/img-size";
 import { PublicImg } from "@/components/PublicImg";
 import { evCalcHref } from "@/lib/calculators/site-preset";
 import { LegitCallout } from "@/components/LegitCallout";
@@ -35,6 +37,12 @@ export async function generateMetadata(
     },
     ...ogMeta(`/sites/${slug}`, title, description),
   };
+}
+
+/** True for a taller-than-wide image, i.e. a phone screenshot rather than a lobby shot. */
+function isPortrait(publicPath: string): boolean {
+  const d = imgSize(publicPath);
+  return !!d && d.height > d.width;
 }
 
 export default async function SitePage(
@@ -347,8 +355,10 @@ export default async function SitePage(
                       <div key={pi} className="mt-4 flex justify-center">
                         <PublicImg
                           src={site.promoImage}
-                          alt={`${site.name} free spins promotion`}
-                          className="rounded-2xl border border-border shadow-lg max-w-[260px] w-full"
+                          alt={site.promoImageAlt ?? `${site.name} free spins promotion`}
+                          className={`rounded-2xl border border-border shadow-lg w-full ${
+                            isPortrait(site.promoImage) ? "max-w-[300px]" : "max-w-[260px]"
+                          }`}
                         />
                       </div>
                     ) : para === "<<discord>>" ? (
@@ -384,11 +394,13 @@ export default async function SitePage(
                         />
                       </div>
                     ) : para === "<<interfaceimage>>" && site.interfaceImage ? (
-                      <div key={pi} className="mt-4">
+                      <div key={pi} className={`mt-4${isPortrait(site.interfaceImage) ? " flex justify-center" : ""}`}>
                         <PublicImg
                           src={site.interfaceImage}
-                          alt={`${site.name} lobby and game library`}
-                          className="rounded-2xl w-full border border-border shadow-lg"
+                          alt={site.interfaceImageAlt ?? `${site.name} lobby and game library`}
+                          className={`rounded-2xl border border-border shadow-lg ${
+                            isPortrait(site.interfaceImage) ? "max-w-[300px] w-full" : "w-full"
+                          }`}
                         />
                       </div>
                     ) : para === "<<dailyladderimage>>" && site.dailyLadderImage ? (
@@ -457,6 +469,12 @@ export default async function SitePage(
                           className="rounded-2xl max-w-md border border-border shadow-lg"
                         />
                       </div>
+                    ) : para === "<<leveltable>>" && site.levelTable ? (
+                      <LevelTable
+                        key={pi}
+                        rows={site.levelTable}
+                        caption={site.levelTableCaption}
+                      />
                     ) : para === "<<missionsimage>>" && site.missionsImage ? (
                       <div key={pi} className="mt-4 flex justify-center">
                         <PublicImg
