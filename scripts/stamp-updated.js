@@ -4,6 +4,7 @@
  * schema's dateModified) always reflects when content actually changed.
  *
  *   - Reviews: data/sites.json -> per-casino `updatedAt`, plus `publishedAt` for new entries
+ *   - Card rips: data/rip-sites.json -> the same two fields per rip site
  *   - Guides:  app/guides/**\/page.tsx -> data/guide-dates.json entry for that route
  *
  * Run automatically by .githooks/pre-commit, or manually with `npm run stamp`.
@@ -13,6 +14,7 @@ const fs = require("fs");
 const { execSync } = require("child_process");
 
 const SITES = "data/sites.json";
+const RIP_SITES = "data/rip-sites.json";
 const GUIDE_DATES = "data/guide-dates.json";
 
 function today() {
@@ -27,7 +29,9 @@ function git(cmd) {
 
 /** Ignore the stamp field itself so re-running is idempotent. */
 function contentOf(site) {
-  const { updatedAt, ...rest } = site;
+  // Both date fields are stamps, not content. Back-filling a publishedAt on an
+  // existing entry must not read as the page having been rewritten that day.
+  const { updatedAt, publishedAt, ...rest } = site;
   return JSON.stringify(rest);
 }
 
@@ -73,15 +77,15 @@ function routesForGuideFile(file) {
   return [`/guides/${mid}`];
 }
 
-function stampReviews(stamp) {
-  if (!fs.existsSync(SITES)) return;
+function stampReviews(stamp, file = SITES, label = "") {
+  if (!fs.existsSync(file)) return 0;
   let head;
   try {
-    head = JSON.parse(git(`git show HEAD:${SITES}`));
+    head = JSON.parse(git(`git show HEAD:${file}`));
   } catch {
-    return; // no HEAD version to diff against
+    return 0; // no HEAD version to diff against
   }
-  const current = JSON.parse(fs.readFileSync(SITES, "utf8"));
+  const current = JSON.parse(fs.readFileSync(file, "utf8"));
   const bySlug = new Map(head.map((s) => [s.slug, s]));
   const changed = [];
   const added = [];
@@ -101,9 +105,9 @@ function stampReviews(stamp) {
     }
   }
   if (changed.length || added.length) {
-    fs.writeFileSync(SITES, JSON.stringify(current, null, 2) + "\n");
-    if (added.length) console.log(`stamped publishedAt=${stamp}: ${added.join(", ")}`);
-    if (changed.length) console.log(`stamped updatedAt=${stamp}: ${changed.join(", ")}`);
+    fs.writeFileSync(file, JSON.stringify(current, null, 2) + "\n");
+    if (added.length) console.log(`stamped ${label}publishedAt=${stamp}: ${added.join(", ")}`);
+    if (changed.length) console.log(`stamped ${label}updatedAt=${stamp}: ${changed.join(", ")}`);
   }
   return changed.length + added.length;
 }
@@ -195,7 +199,10 @@ function stampGuides(stamp) {
 
 try {
   const stamp = today();
-  const n = (stampReviews(stamp) || 0) + (stampGuides(stamp) || 0);
+  const n =
+    (stampReviews(stamp) || 0) +
+    (stampReviews(stamp, RIP_SITES, "card rip ") || 0) +
+    (stampGuides(stamp) || 0);
   if (!n) console.log("no review or guide content changed, nothing to stamp");
 } catch (err) {
   console.error("stamp-updated skipped:", err.message);

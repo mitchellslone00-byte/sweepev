@@ -50,6 +50,16 @@ export default async function RipSiteReview({
   // Triumph's is padlocked behind a purchase, so it does not belong there.
   const freeDaily = Boolean(site.dailyReward && !site.dailyReward.requiresPurchase);
 
+  // Falls back to the publish date, then to the site-wide date, so a rip site
+  // added without a stamp still renders something true.
+  const modifiedISO = site.updatedAt ?? site.publishedAt ?? siteConfig.lastUpdatedISO;
+  const modifiedDisplay = new Date(`${modifiedISO}T00:00:00Z`).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+
   const blocked = site.eligibility.restrictedStates;
   const stateSummary =
     blocked === null ? "Unverified" : blocked.length ? blocked.join(", ") : "None named";
@@ -74,6 +84,8 @@ export default async function RipSiteReview({
     author: { "@type": "Person", name: "Jordan Thacker", url: siteConfig.url },
     publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
     reviewBody: site.verdict,
+    datePublished: site.publishedAt ?? modifiedISO,
+    dateModified: modifiedISO,
   };
 
   const faqLd = site.faqs?.length
@@ -145,6 +157,14 @@ export default async function RipSiteReview({
         </div>
 
         <p className="mt-3 text-muted leading-relaxed">{site.tagline}</p>
+
+        <div className="mt-2 flex items-center gap-2 text-xs text-muted">
+          <span>
+            By <span className="font-medium text-text">Jordan Thacker</span>
+          </span>
+          <span>·</span>
+          <span>Last updated: {modifiedDisplay}</span>
+        </div>
 
         {/* The offer block. Free value is the reason to sign up on any of these,
             so it leads, with the daily listed beside the signup offer only when

@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 import { GUIDE_SLUGS } from "@/lib/guides";
 import { states } from "@/lib/states";
 import { matchups } from "@/lib/comparisons";
+import { ripSites } from "@/lib/rip-sites";
 
 type ChangeFreq = "daily" | "weekly" | "monthly";
 
@@ -83,17 +84,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Programmatic head-to-head comparison pages (app/compare/[matchup]).
   const comparePaths = matchups.map((m) => `/compare/${m.slug}`);
 
+  // Card rip reviews (app/card-rips/[slug]). Dynamic segments are skipped by
+  // walkApp, so without this the eight reviews never reach the sitemap.
+  const ripPaths = ripSites.map((s) => `/card-rips/${s.slug}`);
+
   const all = Array.from(
-    new Set([...staticPaths, ...sitePaths, ...guidePaths, ...statePaths, ...comparePaths])
+    new Set([...staticPaths, ...sitePaths, ...guidePaths, ...statePaths, ...comparePaths, ...ripPaths])
   ).sort();
   const base = siteConfig.url.replace(/\/$/, "");
 
   // Per-URL last-modified from real content dates (reviews carry their own
   // publish/update dates) rather than the build timestamp. A sitemap that claims
   // every page changed on every deploy is a freshness signal Google learns to ignore.
-  const reviewDate = new Map(
-    sites.map((s) => [`/sites/${s.slug}`, s.updatedAt ?? s.publishedAt ?? siteConfig.lastUpdatedISO])
-  );
+  const reviewDate = new Map<string, string>([
+    ...sites.map(
+      (s) => [`/sites/${s.slug}`, s.updatedAt ?? s.publishedAt ?? siteConfig.lastUpdatedISO] as const
+    ),
+    ...ripSites.map(
+      (s) => [`/card-rips/${s.slug}`, s.updatedAt ?? s.publishedAt ?? siteConfig.lastUpdatedISO] as const
+    ),
+  ]);
 
   return all.map((p) => {
     const r = rulesFor(p);

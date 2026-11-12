@@ -130,7 +130,9 @@
       "minAge": 19,
       "note": "Crown Rips is available across the United States except Nevada, and the minimum age is 19 rather than the 18 every other site in this category sets. That is worth knowing if you are 18: this is the one place on the list you cannot use yet. The terms carry no prominent state eligibility section, which is why several third-party lists get the states wrong, claiming Crown Rips also bars Idaho, Louisiana, Michigan, Montana, Washington, Connecticut and New Jersey. Those are Crown Coins sweepstakes casino restrictions, a different operator, and they do not apply here.",
       "source": "Crown Rips terms of service"
-    }
+    },
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
   },
   {
     "slug": "tilt-rips",
@@ -252,7 +254,9 @@
       "minAge": 18,
       "note": "The Tilt Rips collectibles terms restrict access by country rather than by state, and name no US state at all. Shipping carries a quantity cap of three graded and three raw cards rather than any geographic limit. The operator is Tilt Rips LLC, a Nevada company, which does not by itself bar Nevada residents.",
       "source": "Tilt Rips collectibles terms, section 2"
-    }
+    },
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
   },
   {
     "slug": "triumph-rips",
@@ -374,7 +378,9 @@
       "minAge": 18,
       "note": "Triumph's own regulatory FAQ says Rips is offered throughout the United States except for Nevada. Worth separating from the longer exclusion list you may see quoted elsewhere, which covers Triumph Arcade's cash skill tournaments rather than Rips: that product also bars Arizona, Connecticut, Delaware, Louisiana, Maine, Michigan, Montana, South Dakota and Tennessee. Those do not apply here.",
       "source": "Triumph regulatory and legal FAQ"
-    }
+    },
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
   },
   {
     "slug": "crowncards",
@@ -423,7 +429,7 @@
       "imageAlt": "CrownCards daily reward screen showing the seven-day cycle and the milestone pack track at days 7, 14, 21 and 30"
     },
     "seoTitle": "CrownCards Review 2026: Free Daily Packs",
-    "metaDescription": "CrownCards pays 100% of fair market value into a withdrawable balance, runs a free daily paying packs at days 7, 14, 21 and 30, and discloses pull rates in full.",
+    "metaDescription": "CrownCards pays 100% of fair market value into a withdrawable balance, runs a free daily paying packs at days 7, 14, 21 and 30, and publishes pull rates.",
     "sections": [
       {
         "heading": "Graded cards, which makes this a different product",
@@ -488,7 +494,9 @@
       "minAge": 18,
       "note": "CrownCards' terms name no prohibited US state. They require you to reside in and access the platform from a jurisdiction where it is permitted, and note the platform may be unavailable in some, without listing any. Shipping is limited to eligible US domestic addresses.",
       "source": "CrownCards terms, sections 2.1 and 5.9"
-    }
+    },
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-11-01"
   },
   {
     "slug": "pullz",
@@ -608,7 +616,9 @@
       "minAge": 18,
       "note": "Pullz's terms name no prohibited US state. They define a Prohibited Jurisdiction without listing one, and reserve the right to add or remove jurisdictions at any time and to decline shipment to certain addresses. Reports of shipping being unavailable in thirteen states come from users rather than from the terms, and we could not confirm which states those are. The contracting entity is Delta Two.",
       "source": "Pullz terms and conditions, sections 1.13, 5.2 and 11.8"
-    }
+    },
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
   },
   {
     "slug": "prizepicks",
@@ -652,7 +662,7 @@
     "verdict": "The most credible operator in the category, and the terms now back that up: 100% of fair market value into a balance you can withdraw, with a three-day buyback offer that does not move while you think about it. What is missing is any recurring free value and any track record at all. Strong if you are going to spend, thin if you are not.",
     "dailyReward": null,
     "seoTitle": "PrizePicks Packs Review 2026: Digital Rips",
-    "metaDescription": "PrizePicks launched digital rips in October 2026, buying cards back at 100% of fair market value into a withdrawable balance. Our review of the terms and the catch.",
+    "metaDescription": "PrizePicks launched digital rips in October 2026, buying cards back at 100% of market value into a withdrawable balance. Our review of the terms and the catch.",
     "sections": [
       {
         "heading": "The biggest name in pick'em just entered card rips",
@@ -718,7 +728,9 @@
       "minAge": null,
       "note": "PrizePicks states that Packs is available in all 50 states, which is unusual enough to be a genuine selling point. Note that this is the Packs product specifically: the PrizePicks pick'em product is restricted in a number of states, and the two are not the same thing. Eligibility still requires that you are legally allowed to use PrizePicks where you are.",
       "source": "PrizePicks help centre, PrizePicks Packs"
-    }
+    },
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-11-01"
   },
   {
     "slug": "courtside",
@@ -808,7 +820,9 @@
       "minAge": 18,
       "note": "Courtside's terms name no prohibited US state, referring only to jurisdictions where use is prohibited without listing any. Given it runs a social sportsbook alongside the rips, confirm your own state at signup rather than relying on the absence of a list.",
       "source": "Courtside terms, sections 3.1 and 3.4"
-    }
+    },
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
   },
   {
     "slug": "packz",
@@ -920,6 +934,8 @@
       "minAge": 18,
       "note": "Section 3.3 of the Packz terms states plainly that the service is not available in Nevada. The same section reserves the right to change eligible locations at any time and at its sole discretion, so it is worth re-checking rather than assuming.",
       "source": "Packz terms, section 3.3"
-    }
+    },
+    "publishedAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
   }
 ]

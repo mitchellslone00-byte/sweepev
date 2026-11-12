@@ -20,11 +20,14 @@ const DESC_SOFT_MIN = 70; // much shorter than this and we are wasting the slot
 
 // Pre-launch pages still render a title and a description, so they are checked too.
 const sites = JSON.parse(fs.readFileSync("data/sites.json", "utf8"));
+// Card rip reviews render through the same title template, so they get the same
+// budget. They were overflowing unnoticed while this script only read sites.json.
+const ripSites = JSON.parse(fs.readFileSync("data/rip-sites.json", "utf8"));
 
 const problems = [];
 const titleCounts = new Map();
 
-for (const s of sites) {
+for (const s of [...sites, ...ripSites]) {
   // ---- title ----
   const titleCustom = Boolean(s.seoTitle || s.reviewTitle);
   const title = s.seoTitle ?? s.reviewTitle ?? `${s.name} Review, Bonus, Promo Code & Payouts`;
@@ -53,7 +56,7 @@ const duplicated = [...titleCounts.entries()].filter(([, n]) => n >= 4);
 
 if (!problems.length && !duplicated.length) {
   console.log(
-    `All ${sites.length} titles (<=${TITLE_LIMIT} rendered) and descriptions (${DESC_SOFT_MIN}-${DESC_LIMIT}) look fine.`
+    `All ${sites.length + ripSites.length} titles (<=${TITLE_LIMIT} rendered) and descriptions (${DESC_SOFT_MIN}-${DESC_LIMIT}) look fine.`
   );
   process.exit(0);
 }

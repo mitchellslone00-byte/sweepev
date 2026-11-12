@@ -71,6 +71,10 @@ export interface RipSite {
   oddsPublished: boolean;
   platform: string;
   operator: string;
+  /** First published, ISO date. Feeds the sitemap and the Article schema. */
+  publishedAt?: string;
+  /** Last verified against the operator's own terms, ISO date. */
+  updatedAt?: string;
   /**
    * Long-form review body. Structured rather than the casino side's marker
    * string, because these pages are built from scratch and an array of
